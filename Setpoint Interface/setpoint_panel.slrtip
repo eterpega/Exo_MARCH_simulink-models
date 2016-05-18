@@ -1,0 +1,23 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Phase offset/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Span">400000</Property>
+      </Property>
+      <Property name="Size">84, 324</Property>
+      <Property name="Location">264, 12</Property>
+      <Property name="Name">Slider1</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+      <Property name="Text">Joint Angle</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">367, 163</Property>
+      <Property name="Name">Label1</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Property name="ClientSize">1366, 768</Property>
+  </Object>
