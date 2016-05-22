@@ -2,15 +2,23 @@
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">EtherCAT PDO Transmit /P2</Property>
+      <Property name="BindingSrcPath">Line/Value</Property>
       <Property name="TargetName">TargetPC1</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65000</Property>
+        <Property name="Span">65536</Property>
       </Property>
-      <Property name="Size">78, 541</Property>
-      <Property name="Location">34, 12</Property>
+      <Property name="Size">78, 521</Property>
+      <Property name="Location">26, 12</Property>
       <Property name="Name">Slider1</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
+      <Property name="BindingSrcPath">Line/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">296, 121</Property>
+      <Property name="Name">NumericEntry1</Property>
     </Object>
     <Property name="ClientSize">1366, 768</Property>
   </Object>
