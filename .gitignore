@@ -1,1 +1,5 @@
+*.dlm
 *.autosave
+*.original
+slprj/
+*_rtw/
