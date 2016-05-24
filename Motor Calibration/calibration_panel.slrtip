@@ -2,7 +2,7 @@
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">Line/Value</Property>
+      <Property name="BindingSrcPath">Phaseoffset/Value</Property>
       <Property name="TargetName">TargetPC1</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
