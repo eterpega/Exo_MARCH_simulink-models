@@ -21,6 +21,7 @@ outputLog = tg.OutputLog;
 
 filename = input('Filename?','s');
 
-csvwrite([filename '.csv'],outputLog');
+csvwrite([filename '_encoder.csv'],outputLog(:,1)');
+csvwrite([filename '_pwm.csv'],outputLog(:,2)');
 
 plot(timelog,outputLog)

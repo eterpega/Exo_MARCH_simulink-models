@@ -13,7 +13,7 @@
       <Property name="Name">Slider1</Property>
     </Object>
     <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
-      <Property name="BindingSrcPath">Line/Value</Property>
+      <Property name="BindingSrcPath">Phaseoffset/Value</Property>
       <Property name="TargetName">TargetPC1</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">100, 23</Property>

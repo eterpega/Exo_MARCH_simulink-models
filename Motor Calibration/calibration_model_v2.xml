@@ -12,8 +12,36 @@
 
 
     </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>calibration_model_v2/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 2</Name>
+    <xPCName>calibration_model_v2/Scope 2</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
 
       
+
+
+
+
 
  
             <block>
@@ -29,6 +57,10 @@
 
 
 
+
+
+
+
  
             <block>
             <blkName>EtherCAT PDO Receive</blkName>
@@ -37,7 +69,91 @@
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 22]</dim>  
+          <dim>[1, 45]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Receive1</blkName>
+            <xpcblkName>EtherCAT PDO Receive1</xpcblkName>
+            <SLblockPath>calibration_model_v2/EtherCAT PDO Receive1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 42]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Receive2</blkName>
+            <xpcblkName>EtherCAT PDO Receive2</xpcblkName>
+            <SLblockPath>calibration_model_v2/EtherCAT PDO Receive2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 42]</dim>  
           </parameter>
  
           <parameter>
@@ -79,7 +195,7 @@
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 46]</dim>  
           </parameter>
  
           <parameter>
@@ -112,6 +228,58 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
+ 
+            <block>
+            <blkName>PWM Angle</blkName>
+            <xpcblkName>PWM Angle</xpcblkName>
+            <SLblockPath>calibration_model_v2/PWM Angle</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 42]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    
+    
+
 
 
     
@@ -158,6 +326,74 @@
               
        
               <signal>
+              <sigName>phaseoffset1</sigName>
+              <xpcsigName>phaseoffset1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>phaseoffset2</sigName>
+              <xpcsigName>phaseoffset2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>phaseoffset3</sigName>
+              <xpcsigName>phaseoffset3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>phaseoffset4</sigName>
+              <xpcsigName>phaseoffset4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>EtherCAT Init </sigName>
               <xpcsigName>EtherCAT Init </xpcsigName>
               <sigWidth>6</sigWidth>
@@ -185,5 +421,56 @@
     
     
 
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT PDO Receive1</sigName>
+              <xpcsigName>EtherCAT PDO Receive1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT PDO Receive2</sigName>
+              <xpcsigName>EtherCAT PDO Receive2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>PWM Angle</sigName>
+              <xpcsigName>PWM Angle</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 </Root>
