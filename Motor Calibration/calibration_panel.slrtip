@@ -1,5 +1,71 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_VELOCITY_P/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Span">500</Property>
+      </Property>
+      <Property name="Size">64, 521</Property>
+      <Property name="Location">634, 12</Property>
+      <Property name="Name">Slider5</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
+      <Property name="BindingSrcPath">C_LAG/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">123, 159</Property>
+      <Property name="Name">NumericEntry3</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">123, 105</Property>
+      <Property name="Name">NumericEntry2</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_TORQUE/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">100</Property>
+        <Property name="Span">2000</Property>
+      </Property>
+      <Property name="Size">71, 521</Property>
+      <Property name="Location">521, 12</Property>
+      <Property name="Name">Slider4</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_VELOCITY/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">1000</Property>
+        <Property name="Span">9000</Property>
+      </Property>
+      <Property name="Size">78, 521</Property>
+      <Property name="Location">397, 12</Property>
+      <Property name="Name">Slider3</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_LAG/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Span">65536</Property>
+      </Property>
+      <Property name="Size">78, 521</Property>
+      <Property name="Location">267, 12</Property>
+      <Property name="Name">Slider2</Property>
+    </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Phaseoffset/Value</Property>
@@ -17,7 +83,7 @@
       <Property name="TargetName">TargetPC1</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">100, 23</Property>
-      <Property name="Location">296, 121</Property>
+      <Property name="Location">123, 55</Property>
       <Property name="Name">NumericEntry1</Property>
     </Object>
     <Property name="ClientSize">1366, 768</Property>
