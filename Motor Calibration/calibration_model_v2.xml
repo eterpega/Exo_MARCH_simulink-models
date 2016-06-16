@@ -37,8 +37,20 @@
 
     </SubSystem>
     <SubSystem>
-    <Name>Scope 3</Name>
-    <xPCName>calibration_model_v2/Scope 3</xPCName>
+    <Name>Scope 4</Name>
+    <xPCName>calibration_model_v2/Scope 4</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 5</Name>
+    <xPCName>calibration_model_v2/Scope 5</xPCName>
     
     
 
@@ -56,11 +68,12 @@
 
 
 
+
  
             <block>
-            <blkName>C_LAG</blkName>
-            <xpcblkName>C_LAG</xpcblkName>
-            <SLblockPath>calibration_model_v2/C_LAG</SLblockPath>
+            <blkName>D</blkName>
+            <xpcblkName>D</xpcblkName>
+            <SLblockPath>calibration_model_v2/D</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -70,9 +83,9 @@
 
  
             <block>
-            <blkName>C_TORQUE</blkName>
-            <xpcblkName>C_TORQUE</xpcblkName>
-            <SLblockPath>calibration_model_v2/C_TORQUE</SLblockPath>
+            <blkName>I</blkName>
+            <xpcblkName>I</xpcblkName>
+            <SLblockPath>calibration_model_v2/I</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -82,9 +95,9 @@
 
  
             <block>
-            <blkName>C_VELOCITY</blkName>
-            <xpcblkName>C_VELOCITY</xpcblkName>
-            <SLblockPath>calibration_model_v2/C_VELOCITY</SLblockPath>
+            <blkName>P</blkName>
+            <xpcblkName>P</xpcblkName>
+            <SLblockPath>calibration_model_v2/P</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -104,25 +117,63 @@
           </parameter>
           </block>
 
+
+
+
+
+
  
             <block>
-            <blkName>velocity setpoint</blkName>
-            <xpcblkName>velocity setpoint</xpcblkName>
-            <SLblockPath>calibration_model_v2/velocity setpoint</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>calibration_model_v2/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
           <parameter>
-          <paramName>Value</paramName>
+          <paramName>Gain</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Gain1</xpcblkName>
+            <SLblockPath>calibration_model_v2/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Gain2</xpcblkName>
+            <SLblockPath>calibration_model_v2/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
-
-
-
-
-
+ 
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>Saturation</xpcblkName>
+            <SLblockPath>calibration_model_v2/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
 
  
@@ -253,9 +304,9 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 1</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 1</xpcblkName>
-            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 1</SLblockPath>
+            <blkName>EtherCAT PDO Transmit 6</blkName>
+            <xpcblkName>EtherCAT PDO Transmit 6</xpcblkName>
+            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 6</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -295,9 +346,9 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 2</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 2</xpcblkName>
-            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 2</SLblockPath>
+            <blkName>EtherCAT PDO Transmit 7</blkName>
+            <xpcblkName>EtherCAT PDO Transmit 7</xpcblkName>
+            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 7</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -337,51 +388,9 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 3</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 3</xpcblkName>
-            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 3</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 38]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 4</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 4</xpcblkName>
-            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 4</SLblockPath>
+            <blkName>EtherCAT PDO Transmit 8</blkName>
+            <xpcblkName>EtherCAT PDO Transmit 8</xpcblkName>
+            <SLblockPath>calibration_model_v2/EtherCAT PDO Transmit 8</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -462,10 +471,6 @@
           </block>
 
 
-    
-    
-
-
 
     
     
@@ -476,85 +481,29 @@
     
 
 
-  
-              
 
-              
-       
-              <signal>
-              <sigName>C_LAG</sigName>
-              <xpcsigName>C_LAG</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
+    
+    
+
+
 
 
     
     
 
 
-  
-              
-
-              
-       
-              <signal>
-              <sigName>C_TORQUE</sigName>
-              <xpcsigName>C_TORQUE</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
     
 
 
-  
-              
-
-              
-       
-              <signal>
-              <sigName>C_VELOCITY</sigName>
-              <xpcsigName>C_VELOCITY</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
     
 
 
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Phaseoffset</sigName>
-              <xpcsigName>Phaseoffset</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>velocity setpoint</sigName>
-              <xpcsigName>velocity setpoint</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
@@ -603,24 +552,6 @@
               
        
               <signal>
-              <sigName>phaseoffset2</sigName>
-              <xpcsigName>phaseoffset2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>velocity setpoint</sigLabel>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
               <sigName>phaseoffset3</sigName>
               <xpcsigName>phaseoffset3</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -643,7 +574,7 @@
               <xpcsigName>phaseoffset4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>PWM Angle</sigLabel>
+                <sigLabel>Joint Angle</sigLabel>
             </signal>
 
 
@@ -657,11 +588,11 @@
               
        
               <signal>
-              <sigName>phaseoffset5</sigName>
-              <xpcsigName>phaseoffset5</xpcsigName>
+              <sigName>phaseoffset9</sigName>
+              <xpcsigName>phaseoffset9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>C_LAG</sigLabel>
+                <sigLabel>Error</sigLabel>
             </signal>
 
 
@@ -675,11 +606,11 @@
               
        
               <signal>
-              <sigName>phaseoffset6</sigName>
-              <xpcsigName>phaseoffset6</xpcsigName>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>C_VELOCITY</sigLabel>
+                <sigLabel>D gain</sigLabel>
             </signal>
 
 
@@ -693,11 +624,46 @@
               
        
               <signal>
-              <sigName>phaseoffset7</sigName>
-              <xpcsigName>phaseoffset7</xpcsigName>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Gain1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>C_TORQUE</sigLabel>
+                <sigLabel>I gain</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>P gain</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
 
 
@@ -776,6 +742,18 @@
     
 
 
+  
+              
+
+              
+       
+              <signal>
+              <sigName>PWM Angle</sigName>
+              <xpcsigName>PWM Angle</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
 
     
     
@@ -787,8 +765,8 @@
               
        
               <signal>
-              <sigName>PWM Angle</sigName>
-              <xpcsigName>PWM Angle</xpcsigName>
+              <sigName>Sum</sigName>
+              <xpcsigName>Sum</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>

@@ -1,86 +1,169 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
-    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">C_VELOCITY_P/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
-      <Property name="BindingSrcObject" />
-      <Property name="ScaleRange">
-        <Property name="Span">500</Property>
-      </Property>
-      <Property name="Size">64, 521</Property>
-      <Property name="Location">634, 12</Property>
-      <Property name="Name">Slider5</Property>
-    </Object>
-    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
-      <Property name="BindingSrcPath">C_LAG/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
-      <Property name="BindingSrcType">Parameter</Property>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label10" children="Controls">
+      <Property name="Text">Velocity Override</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">668, 12</Property>
+      <Property name="Name">Label10</Property>
       <Property name="Size">100, 23</Property>
-      <Property name="Location">123, 159</Property>
-      <Property name="Name">NumericEntry3</Property>
     </Object>
-    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
-      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+      <Property name="BindingSrcPath">man mode/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
-      <Property name="Size">100, 23</Property>
-      <Property name="Location">123, 105</Property>
-      <Property name="Name">NumericEntry2</Property>
-    </Object>
-    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">C_TORQUE/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
-      <Property name="BindingSrcObject" />
-      <Property name="ScaleRange">
-        <Property name="Min">100</Property>
-        <Property name="Span">2000</Property>
-      </Property>
-      <Property name="Size">71, 521</Property>
-      <Property name="Location">521, 12</Property>
-      <Property name="Name">Slider4</Property>
-    </Object>
-    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">C_VELOCITY/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
-      <Property name="BindingSrcObject" />
-      <Property name="ScaleRange">
-        <Property name="Min">1000</Property>
-        <Property name="Span">9000</Property>
-      </Property>
-      <Property name="Size">78, 521</Property>
-      <Property name="Location">397, 12</Property>
-      <Property name="Name">Slider3</Property>
+      <Property name="Size">48, 40</Property>
+      <Property name="Location">698, 38</Property>
+      <Property name="Name">SwitchLED1</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
-      <Property name="BindingSrcPath">C_LAG/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Min">-300</Property>
+        <Property name="Span">600</Property>
       </Property>
-      <Property name="Size">78, 521</Property>
-      <Property name="Location">267, 12</Property>
+      <Property name="Size">69, 363</Property>
+      <Property name="Location">682, 99</Property>
       <Property name="Name">Slider2</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry7" children="Controls">
+      <Property name="BindingSrcPath">N/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">919, 607</Property>
+      <Property name="Name">NumericEntry7</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry6" children="Controls">
+      <Property name="BindingSrcPath">D/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">485, 451</Property>
+      <Property name="Name">NumericEntry6</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry5" children="Controls">
+      <Property name="BindingSrcPath">P/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">485, 99</Property>
+      <Property name="Name">NumericEntry5</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry4" children="Controls">
+      <Property name="BindingSrcPath">I/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">485, 270</Property>
+      <Property name="Name">NumericEntry4</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
+      <Property name="Text">N gain</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">334, 528</Property>
+      <Property name="Name">Label9</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Knob, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Knob2147483644" children="Controls">
+      <Property name="BindingSrcPath">N/Value</Property>
+      <Property name="TargetName">TargetPC1</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Body">
+        <Property name="Radius">43</Property>
+      </Property>
+      <Property name="Size">159, 124</Property>
+      <Property name="Location">745, 560</Property>
+      <Property name="Name">Knob2147483644</Property>
+    </Object>
+    <Object type="MW.Instruments.Knob, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Knob2147483645" children="Controls">
+      <Property name="BindingSrcPath">D/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Body">
+        <Property name="Radius">45</Property>
+      </Property>
+      <Property name="ScaleRange">
+        <Property name="Span">10</Property>
+      </Property>
+      <Property name="Size">151, 127</Property>
+      <Property name="Location">311, 397</Property>
+      <Property name="Name">Knob2147483645</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
+      <Property name="Text">D gain</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">334, 359</Property>
+      <Property name="Name">Label8</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
+      <Property name="Text">I gain</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">334, 197</Property>
+      <Property name="Name">Label7</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Knob, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Knob2147483646" children="Controls">
+      <Property name="BindingSrcPath">I/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Body">
+        <Property name="Radius">45</Property>
+      </Property>
+      <Property name="ScaleRange">
+        <Property name="Span">10</Property>
+      </Property>
+      <Property name="Size">151, 127</Property>
+      <Property name="Location">311, 223</Property>
+      <Property name="Name">Knob2147483646</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+      <Property name="Text">P gain</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">334, 29</Property>
+      <Property name="Name">Label6</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Knob, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="P" children="Controls">
+      <Property name="BindingSrcPath">P/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Body">
+        <Property name="Radius">45</Property>
+      </Property>
+      <Property name="ScaleRange">
+        <Property name="Span">0.1</Property>
+      </Property>
+      <Property name="Size">151, 127</Property>
+      <Property name="Location">311, 55</Property>
+      <Property name="Name">P</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+      <Property name="Text">Joint Setpoint</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">26, 13</Property>
+      <Property name="Name">Label1</Property>
+      <Property name="Size">100, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Phaseoffset/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Min">305130</Property>
+        <Property name="Span">88807</Property>
       </Property>
-      <Property name="Size">78, 521</Property>
-      <Property name="Location">26, 12</Property>
+      <Property name="Size">84, 489</Property>
+      <Property name="Location">26, 44</Property>
       <Property name="Name">Slider1</Property>
     </Object>
     <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
       <Property name="BindingSrcPath">Phaseoffset/Value</Property>
-      <Property name="TargetName">TargetPC1</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">100, 23</Property>
       <Property name="Location">123, 55</Property>
