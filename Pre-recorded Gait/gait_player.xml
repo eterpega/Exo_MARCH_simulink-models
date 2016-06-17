@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>gait_player/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+
+      
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT Init </sigName>
+              <xpcsigName>EtherCAT Init </xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+</Root>
