@@ -1,0 +1,244 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="gait_player" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label20" children="Controls">
+      <Property name="Text">LKFE</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">524, 405</Property>
+      <Property name="Name">Label20</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label21" children="Controls">
+      <Property name="Text">LHFE</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">385, 405</Property>
+      <Property name="Name">Label21</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label22" children="Controls">
+      <Property name="Text">RKFE</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">240, 405</Property>
+      <Property name="Name">Label22</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label23" children="Controls">
+      <Property name="Text">RHFE</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">104, 405</Property>
+      <Property name="Name">Label23</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
+      <Property name="BindingSrcPath">Instrument Panel LKFE/velocityOverrideFlag/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">64, 51</Property>
+      <Property name="Location">524, 41</Property>
+      <Property name="Name">SwitchLED5</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+      <Property name="BindingSrcPath">Instrument Panel LHFE/velocityOverrideFlag/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">64, 51</Property>
+      <Property name="Location">385, 41</Property>
+      <Property name="Name">SwitchLED1</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
+      <Property name="BindingSrcPath">Instrument Panel RKFE/velocityOverrideFlag/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">64, 51</Property>
+      <Property name="Location">240, 41</Property>
+      <Property name="Name">SwitchLED2</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
+      <Property name="BindingSrcPath">Instrument Panel RHFE/velocityOverrideFlag/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">64, 51</Property>
+      <Property name="Location">104, 41</Property>
+      <Property name="Name">SwitchLED3</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Instrument Panel LKFE/velocity setpoint1/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-100</Property>
+        <Property name="Span">200</Property>
+      </Property>
+      <Property name="Size">64, 293</Property>
+      <Property name="Location">524, 98</Property>
+      <Property name="Name">Slider3</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Instrument Panel LHFE/velocity setpoint/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-100</Property>
+        <Property name="Span">200</Property>
+      </Property>
+      <Property name="Size">64, 293</Property>
+      <Property name="Location">385, 98</Property>
+      <Property name="Name">Slider4</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Instrument Panel RKFE/velocity setpoint1/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-100</Property>
+        <Property name="Span">200</Property>
+      </Property>
+      <Property name="Size">64, 293</Property>
+      <Property name="Location">240, 98</Property>
+      <Property name="Name">Slider5</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Instrument Panel RHFE/velocity setpoint/Value</Property>
+      <Property name="TargetName">SpeedCow</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-100</Property>
+        <Property name="Span">200</Property>
+      </Property>
+      <Property name="Size">64, 293</Property>
+      <Property name="Location">104, 98</Property>
+      <Property name="Name">Slider6</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox7" children="Controls">
+      <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox8" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label24" children="Controls">
+          <Property name="TextAlign">MiddleCenter</Property>
+          <Property name="Text">D Gain</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">52, 83</Property>
+          <Property name="Name">Label24</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label25" children="Controls">
+          <Property name="TextAlign">MiddleCenter</Property>
+          <Property name="Text">I Gain</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">52, 54</Property>
+          <Property name="Name">Label25</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label26" children="Controls">
+          <Property name="TextAlign">MiddleCenter</Property>
+          <Property name="Text">P Gain</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">52, 22</Property>
+          <Property name="Name">Label26</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry22" children="Controls">
+          <Property name="BindingSrcPath">Instrument Panel RKFE/D/Value</Property>
+          <Property name="TargetName">SpeedCow</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">100, 23</Property>
+          <Property name="Location">170, 83</Property>
+          <Property name="Name">NumericEntry22</Property>
+        </Object>
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry23" children="Controls">
+          <Property name="BindingSrcPath">Instrument Panel RKFE/I/Value</Property>
+          <Property name="TargetName">SpeedCow</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">100, 23</Property>
+          <Property name="Location">170, 54</Property>
+          <Property name="Name">NumericEntry23</Property>
+        </Object>
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry24" children="Controls">
+          <Property name="BindingSrcPath">Instrument Panel RKFE/P/Value</Property>
+          <Property name="TargetName">SpeedCow</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">100, 23</Property>
+          <Property name="Location">170, 22</Property>
+          <Property name="Name">NumericEntry24</Property>
+        </Object>
+        <Property name="Text">PID Controls</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">30, 508</Property>
+        <Property name="Name">GroupBox8</Property>
+        <Property name="Size">312, 124</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry25" children="Controls">
+        <Property name="BindingSrcPath">Instrument Panel RKFE/velocity setpoint1/Value</Property>
+        <Property name="TargetName">SpeedCow</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">100, 23</Property>
+        <Property name="Location">200, 460</Property>
+        <Property name="Name">NumericEntry25</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider7" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">Instrument Panel RKFE/velocity setpoint1/Value</Property>
+        <Property name="TargetName">SpeedCow</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-300</Property>
+          <Property name="Span">600</Property>
+        </Property>
+        <Property name="Size">69, 358</Property>
+        <Property name="Location">200, 96</Property>
+        <Property name="Name">Slider7</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label27" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">Joint Setpoint</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">30, 19</Property>
+        <Property name="Name">Label27</Property>
+        <Property name="Size">93, 28</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label28" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">179, 19</Property>
+        <Property name="Name">Label28</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
+        <Property name="BindingSrcPath">Instrument Panel RKFE/velocityOverrideFlag/Value</Property>
+        <Property name="TargetName">SpeedCow</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">48, 40</Property>
+        <Property name="Location">212, 50</Property>
+        <Property name="Name">SwitchLED4</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider8" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">Instrument Panel RKFE/Sine Wave1/Bias</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">330000</Property>
+          <Property name="Span">50000</Property>
+        </Property>
+        <Property name="Size">84, 404</Property>
+        <Property name="Location">30, 50</Property>
+        <Property name="Name">Slider8</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry26" children="Controls">
+        <Property name="BindingSrcPath">Instrument Panel RKFE/Sine Wave1/Bias</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">100, 23</Property>
+        <Property name="Location">30, 460</Property>
+        <Property name="Name">NumericEntry26</Property>
+      </Object>
+      <Property name="Text">RKFE</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">1374, 12</Property>
+      <Property name="Name">GroupBox7</Property>
+      <Property name="Size">361, 638</Property>
+    </Object>
+    <Property name="ClientSize">1366, 768</Property>
+  </Object>
