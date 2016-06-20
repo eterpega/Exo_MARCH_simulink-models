@@ -999,6 +999,23 @@
     
  
             <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>LHFE/Saturation</xpcblkName>
+            <SLblockPath>gait_player/LHFE/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>EtherCAT PDO Receive</blkName>
             <xpcblkName>LHFE/EtherCAT PDO Receive</xpcblkName>
             <SLblockPath>gait_player/LHFE/EtherCAT PDO Receive</SLblockPath>
@@ -1386,6 +1403,23 @@
               
        
               <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>LHFE/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>EtherCAT PDO Receive</sigName>
               <xpcsigName>LHFE/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1464,13 +1498,14 @@
     <Name>LHFE Gait Generation</Name>
     <xPCName>gait_player/LHFE Gait Generation</xPCName>
         <SubSystem>
-    <Name>LHFE home and walk</Name>
-    <xPCName>gait_player/LHFE Gait Generation/LHFE home and walk</xPCName>
+    <Name>RKFE home and walk1</Name>
+    <xPCName>gait_player/LHFE Gait Generation/RKFE home and walk1</xPCName>
     
     
     </SubSystem>
 
     
+
 
 
 
@@ -1486,8 +1521,8 @@
               
        
               <signal>
-              <sigName>LHFE home and walk</sigName>
-              <xpcsigName>LHFE Gait Generation/LHFE home and walk</xpcsigName>
+              <sigName>RKFE home and walk1</sigName>
+              <xpcsigName>LHFE Gait Generation/RKFE home and walk1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1508,6 +1543,12 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -1549,6 +1590,23 @@
     <xPCName>gait_player/LKFE</xPCName>
     
     
+ 
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>LKFE/Saturation</xpcblkName>
+            <SLblockPath>gait_player/LKFE/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
  
             <block>
             <blkName>EtherCAT PDO Receive</blkName>
@@ -1938,6 +1996,23 @@
               
        
               <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>LKFE/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>EtherCAT PDO Receive</sigName>
               <xpcsigName>LKFE/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -2017,13 +2092,14 @@
 </Name>
     <xPCName>gait_player/LKFE Gait Generation </xPCName>
         <SubSystem>
-    <Name>LKFE home and walk</Name>
-    <xPCName>gait_player/LKFE Gait Generation /LKFE home and walk</xPCName>
+    <Name>RKFE home and walk1</Name>
+    <xPCName>gait_player/LKFE Gait Generation /RKFE home and walk1</xPCName>
     
     
     </SubSystem>
 
     
+
 
 
 
@@ -2039,8 +2115,8 @@
               
        
               <signal>
-              <sigName>LKFE home and walk</sigName>
-              <xpcsigName>LKFE Gait Generation /LKFE home and walk</xpcsigName>
+              <sigName>RKFE home and walk1</sigName>
+              <xpcsigName>LKFE Gait Generation /RKFE home and walk1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2061,6 +2137,12 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -2126,6 +2208,23 @@
     <xPCName>gait_player/RHFE</xPCName>
     
     
+ 
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>RHFE/Saturation</xpcblkName>
+            <SLblockPath>gait_player/RHFE/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
  
             <block>
             <blkName>EtherCAT PDO Receive</blkName>
@@ -2515,6 +2614,23 @@
               
        
               <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>RHFE/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>EtherCAT PDO Receive</sigName>
               <xpcsigName>RHFE/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -2593,8 +2709,8 @@
     <Name>RHFE Gait Generation</Name>
     <xPCName>gait_player/RHFE Gait Generation</xPCName>
         <SubSystem>
-    <Name>RHFE home and walk</Name>
-    <xPCName>gait_player/RHFE Gait Generation/RHFE home and walk</xPCName>
+    <Name>RKFE home and walk1</Name>
+    <xPCName>gait_player/RHFE Gait Generation/RKFE home and walk1</xPCName>
     
     
     </SubSystem>
@@ -2616,8 +2732,8 @@
               
        
               <signal>
-              <sigName>RHFE home and walk</sigName>
-              <xpcsigName>RHFE Gait Generation/RHFE home and walk</xpcsigName>
+              <sigName>RKFE home and walk1</sigName>
+              <xpcsigName>RHFE Gait Generation/RKFE home and walk1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2685,6 +2801,23 @@
     <xPCName>gait_player/RKFE</xPCName>
     
     
+ 
+            <block>
+            <blkName>Saturation</blkName>
+            <xpcblkName>RKFE/Saturation</xpcblkName>
+            <SLblockPath>gait_player/RKFE/Saturation</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>UpperLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>LowerLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
  
             <block>
             <blkName>EtherCAT PDO Receive</blkName>
@@ -3074,6 +3207,23 @@
               
        
               <signal>
+              <sigName>Saturation</sigName>
+              <xpcsigName>RKFE/Saturation</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>EtherCAT PDO Receive</sigName>
               <xpcsigName>RKFE/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -3152,13 +3302,14 @@
     <Name>RKFE Gait Generation</Name>
     <xPCName>gait_player/RKFE Gait Generation</xPCName>
         <SubSystem>
-    <Name>RKFE home and walk</Name>
-    <xPCName>gait_player/RKFE Gait Generation/RKFE home and walk</xPCName>
+    <Name>RKFE home and walk1</Name>
+    <xPCName>gait_player/RKFE Gait Generation/RKFE home and walk1</xPCName>
     
     
     </SubSystem>
 
     
+
 
 
 
@@ -3174,8 +3325,8 @@
               
        
               <signal>
-              <sigName>RKFE home and walk</sigName>
-              <xpcsigName>RKFE Gait Generation/RKFE home and walk</xpcsigName>
+              <sigName>RKFE home and walk1</sigName>
+              <xpcsigName>RKFE Gait Generation/RKFE home and walk1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -3196,6 +3347,12 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -3351,8 +3508,23 @@
    <isSrc>[0 1 1]</isSrc>
               
    <parameter>
-      <paramName>test</paramName>
-          <dim>[1,99001]</dim>
+      <paramName>LHFE_rec</paramName>
+          <dim>[1,20239]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>LKFE_rec</paramName>
+          <dim>[1,20239]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>RHFE_rec</paramName>
+          <dim>[1,20239]</dim>
+   </parameter>
+              
+   <parameter>
+      <paramName>RKFE_rec</paramName>
+          <dim>[1,20239]</dim>
    </parameter>
 </block>
 </Root>
