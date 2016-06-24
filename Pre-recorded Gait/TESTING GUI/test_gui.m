@@ -22,18 +22,18 @@ function varargout = test_gui(varargin)
 
 % Edit the above text to modify the response to help test_gui
 
-% Last Modified by GUIDE v2.5 23-Jun-2016 14:56:47
+% Last Modified by GUIDE v2.5 24-Jun-2016 22:01:11
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
-                   'gui_Singleton',  gui_Singleton, ...
-                   'gui_OpeningFcn', @test_gui_OpeningFcn, ...
-                   'gui_OutputFcn',  @test_gui_OutputFcn, ...
-                   'gui_LayoutFcn',  [], ...
-                   'gui_Callback',   []);
+    'gui_Singleton',  gui_Singleton, ...
+    'gui_OpeningFcn', @test_gui_OpeningFcn, ...
+    'gui_OutputFcn',  @test_gui_OutputFcn, ...
+    'gui_LayoutFcn',  [], ...
+    'gui_Callback',   []);
 if nargin && ischar(varargin{1})
-   gui_State.gui_Callback = str2func(varargin{1});
+    gui_State.gui_Callback = str2func(varargin{1});
 end
 
 if nargout
@@ -56,34 +56,6 @@ function test_gui_OpeningFcn(hObject, eventdata, handles, varargin)
 % Determine the global variables
 global fsys;
 fsys = SimulinkRealTime.fileSystem;
-
-% make sure to go to the correct file on the target PC
-while not(strcmp(pwd(fsys),'C:\'))
-    cd(fsys, '..');
-end
-cd(fsys, 'GAITS')
-
-% read all files in the GAITS folder and write them to listbox
-a = dir(fsys);
-c = cell(length(a),1);
-    for i=1:length(a)
-        b = a(i).name;
-        c(i) = b(1);
-    end
-set(handles.lb_FilesOnTarget, 'string', c)
-
-
-% read all files in the Gait_Data/MAT encoder values directory on the host
-cd('Gait_Data/MAT Encoder Values')
-a = dir;
-c = cell(length(a)-2,1);
-     for i=1:length(a)-2
-         b = strtok(a(i+2).name, '.');
-         c{i} = b;
-     end
-set(handles.lb_CovertedFiles, 'string', c)
-cd('../..')
-
 
 % Choose default command line output for test_gui
 handles.output = hObject;
@@ -222,7 +194,7 @@ function pbtn_ConfigureRec_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % call on global variables
-global fsys filename_rec 
+global fsys filename_rec
 
 % read filename from the input textbox
 filename_rec_upper = upper(get(handles.txtEdt_FilenameRec, 'string'));
@@ -321,7 +293,7 @@ gaitData = [time'; RHFE'; RKFE'; LHFE'; LKFE';];
 
 
 
-    
+
 
 % --- Executes on button press in pbtn_SaveConvertFile.
 function pbtn_SaveConvertFile_Callback(hObject, eventdata, handles)
@@ -341,12 +313,12 @@ save([filename_save '.mat'], 'gaitData');
 
 a = dir;
 c = cell(length(a)-2,1);
-     for i=1:length(a)-2
-         b = strtok(a(i+2).name, '.');
-         c{i} = b;
-     end
-     
- set(handles.lb_CovertedFiles, 'string', c)
+for i=1:length(a)-2
+    b = strtok(a(i+2).name, '.');
+    c{i} = b;
+end
+
+set(handles.lb_CovertedFiles, 'string', c)
 
 cd('../..')
 
@@ -388,14 +360,14 @@ function pbtn_UpdateFilesOnTarget_Callback(hObject, eventdata, handles)
 global fsys
 
 % read all files in the GAITS folder on target
- a = dir(fsys);
- c = cell(length(a),1);
-    for i=1:length(a)
-        b = a(i).name;
-        c(i) = b(1);
-    end
+a = dir(fsys);
+c = cell(length(a),1);
+for i=1:length(a)
+    b = a(i).name;
+    c(i) = b(1);
+end
 set(handles.lb_FilesOnTarget, 'string', c)
-    
+
 
 
 % --- Executes on button press in pbtn_DeleteFileTarget.
@@ -420,19 +392,19 @@ file = strcat(files(file_nr), '.DAT');
 file = num2str(cell2mat(file));
 removefile(fsys, file)
 
-% change the value parameter of the listbox to the 
+% change the value parameter of the listbox to the
 % file that is now last
 if last == 1
     set(handles.lb_FilesOnTarget, 'value', length(files)-1)
 end
 
 % update the listbox
- a = dir(fsys);
- c = cell(length(a),1);
-    for i=1:length(a)
-        b = a(i).name;
-        c(i) = b(1);
-    end
+a = dir(fsys);
+c = cell(length(a),1);
+for i=1:length(a)
+    b = a(i).name;
+    c(i) = b(1);
+end
 set(handles.lb_FilesOnTarget, 'string', c)
 
 
@@ -509,11 +481,90 @@ function ptbn_UpdateConvertedFiles_Callback(hObject, eventdata, handles)
 cd('Gait_Data/MAT Encoder Values')
 a = dir;
 c = cell(length(a)-2,1);
-     for i=1:length(a)-2
-         b = strtok(a(i+2).name, '.');
-         c{i} = b;
-     end
-     
- set(handles.lb_CovertedFiles, 'string', c)
+for i=1:length(a)-2
+    b = strtok(a(i+2).name, '.');
+    c{i} = b;
+end
+
+set(handles.lb_CovertedFiles, 'string', c)
 
 cd('../..')
+
+
+% --- Executes on button press in pbtn_ConnectToTarget.
+function pbtn_ConnectToTarget_Callback(hObject, eventdata, handles)
+% hObject    handle to pbtn_ConnectToTarget (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% @todo still have to create and set target object
+ip = handles.txtEdt_TargetIP.String;
+
+% Test communication with target machine and return if failed
+if(strcmp(slrtpingtarget,'failed'))
+    handles.txtDsp_TargetDiagnostic.BackgroundColor = [ 0.831 0.416 0.416];
+    handles.txtDsp_TargetDiagnostic.String = 'Connection failed';
+    populateFromHost(handles);
+    return
+end
+
+% Set some color parameters
+handles.txtDsp_TargetDiagnostic.BackgroundColor = [ 0.408 0.694 0.349];
+handles.txtDsp_TargetDiagnostic.String = 'Connected';
+
+populateFromTarget(handles)
+populateFromHost(handles)
+
+% --- Retrieve files from the host and populate the list box
+function populateFromHost(handles)
+
+
+% read all files in the Gait_Data/MAT encoder values directory on the host
+cd('Gait_Data/MAT Encoder Values')
+a = dir;
+c = cell(length(a)-2,1);
+for i=1:length(a)-2
+    b = strtok(a(i+2).name, '.');
+    c{i} = b;
+end
+set(handles.lb_CovertedFiles, 'string', c)
+cd('../..')
+
+
+% --- Retrieve files from target to display in the list box
+function populateFromTarget(handles)
+% make sure to go to the correct file on the target PC
+while not(strcmp(pwd(fsys),'C:\'))
+    cd(fsys, '..');
+end
+cd(fsys, 'GAITS')
+
+% read all files in the GAITS folder and write them to listbox
+a = dir(fsys);
+c = cell(length(a),1);
+for i=1:length(a)
+    b = a(i).name;
+    c(i) = b(1);
+end
+set(handles.lb_FilesOnTarget, 'string', c)
+
+function txtEdt_TargetIP_Callback(hObject, eventdata, handles)
+% hObject    handle to txtEdt_TargetIP (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    structure with handles and user data (see GUIDATA)
+
+% Hints: get(hObject,'String') returns contents of txtEdt_TargetIP as text
+%        str2double(get(hObject,'String')) returns contents of txtEdt_TargetIP as a double
+
+
+% --- Executes during object creation, after setting all properties.
+function txtEdt_TargetIP_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to txtEdt_TargetIP (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called
+
+% Hint: edit controls usually have a white background on Windows.
+%       See ISPC and COMPUTER.
+if ispc && isequal(get(hObject,'BackgroundColor'), get(0,'defaultUicontrolBackgroundColor'))
+    set(hObject,'BackgroundColor','white');
+end
