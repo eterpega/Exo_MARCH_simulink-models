@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+
+          <SubSystem>
+    <Name>Controllers</Name>
+    <xPCName>MARCH_v1_1/Controllers</xPCName>
+        <SubSystem>
+    <Name>Interpolator Controller</Name>
+    <xPCName>MARCH_v1_1/Controllers/Interpolator Controller</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Interpolator Controller1</Name>
+    <xPCName>MARCH_v1_1/Controllers/Interpolator Controller1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Walking Gait Controller</Name>
+    <xPCName>MARCH_v1_1/Controllers/Walking Gait Controller</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Database</Name>
+    <xPCName>MARCH_v1_1/Database</xPCName>
+        <SubSystem>
+    <Name>Database Interface</Name>
+    <xPCName>MARCH_v1_1/Database/Database Interface</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Database Interface</sigName>
+              <xpcsigName>Database/Database Interface</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Error Handling</Name>
+    <xPCName>MARCH_v1_1/Error Handling</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Exoskeleton parameters</Name>
+    <xPCName>MARCH_v1_1/Exoskeleton parameters</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>GUI Communication</Name>
+    <xPCName>MARCH_v1_1/GUI Communication</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Inverse Kinematics</Name>
+    <xPCName>MARCH_v1_1/Inverse Kinematics</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>MARCH_v1_1/Inverse Kinematics/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Inverse Kinematics/Constant</xpcblkName>
+            <SLblockPath>MARCH_v1_1/Inverse Kinematics/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 3]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Inverse Kinematics/MATLAB Function/p1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[1, 6]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Inverse Kinematics/MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Reachability</Name>
+    <xPCName>MARCH_v1_1/Reachability</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>MARCH_v1_1/Reachability/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Reachability/MATLAB Function/p1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[1, 6]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Reachability/MATLAB Function/p2</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[1, 6]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>MARCH_v1_1/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>State Machine</Name>
+    <xPCName>MARCH_v1_1/State Machine</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>State Machine/Constant</xpcblkName>
+            <SLblockPath>MARCH_v1_1/State Machine/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>State Switch</Name>
+    <xPCName>MARCH_v1_1/State Switch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Torque compensation controller</Name>
+    <xPCName>MARCH_v1_1/Torque compensation controller</xPCName>
+    
+    
+    </SubSystem>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+</Root>
