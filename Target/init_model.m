@@ -2,4 +2,4 @@
 %%% USE THE MODEL PROPERTIES CALLBACKS FOR THAT
 
 % Include libraries to path
-addpath(genpath(fullfile(fileparts(pwd),'libraries')));
+addpath(genpath(fullfile(fileparts(fileparts(pwd)),'libraries')));
