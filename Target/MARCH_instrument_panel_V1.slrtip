@@ -1,5 +1,12 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MARCH_instrument_panel_V1" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+      <Property name="Text">z</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">562, 88</Property>
+      <Property name="Name">Label2</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
       <Property name="TextAlign">MiddleCenter</Property>
       <Property name="Text">Simulation</Property>
