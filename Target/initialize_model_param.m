@@ -9,6 +9,7 @@ par.lower_length = 567.470264/1000;
 par.foot_height = 0.05; %maximum height of swing foot above the ground
 tol = 1e-3; %prevent singularities
 par.leg_length = par.upper_length+par.lower_length-tol; %total leg length
+n = 1000;
 
 % joint limits
 par.joint_limit_min = [-20 -109 -3 -23 -109 -3]/180*pi;
