@@ -4,6 +4,12 @@ par.pelvis_width = 135.213424/1000;
 par.pelvis_depth = 207.340833/1000;
 par.upper_length = 467.447184/1000;
 par.lower_length = 567.470264/1000;
+par.torso_height = par.upper_length+par.lower_length;
+
+% initial values
+par.torso_init = [-par.pelvis_depth par.torso_width+pelvis_width par.torso_height]; %initial torso position with respect to world
+par.foot_right_init = [par.pelvis_depth -par.torso_width-pelvis_width -par.torso_height]; %initial right foot position with respect to torso
+par.foot_left_init = [par.pelvis_depth par.torso_width+pelvis_width -par.torso_height]; %initial left foot position with respect to torso
 
 % trajectory settings
 par.foot_height = 0.05; %maximum height of swing foot above the ground
