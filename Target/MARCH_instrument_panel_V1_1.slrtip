@@ -1,0 +1,4 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MARCH_instrument_panel_V1_1" children="Controls">
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>
