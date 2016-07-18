@@ -7,9 +7,9 @@ par.lower_length = 567.470264/1000;
 par.torso_height = par.upper_length+par.lower_length;
 
 % initial values
-par.torso_init = [-par.pelvis_depth par.torso_width+pelvis_width par.torso_height]; %initial torso position with respect to world
-par.foot_right_init = [par.pelvis_depth -par.torso_width-pelvis_width -par.torso_height]; %initial right foot position with respect to torso
-par.foot_left_init = [par.pelvis_depth par.torso_width+pelvis_width -par.torso_height]; %initial left foot position with respect to torso
+par.torso_init = [-par.pelvis_depth par.torso_width+par.pelvis_width par.torso_height]; %initial torso position with respect to world
+par.foot_right_init = [par.pelvis_depth -par.torso_width-par.pelvis_width -par.torso_height]; %initial right foot position with respect to torso
+par.foot_left_init = [par.pelvis_depth par.torso_width+par.pelvis_width -par.torso_height]; %initial left foot position with respect to torso
 
 % trajectory settings
 par.foot_height = 0.05; %maximum height of swing foot above the ground
