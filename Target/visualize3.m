@@ -9,14 +9,16 @@ convert_gait_data
 labels_joint = {'Right Hip AA','Right Hip FE','Right Knee FE','Left Hip AA','Left Hip FE','Left Knee FE'};
 nj = length(labels_joint);
 
+open_system('march_visualization')
+
 % Initialize joint space angles
 for j=1:nj
-    assignin('base',['q' num2str(j)],q(i,j))
+    assignin('base',['q' num2str(j)],q(1,j))
     set_param(['march_visualization/' labels_joint{j} '/q'],'value',['q' num2str(j)])
 end
     
 % Initialize the model and run it
-open_system('march_visualization')
+
 set_param('march_visualization', 'SimulationCommand', 'start')
 
 % Iterate over all joint angles and set them in simulink

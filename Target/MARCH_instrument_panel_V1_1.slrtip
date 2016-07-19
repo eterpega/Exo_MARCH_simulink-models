@@ -1,4 +1,13 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MARCH_instrument_panel_V1_1" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+      <Property name="BindingSrcPath">Controllers/simulationFlag/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Text">Simulation</Property>
+      <Property name="Size">118, 51</Property>
+      <Property name="Location">28, 25</Property>
+      <Property name="Name">SwitchLED1</Property>
+    </Object>
     <Property name="ClientSize">1920, 1080</Property>
   </Object>

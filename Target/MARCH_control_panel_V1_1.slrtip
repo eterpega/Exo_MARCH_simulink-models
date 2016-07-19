@@ -2,13 +2,11 @@
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MARCH_instrument_panel_V1_1" children="Controls">
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay5" children="Controls">
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/velocity setpoint/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay5</Property>
@@ -22,17 +20,15 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
-        <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider5</Property>
       </Object>
@@ -58,47 +54,39 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry13" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/Kd/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry13</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry14" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/Ki/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry14</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry15" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/Kp/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry15</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LHFE/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
         <Property name="Location">6, 22</Property>
         <Property name="Name">SwitchLED5</Property>
       </Object>
-      <Property name="Text">RHAA</Property>
+      <Property name="Text">LHFE</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">896, 12</Property>
       <Property name="Name">GroupBox5</Property>
@@ -106,13 +94,11 @@
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox6" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/velocity setpoint/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay6</Property>
@@ -126,17 +112,15 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
-        <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider6</Property>
       </Object>
@@ -162,47 +146,39 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry16" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/Kd/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry16</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry17" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/Ki/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry17</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry18" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/Kp/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry18</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/LKFE/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
         <Property name="Location">6, 22</Property>
         <Property name="Name">SwitchLED6</Property>
       </Object>
-      <Property name="Text">RHAA</Property>
+      <Property name="Text">LKFE</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">1117, 12</Property>
       <Property name="Name">GroupBox6</Property>
@@ -212,11 +188,9 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
         <Property name="BindingSrcType">None</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath" />
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName" />
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay4</Property>
@@ -231,16 +205,14 @@
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
         <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider4</Property>
       </Object>
@@ -266,47 +238,39 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry10" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry10</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry11" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry11</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry12" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry12</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
         <Property name="Location">6, 22</Property>
         <Property name="Name">SwitchLED4</Property>
       </Object>
-      <Property name="Text">RHAA</Property>
+      <Property name="Text">LHAA</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">675, 12</Property>
       <Property name="Name">GroupBox4</Property>
@@ -314,13 +278,11 @@
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox3" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/velocity setpoint/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay3</Property>
@@ -334,17 +296,15 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
-        <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider3</Property>
       </Object>
@@ -370,47 +330,39 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry7" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/Kd/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry7</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry8" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/Ki/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry8</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry9" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/Kp/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry9</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RKFE/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
         <Property name="Location">6, 22</Property>
         <Property name="Name">SwitchLED3</Property>
       </Object>
-      <Property name="Text">RHAA</Property>
+      <Property name="Text">RKFE</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">454, 12</Property>
       <Property name="Name">GroupBox3</Property>
@@ -418,13 +370,11 @@
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/velocity setpoint/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay2</Property>
@@ -438,17 +388,15 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
-        <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider2</Property>
       </Object>
@@ -474,47 +422,39 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry4" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/Kd/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry4</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry5" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/Ki/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry5</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry6" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/Kp/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry6</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/RHFE/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
         <Property name="Location">6, 22</Property>
         <Property name="Name">SwitchLED2</Property>
       </Object>
-      <Property name="Text">RHAA</Property>
+      <Property name="Text">RHFE</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">233, 12</Property>
       <Property name="Name">GroupBox2</Property>
@@ -524,11 +464,9 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
         <Property name="BindingSrcType">None</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">
-        </Property>
+        <Property name="BindingSrcPath" />
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">
-        </Property>
+        <Property name="TargetName" />
         <Property name="Size">100, 25</Property>
         <Property name="Location">109, 576</Property>
         <Property name="Name">NumericDisplay1</Property>
@@ -543,16 +481,14 @@
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
         <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>
           <Property name="Span">1000</Property>
         </Property>
-        <Property name="Size">100, 373</Property>
+        <Property name="Size">69, 373</Property>
         <Property name="Location">109, 197</Property>
         <Property name="Name">Slider1</Property>
       </Object>
@@ -578,40 +514,32 @@
         <Property name="Size">100, 23</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 145</Property>
         <Property name="Name">NumericEntry3</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 116</Property>
         <Property name="Name">NumericEntry2</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">100, 23</Property>
         <Property name="Location">109, 87</Property>
         <Property name="Name">NumericEntry1</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Velocity override</Property>
         <Property name="Size">203, 45</Property>
