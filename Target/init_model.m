@@ -3,3 +3,5 @@
 
 % Include libraries to path
 addpath(genpath(fullfile(fileparts(fileparts(pwd)),'libraries')));
+
+param

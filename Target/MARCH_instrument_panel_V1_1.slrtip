@@ -1,5 +1,43 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="MARCH_instrument_panel_V1_1" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+      <Property name="Text">torso_z</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">241, 355</Property>
+      <Property name="Name">Label1</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
+      <Property name="BindingSrcPath">Controllers/torso_z/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 27</Property>
+      <Property name="Location">241, 381</Property>
+      <Property name="Name">NumericEntry1</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">EtherCAT joint setpoints/exoskeleton/Constant/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-0.05</Property>
+        <Property name="Span">2.3</Property>
+      </Property>
+      <Property name="Size">54, 203</Property>
+      <Property name="Location">312, 64</Property>
+      <Property name="Name">Slider1</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">EtherCAT joint setpoints/exoskeleton/Constant/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 29</Property>
+      <Property name="Location">418, 137</Property>
+      <Property name="Name">NumericDisplay1</Property>
+    </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
       <Property name="BindingSrcPath">Controllers/simulationFlag/Value</Property>
       <Property name="TargetName">SpeedGoat</Property>
@@ -9,5 +47,5 @@
       <Property name="Location">28, 25</Property>
       <Property name="Name">SwitchLED1</Property>
     </Object>
-    <Property name="ClientSize">1920, 1080</Property>
+    <Property name="ClientSize">2048, 1152</Property>
   </Object>

@@ -1,5 +1,65 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">1190, 638</Property>
+      <Property name="Name">NumericDisplay6</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay5" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">C_VELOCITY_P/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">870, 638</Property>
+      <Property name="Name">NumericDisplay5</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">C_TORQUE/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">663, 638</Property>
+      <Property name="Name">NumericDisplay4</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">C_VELOCITY /Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">462, 638</Property>
+      <Property name="Name">NumericDisplay3</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">C_LAG/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">283, 638</Property>
+      <Property name="Name">NumericDisplay2</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">Phaseoffset/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">110, 638</Property>
+      <Property name="Name">NumericDisplay1</Property>
+    </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
       <Property name="Text">Velocity Setpoint</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
@@ -9,17 +69,15 @@
       <Property name="Size">164, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Min">-600</Property>
         <Property name="Span">1200</Property>
       </Property>
-      <Property name="Size">69, 675</Property>
+      <Property name="Size">69, 533</Property>
       <Property name="Location">1190, 81</Property>
       <Property name="Name">Slider6</Property>
     </Object>
@@ -32,16 +90,14 @@
       <Property name="Size">129, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_VELOCITY_P/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Span">200</Property>
       </Property>
-      <Property name="Size">78, 675</Property>
+      <Property name="Size">64, 533</Property>
       <Property name="Location">870, 81</Property>
       <Property name="Name">Slider5</Property>
     </Object>
@@ -54,16 +110,14 @@
       <Property name="Size">129, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_TORQUE/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Span">2000</Property>
       </Property>
-      <Property name="Size">78, 675</Property>
+      <Property name="Size">71, 533</Property>
       <Property name="Location">663, 81</Property>
       <Property name="Name">Slider4</Property>
     </Object>
@@ -76,16 +130,14 @@
       <Property name="Size">129, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_VELOCITY /Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Span">10000</Property>
       </Property>
-      <Property name="Size">78, 675</Property>
+      <Property name="Size">78, 533</Property>
       <Property name="Location">462, 81</Property>
       <Property name="Name">Slider3</Property>
     </Object>
@@ -98,16 +150,14 @@
       <Property name="Size">129, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">C_LAG/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
-        <Property name="Span">65536</Property>
+        <Property name="Span">30000</Property>
       </Property>
-      <Property name="Size">78, 675</Property>
+      <Property name="Size">78, 533</Property>
       <Property name="Location">283, 81</Property>
       <Property name="Name">Slider2</Property>
     </Object>
@@ -120,18 +170,16 @@
       <Property name="Size">129, 23</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
-      <Property name="BindingSrcType">None</Property>
-      <Property name="BindingSrcPath">
-      </Property>
-      <Property name="TargetName">
-      </Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">Phaseoffset/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Span">65536</Property>
       </Property>
-      <Property name="Size">78, 675</Property>
+      <Property name="Size">78, 533</Property>
       <Property name="Location">110, 81</Property>
       <Property name="Name">Slider1</Property>
     </Object>
-    <Property name="ClientSize">2560, 1440</Property>
+    <Property name="ClientSize">1920, 1080</Property>
   </Object>

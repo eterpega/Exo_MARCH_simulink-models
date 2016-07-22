@@ -30,7 +30,7 @@
     </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
       <Property name="BindingSrcPath">Instrument Panel LKFE/velocityOverrideFlag/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">64, 51</Property>
       <Property name="Location">524, 41</Property>
@@ -38,7 +38,7 @@
     </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
       <Property name="BindingSrcPath">Instrument Panel LHFE/velocityOverrideFlag/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">64, 51</Property>
       <Property name="Location">385, 41</Property>
@@ -46,7 +46,7 @@
     </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
       <Property name="BindingSrcPath">Instrument Panel RKFE/velocityOverrideFlag/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">64, 51</Property>
       <Property name="Location">240, 41</Property>
@@ -54,7 +54,7 @@
     </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
       <Property name="BindingSrcPath">Instrument Panel RHFE/velocityOverrideFlag/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="Size">64, 51</Property>
       <Property name="Location">104, 41</Property>
@@ -63,52 +63,52 @@
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Instrument Panel LKFE/velocity setpoint1/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Min">-100</Property>
         <Property name="Span">200</Property>
       </Property>
-      <Property name="Size">64, 293</Property>
+      <Property name="Size">69, 293</Property>
       <Property name="Location">524, 98</Property>
       <Property name="Name">Slider3</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Instrument Panel LHFE/velocity setpoint/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Min">-100</Property>
         <Property name="Span">200</Property>
       </Property>
-      <Property name="Size">64, 293</Property>
+      <Property name="Size">69, 293</Property>
       <Property name="Location">385, 98</Property>
       <Property name="Name">Slider4</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Instrument Panel RKFE/velocity setpoint1/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Min">-100</Property>
         <Property name="Span">200</Property>
       </Property>
-      <Property name="Size">64, 293</Property>
+      <Property name="Size">69, 293</Property>
       <Property name="Location">240, 98</Property>
       <Property name="Name">Slider5</Property>
     </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Instrument Panel RHFE/velocity setpoint/Value</Property>
-      <Property name="TargetName">SpeedCow</Property>
+      <Property name="TargetName">SpeedGoat</Property>
       <Property name="BindingSrcObject" />
       <Property name="ScaleRange">
         <Property name="Min">-100</Property>
         <Property name="Span">200</Property>
       </Property>
-      <Property name="Size">64, 293</Property>
+      <Property name="Size">69, 293</Property>
       <Property name="Location">104, 98</Property>
       <Property name="Name">Slider6</Property>
     </Object>
@@ -240,5 +240,5 @@
       <Property name="Name">GroupBox7</Property>
       <Property name="Size">361, 638</Property>
     </Object>
-    <Property name="ClientSize">1366, 768</Property>
+    <Property name="ClientSize">1920, 1080</Property>
   </Object>
