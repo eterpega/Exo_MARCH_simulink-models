@@ -32,7 +32,7 @@ set_param([model{1} '/Simulation Pace'],'commented',local)
 % Disable all EtherCAT Blocks
 set_param([model{1} '/EtherCAT Initialization'],'commented',target)
 set_param([model{1} '/EtherCAT Motor Parameters'],'commented',target)
-set_param([model{1} '/Input Device/EtherCAT Input Device'],'commented',target)
+set_param([model{1} '/State Machine/EtherCAT Input Device'],'commented',target)
 set_param([model{1} '/Point&Go/EtherCAT Point&Go'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Data In'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Setpoints'],'commented',target)
