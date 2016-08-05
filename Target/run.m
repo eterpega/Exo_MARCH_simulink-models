@@ -29,6 +29,12 @@ end
 % Enable soft real-time
 set_param([model{1} '/Simulation Pace'],'commented',local)
 
+% Set EtherCAT Config File
+if(targetValue)
+   config = fullfile(fileparts(pwd),'EtherCAT Config Files','quad_slave_both_legs_v1.0.xml');
+   set_param([model{1} '/EtherCAT Initialization/EtherCAT Init'],'config_file',config)
+end
+
 % Disable all EtherCAT Blocks
 set_param([model{1} '/EtherCAT Initialization'],'commented',target)
 set_param([model{1} '/EtherCAT Motor Parameters'],'commented',target)
