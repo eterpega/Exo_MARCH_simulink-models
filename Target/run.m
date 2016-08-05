@@ -43,6 +43,9 @@ set_param([model{1} '/Point&Go/EtherCAT Point&Go'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Data In'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Setpoints'],'commented',target)
 
+% Disable blocks for target simulation
+set_param([model{1} '/Controllers/UDP Send'],'commented',local)
+
 % Disable other unnecessary blocks for local simulation
 set_param([model{1} '/Data Logging'],'commented',target)
 set_param([model{1} '/Error Handling'],'commented',target)
