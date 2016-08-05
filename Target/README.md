@@ -10,7 +10,7 @@ In order to get started clone the entire `simulink-models` repository
  - Create a `build` folder inside the `Target` folder.
  - Run the `run` function with any of the following arguments: `target` or `local`
   
- ## Example
+## Example
 `>> run('local')`
 
 This command will open the simulink model and based on your argument will set it up for either target compilation or local simulation.
