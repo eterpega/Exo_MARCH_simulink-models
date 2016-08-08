@@ -52,6 +52,14 @@ set_param([model{1} '/Error Handling'],'commented',target)
 set_param([model{1} '/GUI Communication'],'commented',target)
 set_param([model{1} '/Pilot Feedback'],'commented',target)
 
+% Disable 0-torque joint controllers during local simulation
+set_param([model{1} '/Controllers/0-Torque/RHAA'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/LHAA'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/RHFE'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/LHFE'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/RKFE'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/LKFE'],'commented',target)
+
 % Assign data to model workspace
 hws = get_param(bdroot, 'modelworkspace');
 hws.assignin('localValue',localValue);
