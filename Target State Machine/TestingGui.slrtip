@@ -1,56 +1,92 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel2" children="Controls">
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
-      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED7" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Enable Left Safety</Property>
-        <Property name="Size">98, 83</Property>
-        <Property name="Location">320, 34</Property>
-        <Property name="Name">SwitchLED7</Property>
-      </Object>
-      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED8" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Disable Left Safety</Property>
-        <Property name="Size">98, 83</Property>
-        <Property name="Location">320, 128</Property>
-        <Property name="Name">SwitchLED8</Property>
-      </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED9" children="Controls">
         <Property name="BindingSrcPath" />
         <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Disable Right Safety</Property>
-        <Property name="Size">98, 83</Property>
-        <Property name="Location">153, 128</Property>
+        <Property name="Text">Reset Both Safety</Property>
+        <Property name="Size">217, 83</Property>
+        <Property name="Location">24, 335</Property>
         <Property name="Name">SwitchLED9</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED10" children="Controls">
         <Property name="BindingSrcPath" />
         <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Enable Right Safety</Property>
-        <Property name="Size">98, 83</Property>
-        <Property name="Location">153, 34</Property>
+        <Property name="Text">Enable Both Safety</Property>
+        <Property name="Size">217, 83</Property>
+        <Property name="Location">24, 246</Property>
         <Property name="Name">SwitchLED10</Property>
       </Object>
-      <Property name="Text">Safety buttons</Property>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED11" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Enable Right Safety</Property>
+        <Property name="Size">98, 83</Property>
+        <Property name="Location">143, 39</Property>
+        <Property name="Name">SwitchLED11</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED12" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Reset Left Safety</Property>
+        <Property name="Size">98, 83</Property>
+        <Property name="Location">143, 128</Property>
+        <Property name="Name">SwitchLED12</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED13" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Reset Right Safety</Property>
+        <Property name="Size">98, 83</Property>
+        <Property name="Location">24, 128</Property>
+        <Property name="Name">SwitchLED13</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED14" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Enable Right Safety</Property>
+        <Property name="Size">98, 83</Property>
+        <Property name="Location">24, 39</Property>
+        <Property name="Name">SwitchLED14</Property>
+      </Object>
+      <Property name="Text">Safety</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">695, 296</Property>
+      <Property name="Location">925, 12</Property>
       <Property name="Name">GroupBox5</Property>
-      <Property name="Size">447, 230</Property>
+      <Property name="Size">262, 487</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED8" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Reset Both Triggers</Property>
+        <Property name="Size">217, 83</Property>
+        <Property name="Location">24, 335</Property>
+        <Property name="Name">SwitchLED8</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED7" children="Controls">
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Enable Both Triggers</Property>
+        <Property name="Size">217, 83</Property>
+        <Property name="Location">24, 246</Property>
+        <Property name="Name">SwitchLED7</Property>
+      </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
         <Property name="BindingSrcPath" />
         <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Move right leg</Property>
+        <Property name="Text">Enable Right Trigger</Property>
         <Property name="Size">98, 83</Property>
-        <Property name="Location">320, 34</Property>
+        <Property name="Location">143, 39</Property>
         <Property name="Name">SwitchLED5</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
@@ -59,7 +95,7 @@
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Reset Left Trigger</Property>
         <Property name="Size">98, 83</Property>
-        <Property name="Location">320, 128</Property>
+        <Property name="Location">143, 128</Property>
         <Property name="Name">SwitchLED4</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
@@ -68,41 +104,23 @@
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Reset Right Trigger</Property>
         <Property name="Size">98, 83</Property>
-        <Property name="Location">153, 128</Property>
+        <Property name="Location">24, 128</Property>
         <Property name="Name">SwitchLED3</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
         <Property name="BindingSrcPath" />
         <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Move Left Leg</Property>
+        <Property name="Text">Enable Right Trigger</Property>
         <Property name="Size">98, 83</Property>
-        <Property name="Location">153, 34</Property>
+        <Property name="Location">24, 39</Property>
         <Property name="Name">SwitchLED2</Property>
       </Object>
-      <Object type="MW.Instruments.LED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LED11" children="Controls">
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="BindingSrcType">None</Property>
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="Size">45, 45</Property>
-        <Property name="Location">10, 72</Property>
-        <Property name="Name">LED11</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label11" children="Controls">
-        <Property name="Text">Active
-</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">16, 56</Property>
-        <Property name="Name">Label11</Property>
-        <Property name="Size">45, 20</Property>
-      </Object>
-      <Property name="Text">Discrete Gait</Property>
+      <Property name="Text">Triggers</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">695, 39</Property>
+      <Property name="Location">657, 12</Property>
       <Property name="Name">GroupBox2</Property>
-      <Property name="Size">447, 238</Property>
+      <Property name="Size">262, 487</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1" children="Controls">
       <Object type="MW.Instruments.LED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ledResetScrollSelect" children="Controls">
@@ -112,7 +130,7 @@
         <Property name="BindingSrcPath" />
         <Property name="TargetName" />
         <Property name="Size">45, 45</Property>
-        <Property name="Location">464, 324</Property>
+        <Property name="Location">437, 306</Property>
         <Property name="Name">ledResetScrollSelect</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
@@ -121,7 +139,7 @@
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Reset Scroll Select</Property>
         <Property name="Size">168, 74</Property>
-        <Property name="Location">405, 382</Property>
+        <Property name="Location">378, 364</Property>
         <Property name="Name">SwitchLED6</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox4" children="Controls">
@@ -221,7 +239,7 @@ Zero Torque
         </Object>
         <Property name="Text">Possible Modes</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">15, 176</Property>
+        <Property name="Location">16, 159</Property>
         <Property name="Name">GroupBox4</Property>
         <Property name="Size">607, 127</Property>
       </Object>
@@ -322,7 +340,7 @@ Zero Torque
         </Object>
         <Property name="Text">Current Mode</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">15, 39</Property>
+        <Property name="Location">16, 22</Property>
         <Property name="Name">GroupBox3</Property>
         <Property name="Size">607, 127</Property>
       </Object>
@@ -332,7 +350,7 @@ Zero Torque
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Choose</Property>
         <Property name="Size">168, 132</Property>
-        <Property name="Location">200, 324</Property>
+        <Property name="Location">173, 306</Property>
         <Property name="Name">SwitchLED1</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
@@ -340,14 +358,14 @@ Zero Torque
         <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Size">116, 23</Property>
-        <Property name="Location">44, 324</Property>
+        <Property name="Location">17, 306</Property>
         <Property name="Name">NumericEntry1</Property>
       </Object>
       <Property name="Text">Mode Selection</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">36, 39</Property>
+      <Property name="Location">12, 12</Property>
       <Property name="Name">GroupBox1</Property>
       <Property name="Size">639, 487</Property>
     </Object>
-    <Property name="ClientSize">1920, 1080</Property>
+    <Property name="ClientSize">1920, 1200</Property>
   </Object>
