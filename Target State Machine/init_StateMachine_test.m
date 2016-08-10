@@ -11,3 +11,4 @@ set_param('StateMachine_test/Right Scroll Mode', 'Value', '1')
 
 set_param('StateMachine_test/doneSitting', 'Value', '0')
 set_param('StateMachine_test/doneStanding', 'Value', '0')
+set_param('StateMachine_test/doneStep', 'Value', '0')
