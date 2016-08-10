@@ -1,11 +1,11 @@
 udp = dsp.UDPSender()
 s = splineController();
 r = robotics();
-base = 1;
+base = 3;
 torso_delta = [0 0.1 0];
 
 r.base = base;
-r.torso_offset = [0 0.03 0];
+
 %% Weight Shift
 % if(base == 1)
 %     torso_delta(2) = -abs(torso_delta(2));
@@ -23,18 +23,15 @@ r.torso_offset = [0 0.03 0];
 %     step(udp,q);
 %     pause(1/2000);
 % end
-% r.refresh();
-% return
+ r.refresh();
 %% Step sequence
-s.setStepHeight(0.1).setStepLength(0.3);
+s.setStepHeight(0.2).setStepLength(0.3);
 
 trajectory = s.method('circle').setVelocity(0.5).getHalfStep();
 trajectory = r.transformSpline(trajectory);
 
 for j = 1:length(trajectory)
     r.point = [trajectory(1,j) trajectory(2,j) trajectory(3,j)];
-    
-%     r.torso_offset = [0 0.0000*j 0 ];
     
     r.step();
     r.inverseKinematics();
