@@ -1,12 +1,9 @@
 close all
 clear all
-s= 100;
+s= 1000;
 f = 1000;
 time = 5;
-q_t = importdata('q_t.mat');
-data = q_t(:,2);
-data2 = q_t(:,3);
-
+data = linspace(5,117,s);
 % t = linspace(0,time,s);
 % 
 % th = linspace( pi, 0.5*pi, s);
@@ -32,15 +29,13 @@ data2 = q_t(:,3);
 % t(end) = [];
 % scatter(t,k)
 
+data2 = data - (
+
 x = linspace(0,s/f,s);
-time = smf2(x,[0 (s/f)]);
-tic
-data3 = retime(data,time);
-data4 = retime(data2,time);
-toc
-
-figure
-scatter(data3,data4)
-title('retimed position');
+y = smf(x,[0 (s/f)]);
 
 
+
+plot(x,y)
+xlabel('smf, P = [1 8]')
+ylim([-0.05 1.05])
