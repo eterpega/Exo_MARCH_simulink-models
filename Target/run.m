@@ -15,16 +15,20 @@ if(strcmp(location,'local'))
     local = 'off';
     localValue = 1;
     targetValue = 0;
+    mode = 'normal';
 elseif(strcmp(location,'target'))
     target = 'off';
     local = 'on';
-    localValue = 0;
+    localValue = 1; %% Should be 0 when all ethercat peripherals work
     targetValue = 1;
+    mode = 'external';
 else
     error('Wrong option selected. Options are: "local" and "target"');
     return
 end
 
+% Set simulation mode
+set_param([model{1}],'SimulationMode',mode)
 
 % Enable soft real-time
 set_param([model{1} '/Simulation Pace'],'commented',local)
