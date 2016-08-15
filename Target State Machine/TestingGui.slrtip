@@ -2,8 +2,10 @@
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel2" children="Controls">
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED9" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
+        <Property name="BindingSrcPath">
+        </Property>
+        <Property name="TargetName">
+        </Property>
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Reset Both Safety</Property>
         <Property name="Size">217, 83</Property>
@@ -11,19 +13,19 @@
         <Property name="Name">SwitchLED9</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED10" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Both Safety/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Enable Both Safety</Property>
         <Property name="Size">217, 83</Property>
         <Property name="Location">24, 246</Property>
         <Property name="Name">SwitchLED10</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED11" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Enable Right Safety</Property>
+        <Property name="BindingSrcPath">Input Device/Left Safety/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Enable Left Safety</Property>
         <Property name="Size">98, 83</Property>
         <Property name="Location">143, 39</Property>
         <Property name="Name">SwitchLED11</Property>
@@ -47,9 +49,9 @@
         <Property name="Name">SwitchLED13</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED14" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Right Safety/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Enable Right Safety</Property>
         <Property name="Size">98, 83</Property>
         <Property name="Location">24, 39</Property>
@@ -72,19 +74,19 @@
         <Property name="Name">SwitchLED8</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED7" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Both Triggers/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Enable Both Triggers</Property>
         <Property name="Size">217, 83</Property>
         <Property name="Location">24, 246</Property>
         <Property name="Name">SwitchLED7</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
-        <Property name="Text">Enable Right Trigger</Property>
+        <Property name="BindingSrcPath">Input Device/Left Trigger/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Enable Left Trigger</Property>
         <Property name="Size">98, 83</Property>
         <Property name="Location">143, 39</Property>
         <Property name="Name">SwitchLED5</Property>
@@ -108,9 +110,9 @@
         <Property name="Name">SwitchLED3</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Right Trigger/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Enable Right Trigger</Property>
         <Property name="Size">98, 83</Property>
         <Property name="Location">24, 39</Property>
@@ -345,18 +347,18 @@ Zero Torque
         <Property name="Size">607, 127</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName">ledResetScrollSelect</Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Right Scroll Click/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Choose</Property>
         <Property name="Size">168, 132</Property>
         <Property name="Location">173, 306</Property>
         <Property name="Name">SwitchLED1</Property>
       </Object>
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">Input Device/Right Scroll Mode/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">116, 23</Property>
         <Property name="Location">17, 306</Property>
         <Property name="Name">NumericEntry1</Property>
@@ -367,5 +369,5 @@ Zero Torque
       <Property name="Name">GroupBox1</Property>
       <Property name="Size">639, 487</Property>
     </Object>
-    <Property name="ClientSize">1920, 1200</Property>
+    <Property name="ClientSize">1920, 1080</Property>
   </Object>
