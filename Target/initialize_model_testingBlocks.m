@@ -15,8 +15,3 @@ set_param('MARCH_v1_5/Input Device/Both Safety', 'Value', '0')
 set_param('MARCH_v1_5/Input Device/Right Scroll Click', 'Value', '0')
 set_param('MARCH_v1_5/Input Device/Right Scroll Mode', 'Value', '0')
 
-% Controller feedback: done variables
-set_param('MARCH_v1_5/Input Device/doneSitting', 'Value', '0')
-set_param('MARCH_v1_5/Input Device/doneStanding', 'Value', '0')
-set_param('MARCH_v1_5/Input Device/doneStepConst', 'Value', '0')
-set_param('MARCH_v1_5/Input Device/doneStepPeak', 'Value', '0')
