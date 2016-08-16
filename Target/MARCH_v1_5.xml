@@ -698,6 +698,18 @@
 
     </SubSystem>
     <SubSystem>
+    <Name>Joint Angles</Name>
+    <xPCName>MARCH_v1_5/Controllers/Joint Angles</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>Point &amp; Go</Name>
     <xPCName>MARCH_v1_5/Controllers/Point &amp; Go</xPCName>
         <SubSystem>
@@ -1113,6 +1125,91 @@
 
 
 
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Controllers/Gain</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Controllers/Gain1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Controllers/Gain2</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Controllers/Gain3</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>Controllers/Gain4</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>Controllers/Gain5</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain6</blkName>
+            <xpcblkName>Controllers/Gain6</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Gain6</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
 
  
             <block>
@@ -1182,6 +1279,132 @@
               <xpcsigName>Controllers/Switcher/p2</xpcsigName>
               <sigWidth>10</sigWidth>
               <sigDim>[10, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Controllers/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>RHAA</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Controllers/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>RHFE</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Controllers/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>RKFE</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Controllers/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>LHAA</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>Controllers/Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>LHFE</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>Controllers/Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>LKFE</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain6</sigName>
+              <xpcsigName>Controllers/Gain6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>done</sigLabel>
             </signal>
 
 
@@ -5947,6 +6170,78 @@ Switch1</sigName>
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Input Device/Gain</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Input Device/Gain1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Input Device/Gain2</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Input Device/Gain3</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>Input Device/Gain4</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>Input Device/Gain5</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Input Device/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
 
     
@@ -6001,6 +6296,114 @@ Switch1</sigName>
     
 
 
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Input Device/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>right trigger</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Input Device/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>left trigger</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Input Device/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>right safety</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Input Device/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>left safety</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>Input Device/Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Right Scroll Mode</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>Input Device/Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Richt Scroll Click</sigLabel>
+            </signal>
 
 
     
@@ -6060,18 +6463,6 @@ Switch1</sigName>
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Joint Angles</Name>
-    <xPCName>MARCH_v1_5/Joint Angles</xPCName>
-    
-    
-
-
-    
-    
-
 
     </SubSystem>
     <SubSystem>
@@ -6516,7 +6907,6 @@ Switch1</sigName>
     </SubSystem>
 
       
-
 
 
 
