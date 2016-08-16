@@ -1,0 +1,35 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ethercat_manual_control" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
+      <Property name="BindingSrcPath">LHAA/Motor Enable/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Text">Motor Enable</Property>
+      <Property name="Size">210, 54</Property>
+      <Property name="Location">358, 148</Property>
+      <Property name="Name">SwitchLED2</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+      <Property name="BindingSrcPath">LHAA/Velocity Override/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Text">Velocity Override</Property>
+      <Property name="Size">210, 54</Property>
+      <Property name="Location">358, 64</Property>
+      <Property name="Name">SwitchLED1</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">LHAA/Velocity/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-500</Property>
+        <Property name="Span">1000</Property>
+      </Property>
+      <Property name="Size">69, 596</Property>
+      <Property name="Location">173, 12</Property>
+      <Property name="Name">Slider1</Property>
+    </Object>
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>

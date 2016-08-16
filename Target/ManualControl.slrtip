@@ -1,0 +1,272 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ManualControl" children="Controls">
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel6" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">RKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label6</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/velocity setpoint1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">114, 212</Property>
+        <Property name="Name">Slider6</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED11" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/velocity override1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED11</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED12" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/motor enable1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED12</Property>
+      </Object>
+      <Property name="Location">1022, 12</Property>
+      <Property name="Name">Panel6</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel5" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label5" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">RHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label5</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">115, 212</Property>
+        <Property name="Name">Slider5</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED9" children="Controls">
+        <Property name="BindingSrcPath">
+        </Property>
+        <Property name="TargetName">
+        </Property>
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED9</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED10" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/motor enable/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED10</Property>
+      </Object>
+      <Property name="Location">820, 12</Property>
+      <Property name="Name">Panel5</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel4" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label4" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">RHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label4</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/velocity setpoint1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">124, 212</Property>
+        <Property name="Name">Slider4</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED7" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/velocity override1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED7</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED8" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/motor enable1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED8</Property>
+      </Object>
+      <Property name="Location">618, 12</Property>
+      <Property name="Name">Panel4</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel3" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label3" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">LHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label3</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">124, 212</Property>
+        <Property name="Name">Slider3</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED5</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
+        <Property name="BindingSrcPath">
+        </Property>
+        <Property name="TargetName">
+        </Property>
+        <Property name="BindingSrcType">None</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED6</Property>
+      </Object>
+      <Property name="Location">416, 12</Property>
+      <Property name="Name">Panel3</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel2" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">LHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label2</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/velocity setpoint/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">124, 212</Property>
+        <Property name="Name">Slider2</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED3</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/motor enable/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED4</Property>
+      </Object>
+      <Property name="Location">214, 12</Property>
+      <Property name="Name">Panel2</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel1" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+        <Property name="TextAlign">MiddleCenter</Property>
+        <Property name="Text">LKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 10</Property>
+        <Property name="Name">Label1</Property>
+        <Property name="Size">190, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/velocity setpoint1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+        </Property>
+        <Property name="Size">69, 544</Property>
+        <Property name="Location">124, 212</Property>
+        <Property name="Name">Slider1</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/velocity override1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Velocity Override</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 130</Property>
+        <Property name="Name">SwitchLED2</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Left Leg/motor enable1/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Text">Motor Enable</Property>
+        <Property name="Size">190, 40</Property>
+        <Property name="Location">3, 45</Property>
+        <Property name="Name">SwitchLED1</Property>
+      </Object>
+      <Property name="Location">12, 12</Property>
+      <Property name="Name">Panel1</Property>
+      <Property name="Size">196, 772</Property>
+    </Object>
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>
