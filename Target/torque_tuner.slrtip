@@ -1,5 +1,52 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="torque_tuner" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
+      <Property name="Text">Deadzone Upper</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">583, 624</Property>
+      <Property name="Name">Label9</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
+      <Property name="Text">Deadzone Lower</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">408, 624</Property>
+      <Property name="Name">Label8</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Dead Zone/UpperValue</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">583, 650</Property>
+      <Property name="Name">NumericEntry3</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Dead Zone/LowerValue</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">408, 650</Property>
+      <Property name="Name">NumericEntry2</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
+      <Property name="Text">filtered error</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">866, 44</Property>
+      <Property name="Name">Label7</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay7" children="Controls">
+      <Property name="BindingSrcType">Signal</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Dead Zone</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">866, 74</Property>
+      <Property name="Name">NumericDisplay7</Property>
+    </Object>
     <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
       <Property name="BindingSrcType">Parameter</Property>
       <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Constant/Value</Property>
@@ -50,7 +97,7 @@
       <Property name="Name">SwitchLED1</Property>
     </Object>
     <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
-      <Property name="Text">P-Gain * 10000</Property>
+      <Property name="Text">P-Gain</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">252, 400</Property>
       <Property name="Name">Label6</Property>
@@ -71,9 +118,9 @@
     </Object>
     <Object type="MW.Instruments.GaugeAngular, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GaugeAngular1" children="Controls">
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcType">Signal</Property>
       <Property name="BindingSrcObject" />
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Setpoint/Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Sum1</Property>
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Pointers">
         <Item type="Iocomp.Classes.PointerGaugeAngular, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">(sub-class)</Item>
@@ -82,8 +129,8 @@
         <Property name="Min">-500</Property>
         <Property name="Span">1000</Property>
       </Property>
-      <Property name="InnerRadius">262</Property>
-      <Property name="Size">357, 315</Property>
+      <Property name="InnerRadius">267</Property>
+      <Property name="Size">329, 329</Property>
       <Property name="Location">408, 274</Property>
       <Property name="Name">GaugeAngular1</Property>
       <Property name="Text">GaugeAngular1</Property>
@@ -98,7 +145,7 @@
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay5" children="Controls">
       <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Error /Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Sum</Property>
       <Property name="BindingSrcObject" />
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Size">100, 25</Property>
@@ -115,7 +162,7 @@
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
       <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Reference Offset1/Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Sample and Hold</Property>
       <Property name="BindingSrcObject" />
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Size">100, 25</Property>
@@ -130,9 +177,9 @@
       <Property name="Size">100, 23</Property>
     </Object>
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Torque Offset/Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Offset</Property>
       <Property name="BindingSrcObject" />
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Size">100, 25</Property>
@@ -154,9 +201,9 @@
       <Property name="Size">100, 23</Property>
     </Object>
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Spring Encoder/Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Spring Encoder</Property>
       <Property name="BindingSrcObject" />
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Size">100, 25</Property>
@@ -164,9 +211,9 @@
       <Property name="Name">NumericDisplay2</Property>
     </Object>
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
-      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
-      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Joint Encoder/Gain</Property>
+      <Property name="BindingSrcPath">Controllers/0-Torque/RHFE/Joint Encoder</Property>
       <Property name="BindingSrcObject" />
       <Property name="TargetName">SpeedGoat</Property>
       <Property name="Size">100, 25</Property>

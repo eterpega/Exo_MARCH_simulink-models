@@ -2556,8 +2556,8 @@ pt(160).subsource = 'SS_DOUBLE';
 pt(160).ndims     = '2';
 pt(160).size      = '[]';
 pt(160).isStruct  = false;
-pt(160).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P1_h';
-pt(160).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P1_h[0]';
+pt(160).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P1';
+pt(160).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P1[0]';
 pt(160).dtname     = 'real_T';
 
 
@@ -2572,8 +2572,8 @@ pt(161).subsource = 'SS_DOUBLE';
 pt(161).ndims     = '2';
 pt(161).size      = '[]';
 pt(161).isStruct  = false;
-pt(161).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P2_g';
-pt(161).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P2_g';
+pt(161).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P2';
+pt(161).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P2';
 pt(161).dtname     = 'real_T';
 
 
@@ -2588,8 +2588,8 @@ pt(162).subsource = 'SS_DOUBLE';
 pt(162).ndims     = '2';
 pt(162).size      = '[]';
 pt(162).isStruct  = false;
-pt(162).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P3_i';
-pt(162).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P3_i';
+pt(162).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P3';
+pt(162).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P3';
 pt(162).dtname     = 'real_T';
 
 
@@ -2604,8 +2604,8 @@ pt(163).subsource = 'SS_DOUBLE';
 pt(163).ndims     = '2';
 pt(163).size      = '[]';
 pt(163).isStruct  = false;
-pt(163).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P4_j';
-pt(163).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P4_j';
+pt(163).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P4';
+pt(163).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P4';
 pt(163).dtname     = 'real_T';
 
 
@@ -2620,8 +2620,8 @@ pt(164).subsource = 'SS_DOUBLE';
 pt(164).ndims     = '2';
 pt(164).size      = '[]';
 pt(164).isStruct  = false;
-pt(164).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P5_m';
-pt(164).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P5_m';
+pt(164).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P5';
+pt(164).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P5';
 pt(164).dtname     = 'real_T';
 
 
@@ -2636,8 +2636,8 @@ pt(165).subsource = 'SS_DOUBLE';
 pt(165).ndims     = '2';
 pt(165).size      = '[]';
 pt(165).isStruct  = false;
-pt(165).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P6_c';
-pt(165).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P6_c';
+pt(165).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P6';
+pt(165).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P6';
 pt(165).dtname     = 'real_T';
 
 
@@ -2652,8 +2652,8 @@ pt(166).subsource = 'SS_DOUBLE';
 pt(166).ndims     = '2';
 pt(166).size      = '[]';
 pt(166).isStruct  = false;
-pt(166).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P7_e';
-pt(166).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P7_e';
+pt(166).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P7';
+pt(166).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P7';
 pt(166).dtname     = 'real_T';
 
 
@@ -2668,8 +2668,8 @@ pt(167).subsource = 'SS_DOUBLE';
 pt(167).ndims     = '2';
 pt(167).size      = '[]';
 pt(167).isStruct  = false;
-pt(167).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P1_d';
-pt(167).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P1_d[0]';
+pt(167).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P1';
+pt(167).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P1[0]';
 pt(167).dtname     = 'real_T';
 
 
@@ -2684,8 +2684,8 @@ pt(168).subsource = 'SS_DOUBLE';
 pt(168).ndims     = '2';
 pt(168).size      = '[]';
 pt(168).isStruct  = false;
-pt(168).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k';
-pt(168).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k';
+pt(168).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P2';
+pt(168).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P2';
 pt(168).dtname     = 'real_T';
 
 
@@ -2700,8 +2700,8 @@ pt(169).subsource = 'SS_DOUBLE';
 pt(169).ndims     = '2';
 pt(169).size      = '[]';
 pt(169).isStruct  = false;
-pt(169).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P3_o';
-pt(169).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P3_o';
+pt(169).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P3';
+pt(169).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P3';
 pt(169).dtname     = 'real_T';
 
 
@@ -2716,8 +2716,8 @@ pt(170).subsource = 'SS_DOUBLE';
 pt(170).ndims     = '2';
 pt(170).size      = '[]';
 pt(170).isStruct  = false;
-pt(170).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P4_b';
-pt(170).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P4_b';
+pt(170).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P4';
+pt(170).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P4';
 pt(170).dtname     = 'real_T';
 
 
@@ -2732,8 +2732,8 @@ pt(171).subsource = 'SS_DOUBLE';
 pt(171).ndims     = '2';
 pt(171).size      = '[]';
 pt(171).isStruct  = false;
-pt(171).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P5_g';
-pt(171).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P5_g';
+pt(171).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P5';
+pt(171).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P5';
 pt(171).dtname     = 'real_T';
 
 
@@ -2748,8 +2748,8 @@ pt(172).subsource = 'SS_DOUBLE';
 pt(172).ndims     = '2';
 pt(172).size      = '[]';
 pt(172).isStruct  = false;
-pt(172).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P6_b';
-pt(172).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P6_b';
+pt(172).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P6';
+pt(172).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P6';
 pt(172).dtname     = 'real_T';
 
 
@@ -2764,8 +2764,8 @@ pt(173).subsource = 'SS_DOUBLE';
 pt(173).ndims     = '2';
 pt(173).size      = '[]';
 pt(173).isStruct  = false;
-pt(173).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P7_b';
-pt(173).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P7_b';
+pt(173).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P7';
+pt(173).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P7';
 pt(173).dtname     = 'real_T';
 
 
@@ -2780,8 +2780,8 @@ pt(174).subsource = 'SS_DOUBLE';
 pt(174).ndims     = '2';
 pt(174).size      = '[]';
 pt(174).isStruct  = false;
-pt(174).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P1_k';
-pt(174).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P1_k[0]';
+pt(174).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P1';
+pt(174).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P1[0]';
 pt(174).dtname     = 'real_T';
 
 
@@ -2796,8 +2796,8 @@ pt(175).subsource = 'SS_DOUBLE';
 pt(175).ndims     = '2';
 pt(175).size      = '[]';
 pt(175).isStruct  = false;
-pt(175).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P2_n';
-pt(175).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P2_n';
+pt(175).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P2';
+pt(175).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P2';
 pt(175).dtname     = 'real_T';
 
 
@@ -2812,8 +2812,8 @@ pt(176).subsource = 'SS_DOUBLE';
 pt(176).ndims     = '2';
 pt(176).size      = '[]';
 pt(176).isStruct  = false;
-pt(176).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P3_e';
-pt(176).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P3_e';
+pt(176).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P3';
+pt(176).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P3';
 pt(176).dtname     = 'real_T';
 
 
@@ -2828,8 +2828,8 @@ pt(177).subsource = 'SS_DOUBLE';
 pt(177).ndims     = '2';
 pt(177).size      = '[]';
 pt(177).isStruct  = false;
-pt(177).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P4_b';
-pt(177).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P4_b';
+pt(177).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P4';
+pt(177).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P4';
 pt(177).dtname     = 'real_T';
 
 
@@ -2844,8 +2844,8 @@ pt(178).subsource = 'SS_DOUBLE';
 pt(178).ndims     = '2';
 pt(178).size      = '[]';
 pt(178).isStruct  = false;
-pt(178).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P5_g';
-pt(178).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P5_g';
+pt(178).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P5';
+pt(178).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P5';
 pt(178).dtname     = 'real_T';
 
 
@@ -2860,8 +2860,8 @@ pt(179).subsource = 'SS_DOUBLE';
 pt(179).ndims     = '2';
 pt(179).size      = '[]';
 pt(179).isStruct  = false;
-pt(179).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P6_n';
-pt(179).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P6_n';
+pt(179).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P6';
+pt(179).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P6';
 pt(179).dtname     = 'real_T';
 
 
@@ -2876,8 +2876,8 @@ pt(180).subsource = 'SS_DOUBLE';
 pt(180).ndims     = '2';
 pt(180).size      = '[]';
 pt(180).isStruct  = false;
-pt(180).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P7_g';
-pt(180).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P7_g';
+pt(180).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P7';
+pt(180).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P7';
 pt(180).dtname     = 'real_T';
 
 
@@ -2892,8 +2892,8 @@ pt(181).subsource = 'SS_DOUBLE';
 pt(181).ndims     = '2';
 pt(181).size      = '[]';
 pt(181).isStruct  = false;
-pt(181).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P1_g';
-pt(181).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P1_g[0]';
+pt(181).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P1';
+pt(181).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P1[0]';
 pt(181).dtname     = 'real_T';
 
 
@@ -2908,8 +2908,8 @@ pt(182).subsource = 'SS_DOUBLE';
 pt(182).ndims     = '2';
 pt(182).size      = '[]';
 pt(182).isStruct  = false;
-pt(182).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P2_e';
-pt(182).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P2_e';
+pt(182).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P2';
+pt(182).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P2';
 pt(182).dtname     = 'real_T';
 
 
@@ -2924,8 +2924,8 @@ pt(183).subsource = 'SS_DOUBLE';
 pt(183).ndims     = '2';
 pt(183).size      = '[]';
 pt(183).isStruct  = false;
-pt(183).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P3_e';
-pt(183).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P3_e';
+pt(183).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P3';
+pt(183).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P3';
 pt(183).dtname     = 'real_T';
 
 
@@ -2940,8 +2940,8 @@ pt(184).subsource = 'SS_DOUBLE';
 pt(184).ndims     = '2';
 pt(184).size      = '[]';
 pt(184).isStruct  = false;
-pt(184).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P4_h';
-pt(184).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P4_h';
+pt(184).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P4';
+pt(184).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P4';
 pt(184).dtname     = 'real_T';
 
 
@@ -2956,8 +2956,8 @@ pt(185).subsource = 'SS_DOUBLE';
 pt(185).ndims     = '2';
 pt(185).size      = '[]';
 pt(185).isStruct  = false;
-pt(185).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P5_d';
-pt(185).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P5_d';
+pt(185).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P5';
+pt(185).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P5';
 pt(185).dtname     = 'real_T';
 
 
@@ -2972,8 +2972,8 @@ pt(186).subsource = 'SS_DOUBLE';
 pt(186).ndims     = '2';
 pt(186).size      = '[]';
 pt(186).isStruct  = false;
-pt(186).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P6_g';
-pt(186).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P6_g';
+pt(186).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P6';
+pt(186).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P6';
 pt(186).dtname     = 'real_T';
 
 
@@ -2988,8 +2988,8 @@ pt(187).subsource = 'SS_DOUBLE';
 pt(187).ndims     = '2';
 pt(187).size      = '[]';
 pt(187).isStruct  = false;
-pt(187).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P7_n';
-pt(187).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P7_n';
+pt(187).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P7';
+pt(187).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P7';
 pt(187).dtname     = 'real_T';
 
 
@@ -3452,8 +3452,8 @@ pt(216).subsource = 'SS_DOUBLE';
 pt(216).ndims     = '2';
 pt(216).size      = '[]';
 pt(216).isStruct  = false;
-pt(216).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k5';
-pt(216).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k5';
+pt(216).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k';
+pt(216).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P2_k';
 pt(216).dtname     = 'real_T';
 
 
@@ -3484,8 +3484,8 @@ pt(218).subsource = 'SS_DOUBLE';
 pt(218).ndims     = '2';
 pt(218).size      = '[]';
 pt(218).isStruct  = false;
-pt(218).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P4_bl';
-pt(218).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P4_bl';
+pt(218).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P4_b';
+pt(218).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P4_b';
 pt(218).dtname     = 'real_T';
 
 
@@ -3548,8 +3548,8 @@ pt(222).subsource = 'SS_DOUBLE';
 pt(222).ndims     = '2';
 pt(222).size      = '[]';
 pt(222).isStruct  = false;
-pt(222).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P1_kt';
-pt(222).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P1_kt[0]';
+pt(222).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P1_k';
+pt(222).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P1_k[0]';
 pt(222).dtname     = 'real_T';
 
 
@@ -3788,8 +3788,8 @@ pt(237).subsource = 'SS_DOUBLE';
 pt(237).ndims     = '2';
 pt(237).size      = '[]';
 pt(237).isStruct  = false;
-pt(237).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e5';
-pt(237).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e5';
+pt(237).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e';
+pt(237).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e';
 pt(237).dtname     = 'real_T';
 
 
@@ -3836,8 +3836,8 @@ pt(240).subsource = 'SS_DOUBLE';
 pt(240).ndims     = '2';
 pt(240).size      = '[]';
 pt(240).isStruct  = false;
-pt(240).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P5_cd';
-pt(240).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P5_cd';
+pt(240).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P5_c';
+pt(240).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P5_c';
 pt(240).dtname     = 'real_T';
 
 
@@ -4412,8 +4412,8 @@ pt(276).subsource = 'SS_DOUBLE';
 pt(276).ndims     = '2';
 pt(276).size      = '[]';
 pt(276).isStruct  = false;
-pt(276).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P7_ga';
-pt(276).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P7_ga';
+pt(276).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P7_g';
+pt(276).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P7_g';
 pt(276).dtname     = 'real_T';
 
 
@@ -6147,24 +6147,24 @@ pt(384).dtname     = 'real_T';
 
 
   
-pt(385).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(385).paramname = 'P1';
-pt(385).class     = 'vector';
+pt(385).blockname = 'Input Device/Generate random block signal safety/Create peak1/Delay';
+pt(385).paramname = 'DelayLength';
+pt(385).class     = 'scalar';
 pt(385).nrows     = 1;
-pt(385).ncols     = 31;
-pt(385).subsource = 'SS_DOUBLE';
+pt(385).ncols     = 1;
+pt(385).subsource = 'SS_UINT32';
 pt(385).ndims     = '2';
 pt(385).size      = '[]';
 pt(385).isStruct  = false;
-pt(385).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P1';
-pt(385).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P1[0]';
-pt(385).dtname     = 'real_T';
+pt(385).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_c';
+pt(385).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_c';
+pt(385).dtname     = 'uint32_T';
 
 
 
   
-pt(386).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(386).paramname = 'P2';
+pt(386).blockname = 'Input Device/Generate random block signal safety/Create peak1/Delay';
+pt(386).paramname = 'InitialCondition';
 pt(386).class     = 'scalar';
 pt(386).nrows     = 1;
 pt(386).ncols     = 1;
@@ -6172,31 +6172,31 @@ pt(386).subsource = 'SS_DOUBLE';
 pt(386).ndims     = '2';
 pt(386).size      = '[]';
 pt(386).isStruct  = false;
-pt(386).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P2';
-pt(386).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P2';
+pt(386).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_o';
+pt(386).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_o';
 pt(386).dtname     = 'real_T';
 
 
 
   
-pt(387).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(387).paramname = 'P3';
+pt(387).blockname = 'Input Device/Generate random block signal safety/Create peak2/Delay';
+pt(387).paramname = 'DelayLength';
 pt(387).class     = 'scalar';
 pt(387).nrows     = 1;
 pt(387).ncols     = 1;
-pt(387).subsource = 'SS_DOUBLE';
+pt(387).subsource = 'SS_UINT32';
 pt(387).ndims     = '2';
 pt(387).size      = '[]';
 pt(387).isStruct  = false;
-pt(387).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P3';
-pt(387).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P3';
-pt(387).dtname     = 'real_T';
+pt(387).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_i';
+pt(387).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_i';
+pt(387).dtname     = 'uint32_T';
 
 
 
   
-pt(388).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(388).paramname = 'P4';
+pt(388).blockname = 'Input Device/Generate random block signal safety/Create peak2/Delay';
+pt(388).paramname = 'InitialCondition';
 pt(388).class     = 'scalar';
 pt(388).nrows     = 1;
 pt(388).ncols     = 1;
@@ -6204,31 +6204,31 @@ pt(388).subsource = 'SS_DOUBLE';
 pt(388).ndims     = '2';
 pt(388).size      = '[]';
 pt(388).isStruct  = false;
-pt(388).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P4';
-pt(388).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P4';
+pt(388).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_fr';
+pt(388).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_fr';
 pt(388).dtname     = 'real_T';
 
 
 
   
-pt(389).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(389).paramname = 'P5';
+pt(389).blockname = 'Input Device/Generate random block signal safety/Create peak3/Delay';
+pt(389).paramname = 'DelayLength';
 pt(389).class     = 'scalar';
 pt(389).nrows     = 1;
 pt(389).ncols     = 1;
-pt(389).subsource = 'SS_DOUBLE';
+pt(389).subsource = 'SS_UINT32';
 pt(389).ndims     = '2';
 pt(389).size      = '[]';
 pt(389).isStruct  = false;
-pt(389).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P5';
-pt(389).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P5';
-pt(389).dtname     = 'real_T';
+pt(389).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_ij';
+pt(389).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_ij';
+pt(389).dtname     = 'uint32_T';
 
 
 
   
-pt(390).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(390).paramname = 'P6';
+pt(390).blockname = 'Input Device/Generate random block signal safety/Create peak3/Delay';
+pt(390).paramname = 'InitialCondition';
 pt(390).class     = 'scalar';
 pt(390).nrows     = 1;
 pt(390).ncols     = 1;
@@ -6236,63 +6236,63 @@ pt(390).subsource = 'SS_DOUBLE';
 pt(390).ndims     = '2';
 pt(390).size      = '[]';
 pt(390).isStruct  = false;
-pt(390).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P6';
-pt(390).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P6';
+pt(390).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_b';
+pt(390).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_b';
 pt(390).dtname     = 'real_T';
 
 
 
   
-pt(391).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit ';
-pt(391).paramname = 'P7';
+pt(391).blockname = 'Input Device/Generate random block signal trigger/Create peak1/Delay';
+pt(391).paramname = 'DelayLength';
 pt(391).class     = 'scalar';
 pt(391).nrows     = 1;
 pt(391).ncols     = 1;
-pt(391).subsource = 'SS_DOUBLE';
+pt(391).subsource = 'SS_UINT32';
 pt(391).ndims     = '2';
 pt(391).size      = '[]';
 pt(391).isStruct  = false;
-pt(391).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit_P7';
-pt(391).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit_P7';
-pt(391).dtname     = 'real_T';
+pt(391).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_d';
+pt(391).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_d';
+pt(391).dtname     = 'uint32_T';
 
 
 
   
-pt(392).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(392).paramname = 'P1';
-pt(392).class     = 'vector';
+pt(392).blockname = 'Input Device/Generate random block signal trigger/Create peak1/Delay';
+pt(392).paramname = 'InitialCondition';
+pt(392).class     = 'scalar';
 pt(392).nrows     = 1;
-pt(392).ncols     = 33;
+pt(392).ncols     = 1;
 pt(392).subsource = 'SS_DOUBLE';
 pt(392).ndims     = '2';
 pt(392).size      = '[]';
 pt(392).isStruct  = false;
-pt(392).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P1';
-pt(392).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P1[0]';
+pt(392).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_i';
+pt(392).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_i';
 pt(392).dtname     = 'real_T';
 
 
 
   
-pt(393).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(393).paramname = 'P2';
+pt(393).blockname = 'Input Device/Generate random block signal trigger/Create peak2/Delay';
+pt(393).paramname = 'DelayLength';
 pt(393).class     = 'scalar';
 pt(393).nrows     = 1;
 pt(393).ncols     = 1;
-pt(393).subsource = 'SS_DOUBLE';
+pt(393).subsource = 'SS_UINT32';
 pt(393).ndims     = '2';
 pt(393).size      = '[]';
 pt(393).isStruct  = false;
-pt(393).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P2';
-pt(393).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P2';
-pt(393).dtname     = 'real_T';
+pt(393).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_n';
+pt(393).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_n';
+pt(393).dtname     = 'uint32_T';
 
 
 
   
-pt(394).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(394).paramname = 'P3';
+pt(394).blockname = 'Input Device/Generate random block signal trigger/Create peak2/Delay';
+pt(394).paramname = 'InitialCondition';
 pt(394).class     = 'scalar';
 pt(394).nrows     = 1;
 pt(394).ncols     = 1;
@@ -6300,31 +6300,31 @@ pt(394).subsource = 'SS_DOUBLE';
 pt(394).ndims     = '2';
 pt(394).size      = '[]';
 pt(394).isStruct  = false;
-pt(394).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P3';
-pt(394).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P3';
+pt(394).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_f';
+pt(394).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_f';
 pt(394).dtname     = 'real_T';
 
 
 
   
-pt(395).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(395).paramname = 'P4';
+pt(395).blockname = 'Input Device/Generate random block signal trigger/Create peak3/Delay';
+pt(395).paramname = 'DelayLength';
 pt(395).class     = 'scalar';
 pt(395).nrows     = 1;
 pt(395).ncols     = 1;
-pt(395).subsource = 'SS_DOUBLE';
+pt(395).subsource = 'SS_UINT32';
 pt(395).ndims     = '2';
 pt(395).size      = '[]';
 pt(395).isStruct  = false;
-pt(395).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P4';
-pt(395).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P4';
-pt(395).dtname     = 'real_T';
+pt(395).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_m';
+pt(395).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_m';
+pt(395).dtname     = 'uint32_T';
 
 
 
   
-pt(396).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(396).paramname = 'P5';
+pt(396).blockname = 'Input Device/Generate random block signal trigger/Create peak3/Delay';
+pt(396).paramname = 'InitialCondition';
 pt(396).class     = 'scalar';
 pt(396).nrows     = 1;
 pt(396).ncols     = 1;
@@ -6332,15 +6332,15 @@ pt(396).subsource = 'SS_DOUBLE';
 pt(396).ndims     = '2';
 pt(396).size      = '[]';
 pt(396).isStruct  = false;
-pt(396).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P5';
-pt(396).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P5';
+pt(396).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_fm';
+pt(396).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_fm';
 pt(396).dtname     = 'real_T';
 
 
 
   
-pt(397).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(397).paramname = 'P6';
+pt(397).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator';
+pt(397).paramname = 'gainval';
 pt(397).class     = 'scalar';
 pt(397).nrows     = 1;
 pt(397).ncols     = 1;
@@ -6348,15 +6348,15 @@ pt(397).subsource = 'SS_DOUBLE';
 pt(397).ndims     = '2';
 pt(397).size      = '[]';
 pt(397).isStruct  = false;
-pt(397).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P6';
-pt(397).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P6';
+pt(397).symbol     = 'MARCH_v1_5_P.Integrator_gainval';
+pt(397).baseaddr   = '&MARCH_v1_5_P.Integrator_gainval';
 pt(397).dtname     = 'real_T';
 
 
 
   
-pt(398).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1';
-pt(398).paramname = 'P7';
+pt(398).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator';
+pt(398).paramname = 'InitialCondition';
 pt(398).class     = 'scalar';
 pt(398).nrows     = 1;
 pt(398).ncols     = 1;
@@ -6364,47 +6364,47 @@ pt(398).subsource = 'SS_DOUBLE';
 pt(398).ndims     = '2';
 pt(398).size      = '[]';
 pt(398).isStruct  = false;
-pt(398).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit1_P7';
-pt(398).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit1_P7';
+pt(398).symbol     = 'MARCH_v1_5_P.Integrator_IC';
+pt(398).baseaddr   = '&MARCH_v1_5_P.Integrator_IC';
 pt(398).dtname     = 'real_T';
 
 
 
   
-pt(399).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(399).paramname = 'P1';
-pt(399).class     = 'vector';
+pt(399).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/TSamp';
+pt(399).paramname = 'WtEt';
+pt(399).class     = 'scalar';
 pt(399).nrows     = 1;
-pt(399).ncols     = 33;
+pt(399).ncols     = 1;
 pt(399).subsource = 'SS_DOUBLE';
 pt(399).ndims     = '2';
 pt(399).size      = '[]';
 pt(399).isStruct  = false;
-pt(399).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P1';
-pt(399).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P1[0]';
+pt(399).symbol     = 'MARCH_v1_5_P.TSamp_WtEt';
+pt(399).baseaddr   = '&MARCH_v1_5_P.TSamp_WtEt';
 pt(399).dtname     = 'real_T';
 
 
 
   
-pt(400).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(400).paramname = 'P2';
+pt(400).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD';
+pt(400).paramname = 'DelayLength';
 pt(400).class     = 'scalar';
 pt(400).nrows     = 1;
 pt(400).ncols     = 1;
-pt(400).subsource = 'SS_DOUBLE';
+pt(400).subsource = 'SS_UINT32';
 pt(400).ndims     = '2';
 pt(400).size      = '[]';
 pt(400).isStruct  = false;
-pt(400).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P2';
-pt(400).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P2';
-pt(400).dtname     = 'real_T';
+pt(400).symbol     = 'MARCH_v1_5_P.UD_DelayLength';
+pt(400).baseaddr   = '&MARCH_v1_5_P.UD_DelayLength';
+pt(400).dtname     = 'uint32_T';
 
 
 
   
-pt(401).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(401).paramname = 'P3';
+pt(401).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD';
+pt(401).paramname = 'InitialCondition';
 pt(401).class     = 'scalar';
 pt(401).nrows     = 1;
 pt(401).ncols     = 1;
@@ -6412,719 +6412,47 @@ pt(401).subsource = 'SS_DOUBLE';
 pt(401).ndims     = '2';
 pt(401).size      = '[]';
 pt(401).isStruct  = false;
-pt(401).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P3';
-pt(401).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P3';
+pt(401).symbol     = 'MARCH_v1_5_P.UD_InitialCondition';
+pt(401).baseaddr   = '&MARCH_v1_5_P.UD_InitialCondition';
 pt(401).dtname     = 'real_T';
 
 
 
   
-pt(402).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(402).paramname = 'P4';
+pt(402).blockname = '';
+pt(402).paramname = 'par';
 pt(402).class     = 'scalar';
 pt(402).nrows     = 1;
 pt(402).ncols     = 1;
-pt(402).subsource = 'SS_DOUBLE';
+pt(402).subsource = '';
 pt(402).ndims     = '2';
 pt(402).size      = '[]';
-pt(402).isStruct  = false;
-pt(402).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P4';
-pt(402).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P4';
-pt(402).dtname     = 'real_T';
-
-
-
-  
-pt(403).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(403).paramname = 'P5';
-pt(403).class     = 'scalar';
-pt(403).nrows     = 1;
-pt(403).ncols     = 1;
-pt(403).subsource = 'SS_DOUBLE';
-pt(403).ndims     = '2';
-pt(403).size      = '[]';
-pt(403).isStruct  = false;
-pt(403).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P5';
-pt(403).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P5';
-pt(403).dtname     = 'real_T';
-
-
-
-  
-pt(404).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(404).paramname = 'P6';
-pt(404).class     = 'scalar';
-pt(404).nrows     = 1;
-pt(404).ncols     = 1;
-pt(404).subsource = 'SS_DOUBLE';
-pt(404).ndims     = '2';
-pt(404).size      = '[]';
-pt(404).isStruct  = false;
-pt(404).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P6';
-pt(404).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P6';
-pt(404).dtname     = 'real_T';
-
-
-
-  
-pt(405).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2';
-pt(405).paramname = 'P7';
-pt(405).class     = 'scalar';
-pt(405).nrows     = 1;
-pt(405).ncols     = 1;
-pt(405).subsource = 'SS_DOUBLE';
-pt(405).ndims     = '2';
-pt(405).size      = '[]';
-pt(405).isStruct  = false;
-pt(405).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit2_P7';
-pt(405).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit2_P7';
-pt(405).dtname     = 'real_T';
-
-
-
-  
-pt(406).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(406).paramname = 'P1';
-pt(406).class     = 'vector';
-pt(406).nrows     = 1;
-pt(406).ncols     = 31;
-pt(406).subsource = 'SS_DOUBLE';
-pt(406).ndims     = '2';
-pt(406).size      = '[]';
-pt(406).isStruct  = false;
-pt(406).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P1';
-pt(406).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P1[0]';
-pt(406).dtname     = 'real_T';
-
-
-
-  
-pt(407).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(407).paramname = 'P2';
-pt(407).class     = 'scalar';
-pt(407).nrows     = 1;
-pt(407).ncols     = 1;
-pt(407).subsource = 'SS_DOUBLE';
-pt(407).ndims     = '2';
-pt(407).size      = '[]';
-pt(407).isStruct  = false;
-pt(407).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P2';
-pt(407).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P2';
-pt(407).dtname     = 'real_T';
-
-
-
-  
-pt(408).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(408).paramname = 'P3';
-pt(408).class     = 'scalar';
-pt(408).nrows     = 1;
-pt(408).ncols     = 1;
-pt(408).subsource = 'SS_DOUBLE';
-pt(408).ndims     = '2';
-pt(408).size      = '[]';
-pt(408).isStruct  = false;
-pt(408).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P3';
-pt(408).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P3';
-pt(408).dtname     = 'real_T';
-
-
-
-  
-pt(409).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(409).paramname = 'P4';
-pt(409).class     = 'scalar';
-pt(409).nrows     = 1;
-pt(409).ncols     = 1;
-pt(409).subsource = 'SS_DOUBLE';
-pt(409).ndims     = '2';
-pt(409).size      = '[]';
-pt(409).isStruct  = false;
-pt(409).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P4';
-pt(409).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P4';
-pt(409).dtname     = 'real_T';
-
-
-
-  
-pt(410).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(410).paramname = 'P5';
-pt(410).class     = 'scalar';
-pt(410).nrows     = 1;
-pt(410).ncols     = 1;
-pt(410).subsource = 'SS_DOUBLE';
-pt(410).ndims     = '2';
-pt(410).size      = '[]';
-pt(410).isStruct  = false;
-pt(410).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P5';
-pt(410).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P5';
-pt(410).dtname     = 'real_T';
-
-
-
-  
-pt(411).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(411).paramname = 'P6';
-pt(411).class     = 'scalar';
-pt(411).nrows     = 1;
-pt(411).ncols     = 1;
-pt(411).subsource = 'SS_DOUBLE';
-pt(411).ndims     = '2';
-pt(411).size      = '[]';
-pt(411).isStruct  = false;
-pt(411).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P6';
-pt(411).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P6';
-pt(411).dtname     = 'real_T';
-
-
-
-  
-pt(412).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3';
-pt(412).paramname = 'P7';
-pt(412).class     = 'scalar';
-pt(412).nrows     = 1;
-pt(412).ncols     = 1;
-pt(412).subsource = 'SS_DOUBLE';
-pt(412).ndims     = '2';
-pt(412).size      = '[]';
-pt(412).isStruct  = false;
-pt(412).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit3_P7';
-pt(412).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit3_P7';
-pt(412).dtname     = 'real_T';
-
-
-
-  
-pt(413).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(413).paramname = 'P1';
-pt(413).class     = 'vector';
-pt(413).nrows     = 1;
-pt(413).ncols     = 32;
-pt(413).subsource = 'SS_DOUBLE';
-pt(413).ndims     = '2';
-pt(413).size      = '[]';
-pt(413).isStruct  = false;
-pt(413).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P1';
-pt(413).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P1[0]';
-pt(413).dtname     = 'real_T';
-
-
-
-  
-pt(414).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(414).paramname = 'P2';
-pt(414).class     = 'scalar';
-pt(414).nrows     = 1;
-pt(414).ncols     = 1;
-pt(414).subsource = 'SS_DOUBLE';
-pt(414).ndims     = '2';
-pt(414).size      = '[]';
-pt(414).isStruct  = false;
-pt(414).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P2';
-pt(414).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P2';
-pt(414).dtname     = 'real_T';
-
-
-
-  
-pt(415).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(415).paramname = 'P3';
-pt(415).class     = 'scalar';
-pt(415).nrows     = 1;
-pt(415).ncols     = 1;
-pt(415).subsource = 'SS_DOUBLE';
-pt(415).ndims     = '2';
-pt(415).size      = '[]';
-pt(415).isStruct  = false;
-pt(415).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P3';
-pt(415).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P3';
-pt(415).dtname     = 'real_T';
-
-
-
-  
-pt(416).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(416).paramname = 'P4';
-pt(416).class     = 'scalar';
-pt(416).nrows     = 1;
-pt(416).ncols     = 1;
-pt(416).subsource = 'SS_DOUBLE';
-pt(416).ndims     = '2';
-pt(416).size      = '[]';
-pt(416).isStruct  = false;
-pt(416).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P4';
-pt(416).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P4';
-pt(416).dtname     = 'real_T';
-
-
-
-  
-pt(417).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(417).paramname = 'P5';
-pt(417).class     = 'scalar';
-pt(417).nrows     = 1;
-pt(417).ncols     = 1;
-pt(417).subsource = 'SS_DOUBLE';
-pt(417).ndims     = '2';
-pt(417).size      = '[]';
-pt(417).isStruct  = false;
-pt(417).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P5';
-pt(417).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P5';
-pt(417).dtname     = 'real_T';
-
-
-
-  
-pt(418).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(418).paramname = 'P6';
-pt(418).class     = 'scalar';
-pt(418).nrows     = 1;
-pt(418).ncols     = 1;
-pt(418).subsource = 'SS_DOUBLE';
-pt(418).ndims     = '2';
-pt(418).size      = '[]';
-pt(418).isStruct  = false;
-pt(418).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P6';
-pt(418).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P6';
-pt(418).dtname     = 'real_T';
-
-
-
-  
-pt(419).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4';
-pt(419).paramname = 'P7';
-pt(419).class     = 'scalar';
-pt(419).nrows     = 1;
-pt(419).ncols     = 1;
-pt(419).subsource = 'SS_DOUBLE';
-pt(419).ndims     = '2';
-pt(419).size      = '[]';
-pt(419).isStruct  = false;
-pt(419).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit4_P7';
-pt(419).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit4_P7';
-pt(419).dtname     = 'real_T';
-
-
-
-  
-pt(420).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(420).paramname = 'P1';
-pt(420).class     = 'vector';
-pt(420).nrows     = 1;
-pt(420).ncols     = 32;
-pt(420).subsource = 'SS_DOUBLE';
-pt(420).ndims     = '2';
-pt(420).size      = '[]';
-pt(420).isStruct  = false;
-pt(420).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P1_p';
-pt(420).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P1_p[0]';
-pt(420).dtname     = 'real_T';
-
-
-
-  
-pt(421).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(421).paramname = 'P2';
-pt(421).class     = 'scalar';
-pt(421).nrows     = 1;
-pt(421).ncols     = 1;
-pt(421).subsource = 'SS_DOUBLE';
-pt(421).ndims     = '2';
-pt(421).size      = '[]';
-pt(421).isStruct  = false;
-pt(421).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e';
-pt(421).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P2_e';
-pt(421).dtname     = 'real_T';
-
-
-
-  
-pt(422).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(422).paramname = 'P3';
-pt(422).class     = 'scalar';
-pt(422).nrows     = 1;
-pt(422).ncols     = 1;
-pt(422).subsource = 'SS_DOUBLE';
-pt(422).ndims     = '2';
-pt(422).size      = '[]';
-pt(422).isStruct  = false;
-pt(422).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P3_g';
-pt(422).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P3_g';
-pt(422).dtname     = 'real_T';
-
-
-
-  
-pt(423).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(423).paramname = 'P4';
-pt(423).class     = 'scalar';
-pt(423).nrows     = 1;
-pt(423).ncols     = 1;
-pt(423).subsource = 'SS_DOUBLE';
-pt(423).ndims     = '2';
-pt(423).size      = '[]';
-pt(423).isStruct  = false;
-pt(423).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P4_g';
-pt(423).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P4_g';
-pt(423).dtname     = 'real_T';
-
-
-
-  
-pt(424).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(424).paramname = 'P5';
-pt(424).class     = 'scalar';
-pt(424).nrows     = 1;
-pt(424).ncols     = 1;
-pt(424).subsource = 'SS_DOUBLE';
-pt(424).ndims     = '2';
-pt(424).size      = '[]';
-pt(424).isStruct  = false;
-pt(424).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P5_c';
-pt(424).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P5_c';
-pt(424).dtname     = 'real_T';
-
-
-
-  
-pt(425).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(425).paramname = 'P6';
-pt(425).class     = 'scalar';
-pt(425).nrows     = 1;
-pt(425).ncols     = 1;
-pt(425).subsource = 'SS_DOUBLE';
-pt(425).ndims     = '2';
-pt(425).size      = '[]';
-pt(425).isStruct  = false;
-pt(425).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P6_a';
-pt(425).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P6_a';
-pt(425).dtname     = 'real_T';
-
-
-
-  
-pt(426).blockname = 'EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5';
-pt(426).paramname = 'P7';
-pt(426).class     = 'scalar';
-pt(426).nrows     = 1;
-pt(426).ncols     = 1;
-pt(426).subsource = 'SS_DOUBLE';
-pt(426).ndims     = '2';
-pt(426).size      = '[]';
-pt(426).isStruct  = false;
-pt(426).symbol     = 'MARCH_v1_5_P.EtherCATPDOTransmit5_P7_h';
-pt(426).baseaddr   = '&MARCH_v1_5_P.EtherCATPDOTransmit5_P7_h';
-pt(426).dtname     = 'real_T';
-
-
-
-  
-pt(427).blockname = 'Input Device/Generate random block signal safety/Create peak1/Delay';
-pt(427).paramname = 'DelayLength';
-pt(427).class     = 'scalar';
-pt(427).nrows     = 1;
-pt(427).ncols     = 1;
-pt(427).subsource = 'SS_UINT32';
-pt(427).ndims     = '2';
-pt(427).size      = '[]';
-pt(427).isStruct  = false;
-pt(427).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_c';
-pt(427).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_c';
-pt(427).dtname     = 'uint32_T';
-
-
-
-  
-pt(428).blockname = 'Input Device/Generate random block signal safety/Create peak1/Delay';
-pt(428).paramname = 'InitialCondition';
-pt(428).class     = 'scalar';
-pt(428).nrows     = 1;
-pt(428).ncols     = 1;
-pt(428).subsource = 'SS_DOUBLE';
-pt(428).ndims     = '2';
-pt(428).size      = '[]';
-pt(428).isStruct  = false;
-pt(428).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_o';
-pt(428).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_o';
-pt(428).dtname     = 'real_T';
-
-
-
-  
-pt(429).blockname = 'Input Device/Generate random block signal safety/Create peak2/Delay';
-pt(429).paramname = 'DelayLength';
-pt(429).class     = 'scalar';
-pt(429).nrows     = 1;
-pt(429).ncols     = 1;
-pt(429).subsource = 'SS_UINT32';
-pt(429).ndims     = '2';
-pt(429).size      = '[]';
-pt(429).isStruct  = false;
-pt(429).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_i';
-pt(429).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_i';
-pt(429).dtname     = 'uint32_T';
-
-
-
-  
-pt(430).blockname = 'Input Device/Generate random block signal safety/Create peak2/Delay';
-pt(430).paramname = 'InitialCondition';
-pt(430).class     = 'scalar';
-pt(430).nrows     = 1;
-pt(430).ncols     = 1;
-pt(430).subsource = 'SS_DOUBLE';
-pt(430).ndims     = '2';
-pt(430).size      = '[]';
-pt(430).isStruct  = false;
-pt(430).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_fr';
-pt(430).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_fr';
-pt(430).dtname     = 'real_T';
-
-
-
-  
-pt(431).blockname = 'Input Device/Generate random block signal safety/Create peak3/Delay';
-pt(431).paramname = 'DelayLength';
-pt(431).class     = 'scalar';
-pt(431).nrows     = 1;
-pt(431).ncols     = 1;
-pt(431).subsource = 'SS_UINT32';
-pt(431).ndims     = '2';
-pt(431).size      = '[]';
-pt(431).isStruct  = false;
-pt(431).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_ij';
-pt(431).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_ij';
-pt(431).dtname     = 'uint32_T';
-
-
-
-  
-pt(432).blockname = 'Input Device/Generate random block signal safety/Create peak3/Delay';
-pt(432).paramname = 'InitialCondition';
-pt(432).class     = 'scalar';
-pt(432).nrows     = 1;
-pt(432).ncols     = 1;
-pt(432).subsource = 'SS_DOUBLE';
-pt(432).ndims     = '2';
-pt(432).size      = '[]';
-pt(432).isStruct  = false;
-pt(432).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_b';
-pt(432).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_b';
-pt(432).dtname     = 'real_T';
-
-
-
-  
-pt(433).blockname = 'Input Device/Generate random block signal trigger/Create peak1/Delay';
-pt(433).paramname = 'DelayLength';
-pt(433).class     = 'scalar';
-pt(433).nrows     = 1;
-pt(433).ncols     = 1;
-pt(433).subsource = 'SS_UINT32';
-pt(433).ndims     = '2';
-pt(433).size      = '[]';
-pt(433).isStruct  = false;
-pt(433).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_d';
-pt(433).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_d';
-pt(433).dtname     = 'uint32_T';
-
-
-
-  
-pt(434).blockname = 'Input Device/Generate random block signal trigger/Create peak1/Delay';
-pt(434).paramname = 'InitialCondition';
-pt(434).class     = 'scalar';
-pt(434).nrows     = 1;
-pt(434).ncols     = 1;
-pt(434).subsource = 'SS_DOUBLE';
-pt(434).ndims     = '2';
-pt(434).size      = '[]';
-pt(434).isStruct  = false;
-pt(434).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_i';
-pt(434).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_i';
-pt(434).dtname     = 'real_T';
-
-
-
-  
-pt(435).blockname = 'Input Device/Generate random block signal trigger/Create peak2/Delay';
-pt(435).paramname = 'DelayLength';
-pt(435).class     = 'scalar';
-pt(435).nrows     = 1;
-pt(435).ncols     = 1;
-pt(435).subsource = 'SS_UINT32';
-pt(435).ndims     = '2';
-pt(435).size      = '[]';
-pt(435).isStruct  = false;
-pt(435).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_n';
-pt(435).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_n';
-pt(435).dtname     = 'uint32_T';
-
-
-
-  
-pt(436).blockname = 'Input Device/Generate random block signal trigger/Create peak2/Delay';
-pt(436).paramname = 'InitialCondition';
-pt(436).class     = 'scalar';
-pt(436).nrows     = 1;
-pt(436).ncols     = 1;
-pt(436).subsource = 'SS_DOUBLE';
-pt(436).ndims     = '2';
-pt(436).size      = '[]';
-pt(436).isStruct  = false;
-pt(436).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_f';
-pt(436).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_f';
-pt(436).dtname     = 'real_T';
-
-
-
-  
-pt(437).blockname = 'Input Device/Generate random block signal trigger/Create peak3/Delay';
-pt(437).paramname = 'DelayLength';
-pt(437).class     = 'scalar';
-pt(437).nrows     = 1;
-pt(437).ncols     = 1;
-pt(437).subsource = 'SS_UINT32';
-pt(437).ndims     = '2';
-pt(437).size      = '[]';
-pt(437).isStruct  = false;
-pt(437).symbol     = 'MARCH_v1_5_P.Delay_DelayLength_m';
-pt(437).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength_m';
-pt(437).dtname     = 'uint32_T';
-
-
-
-  
-pt(438).blockname = 'Input Device/Generate random block signal trigger/Create peak3/Delay';
-pt(438).paramname = 'InitialCondition';
-pt(438).class     = 'scalar';
-pt(438).nrows     = 1;
-pt(438).ncols     = 1;
-pt(438).subsource = 'SS_DOUBLE';
-pt(438).ndims     = '2';
-pt(438).size      = '[]';
-pt(438).isStruct  = false;
-pt(438).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition_fm';
-pt(438).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition_fm';
-pt(438).dtname     = 'real_T';
-
-
-
-  
-pt(439).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator';
-pt(439).paramname = 'gainval';
-pt(439).class     = 'scalar';
-pt(439).nrows     = 1;
-pt(439).ncols     = 1;
-pt(439).subsource = 'SS_DOUBLE';
-pt(439).ndims     = '2';
-pt(439).size      = '[]';
-pt(439).isStruct  = false;
-pt(439).symbol     = 'MARCH_v1_5_P.Integrator_gainval';
-pt(439).baseaddr   = '&MARCH_v1_5_P.Integrator_gainval';
-pt(439).dtname     = 'real_T';
-
-
-
-  
-pt(440).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator';
-pt(440).paramname = 'InitialCondition';
-pt(440).class     = 'scalar';
-pt(440).nrows     = 1;
-pt(440).ncols     = 1;
-pt(440).subsource = 'SS_DOUBLE';
-pt(440).ndims     = '2';
-pt(440).size      = '[]';
-pt(440).isStruct  = false;
-pt(440).symbol     = 'MARCH_v1_5_P.Integrator_IC';
-pt(440).baseaddr   = '&MARCH_v1_5_P.Integrator_IC';
-pt(440).dtname     = 'real_T';
-
-
-
-  
-pt(441).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/TSamp';
-pt(441).paramname = 'WtEt';
-pt(441).class     = 'scalar';
-pt(441).nrows     = 1;
-pt(441).ncols     = 1;
-pt(441).subsource = 'SS_DOUBLE';
-pt(441).ndims     = '2';
-pt(441).size      = '[]';
-pt(441).isStruct  = false;
-pt(441).symbol     = 'MARCH_v1_5_P.TSamp_WtEt';
-pt(441).baseaddr   = '&MARCH_v1_5_P.TSamp_WtEt';
-pt(441).dtname     = 'real_T';
-
-
-
-  
-pt(442).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD';
-pt(442).paramname = 'DelayLength';
-pt(442).class     = 'scalar';
-pt(442).nrows     = 1;
-pt(442).ncols     = 1;
-pt(442).subsource = 'SS_UINT32';
-pt(442).ndims     = '2';
-pt(442).size      = '[]';
-pt(442).isStruct  = false;
-pt(442).symbol     = 'MARCH_v1_5_P.UD_DelayLength';
-pt(442).baseaddr   = '&MARCH_v1_5_P.UD_DelayLength';
-pt(442).dtname     = 'uint32_T';
-
-
-
-  
-pt(443).blockname = 'Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD';
-pt(443).paramname = 'InitialCondition';
-pt(443).class     = 'scalar';
-pt(443).nrows     = 1;
-pt(443).ncols     = 1;
-pt(443).subsource = 'SS_DOUBLE';
-pt(443).ndims     = '2';
-pt(443).size      = '[]';
-pt(443).isStruct  = false;
-pt(443).symbol     = 'MARCH_v1_5_P.UD_InitialCondition';
-pt(443).baseaddr   = '&MARCH_v1_5_P.UD_InitialCondition';
-pt(443).dtname     = 'real_T';
-
-
-
-  
-pt(444).blockname = '';
-pt(444).paramname = 'par';
-pt(444).class     = 'scalar';
-pt(444).nrows     = 1;
-pt(444).ncols     = 1;
-pt(444).subsource = '';
-pt(444).ndims     = '2';
-pt(444).size      = '[]';
-pt(444).isStruct  = true;
-pt(444).symbol     = 'MARCH_v1_5_P.par';
-pt(444).baseaddr   = '&MARCH_v1_5_P.par';
-pt(444).dtname     = 'struct_qp5kuiWII5n5rBhED3GonD';
-pt(444).elements(1).symbol     = 'dimensions';
-pt(444).elements(1).nrows     = 1;
-pt(444).elements(1).ncols     = 1;
-pt(444).elements(1).dtname     = 'struct_ZpgCdW5JtuB5cVmaeyPorE';
-pt(444).elements(2).symbol     = 'encoder_limit';
-pt(444).elements(2).nrows     = 1;
-pt(444).elements(2).ncols     = 1;
-pt(444).elements(2).dtname     = 'struct_OBtc9Z7kNaOBweUN8UV7FC';
-pt(444).elements(3).symbol     = 'jointAngle_limit';
-pt(444).elements(3).nrows     = 1;
-pt(444).elements(3).ncols     = 1;
-pt(444).elements(3).dtname     = 'struct_OBtc9Z7kNaOBweUN8UV7FC';
-pt(444).elements(4).symbol     = 'joint_limit_min';
-pt(444).elements(4).nrows     = 1;
-pt(444).elements(4).ncols     = 6;
-pt(444).elements(4).dtname     = 'real_T';
-pt(444).elements(5).symbol     = 'joint_limit_max';
-pt(444).elements(5).nrows     = 1;
-pt(444).elements(5).ncols     = 6;
-pt(444).elements(5).dtname     = 'real_T';
+pt(402).isStruct  = true;
+pt(402).symbol     = 'MARCH_v1_5_P.par';
+pt(402).baseaddr   = '&MARCH_v1_5_P.par';
+pt(402).dtname     = 'struct_qp5kuiWII5n5rBhED3GonD';
+pt(402).elements(1).symbol     = 'dimensions';
+pt(402).elements(1).nrows     = 1;
+pt(402).elements(1).ncols     = 1;
+pt(402).elements(1).dtname     = 'struct_ZpgCdW5JtuB5cVmaeyPorE';
+pt(402).elements(2).symbol     = 'encoder_limit';
+pt(402).elements(2).nrows     = 1;
+pt(402).elements(2).ncols     = 1;
+pt(402).elements(2).dtname     = 'struct_OBtc9Z7kNaOBweUN8UV7FC';
+pt(402).elements(3).symbol     = 'jointAngle_limit';
+pt(402).elements(3).nrows     = 1;
+pt(402).elements(3).ncols     = 1;
+pt(402).elements(3).dtname     = 'struct_OBtc9Z7kNaOBweUN8UV7FC';
+pt(402).elements(4).symbol     = 'joint_limit_min';
+pt(402).elements(4).nrows     = 1;
+pt(402).elements(4).ncols     = 6;
+pt(402).elements(4).dtname     = 'real_T';
+pt(402).elements(5).symbol     = 'joint_limit_max';
+pt(402).elements(5).nrows     = 1;
+pt(402).elements(5).ncols     = 6;
+pt(402).elements(5).dtname     = 'real_T';
 
 
 function len = getlenPT
-len = 444;
+len = 402;
 

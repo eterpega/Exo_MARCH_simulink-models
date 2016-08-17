@@ -1,5 +1,232 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel2" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED15" children="Controls">
+      <Property name="BindingSrcPath">Controllers/Hold/Constant/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Text">Reset hold</Property>
+      <Property name="Size">98, 59</Property>
+      <Property name="Location">864, 366</Property>
+      <Property name="Name">SwitchLED15</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox7" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
+        <Property name="Text">LKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 263</Property>
+        <Property name="Name">Label7</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+        <Property name="Text">LHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 213</Property>
+        <Property name="Name">Label6</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label5" children="Controls">
+        <Property name="Text">LHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 168</Property>
+        <Property name="Name">Label5</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label4" children="Controls">
+        <Property name="Text">RKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 120</Property>
+        <Property name="Name">Label4</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label3" children="Controls">
+        <Property name="Text">RHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 80</Property>
+        <Property name="Name">Label3</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+        <Property name="Text">RHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 33</Property>
+        <Property name="Name">Label2</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay12" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LKFE1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 261</Property>
+        <Property name="Name">NumericDisplay12</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay10" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LHFE1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 211</Property>
+        <Property name="Name">NumericDisplay10</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay8" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LHAA1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 166</Property>
+        <Property name="Name">NumericDisplay8</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RKFE1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 118</Property>
+        <Property name="Name">NumericDisplay6</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RHFE1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 78</Property>
+        <Property name="Name">NumericDisplay4</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RHAA1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">24, 32</Property>
+        <Property name="Name">NumericDisplay3</Property>
+      </Object>
+      <Property name="Text">Measured values</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">453, 350</Property>
+      <Property name="Name">GroupBox7</Property>
+      <Property name="Size">262, 312</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox6" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
+        <Property name="Text">LKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 263</Property>
+        <Property name="Name">Label8</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
+        <Property name="Text">LHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 213</Property>
+        <Property name="Name">Label9</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label10" children="Controls">
+        <Property name="Text">LHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 168</Property>
+        <Property name="Name">Label10</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label11" children="Controls">
+        <Property name="Text">RKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 120</Property>
+        <Property name="Name">Label11</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label12" children="Controls">
+        <Property name="Text">RHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 80</Property>
+        <Property name="Name">Label12</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label13" children="Controls">
+        <Property name="Text">RHAA</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">170, 33</Property>
+        <Property name="Name">Label13</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay13" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LKFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 263</Property>
+        <Property name="Name">NumericDisplay13</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay11" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LHFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 213</Property>
+        <Property name="Name">NumericDisplay11</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay9" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">LHAA</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 168</Property>
+        <Property name="Name">NumericDisplay9</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay7" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RKFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 120</Property>
+        <Property name="Name">NumericDisplay7</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay5" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RHFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 80</Property>
+        <Property name="Name">NumericDisplay5</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">RHAA</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">39, 34</Property>
+        <Property name="Name">NumericDisplay2</Property>
+      </Object>
+      <Property name="Text">Controller Output</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">156, 350</Property>
+      <Property name="Name">GroupBox6</Property>
+      <Property name="Size">291, 312</Property>
+    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED10" children="Controls">
         <Property name="BindingSrcPath">Input Device/Both Safety/Value</Property>
@@ -69,6 +296,23 @@
       <Property name="Size">262, 257</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+        <Property name="Text">State</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">16, 174</Property>
+        <Property name="Name">Label1</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">Controllers/Switcher/p1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="Size">116, 25</Property>
+        <Property name="Location">16, 200</Property>
+        <Property name="Name">NumericDisplay1</Property>
+      </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
         <Property name="BindingSrcPath">Input Device/Right Scroll Click/Value</Property>
         <Property name="TargetName">SpeedGoat</Property>
@@ -92,5 +336,5 @@
       <Property name="Name">GroupBox1</Property>
       <Property name="Size">423, 257</Property>
     </Object>
-    <Property name="ClientSize">1920, 1200</Property>
+    <Property name="ClientSize">1920, 1080</Property>
   </Object>

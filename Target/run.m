@@ -4,7 +4,7 @@ function run(location)
 % model to function on your local host.
 
 % Define model as single cell array
-model = {'MARCH_v1_5'};
+model = {'MARCH_v1_6'};
 
 % Load the model in memory before we open it.
 open_system(model{1});
@@ -35,7 +35,7 @@ set_param([model{1} '/Simulation Pace'],'commented',local)
 
 % Set EtherCAT Config File
 if(targetValue)
-   config = fullfile(fileparts(pwd),'EtherCAT Config Files','quad_slave_both_legs_v1.0.xml');
+   config = fullfile(fileparts(pwd),'EtherCAT Config Files','full_setup_v1.0.xml');
    set_param([model{1} '/EtherCAT Initialization/EtherCAT Init'],'config_file',config)
 end
 
@@ -78,7 +78,7 @@ set_param([model{1} '/GUI Communication'],'commented',target)
 set_param([model{1} '/Pilot Feedback'],'commented',target)
 
 % Disable 0-torque joint controllers during local simulation
-set_param([model{1} '/Controllers/0-Torque/RHAA'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/RHFE'],'commented',target)
 % set_param([model{1} '/Controllers/0-Torque/LHAA'],'commented',target)
 % set_param([model{1} '/Controllers/0-Torque/RHFE'],'commented',target)
 % set_param([model{1} '/Controllers/0-Torque/LHFE'],'commented',target)

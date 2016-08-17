@@ -67,10 +67,8 @@
         <Property name="Name">Slider5</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED9" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
+        <Property name="BindingSrcPath" />
+        <Property name="TargetName" />
         <Property name="BindingSrcType">None</Property>
         <Property name="Text">Velocity Override</Property>
         <Property name="Size">190, 40</Property>
@@ -166,11 +164,9 @@
         <Property name="Name">SwitchLED5</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
-        <Property name="BindingSrcPath">
-        </Property>
-        <Property name="TargetName">
-        </Property>
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Hips/motor enable/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
         <Property name="Size">190, 40</Property>
         <Property name="Location">3, 45</Property>
