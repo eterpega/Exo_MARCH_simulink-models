@@ -1387,6 +1387,18 @@
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>done</blkName>
+            <xpcblkName>Controllers/SitDown/done</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/SitDown/done</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
  
             <block>
@@ -1411,8 +1423,20 @@
               
        
               <signal>
-              <sigName>Trajectory</sigName>
-              <xpcsigName>Controllers/SitDown/Trajectory</xpcsigName>
+              <sigName>Trajectory/p1</sigName>
+              <xpcsigName>Controllers/SitDown/Trajectory/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Trajectory/p2</sigName>
+              <xpcsigName>Controllers/SitDown/Trajectory/p2</xpcsigName>
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
