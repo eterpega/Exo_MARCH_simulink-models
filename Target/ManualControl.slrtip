@@ -1,13 +1,21 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ManualControl" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED13" children="Controls">
+      <Property name="BindingSrcPath">ManualControl/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">71, 38</Property>
+      <Property name="Location">1244, 57</Property>
+      <Property name="Name">SwitchLED13</Property>
+    </Object>
     <Object type="System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Panel6" children="Controls">
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">RKFE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">29, 10</Property>
         <Property name="Name">Label6</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">136, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -19,7 +27,7 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">114, 212</Property>
+        <Property name="Location">96, 212</Property>
         <Property name="Name">Slider6</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED11" children="Controls">
@@ -27,8 +35,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">136, 40</Property>
+        <Property name="Location">29, 130</Property>
         <Property name="Name">SwitchLED11</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED12" children="Controls">
@@ -36,8 +44,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">136, 40</Property>
+        <Property name="Location">29, 45</Property>
         <Property name="Name">SwitchLED12</Property>
       </Object>
       <Property name="Location">1022, 12</Property>
@@ -49,9 +57,9 @@
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">RHFE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">32, 10</Property>
         <Property name="Name">Label5</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">132, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -63,16 +71,16 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">115, 212</Property>
+        <Property name="Location">95, 212</Property>
         <Property name="Name">Slider5</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED9" children="Controls">
-        <Property name="BindingSrcPath" />
-        <Property name="TargetName" />
-        <Property name="BindingSrcType">None</Property>
+        <Property name="BindingSrcPath">EtherCAT Motor Parameters/Right Leg/velocity override/Value</Property>
+        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">132, 40</Property>
+        <Property name="Location">32, 130</Property>
         <Property name="Name">SwitchLED9</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED10" children="Controls">
@@ -80,8 +88,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">132, 40</Property>
+        <Property name="Location">32, 45</Property>
         <Property name="Name">SwitchLED10</Property>
       </Object>
       <Property name="Location">820, 12</Property>
@@ -93,9 +101,9 @@
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">RHAA</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">28, 10</Property>
         <Property name="Name">Label4</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">137, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -107,7 +115,7 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">124, 212</Property>
+        <Property name="Location">96, 212</Property>
         <Property name="Name">Slider4</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED7" children="Controls">
@@ -115,8 +123,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">137, 40</Property>
+        <Property name="Location">28, 130</Property>
         <Property name="Name">SwitchLED7</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED8" children="Controls">
@@ -124,8 +132,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">137, 40</Property>
+        <Property name="Location">28, 45</Property>
         <Property name="Name">SwitchLED8</Property>
       </Object>
       <Property name="Location">618, 12</Property>
@@ -137,9 +145,9 @@
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">LHAA</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">31, 10</Property>
         <Property name="Name">Label3</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">138, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -151,7 +159,7 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">124, 212</Property>
+        <Property name="Location">100, 212</Property>
         <Property name="Name">Slider3</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
@@ -159,8 +167,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">138, 40</Property>
+        <Property name="Location">31, 130</Property>
         <Property name="Name">SwitchLED5</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
@@ -168,8 +176,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">138, 40</Property>
+        <Property name="Location">31, 45</Property>
         <Property name="Name">SwitchLED6</Property>
       </Object>
       <Property name="Location">416, 12</Property>
@@ -181,9 +189,9 @@
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">LHFE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">25, 10</Property>
         <Property name="Name">Label2</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">150, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -195,7 +203,7 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">124, 212</Property>
+        <Property name="Location">106, 212</Property>
         <Property name="Name">Slider2</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
@@ -203,8 +211,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">150, 40</Property>
+        <Property name="Location">25, 130</Property>
         <Property name="Name">SwitchLED3</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
@@ -212,8 +220,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">150, 40</Property>
+        <Property name="Location">25, 45</Property>
         <Property name="Name">SwitchLED4</Property>
       </Object>
       <Property name="Location">214, 12</Property>
@@ -225,9 +233,9 @@
         <Property name="TextAlign">MiddleCenter</Property>
         <Property name="Text">LKFE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">3, 10</Property>
+        <Property name="Location">26, 10</Property>
         <Property name="Name">Label1</Property>
-        <Property name="Size">190, 23</Property>
+        <Property name="Size">144, 23</Property>
       </Object>
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
@@ -239,7 +247,7 @@
           <Property name="Span">1000</Property>
         </Property>
         <Property name="Size">69, 544</Property>
-        <Property name="Location">124, 212</Property>
+        <Property name="Location">101, 212</Property>
         <Property name="Name">Slider1</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
@@ -247,8 +255,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Velocity Override</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 130</Property>
+        <Property name="Size">144, 40</Property>
+        <Property name="Location">26, 130</Property>
         <Property name="Name">SwitchLED2</Property>
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
@@ -256,8 +264,8 @@
         <Property name="TargetName">SpeedGoat</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Text">Motor Enable</Property>
-        <Property name="Size">190, 40</Property>
-        <Property name="Location">3, 45</Property>
+        <Property name="Size">144, 40</Property>
+        <Property name="Location">26, 45</Property>
         <Property name="Name">SwitchLED1</Property>
       </Object>
       <Property name="Location">12, 12</Property>
