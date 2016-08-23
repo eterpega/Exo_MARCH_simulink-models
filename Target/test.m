@@ -1,46 +1,21 @@
-close all
+clc
 clear all
-s= 100;
-f = 1000;
-time = 5;
-q_t = importdata('q_t.mat');
-data = q_t(:,2);
-data2 = q_t(:,3);
+s = splineController();
+r = robotics();
 
-% t = linspace(0,time,s);
-% 
-% th = linspace( pi, 0.5*pi, s);
-% 
-% t_vector = (time*cos(th)+time);
-% s_vector = s*sin(th);
-% 
-% plot(t,data);
-% 
-% figure
-% 
-% plot(t_vector,s_vector)
-% 
-% for i = 1:length(t_vector)-1
-%    
-%     sample = s_vector(i);
-%     i
-%     k(i) = (data(i+1) - data(i))/(i+1-i)*(sample-i)+(data(i));
-%     
-% end
-% 
-% figure
-% t(end) = [];
-% scatter(t,k)
+curve = s.getCustomEaseTimeCurve(0.3,1);
+r.refresh();
+r.inverseKinematics();
+q_f = r.q;
 
-x = linspace(0,s/f,s);
-time = smf2(x,[0 (s/f)]);
-tic
-data3 = retime(data,time);
-data4 = retime(data2,time);
-toc
+q_i = [0 -2.15 1.8 0 -2.15 1.8];
 
-figure
-scatter(data3,data4)
-title('retimed position');
+q_t = s.getStandupJointTrajectory(q_i,q_f);
 
+for i = 1:length(q_t)
+   q(i) = s.easeTrajectory(q_t(:,2),i,curve); 
+end
 
+plot(q_t(:,2))
+hold on
+plot(q);
