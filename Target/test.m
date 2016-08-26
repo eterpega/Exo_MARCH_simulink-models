@@ -1,21 +1,18 @@
-clc
-clear all
-s = splineController();
-r = robotics();
+clc;clear;close all;
 
-curve = s.getCustomEaseTimeCurve(0.3,1);
-r.refresh();
-r.inverseKinematics();
-q_f = r.q;
+rp = 105.658/1000; %[mm]
+rd = 44.80/1000; %[mm]
+lead = 4/1000;
+springAngle = 0:0.01:133/180*pi;
 
-q_i = [0 -2.15 1.8 0 -2.15 1.8];
+l = sqrt(rp^2 + rd^2 + 2*rp*rd*cos(springAngle));
+% l = fliplr(l);
+d = rp*rd*sin(springAngle)./l;
 
-q_t = s.getStandupJointTrajectory(q_i,q_f);
+N = d.*2*pi/lead;
 
-for i = 1:length(q_t)
-   q(i) = s.easeTrajectory(q_t(:,2),i,curve); 
-end
 
-plot(q_t(:,2))
-hold on
-plot(q);
+% plot(springAngle,d)
+plot(springAngle,N)
+figure
+plot(springAngle,d)
