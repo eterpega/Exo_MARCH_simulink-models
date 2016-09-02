@@ -46,6 +46,12 @@ set_param([model{1} '/Input Device/EtherCAT Input Device'],'commented',target)
 set_param([model{1} '/Point&Go/EtherCAT Point&Go'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Data In'],'commented',target)
 set_param([model{1} '/EtherCAT Joint Setpoints'],'commented',target)
+set_param([model{1} '/Controllers/Joint Angles'],'commented',target)
+set_param([model{1} '/Controllers/Input Device'],'commented',target)
+set_param([model{1} '/Input Device/Input Device'],'commented',target)
+set_param([model{1} '/State Machine/State Machine Output'],'commented',target)
+set_param([model{1} '/Controllers/0-Torque/Motor enable'],'commented',target)
+set_param([model{1} '/Controllers/Hold/Motor enable'],'commented',target)
 
 % Disable blocks for target simulation
 set_param([model{1} '/UDP Send'],'commented',local)
