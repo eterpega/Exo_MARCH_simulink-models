@@ -1,5 +1,15 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ManualControl" children="Controls">
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+      <Property name="BindingSrcType">Signal</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">Gain8</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">1244, 293</Property>
+      <Property name="Name">NumericDisplay1</Property>
+    </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED13" children="Controls">
       <Property name="BindingSrcPath">ManualControl/Value</Property>
       <Property name="TargetName">SpeedGoat</Property>

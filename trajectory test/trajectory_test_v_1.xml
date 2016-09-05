@@ -421,42 +421,6 @@
 
     </SubSystem>
     <SubSystem>
-    <Name>Scope 3</Name>
-    <xPCName>trajectory_test_v_1/Scope 3</xPCName>
-    
-    
-
-
-    
-    
-
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Scope 4</Name>
-    <xPCName>trajectory_test_v_1/Scope 4</xPCName>
-    
-    
-
-
-    
-    
-
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Scope 5</Name>
-    <xPCName>trajectory_test_v_1/Scope 5</xPCName>
-    
-    
-
-
-    
-    
-
-
-    </SubSystem>
-    <SubSystem>
     <Name>MATLAB Function</Name>
     <xPCName>trajectory_test_v_1/MATLAB Function</xPCName>
     
@@ -469,16 +433,13 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Torso Trajectory</Name>
-    <xPCName>trajectory_test_v_1/Torso Trajectory</xPCName>
+    <Name>Trajectory</Name>
+    <xPCName>trajectory_test_v_1/Trajectory</xPCName>
     
     
     </SubSystem>
 
       
-
-
-
 
 
 
@@ -523,9 +484,9 @@
 
  
             <block>
-            <blkName>Constant1</blkName>
-            <xpcblkName>Constant1</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Constant1</SLblockPath>
+            <blkName>Motor Enable</blkName>
+            <xpcblkName>Motor Enable</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/Motor Enable</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -535,57 +496,9 @@
 
  
             <block>
-            <blkName>LHAA_p</blkName>
-            <xpcblkName>LHAA_p</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/LHAA_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>LHFE_p</blkName>
-            <xpcblkName>LHFE_p</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/LHFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>LKFE_p</blkName>
-            <xpcblkName>LKFE_p</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/LKFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>RHAA_p</blkName>
-            <xpcblkName>RHAA_p</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/RHAA_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>RHFE_p</blkName>
-            <xpcblkName>RHFE_p</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/RHFE_p</SLblockPath>
+            <blkName>RKFE_d</blkName>
+            <xpcblkName>RKFE_d</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/RKFE_d</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -605,75 +518,13 @@
           </parameter>
           </block>
 
- 
-            <block>
-            <blkName>RKFE_p1</blkName>
-            <xpcblkName>RKFE_p1</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/RKFE_p1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
-
-
-
-
- 
-            <block>
-            <blkName>Gain</blkName>
-            <xpcblkName>Gain</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
  
             <block>
             <blkName>Gain1</blkName>
             <xpcblkName>Gain1</xpcblkName>
             <SLblockPath>trajectory_test_v_1/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain2</blkName>
-            <xpcblkName>Gain2</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Gain2</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain3</blkName>
-            <xpcblkName>Gain3</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Gain3</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain4</blkName>
-            <xpcblkName>Gain4</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Gain4</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>Gain</paramName>
@@ -695,105 +546,9 @@
 
  
             <block>
-            <blkName>Gain6</blkName>
-            <xpcblkName>Gain6</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/Gain6</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Receive1</blkName>
-            <xpcblkName>EtherCAT PDO Receive1</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Receive1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Receive9</blkName>
-            <xpcblkName>EtherCAT PDO Receive9</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Receive9</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 1</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 1</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 1</SLblockPath>
+            <blkName>EtherCAT D-Gain</blkName>
+            <xpcblkName>EtherCAT D-Gain</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/EtherCAT D-Gain</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -833,181 +588,55 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 2</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 2</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 2</SLblockPath>
+            <blkName>EtherCAT Motor Enable</blkName>
+            <xpcblkName>EtherCAT Motor Enable</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/EtherCAT Motor Enable</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT P-Gain</blkName>
+            <xpcblkName>EtherCAT P-Gain</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/EtherCAT P-Gain</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 27]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 3</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 3</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 3</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 25]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 4</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 4</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 4</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 26]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 5</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 5</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 5</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 26]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 6</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 6</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 6</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 25]</dim>  
           </parameter>
  
           <parameter>
@@ -1085,13 +714,13 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 8</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 8</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 8</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
+            <blkName>Simulation Pace</blkName>
+            <xpcblkName>Simulation Pace</xpcblkName>
+            <SLblockPath>trajectory_test_v_1/Simulation Pace</SLblockPath>
+            <isSrc>[0 0 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 31]</dim>  
+          <dim>[1, 1]</dim>  
           </parameter>
  
           <parameter>
@@ -1106,66 +735,10 @@
  
           <parameter>
           <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 9</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 9</xpcblkName>
-            <SLblockPath>trajectory_test_v_1/EtherCAT PDO Transmit 9</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 27]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
 
     
@@ -1199,6 +772,7 @@
               <xpcsigName>MATLAB Function1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>encoderOut</sigLabel>
             </signal>
 
 
@@ -1212,8 +786,8 @@
               
        
               <signal>
-              <sigName>Torso Trajectory</sigName>
-              <xpcsigName>Torso Trajectory</xpcsigName>
+              <sigName>Trajectory</sigName>
+              <xpcsigName>Trajectory</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1235,41 +809,11 @@
               
        
               <signal>
-              <sigName>Constant1</sigName>
-              <xpcsigName>Constant1</xpcsigName>
+              <sigName>Motor Enable</sigName>
+              <xpcsigName>Motor Enable</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
 
 
     
@@ -1298,6 +842,7 @@
               <xpcsigName>Data Type Conversion</xpcsigName>
               <sigWidth>6</sigWidth>
               <sigDim>[6, 1]</sigDim>
+                <sigLabel>encoderIn</sigLabel>
             </signal>
 
 
@@ -1313,57 +858,6 @@
               <signal>
               <sigName>Data Type Conversion1</sigName>
               <xpcsigName>Data Type Conversion1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion2</sigName>
-              <xpcsigName>Data Type Conversion2</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion3</sigName>
-              <xpcsigName>Data Type Conversion3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain</sigName>
-              <xpcsigName>Gain</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1396,128 +890,11 @@
               
        
               <signal>
-              <sigName>Gain2</sigName>
-              <xpcsigName>Gain2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain3</sigName>
-              <xpcsigName>Gain3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain4</sigName>
-              <xpcsigName>Gain4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
               <sigName>Gain5</sigName>
               <xpcsigName>Gain5</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain6</sigName>
-              <xpcsigName>Gain6</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT PDO Receive1</sigName>
-              <xpcsigName>EtherCAT PDO Receive1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT PDO Receive9</sigName>
-              <xpcsigName>EtherCAT PDO Receive9</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-
-    
-    
-
-
-
-    
-    
-
 
 
     
