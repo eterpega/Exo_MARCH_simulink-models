@@ -964,8 +964,8 @@
 
     </SubSystem>
     <SubSystem>
-    <Name>Input Device </Name>
-    <xPCName>MARCH_v1_5/Controllers/Input Device </xPCName>
+    <Name>Input Device</Name>
+    <xPCName>MARCH_v1_5/Controllers/Input Device</xPCName>
     
     
 
@@ -1120,6 +1120,30 @@
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>Controllers/SitDown/Constant1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/SitDown/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 6]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Torso Height</blkName>
+            <xpcblkName>Controllers/SitDown/Torso Height</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/SitDown/Torso Height</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
     
     
@@ -1148,6 +1172,18 @@
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
 
 
     
@@ -2270,9 +2306,9 @@ Switch1</sigName>
     
  
             <block>
-            <blkName>EtherCAT PDO Receive</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</SLblockPath>
+            <blkName>LHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2312,13 +2348,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive1</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</SLblockPath>
+            <blkName>LHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2354,13 +2390,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive2</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</SLblockPath>
+            <blkName>LKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2396,9 +2432,9 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive3</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</SLblockPath>
+            <blkName>RHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2438,13 +2474,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive4</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</SLblockPath>
+            <blkName>RHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2480,13 +2516,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive5</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</SLblockPath>
+            <blkName>RKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2531,8 +2567,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</xpcsigName>
+              <sigName>LHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2548,8 +2584,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive1</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</xpcsigName>
+              <sigName>LHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2565,8 +2601,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive2</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</xpcsigName>
+              <sigName>LKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2582,8 +2618,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive3</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</xpcsigName>
+              <sigName>RHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2599,8 +2635,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive4</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</xpcsigName>
+              <sigName>RHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2616,8 +2652,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive5</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</xpcsigName>
+              <sigName>RKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -5756,8 +5792,8 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Input Device </Name>
-    <xPCName>MARCH_v1_5/Input Device/Input Device </xPCName>
+    <Name>Input Device</Name>
+    <xPCName>MARCH_v1_5/Input Device/Input Device</xPCName>
     
     
 
@@ -6177,6 +6213,18 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>Joint Angles</Name>
+    <xPCName>MARCH_v1_5/Joint Angles</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>Point&amp;Go</Name>
     <xPCName>MARCH_v1_5/Point&amp;Go</xPCName>
         <SubSystem>
@@ -6412,8 +6460,8 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>State Machine Output </Name>
-    <xPCName>MARCH_v1_5/State Machine/State Machine Output </xPCName>
+    <Name>State Machine Output</Name>
+    <xPCName>MARCH_v1_5/State Machine/State Machine Output</xPCName>
     
     
 
@@ -6611,9 +6659,9 @@ Switch1</sigName>
     
  
             <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Torque compensation controller/Constant</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Torque compensation controller/Constant</SLblockPath>
+            <blkName>HAA Offset</blkName>
+            <xpcblkName>Torque compensation controller/HAA Offset</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/HAA Offset</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -6742,41 +6790,6 @@ Switch1</sigName>
 
 
 
- 
-            <block>
-            <blkName>LHAA_p</blkName>
-            <xpcblkName>LHAA_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/LHAA_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>LHFE_p</blkName>
-            <xpcblkName>LHFE_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/LHFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>LKFE_p</blkName>
-            <xpcblkName>LKFE_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/LKFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
  
             <block>
@@ -6790,125 +6803,7 @@ Switch1</sigName>
           </parameter>
           </block>
 
- 
-            <block>
-            <blkName>RHAA_p</blkName>
-            <xpcblkName>RHAA_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/RHAA_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
- 
-            <block>
-            <blkName>RHFE_p</blkName>
-            <xpcblkName>RHFE_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/RHFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>RKFE_p</blkName>
-            <xpcblkName>RKFE_p</xpcblkName>
-            <SLblockPath>MARCH_v1_5/RKFE_p</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain</blkName>
-            <xpcblkName>Gain</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>Gain1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain2</blkName>
-            <xpcblkName>Gain2</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain2</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain3</blkName>
-            <xpcblkName>Gain3</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain3</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain4</blkName>
-            <xpcblkName>Gain4</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain4</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain5</blkName>
-            <xpcblkName>Gain5</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain5</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Gain6</blkName>
-            <xpcblkName>Gain6</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Gain6</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
 
  
             <block>
@@ -7056,265 +6951,55 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 1</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 1</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 27]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 2</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 2</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 2</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 27]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 3</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 3</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 3</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 25]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 4</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 4</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 4</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 26]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 5</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 5</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 5</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 26]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Transmit 6</blkName>
-            <xpcblkName>EtherCAT PDO Transmit 6</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Transmit 6</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 25]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Motor Angle</blkName>
-            <xpcblkName>Motor Angle</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Motor Angle</SLblockPath>
+            <blkName>EtherCAT PDO Receive</blkName>
+            <xpcblkName>EtherCAT PDO Receive</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT PDO Receive</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 28]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Receive1</blkName>
+            <xpcblkName>EtherCAT PDO Receive1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT PDO Receive1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -7396,50 +7081,14 @@ Switch1</sigName>
     
 
 
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
   
               
 
               
        
               <signal>
-              <sigName>Gain</sigName>
-              <xpcsigName>Gain</xpcsigName>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -7455,93 +7104,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain2</sigName>
-              <xpcsigName>Gain2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain3</sigName>
-              <xpcsigName>Gain3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain4</sigName>
-              <xpcsigName>Gain4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain5</sigName>
-              <xpcsigName>Gain5</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Gain6</sigName>
-              <xpcsigName>Gain6</xpcsigName>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Data Type Conversion1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -7755,30 +7319,17 @@ Switch1</sigName>
     
 
 
+  
+              
 
-    
-    
-
-
-
-    
-    
-
-
-
-    
-    
-
-
-
-    
-    
-
-
-
-    
-    
-
+              
+       
+              <signal>
+              <sigName>EtherCAT PDO Receive</sigName>
+              <xpcsigName>EtherCAT PDO Receive</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 
     
@@ -7791,8 +7342,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>Motor Angle</sigName>
-              <xpcsigName>Motor Angle</xpcsigName>
+              <sigName>EtherCAT PDO Receive1</sigName>
+              <xpcsigName>EtherCAT PDO Receive1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>

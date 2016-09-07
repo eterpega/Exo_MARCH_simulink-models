@@ -1,5 +1,14 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ManualControl" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED14" children="Controls">
+      <Property name="BindingSrcPath">Constant2/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Text">SAFEOP</Property>
+      <Property name="Size">71, 40</Property>
+      <Property name="Location">1244, 142</Property>
+      <Property name="Name">SwitchLED14</Property>
+    </Object>
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
       <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>

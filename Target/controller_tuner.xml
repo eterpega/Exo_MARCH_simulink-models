@@ -439,6 +439,30 @@ Switch</sigName>
 
 
     </SubSystem>
+    <SubSystem>
+    <Name>Slider</Name>
+    <xPCName>controller_tuner/Slider</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch</Name>
+    <xPCName>controller_tuner/Toggle Switch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch1</Name>
+    <xPCName>controller_tuner/Toggle Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch2</Name>
+    <xPCName>controller_tuner/Toggle Switch2</xPCName>
+    
+    
+    </SubSystem>
 
       
  
@@ -467,6 +491,10 @@ Stair</blkName>
           <dim>[5, 1]</dim>  
           </parameter>
           </block>
+
+
+
+
 
 
 
@@ -569,6 +597,18 @@ Stair</blkName>
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>Velocity Override1</blkName>
+            <xpcblkName>Velocity Override1</xpcblkName>
+            <SLblockPath>controller_tuner/Velocity Override1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
 
 
@@ -651,7 +691,7 @@ Stair</blkName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 28]</dim>  
           </parameter>
  
           <parameter>
@@ -693,7 +733,7 @@ Stair</blkName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 31]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -735,7 +775,7 @@ Stair</blkName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 32]</dim>  
+          <dim>[1, 31]</dim>  
           </parameter>
  
           <parameter>
@@ -819,7 +859,7 @@ Stair</blkName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 33]</dim>  
+          <dim>[1, 32]</dim>  
           </parameter>
  
           <parameter>
@@ -903,7 +943,7 @@ Stair</blkName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -988,6 +1028,48 @@ Stair</blkName>
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Velocity Override Out1</blkName>
+            <xpcblkName>Velocity Override Out1</xpcblkName>
+            <SLblockPath>controller_tuner/Velocity Override Out1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 35]</dim>  
           </parameter>
  
           <parameter>
@@ -1251,6 +1333,23 @@ Stair</blkName>
               
        
               <signal>
+              <sigName>Velocity Override1</sigName>
+              <xpcsigName>Velocity Override1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>Data Type Conversion</sigName>
               <xpcsigName>Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1494,6 +1593,11 @@ Stair</blkName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
+
+
+    
+    
+
 
 
     

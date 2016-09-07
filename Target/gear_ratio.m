@@ -4,9 +4,9 @@ clc
 rd = 44.8/1000;
 L0 = 75.98/1000;
 rp = 105.658/1000;
-angle = deg2rad(linspace(-1.5,133,1000));
+angle = deg2rad(linspace(-1.5,121,1000));
 
- offsetAngle = 3.14 - acos((L0^2 - rp^2 - rd^2)/(-2*rp*rd));
+offsetAngle = pi - acos((L0^2 - rp^2 - rd^2)/(-2*rp*rd));
 
 angleCorrected = angle - offsetAngle;
 
