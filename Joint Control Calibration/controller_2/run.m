@@ -3,11 +3,11 @@
 % model to function on your local host.
 
 % Define model as single cell array
-model = {'joint_calibrator'};
+model = {'controller_tuner'};
 
 % Load the model in memory before we open it.
 % open_system(model{1});
-joint = 'LHAA';
+joint = 'RHFE';
 switch joint
     case 'RHAA'
         jointOut = 'Hip_HAA.Outputs.R_';
@@ -29,7 +29,7 @@ switch joint
         jointIn = 'Left_Leg.Inputs.K_';
 end
 
-blocks = find_system([model{1} '/Joint']);
+blocks = find_system([model{1}]);
 
 % We want to iterate over all blocks and replace the PDO map. We do that by
 % simply going over all blocks and finding the value of the PDO and

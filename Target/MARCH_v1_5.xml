@@ -1940,7 +1940,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 28]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -1982,7 +1982,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 28]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2066,7 +2066,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2108,7 +2108,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -6213,18 +6213,6 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Joint Angles</Name>
-    <xPCName>MARCH_v1_5/Joint Angles</xPCName>
-    
-    
-
-
-    
-    
-
-
-    </SubSystem>
-    <SubSystem>
     <Name>Point&amp;Go</Name>
     <xPCName>MARCH_v1_5/Point&amp;Go</xPCName>
         <SubSystem>
@@ -6790,7 +6778,6 @@ Switch1</sigName>
 
 
 
-
  
             <block>
             <blkName>ManualControl</blkName>
@@ -6802,8 +6789,6 @@ Switch1</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-
-
 
  
             <block>
@@ -6951,90 +6936,6 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive</blkName>
-            <xpcblkName>EtherCAT PDO Receive</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Receive</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 28]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Receive1</blkName>
-            <xpcblkName>EtherCAT PDO Receive1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT PDO Receive1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
             <blkName>Delay</blkName>
             <xpcblkName>Delay</xpcblkName>
             <SLblockPath>MARCH_v1_5/Delay</SLblockPath>
@@ -7075,40 +6976,6 @@ Switch1</sigName>
     
 
 
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>Data Type Conversion</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion1</sigName>
-              <xpcsigName>Data Type Conversion1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
@@ -7310,40 +7177,6 @@ Switch1</sigName>
               <signal>
               <sigName>RKFE1</sigName>
               <xpcsigName>RKFE1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT PDO Receive</sigName>
-              <xpcsigName>EtherCAT PDO Receive</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT PDO Receive1</sigName>
-              <xpcsigName>EtherCAT PDO Receive1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
