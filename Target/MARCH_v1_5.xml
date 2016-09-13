@@ -296,11 +296,12 @@
     </SubSystem>
 
     
+
  
             <block>
-            <blkName>Dummy out</blkName>
-            <xpcblkName>Controllers/0-Torque/Dummy out</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Dummy out</SLblockPath>
+            <blkName>Q_out</blkName>
+            <xpcblkName>Controllers/0-Torque/Q_out</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Q_out</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>InitialOutput</paramName>
@@ -308,18 +309,6 @@
           </parameter>
           </block>
 
-
- 
-            <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Controllers/0-Torque/Constant</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 6]</dim>  
-          </parameter>
-          </block>
 
  
             <block>
@@ -338,6 +327,17 @@
     
 
 
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Q_in</sigName>
+              <xpcsigName>Controllers/0-Torque/Q_in</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
 
 
     
@@ -1122,18 +1122,6 @@
 
  
             <block>
-            <blkName>Constant1</blkName>
-            <xpcblkName>Controllers/SitDown/Constant1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/SitDown/Constant1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 6]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
             <blkName>Torso Height</blkName>
             <xpcblkName>Controllers/SitDown/Torso Height</xpcblkName>
             <SLblockPath>MARCH_v1_5/Controllers/SitDown/Torso Height</SLblockPath>
@@ -1172,12 +1160,6 @@
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
-
-
-    
-    
-
-
 
 
     
@@ -6659,6 +6641,18 @@ Switch1</sigName>
 
  
             <block>
+            <blkName>HFE Offset1</blkName>
+            <xpcblkName>Torque compensation controller/HFE Offset1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/HFE Offset1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Gain</blkName>
             <xpcblkName>Torque compensation controller/Gain</xpcblkName>
             <SLblockPath>MARCH_v1_5/Torque compensation controller/Gain</SLblockPath>
@@ -6681,6 +6675,25 @@ Switch1</sigName>
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>rad2deg1</blkName>
+            <xpcblkName>Torque compensation controller/rad2deg1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/rad2deg1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+    
+    
 
 
 
@@ -6735,6 +6748,23 @@ Switch1</sigName>
               
        
               <signal>
+              <sigName>rad2deg1</sigName>
+              <xpcsigName>Torque compensation controller/rad2deg1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
               <sigName>Sum</sigName>
               <xpcsigName>Torque compensation controller/Sum</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -6762,6 +6792,35 @@ Switch1</sigName>
     
     
 
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Torque compensation controller/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum3</sigName>
+              <xpcsigName>Torque compensation controller/Sum3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
     </SubSystem>
 

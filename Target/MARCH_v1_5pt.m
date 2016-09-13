@@ -755,8 +755,8 @@ pt(47).dtname     = 'real_T';
 
 
   
-pt(48).blockname = 'Torque compensation controller/Gain';
-pt(48).paramname = 'Gain';
+pt(48).blockname = 'Torque compensation controller/HFE Offset1';
+pt(48).paramname = 'Value';
 pt(48).class     = 'scalar';
 pt(48).nrows     = 1;
 pt(48).ncols     = 1;
@@ -764,14 +764,14 @@ pt(48).subsource = 'SS_DOUBLE';
 pt(48).ndims     = '2';
 pt(48).size      = '[]';
 pt(48).isStruct  = false;
-pt(48).symbol     = 'MARCH_v1_5_P.Gain_Gain';
-pt(48).baseaddr   = '&MARCH_v1_5_P.Gain_Gain';
+pt(48).symbol     = 'MARCH_v1_5_P.HFEOffset1_Value';
+pt(48).baseaddr   = '&MARCH_v1_5_P.HFEOffset1_Value';
 pt(48).dtname     = 'real_T';
 
 
 
   
-pt(49).blockname = 'Torque compensation controller/rad2deg';
+pt(49).blockname = 'Torque compensation controller/Gain';
 pt(49).paramname = 'Gain';
 pt(49).class     = 'scalar';
 pt(49).nrows     = 1;
@@ -780,78 +780,78 @@ pt(49).subsource = 'SS_DOUBLE';
 pt(49).ndims     = '2';
 pt(49).size      = '[]';
 pt(49).isStruct  = false;
-pt(49).symbol     = 'MARCH_v1_5_P.rad2deg_Gain';
-pt(49).baseaddr   = '&MARCH_v1_5_P.rad2deg_Gain';
+pt(49).symbol     = 'MARCH_v1_5_P.Gain_Gain';
+pt(49).baseaddr   = '&MARCH_v1_5_P.Gain_Gain';
 pt(49).dtname     = 'real_T';
 
 
 
   
-pt(50).blockname = 'Controllers/0-Torque/Dummy out';
-pt(50).paramname = 'InitialOutput';
-pt(50).class     = 'vector';
+pt(50).blockname = 'Torque compensation controller/rad2deg';
+pt(50).paramname = 'Gain';
+pt(50).class     = 'scalar';
 pt(50).nrows     = 1;
-pt(50).ncols     = 6;
+pt(50).ncols     = 1;
 pt(50).subsource = 'SS_DOUBLE';
 pt(50).ndims     = '2';
 pt(50).size      = '[]';
 pt(50).isStruct  = false;
-pt(50).symbol     = 'MARCH_v1_5_P.Dummyout_Y0';
-pt(50).baseaddr   = '&MARCH_v1_5_P.Dummyout_Y0[0]';
+pt(50).symbol     = 'MARCH_v1_5_P.rad2deg_Gain';
+pt(50).baseaddr   = '&MARCH_v1_5_P.rad2deg_Gain';
 pt(50).dtname     = 'real_T';
 
 
 
   
-pt(51).blockname = 'Controllers/0-Torque/Constant';
-pt(51).paramname = 'Value';
-pt(51).class     = 'vector';
+pt(51).blockname = 'Torque compensation controller/rad2deg1';
+pt(51).paramname = 'Gain';
+pt(51).class     = 'scalar';
 pt(51).nrows     = 1;
-pt(51).ncols     = 6;
+pt(51).ncols     = 1;
 pt(51).subsource = 'SS_DOUBLE';
 pt(51).ndims     = '2';
 pt(51).size      = '[]';
 pt(51).isStruct  = false;
-pt(51).symbol     = 'MARCH_v1_5_P.Constant_Value';
-pt(51).baseaddr   = '&MARCH_v1_5_P.Constant_Value[0]';
+pt(51).symbol     = 'MARCH_v1_5_P.rad2deg1_Gain';
+pt(51).baseaddr   = '&MARCH_v1_5_P.rad2deg1_Gain';
 pt(51).dtname     = 'real_T';
 
 
 
   
-pt(52).blockname = 'Controllers/0-Torque/Constant1';
-pt(52).paramname = 'Value';
+pt(52).blockname = 'Controllers/0-Torque/Q_out';
+pt(52).paramname = 'InitialOutput';
 pt(52).class     = 'vector';
 pt(52).nrows     = 1;
 pt(52).ncols     = 6;
-pt(52).subsource = 'SS_UINT8';
+pt(52).subsource = 'SS_DOUBLE';
 pt(52).ndims     = '2';
 pt(52).size      = '[]';
 pt(52).isStruct  = false;
-pt(52).symbol     = 'MARCH_v1_5_P.Constant1_Value_i';
-pt(52).baseaddr   = '&MARCH_v1_5_P.Constant1_Value_i[0]';
-pt(52).dtname     = 'uint8_T';
+pt(52).symbol     = 'MARCH_v1_5_P.Q_out_Y0';
+pt(52).baseaddr   = '&MARCH_v1_5_P.Q_out_Y0[0]';
+pt(52).dtname     = 'real_T';
 
 
 
   
-pt(53).blockname = 'Controllers/Continuous Gait/joint Angles';
-pt(53).paramname = 'InitialOutput';
-pt(53).class     = 'scalar';
+pt(53).blockname = 'Controllers/0-Torque/Constant1';
+pt(53).paramname = 'Value';
+pt(53).class     = 'vector';
 pt(53).nrows     = 1;
-pt(53).ncols     = 1;
-pt(53).subsource = 'SS_DOUBLE';
+pt(53).ncols     = 6;
+pt(53).subsource = 'SS_UINT8';
 pt(53).ndims     = '2';
 pt(53).size      = '[]';
 pt(53).isStruct  = false;
-pt(53).symbol     = 'MARCH_v1_5_P.jointAngles_Y0';
-pt(53).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0';
-pt(53).dtname     = 'real_T';
+pt(53).symbol     = 'MARCH_v1_5_P.Constant1_Value';
+pt(53).baseaddr   = '&MARCH_v1_5_P.Constant1_Value[0]';
+pt(53).dtname     = 'uint8_T';
 
 
 
   
-pt(54).blockname = 'Controllers/Continuous Gait/done';
+pt(54).blockname = 'Controllers/Continuous Gait/joint Angles';
 pt(54).paramname = 'InitialOutput';
 pt(54).class     = 'scalar';
 pt(54).nrows     = 1;
@@ -860,14 +860,14 @@ pt(54).subsource = 'SS_DOUBLE';
 pt(54).ndims     = '2';
 pt(54).size      = '[]';
 pt(54).isStruct  = false;
-pt(54).symbol     = 'MARCH_v1_5_P.done_Y0';
-pt(54).baseaddr   = '&MARCH_v1_5_P.done_Y0';
+pt(54).symbol     = 'MARCH_v1_5_P.jointAngles_Y0';
+pt(54).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0';
 pt(54).dtname     = 'real_T';
 
 
 
   
-pt(55).blockname = 'Controllers/Continuous Gait/base';
+pt(55).blockname = 'Controllers/Continuous Gait/done';
 pt(55).paramname = 'InitialOutput';
 pt(55).class     = 'scalar';
 pt(55).nrows     = 1;
@@ -876,15 +876,15 @@ pt(55).subsource = 'SS_DOUBLE';
 pt(55).ndims     = '2';
 pt(55).size      = '[]';
 pt(55).isStruct  = false;
-pt(55).symbol     = 'MARCH_v1_5_P.base_Y0';
-pt(55).baseaddr   = '&MARCH_v1_5_P.base_Y0';
+pt(55).symbol     = 'MARCH_v1_5_P.done_Y0';
+pt(55).baseaddr   = '&MARCH_v1_5_P.done_Y0';
 pt(55).dtname     = 'real_T';
 
 
 
   
-pt(56).blockname = 'Controllers/Continuous Gait/Step Height';
-pt(56).paramname = 'Value';
+pt(56).blockname = 'Controllers/Continuous Gait/base';
+pt(56).paramname = 'InitialOutput';
 pt(56).class     = 'scalar';
 pt(56).nrows     = 1;
 pt(56).ncols     = 1;
@@ -892,14 +892,14 @@ pt(56).subsource = 'SS_DOUBLE';
 pt(56).ndims     = '2';
 pt(56).size      = '[]';
 pt(56).isStruct  = false;
-pt(56).symbol     = 'MARCH_v1_5_P.StepHeight_Value';
-pt(56).baseaddr   = '&MARCH_v1_5_P.StepHeight_Value';
+pt(56).symbol     = 'MARCH_v1_5_P.base_Y0';
+pt(56).baseaddr   = '&MARCH_v1_5_P.base_Y0';
 pt(56).dtname     = 'real_T';
 
 
 
   
-pt(57).blockname = 'Controllers/Continuous Gait/Step Length';
+pt(57).blockname = 'Controllers/Continuous Gait/Step Height';
 pt(57).paramname = 'Value';
 pt(57).class     = 'scalar';
 pt(57).nrows     = 1;
@@ -908,14 +908,14 @@ pt(57).subsource = 'SS_DOUBLE';
 pt(57).ndims     = '2';
 pt(57).size      = '[]';
 pt(57).isStruct  = false;
-pt(57).symbol     = 'MARCH_v1_5_P.StepLength_Value';
-pt(57).baseaddr   = '&MARCH_v1_5_P.StepLength_Value';
+pt(57).symbol     = 'MARCH_v1_5_P.StepHeight_Value';
+pt(57).baseaddr   = '&MARCH_v1_5_P.StepHeight_Value';
 pt(57).dtname     = 'real_T';
 
 
 
   
-pt(58).blockname = 'Controllers/Continuous Gait/torso_z';
+pt(58).blockname = 'Controllers/Continuous Gait/Step Length';
 pt(58).paramname = 'Value';
 pt(58).class     = 'scalar';
 pt(58).nrows     = 1;
@@ -924,47 +924,47 @@ pt(58).subsource = 'SS_DOUBLE';
 pt(58).ndims     = '2';
 pt(58).size      = '[]';
 pt(58).isStruct  = false;
-pt(58).symbol     = 'MARCH_v1_5_P.torso_z_Value';
-pt(58).baseaddr   = '&MARCH_v1_5_P.torso_z_Value';
+pt(58).symbol     = 'MARCH_v1_5_P.StepLength_Value';
+pt(58).baseaddr   = '&MARCH_v1_5_P.StepLength_Value';
 pt(58).dtname     = 'real_T';
 
 
 
   
-pt(59).blockname = 'Controllers/Continuous Gait/Delay';
-pt(59).paramname = 'DelayLength';
+pt(59).blockname = 'Controllers/Continuous Gait/torso_z';
+pt(59).paramname = 'Value';
 pt(59).class     = 'scalar';
 pt(59).nrows     = 1;
 pt(59).ncols     = 1;
-pt(59).subsource = 'SS_UINT32';
+pt(59).subsource = 'SS_DOUBLE';
 pt(59).ndims     = '2';
 pt(59).size      = '[]';
 pt(59).isStruct  = false;
-pt(59).symbol     = 'MARCH_v1_5_P.Delay_DelayLength';
-pt(59).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength';
-pt(59).dtname     = 'uint32_T';
+pt(59).symbol     = 'MARCH_v1_5_P.torso_z_Value';
+pt(59).baseaddr   = '&MARCH_v1_5_P.torso_z_Value';
+pt(59).dtname     = 'real_T';
 
 
 
   
 pt(60).blockname = 'Controllers/Continuous Gait/Delay';
-pt(60).paramname = 'InitialCondition';
+pt(60).paramname = 'DelayLength';
 pt(60).class     = 'scalar';
 pt(60).nrows     = 1;
 pt(60).ncols     = 1;
-pt(60).subsource = 'SS_DOUBLE';
+pt(60).subsource = 'SS_UINT32';
 pt(60).ndims     = '2';
 pt(60).size      = '[]';
 pt(60).isStruct  = false;
-pt(60).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition';
-pt(60).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition';
-pt(60).dtname     = 'real_T';
+pt(60).symbol     = 'MARCH_v1_5_P.Delay_DelayLength';
+pt(60).baseaddr   = '&MARCH_v1_5_P.Delay_DelayLength';
+pt(60).dtname     = 'uint32_T';
 
 
 
   
-pt(61).blockname = 'Controllers/Hold/q_out';
-pt(61).paramname = 'InitialOutput';
+pt(61).blockname = 'Controllers/Continuous Gait/Delay';
+pt(61).paramname = 'InitialCondition';
 pt(61).class     = 'scalar';
 pt(61).nrows     = 1;
 pt(61).ncols     = 1;
@@ -972,15 +972,15 @@ pt(61).subsource = 'SS_DOUBLE';
 pt(61).ndims     = '2';
 pt(61).size      = '[]';
 pt(61).isStruct  = false;
-pt(61).symbol     = 'MARCH_v1_5_P.q_out_Y0';
-pt(61).baseaddr   = '&MARCH_v1_5_P.q_out_Y0';
+pt(61).symbol     = 'MARCH_v1_5_P.Delay_InitialCondition';
+pt(61).baseaddr   = '&MARCH_v1_5_P.Delay_InitialCondition';
 pt(61).dtname     = 'real_T';
 
 
 
   
-pt(62).blockname = 'Controllers/Hold/Constant';
-pt(62).paramname = 'Value';
+pt(62).blockname = 'Controllers/Hold/q_out';
+pt(62).paramname = 'InitialOutput';
 pt(62).class     = 'scalar';
 pt(62).nrows     = 1;
 pt(62).ncols     = 1;
@@ -988,15 +988,15 @@ pt(62).subsource = 'SS_DOUBLE';
 pt(62).ndims     = '2';
 pt(62).size      = '[]';
 pt(62).isStruct  = false;
-pt(62).symbol     = 'MARCH_v1_5_P.Constant_Value_e';
-pt(62).baseaddr   = '&MARCH_v1_5_P.Constant_Value_e';
+pt(62).symbol     = 'MARCH_v1_5_P.q_out_Y0';
+pt(62).baseaddr   = '&MARCH_v1_5_P.q_out_Y0';
 pt(62).dtname     = 'real_T';
 
 
 
   
-pt(63).blockname = 'Controllers/Point & Go/joint Angles';
-pt(63).paramname = 'InitialOutput';
+pt(63).blockname = 'Controllers/Hold/Constant';
+pt(63).paramname = 'Value';
 pt(63).class     = 'scalar';
 pt(63).nrows     = 1;
 pt(63).ncols     = 1;
@@ -1004,15 +1004,15 @@ pt(63).subsource = 'SS_DOUBLE';
 pt(63).ndims     = '2';
 pt(63).size      = '[]';
 pt(63).isStruct  = false;
-pt(63).symbol     = 'MARCH_v1_5_P.jointAngles_Y0_l';
-pt(63).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0_l';
+pt(63).symbol     = 'MARCH_v1_5_P.Constant_Value';
+pt(63).baseaddr   = '&MARCH_v1_5_P.Constant_Value';
 pt(63).dtname     = 'real_T';
 
 
 
   
-pt(64).blockname = 'Controllers/Point & Go/stop ';
-pt(64).paramname = 'Value';
+pt(64).blockname = 'Controllers/Point & Go/joint Angles';
+pt(64).paramname = 'InitialOutput';
 pt(64).class     = 'scalar';
 pt(64).nrows     = 1;
 pt(64).ncols     = 1;
@@ -1020,15 +1020,15 @@ pt(64).subsource = 'SS_DOUBLE';
 pt(64).ndims     = '2';
 pt(64).size      = '[]';
 pt(64).isStruct  = false;
-pt(64).symbol     = 'MARCH_v1_5_P.stop_Value';
-pt(64).baseaddr   = '&MARCH_v1_5_P.stop_Value';
+pt(64).symbol     = 'MARCH_v1_5_P.jointAngles_Y0_l';
+pt(64).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0_l';
 pt(64).dtname     = 'real_T';
 
 
 
   
-pt(65).blockname = 'Controllers/SitDown/joint Angles';
-pt(65).paramname = 'InitialOutput';
+pt(65).blockname = 'Controllers/Point & Go/stop ';
+pt(65).paramname = 'Value';
 pt(65).class     = 'scalar';
 pt(65).nrows     = 1;
 pt(65).ncols     = 1;
@@ -1036,14 +1036,14 @@ pt(65).subsource = 'SS_DOUBLE';
 pt(65).ndims     = '2';
 pt(65).size      = '[]';
 pt(65).isStruct  = false;
-pt(65).symbol     = 'MARCH_v1_5_P.jointAngles_Y0_c';
-pt(65).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0_c';
+pt(65).symbol     = 'MARCH_v1_5_P.stop_Value';
+pt(65).baseaddr   = '&MARCH_v1_5_P.stop_Value';
 pt(65).dtname     = 'real_T';
 
 
 
   
-pt(66).blockname = 'Controllers/SitDown/done';
+pt(66).blockname = 'Controllers/SitDown/joint Angles';
 pt(66).paramname = 'InitialOutput';
 pt(66).class     = 'scalar';
 pt(66).nrows     = 1;
@@ -1052,30 +1052,30 @@ pt(66).subsource = 'SS_DOUBLE';
 pt(66).ndims     = '2';
 pt(66).size      = '[]';
 pt(66).isStruct  = false;
-pt(66).symbol     = 'MARCH_v1_5_P.done_Y0_m';
-pt(66).baseaddr   = '&MARCH_v1_5_P.done_Y0_m';
+pt(66).symbol     = 'MARCH_v1_5_P.jointAngles_Y0_c';
+pt(66).baseaddr   = '&MARCH_v1_5_P.jointAngles_Y0_c';
 pt(66).dtname     = 'real_T';
 
 
 
   
-pt(67).blockname = 'Controllers/SitDown/Constant';
-pt(67).paramname = 'Value';
-pt(67).class     = 'vector';
+pt(67).blockname = 'Controllers/SitDown/done';
+pt(67).paramname = 'InitialOutput';
+pt(67).class     = 'scalar';
 pt(67).nrows     = 1;
-pt(67).ncols     = 6;
+pt(67).ncols     = 1;
 pt(67).subsource = 'SS_DOUBLE';
 pt(67).ndims     = '2';
 pt(67).size      = '[]';
 pt(67).isStruct  = false;
-pt(67).symbol     = 'MARCH_v1_5_P.Constant_Value_f';
-pt(67).baseaddr   = '&MARCH_v1_5_P.Constant_Value_f[0]';
+pt(67).symbol     = 'MARCH_v1_5_P.done_Y0_m';
+pt(67).baseaddr   = '&MARCH_v1_5_P.done_Y0_m';
 pt(67).dtname     = 'real_T';
 
 
 
   
-pt(68).blockname = 'Controllers/SitDown/Constant1';
+pt(68).blockname = 'Controllers/SitDown/Constant';
 pt(68).paramname = 'Value';
 pt(68).class     = 'vector';
 pt(68).nrows     = 1;
@@ -1084,8 +1084,8 @@ pt(68).subsource = 'SS_DOUBLE';
 pt(68).ndims     = '2';
 pt(68).size      = '[]';
 pt(68).isStruct  = false;
-pt(68).symbol     = 'MARCH_v1_5_P.Constant1_Value';
-pt(68).baseaddr   = '&MARCH_v1_5_P.Constant1_Value[0]';
+pt(68).symbol     = 'MARCH_v1_5_P.Constant_Value_f';
+pt(68).baseaddr   = '&MARCH_v1_5_P.Constant_Value_f[0]';
 pt(68).dtname     = 'real_T';
 
 
