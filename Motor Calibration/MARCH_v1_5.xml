@@ -7,409 +7,16 @@
     <Name>0-Torque</Name>
     <xPCName>MARCH_v1_5/Controllers/0-Torque</xPCName>
         <SubSystem>
-    <Name>RHFE</Name>
-    <xPCName>MARCH_v1_5/Controllers/0-Torque/RHFE</xPCName>
-        <SubSystem>
-    <Name>Discrete PID Controller</Name>
-    <xPCName>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller</xPCName>
-        <SubSystem>
-    <Name>Differentiator</Name>
-    <xPCName>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator</xPCName>
+    <Name>Motor enable</Name>
+    <xPCName>MARCH_v1_5/Controllers/0-Torque/Motor enable</xPCName>
     
-    
-
-
- 
-            <block>
-            <blkName>TSamp</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/TSamp</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/TSamp</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>WtEt</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>UD</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>DelayLength</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Diff</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/Diff</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>TSamp</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/TSamp</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>UD</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Differentiator/UD</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-
-    
-
- 
-            <block>
-            <blkName>Integrator</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>gainval</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
-
- 
-            <block>
-            <blkName>Saturate</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Discrete PID Controller/Saturate</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller/Saturate</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>UpperSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Integrator</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Integrator</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>DOut</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/DOut</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>IOut</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/IOut</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>POut</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/POut</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Saturate</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Saturate</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sum</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Discrete PID Controller/Sum</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>Moving Average</Name>
-    <xPCName>MARCH_v1_5/Controllers/0-Torque/RHFE/Moving Average</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Sample and Hold</Name>
-    <xPCName>MARCH_v1_5/Controllers/0-Torque/RHFE/Sample and Hold</xPCName>
-    
-    
-    </SubSystem>
-
     
  
             <block>
-            <blkName>Discrete PID Controller</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Discrete PID Controller</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Discrete PID Controller</SLblockPath>
-            <isSrc>[0 4 1]</isSrc>
-          <parameter>
-          <paramName>UpperSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>LowerSaturationLimit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
- 
-            <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Constant</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant2</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Constant2</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Constant2</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Constant3</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Constant3</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Constant3</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>P-gain</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/P-gain</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/P-gain</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Velocity Override</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Velocity Override</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Velocity Override</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>motor enable</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/motor enable</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/motor enable</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
-
- 
-            <block>
-            <blkName>Joint Encoder</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Joint Encoder</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Joint Encoder</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Reference Offset1</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Reference Offset1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Reference Offset1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Spring Encoder</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Spring Encoder</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Spring Encoder</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>Torque Offset</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/Torque Offset</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/Torque Offset</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT Joint Encoder</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/EtherCAT Joint Encoder</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/EtherCAT Joint Encoder</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
+            <blkName>Enable LHAA</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable LHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 29]</dim>  
@@ -448,13 +55,13 @@
 
  
             <block>
-            <blkName>EtherCAT Motor Velocity Override</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/EtherCAT Motor Velocity Override</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/EtherCAT Motor Velocity Override</SLblockPath>
+            <blkName>Enable LHFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable LHFE</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 27]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -490,13 +97,13 @@
 
  
             <block>
-            <blkName>EtherCAT Motor Velocity Setpoint</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/EtherCAT Motor Velocity Setpoint</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/EtherCAT Motor Velocity Setpoint</SLblockPath>
+            <blkName>Enable LKFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable LKFE</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 36]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -532,9 +139,51 @@
 
  
             <block>
-            <blkName>EtherCAT PDO Transmit 5</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/EtherCAT PDO Transmit 5</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/EtherCAT PDO Transmit 5</SLblockPath>
+            <blkName>Enable RHAA</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable RHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable RHFE</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -574,13 +223,13 @@
 
  
             <block>
-            <blkName>EtherCAT Spring Encoder</blkName>
-            <xpcblkName>Controllers/0-Torque/RHFE/EtherCAT Spring Encoder</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/RHFE/EtherCAT Spring Encoder</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
+            <blkName>Enable RKFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Motor enable/Enable RKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 31]</dim>  
           </parameter>
  
           <parameter>
@@ -615,220 +264,9 @@
           </block>
 
 
-
-
-
     
     
 
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Moving Average</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Moving Average</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>filtered error</sigLabel>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sample and Hold</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Sample and Hold</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Reference</sigLabel>
-            </signal>
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Velocity Override</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Velocity Override</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>motor enable</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/motor enable</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Data Type Conversion</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Data Type Conversion1</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Data Type Conversion1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Joint Encoder</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Joint Encoder</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Reference Offset1</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Reference Offset1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Spring Encoder</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Spring Encoder</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Torque Offset</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Torque Offset</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT Joint Encoder</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/EtherCAT Joint Encoder</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
@@ -850,79 +288,20 @@
     
 
 
-  
-              
-
-              
-       
-              <signal>
-              <sigName>EtherCAT Spring Encoder</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/EtherCAT Spring Encoder</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
 
     
     
 
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Offset</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Offset</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>0-Torque Offset</sigLabel>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sum</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Sum</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Error</sigLabel>
-            </signal>
-
-
-    
-    
-
-
-  
-              
-
-              
-       
-              <signal>
-              <sigName>Sum1</sigName>
-              <xpcsigName>Controllers/0-Torque/RHFE/Sum1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
     </SubSystem>
 
     
+
  
             <block>
-            <blkName>Dummy out</blkName>
-            <xpcblkName>Controllers/0-Torque/Dummy out</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Dummy out</SLblockPath>
+            <blkName>Q_out</blkName>
+            <xpcblkName>Controllers/0-Torque/Q_out</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Q_out</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>InitialOutput</paramName>
@@ -933,9 +312,9 @@
 
  
             <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Controllers/0-Torque/Constant</xpcblkName>
-            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Constant</SLblockPath>
+            <blkName>Constant1</blkName>
+            <xpcblkName>Controllers/0-Torque/Constant1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/0-Torque/Constant1</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -948,6 +327,34 @@
     
 
 
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Q_in</sigName>
+              <xpcsigName>Controllers/0-Torque/Q_in</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Constant1</sigName>
+              <xpcsigName>Controllers/0-Torque/Constant1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
 
     </SubSystem>
     <SubSystem>
@@ -1199,6 +606,294 @@
     <Name>Hold</Name>
     <xPCName>MARCH_v1_5/Controllers/Hold</xPCName>
         <SubSystem>
+    <Name>Motor enable</Name>
+    <xPCName>MARCH_v1_5/Controllers/Hold/Motor enable</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Enable LHAA</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable LHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable LHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LHFE</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable LHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable LHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LKFE</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable LKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable LKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHAA</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable RHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable RHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHFE</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable RHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable RHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RKFE</blkName>
+            <xpcblkName>Controllers/Hold/Motor enable/Enable RKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Hold/Motor enable/Enable RKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>MATLAB Function</Name>
     <xPCName>MARCH_v1_5/Controllers/Hold/MATLAB Function</xPCName>
     
@@ -1217,6 +912,7 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
 
 
  
@@ -1242,8 +938,20 @@
               
        
               <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>Controllers/Hold/MATLAB Function</xpcsigName>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Controllers/Hold/MATLAB Function/p1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[1, 6]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Controllers/Hold/MATLAB Function/p2</xpcsigName>
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
@@ -1256,8 +964,8 @@
 
     </SubSystem>
     <SubSystem>
-    <Name>Input Device </Name>
-    <xPCName>MARCH_v1_5/Controllers/Input Device </xPCName>
+    <Name>Input Device</Name>
+    <xPCName>MARCH_v1_5/Controllers/Input Device</xPCName>
     
     
 
@@ -1387,6 +1095,18 @@
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>done</blkName>
+            <xpcblkName>Controllers/SitDown/done</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/SitDown/done</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
  
             <block>
@@ -1397,6 +1117,18 @@
           <parameter>
           <paramName>Value</paramName>
           <dim>[1, 6]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Torso Height</blkName>
+            <xpcblkName>Controllers/SitDown/Torso Height</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/SitDown/Torso Height</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
           </parameter>
           </block>
 
@@ -1411,11 +1143,29 @@
               
        
               <signal>
-              <sigName>Trajectory</sigName>
-              <xpcsigName>Controllers/SitDown/Trajectory</xpcsigName>
+              <sigName>Trajectory/p1</sigName>
+              <xpcsigName>Controllers/SitDown/Trajectory/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Trajectory/p2</sigName>
+              <xpcsigName>Controllers/SitDown/Trajectory/p2</xpcsigName>
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -1657,6 +1407,54 @@
           </block>
 
 
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Controllers/Walking/Constant</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Walking/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepHeight</blkName>
+            <xpcblkName>Controllers/Walking/stepHeight</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Walking/stepHeight</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepLength</blkName>
+            <xpcblkName>Controllers/Walking/stepLength</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Walking/stepLength</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepVelocity</blkName>
+            <xpcblkName>Controllers/Walking/stepVelocity</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/Walking/stepVelocity</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
     
     
@@ -1686,6 +1484,30 @@
               <sigDim>[1, 1]</sigDim>
             </signal>
 
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
     </SubSystem>
     <SubSystem>
     <Name>Switcher</Name>
@@ -1705,6 +1527,18 @@
 
 
 
+
+ 
+            <block>
+            <blkName>torso_z</blkName>
+            <xpcblkName>Controllers/torso_z</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/torso_z</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
  
             <block>
@@ -1861,6 +1695,12 @@
               <sigWidth>10</sigWidth>
               <sigDim>[10, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -2043,12 +1883,6 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Error Handling</Name>
-    <xPCName>MARCH_v1_5/Error Handling</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>EtherCAT Initialization</Name>
     <xPCName>MARCH_v1_5/EtherCAT Initialization</xPCName>
     
@@ -2088,7 +1922,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 28]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2130,7 +1964,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 28]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2214,7 +2048,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2256,7 +2090,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2436,15 +2270,27 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>MARCH_v1_5/EtherCAT Joint Data In/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>Spring Encoder EtherCAT</Name>
     <xPCName>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT</xPCName>
     
     
  
             <block>
-            <blkName>EtherCAT PDO Receive</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</SLblockPath>
+            <blkName>LHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2484,13 +2330,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive1</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</SLblockPath>
+            <blkName>LHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2526,13 +2372,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive2</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</SLblockPath>
+            <blkName>LKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 29]</dim>  
           </parameter>
  
           <parameter>
@@ -2568,9 +2414,9 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive3</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</SLblockPath>
+            <blkName>RHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2610,13 +2456,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive4</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</SLblockPath>
+            <blkName>RHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2652,13 +2498,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive5</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</SLblockPath>
+            <blkName>RKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 30]</dim>  
           </parameter>
  
           <parameter>
@@ -2703,8 +2549,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive</xpcsigName>
+              <sigName>LHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2720,8 +2566,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive1</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive1</xpcsigName>
+              <sigName>LHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2737,8 +2583,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive2</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive2</xpcsigName>
+              <sigName>LKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2754,8 +2600,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive3</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive3</xpcsigName>
+              <sigName>RHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2771,8 +2617,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive4</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive4</xpcsigName>
+              <sigName>RHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2788,8 +2634,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive5</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/EtherCAT PDO Receive5</xpcsigName>
+              <sigName>RKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2803,6 +2649,7 @@ Switch1</sigName>
     </SubSystem>
 
     
+
 
 
 
@@ -2890,8 +2737,334 @@ Switch1</sigName>
     <SubSystem>
     <Name>exoskeleton</Name>
     <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton</xPCName>
+        <SubSystem>
+    <Name>EtherCAT Joint Communication</Name>
+    <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication</xPCName>
     
     
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit </blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit </xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit </SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 33]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 33]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 32]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 32]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>EtherCAT Joint Setpoints/exoskeleton/MATLAB Function</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
 
 
     
@@ -4347,12 +4520,6 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>GUI Communication</Name>
-    <xPCName>MARCH_v1_5/GUI Communication</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Input Device</Name>
     <xPCName>MARCH_v1_5/Input Device</xPCName>
         <SubSystem>
@@ -5607,8 +5774,8 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Input Device </Name>
-    <xPCName>MARCH_v1_5/Input Device/Input Device </xPCName>
+    <Name>Input Device</Name>
+    <xPCName>MARCH_v1_5/Input Device/Input Device</xPCName>
     
     
 
@@ -6028,12 +6195,6 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Pilot Feedback</Name>
-    <xPCName>MARCH_v1_5/Pilot Feedback</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Point&amp;Go</Name>
     <xPCName>MARCH_v1_5/Point&amp;Go</xPCName>
         <SubSystem>
@@ -6269,8 +6430,8 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>State Machine Output </Name>
-    <xPCName>MARCH_v1_5/State Machine/State Machine Output </xPCName>
+    <Name>State Machine Output</Name>
+    <xPCName>MARCH_v1_5/State Machine/State Machine Output</xPCName>
     
     
 
@@ -6466,6 +6627,201 @@ Switch1</sigName>
     <xPCName>MARCH_v1_5/Torque compensation controller</xPCName>
     
     
+ 
+            <block>
+            <blkName>HAA Offset</blkName>
+            <xpcblkName>Torque compensation controller/HAA Offset</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/HAA Offset</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>HFE Offset1</blkName>
+            <xpcblkName>Torque compensation controller/HFE Offset1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/HFE Offset1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Torque compensation controller/Gain</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>rad2deg</blkName>
+            <xpcblkName>Torque compensation controller/rad2deg</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/rad2deg</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>rad2deg1</blkName>
+            <xpcblkName>Torque compensation controller/rad2deg1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Torque compensation controller/rad2deg1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Torque compensation controller/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>rad2deg</sigName>
+              <xpcsigName>Torque compensation controller/rad2deg</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>rad2deg1</sigName>
+              <xpcsigName>Torque compensation controller/rad2deg1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum</sigName>
+              <xpcsigName>Torque compensation controller/Sum</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum1</sigName>
+              <xpcsigName>Torque compensation controller/Sum1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum2</sigName>
+              <xpcsigName>Torque compensation controller/Sum2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Sum3</sigName>
+              <xpcsigName>Torque compensation controller/Sum3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
     </SubSystem>
 
       
@@ -6481,8 +6837,17 @@ Switch1</sigName>
 
 
 
-
-
+ 
+            <block>
+            <blkName>ManualControl</blkName>
+            <xpcblkName>ManualControl</xpcblkName>
+            <SLblockPath>MARCH_v1_5/ManualControl</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
 
  
             <block>
@@ -6661,6 +7026,15 @@ Switch1</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
+
+    
+
+
+    
+    
+
+
 
 
     
