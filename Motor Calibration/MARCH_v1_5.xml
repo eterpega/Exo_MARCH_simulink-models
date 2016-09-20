@@ -1314,6 +1314,18 @@
 
  
             <block>
+            <blkName>Samples</blkName>
+            <xpcblkName>Controllers/StandUp/Samples</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Controllers/StandUp/Samples</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Simulation Q</blkName>
             <xpcblkName>Controllers/StandUp/Simulation Q</xpcblkName>
             <SLblockPath>MARCH_v1_5/Controllers/StandUp/Simulation Q</SLblockPath>
@@ -1352,6 +1364,12 @@
               <sigWidth>6</sigWidth>
               <sigDim>[1, 6]</sigDim>
             </signal>
+
+
+    
+    
+
+
 
 
     
@@ -1916,93 +1934,9 @@ Switch1</sigName>
     
  
             <block>
-            <blkName>EtherCAT PDO Receive10</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive10</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive10</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Receive11</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive11</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive11</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P5</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P6</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P7</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>EtherCAT PDO Receive6</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive6</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive6</SLblockPath>
+            <blkName>LHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2042,13 +1976,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive7</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive7</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive7</SLblockPath>
+            <blkName>LHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 28]</dim>  
           </parameter>
  
           <parameter>
@@ -2084,13 +2018,13 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive8</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive8</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive8</SLblockPath>
+            <blkName>LKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 30]</dim>  
+          <dim>[1, 28]</dim>  
           </parameter>
  
           <parameter>
@@ -2126,9 +2060,9 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>EtherCAT PDO Receive9</blkName>
-            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive9</xpcblkName>
-            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive9</SLblockPath>
+            <blkName>RHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
@@ -2166,6 +2100,90 @@ Switch1</sigName>
           </parameter>
           </block>
 
+ 
+            <block>
+            <blkName>RHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</xpcblkName>
+            <SLblockPath>MARCH_v1_5/EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
 
     
     
@@ -2177,8 +2195,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive10</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive10</xpcsigName>
+              <sigName>LHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2194,8 +2212,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive11</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive11</xpcsigName>
+              <sigName>LHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2211,8 +2229,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive6</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive6</xpcsigName>
+              <sigName>LKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2228,8 +2246,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive7</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive7</xpcsigName>
+              <sigName>RHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2245,8 +2263,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive8</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive8</xpcsigName>
+              <sigName>RHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2262,8 +2280,8 @@ Switch1</sigName>
               
        
               <signal>
-              <sigName>EtherCAT PDO Receive9</sigName>
-              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/EtherCAT PDO Receive9</xpcsigName>
+              <sigName>RKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
