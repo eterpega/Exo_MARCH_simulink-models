@@ -1,5 +1,65 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel2" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label17" children="Controls">
+      <Property name="Text">Hip Kd</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">756, 613</Property>
+      <Property name="Name">Label17</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label16" children="Controls">
+      <Property name="Text">Hip Kp</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">760, 563</Property>
+      <Property name="Name">Label16</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label15" children="Controls">
+      <Property name="Text">Knee Kd</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">760, 518</Property>
+      <Property name="Name">Label15</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label14" children="Controls">
+      <Property name="Text">Knee Kp</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">760, 472</Property>
+      <Property name="Name">Label14</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry5" children="Controls">
+      <Property name="BindingSrcPath">Hip Kd/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">862, 613</Property>
+      <Property name="Name">NumericEntry5</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry4" children="Controls">
+      <Property name="BindingSrcPath">Knee Kd/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">864, 518</Property>
+      <Property name="Name">NumericEntry4</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
+      <Property name="BindingSrcPath">Hip Kp/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">864, 565</Property>
+      <Property name="Name">NumericEntry3</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
+      <Property name="BindingSrcPath">Knee Kp/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">864, 472</Property>
+      <Property name="Name">NumericEntry2</Property>
+    </Object>
     <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED15" children="Controls">
       <Property name="BindingSrcPath">Controllers/Hold/Constant/Value</Property>
       <Property name="TargetName">SpeedGoat</Property>

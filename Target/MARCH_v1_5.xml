@@ -1538,7 +1538,7 @@ Switch1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 29]</dim>  
+          <dim>[1, 28]</dim>  
           </parameter>
  
           <parameter>
@@ -2625,6 +2625,18 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>MATLAB Function</Name>
     <xPCName>MARCH_v1_5/EtherCAT Joint Setpoints/exoskeleton/MATLAB Function</xPCName>
     
@@ -2632,6 +2644,7 @@ Switch1</sigName>
     </SubSystem>
 
     
+
 
 
 
@@ -6426,12 +6439,108 @@ Switch1</sigName>
 
  
             <block>
+            <blkName>Hip Kd</blkName>
+            <xpcblkName>Hip Kd</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Hip Kd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Hip Kp</blkName>
+            <xpcblkName>Hip Kp</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Hip Kp</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Knee Kd</blkName>
+            <xpcblkName>Knee Kd</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kd</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Knee Kp</blkName>
+            <xpcblkName>Knee Kp</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kp</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>ManualControl</blkName>
             <xpcblkName>ManualControl</xpcblkName>
             <SLblockPath>MARCH_v1_5/ManualControl</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Gain1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Gain2</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Gain3</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
@@ -6582,6 +6691,174 @@ Switch1</sigName>
 
  
             <block>
+            <blkName>Knee Kd Out</blkName>
+            <xpcblkName>Knee Kd Out</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kd Out</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Knee Kd Out1</blkName>
+            <xpcblkName>Knee Kd Out1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kd Out1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Knee Kp Out</blkName>
+            <xpcblkName>Knee Kp Out</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kp Out</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Knee Kp Out1</blkName>
+            <xpcblkName>Knee Kp Out1</xpcblkName>
+            <SLblockPath>MARCH_v1_5/Knee Kp Out1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
             <blkName>Delay</blkName>
             <xpcblkName>Delay</xpcblkName>
             <SLblockPath>MARCH_v1_5/Delay</SLblockPath>
@@ -6622,6 +6899,98 @@ Switch1</sigName>
     
 
 
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 
     
@@ -6826,6 +7195,26 @@ Switch1</sigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
 
 
     

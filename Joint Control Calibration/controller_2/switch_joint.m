@@ -7,7 +7,7 @@ model = {'controller_tuner'};
 
 % Load the model in memory before we open it.
 % open_system(model{1});
-joint = 'RHAA';
+joint = 'LKFE';
 switch joint
     case 'RHAA'
         jointOut = 'Hip_HAA.Outputs.R_';

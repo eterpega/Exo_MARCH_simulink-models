@@ -3,11 +3,11 @@
 % model to function on your local host.
 
 % Define model as single cell array
-model = {'calibration_model_v4'};
+model = {'calibration_model_v5'};
 
 % Load the model in memory before we open it.
 % open_system(model{1});
-joint = 'LKFE';
+joint = 'LHFE';
 switch joint
     case 'RHAA'
         jointOut = 'Hip_HAA.Outputs.R_';
