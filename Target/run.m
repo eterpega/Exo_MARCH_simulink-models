@@ -4,7 +4,7 @@ function run(location)
 % model to function on your local host.
 
 % Define model as single cell array
-model = {'MARCH_v1_5'};
+model = {'MARCH_demo'};
 
 % Load the model in memory before we open it.
 open_system(model{1});
@@ -55,20 +55,6 @@ set_param([model{1} '/Controllers/Hold/Motor enable'],'commented',target)
 
 % Disable blocks for target simulation
 set_param([model{1} '/UDP Send'],'commented',local)
-
-% Disable other unnecessary blocks for local simulation
-set_param([model{1} '/Data Logging'],'commented',target)
-set_param([model{1} '/Error Handling'],'commented',target)
-set_param([model{1} '/GUI Communication'],'commented',target)
-set_param([model{1} '/Pilot Feedback'],'commented',target)
-
-% Disable 0-torque joint controllers during local simulation
-% set_param([model{1} '/Controllers/0-Torque/RHFE'],'commented',target)
-% set_param([model{1} '/Controllers/0-Torque/LHAA'],'commented',target)
-% set_param([model{1} '/Controllers/0-Torque/RHFE'],'commented',target)
-% set_param([model{1} '/Controllers/0-Torque/LHFE'],'commented',target)
-% set_param([model{1} '/Controllers/0-Torque/RKFE'],'commented',target)
-% set_param([model{1} '/Controllers/0-Torque/LKFE'],'commented',target)
 
 % Assign data to model workspace
 hws = get_param(bdroot, 'modelworkspace');
