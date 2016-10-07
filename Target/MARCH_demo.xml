@@ -6,7 +6,295 @@
         <SubSystem>
     <Name>0-Torque</Name>
     <xPCName>MARCH_demo/Controllers/0-Torque</xPCName>
+        <SubSystem>
+    <Name>Motor enable</Name>
+    <xPCName>MARCH_demo/Controllers/0-Torque/Motor enable</xPCName>
     
+    
+ 
+            <block>
+            <blkName>Enable LHAA</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable LHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LHFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable LHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LKFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable LKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable LKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHAA</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable RHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable RHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RKFE</blkName>
+            <xpcblkName>Controllers/0-Torque/Motor enable/Enable RKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/0-Torque/Motor enable/Enable RKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+
     
 
  
@@ -20,6 +308,7 @@
           <dim>[1, 6]</dim>  
           </parameter>
           </block>
+
 
  
             <block>
@@ -47,7 +336,7 @@
               <sigName>Q_in</sigName>
               <xpcsigName>Controllers/0-Torque/Q_in</xpcsigName>
               <sigWidth>6</sigWidth>
-              <sigDim>[1, 6]</sigDim>
+              <sigDim>[6, 1]</sigDim>
             </signal>
 
 
@@ -72,6 +361,323 @@
     <Name>Home</Name>
     <xPCName>MARCH_demo/Controllers/Home</xPCName>
         <SubSystem>
+    <Name>Motor enable</Name>
+    <xPCName>MARCH_demo/Controllers/Home/Motor enable</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>flag</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/flag</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/flag</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 6]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LHAA</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable LHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable LHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LHFE</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable LHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable LHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable LKFE</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable LKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable LKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHAA</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable RHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable RHAA</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RHFE</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable RHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable RHFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>Enable RKFE</blkName>
+            <xpcblkName>Controllers/Home/Motor enable/Enable RKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/Controllers/Home/Motor enable/Enable RKFE</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>flag</sigName>
+              <xpcsigName>Controllers/Home/Motor enable/flag</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>MATLAB Function</Name>
     <xPCName>MARCH_demo/Controllers/Home/MATLAB Function</xPCName>
     
@@ -102,6 +708,7 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+
 
 
  
@@ -198,6 +805,30 @@
               <sigWidth>6</sigWidth>
               <sigDim>[6, 1]</sigDim>
             </signal>
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Input Device</Name>
+    <xPCName>MARCH_demo/Controllers/Input Device</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Joint Angles</Name>
+    <xPCName>MARCH_demo/Controllers/Joint Angles</xPCName>
+    
+    
 
 
     
@@ -357,6 +988,8 @@
     </SubSystem>
 
     
+
+
 
 
 
@@ -701,6 +1334,2639 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>EtherCAT Initialization</Name>
+    <xPCName>MARCH_demo/EtherCAT Initialization</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT Init</sigName>
+              <xpcsigName>EtherCAT Initialization/EtherCAT Init</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT Init1</sigName>
+              <xpcsigName>EtherCAT Initialization/EtherCAT Init1</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>EtherCAT Joint Data In</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In</xPCName>
+        <SubSystem>
+    <Name>Joint Encoder EtherCAT</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>LHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 27]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>LHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>LKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 28]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 27]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHAA</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LHFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/LKFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHAA</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RHFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Joint Encoder EtherCAT/RKFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In/Scope 1</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Spring Encoder EtherCAT</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>LHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 28]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>LHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>LKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RHAA</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 28]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RHFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>RKFE</blkName>
+            <xpcblkName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHAA</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LHFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>LKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/LKFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RHAA</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHAA</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RHFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RHFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>RKFE</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Spring Encoder EtherCAT/RKFE</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Data In/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>EtherCAT Joint Data In/MATLAB Function</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>EtherCAT Joint Data In/Data Type Conversion</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>EtherCAT Joint Setpoints</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints</xPCName>
+        <SubSystem>
+    <Name>Subsystem</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints/Subsystem</xPCName>
+    
+    
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>EtherCAT Joint Setpoints/Subsystem/Data Type Conversion</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>EtherCAT Joint Setpoints/Subsystem/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>exoskeleton</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton</xPCName>
+        <SubSystem>
+    <Name>EtherCAT Joint Communication</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit </blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit </xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit </SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 33]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 33]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 32]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/EtherCAT Joint Communication/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 32]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/Scope </xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>MARCH_demo/EtherCAT Joint Setpoints/exoskeleton/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+    
+
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>EtherCAT Joint Setpoints/exoskeleton/MATLAB Function</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>EtherCAT Joint Setpoints/exoskeleton/Data Type Conversion</xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>EtherCAT Motor Parameters</Name>
+    <xPCName>MARCH_demo/EtherCAT Motor Parameters</xPCName>
+        <SubSystem>
+    <Name>Hips</Name>
+    <xPCName>MARCH_demo/EtherCAT Motor Parameters/Hips</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>motor enable</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/motor enable</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/motor enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>motor enable1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/motor enable1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/motor enable1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/velocity override</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/velocity override</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/velocity override1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/velocity override1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/velocity setpoint</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/velocity setpoint</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/velocity setpoint1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/velocity setpoint1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 25]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 34]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 25]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 34]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 6</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 6</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Hips/EtherCAT PDO Transmit 6</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 29]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/motor enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/motor enable1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/velocity override</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/velocity override1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/velocity setpoint</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Hips/velocity setpoint1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Left Leg</Name>
+    <xPCName>MARCH_demo/EtherCAT Motor Parameters/Left Leg</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>motor enable</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/motor enable</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/motor enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>motor enable1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/motor enable1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/motor enable1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/velocity override</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/velocity override</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/velocity override1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/velocity override1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/velocity setpoint</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/velocity setpoint</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/velocity setpoint1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/velocity setpoint1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 35]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 26]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 35]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 6</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 6</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Left Leg/EtherCAT PDO Transmit 6</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 30]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/motor enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/motor enable1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/velocity override</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/velocity override1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/velocity setpoint</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Left Leg/velocity setpoint1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Right Leg</Name>
+    <xPCName>MARCH_demo/EtherCAT Motor Parameters/Right Leg</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>motor enable</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/motor enable</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/motor enable</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>motor enable1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/motor enable1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/motor enable1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/velocity override</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/velocity override</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity override1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/velocity override1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/velocity override1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/velocity setpoint</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/velocity setpoint</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>velocity setpoint1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/velocity setpoint1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/velocity setpoint1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 27]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 36]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 27]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 36]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT PDO Transmit 6</blkName>
+            <xpcblkName>EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 6</xpcblkName>
+            <SLblockPath>MARCH_demo/EtherCAT Motor Parameters/Right Leg/EtherCAT PDO Transmit 6</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 31]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/motor enable</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>motor enable1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/motor enable1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/velocity override</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity override1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/velocity override1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/velocity setpoint</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>velocity setpoint1</sigName>
+              <xpcsigName>EtherCAT Motor Parameters/Right Leg/velocity setpoint1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+
+    
+    
+
+
+    </SubSystem>
+
+    
+
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>Exoskeleton parameters</Name>
     <xPCName>MARCH_demo/Exoskeleton parameters</xPCName>
     
@@ -739,6 +4005,210 @@ Switch1</sigName>
     <Name>Input Device</Name>
     <xPCName>MARCH_demo/Input Device</xPCName>
         <SubSystem>
+    <Name>EtherCAT Input Device</Name>
+    <xPCName>MARCH_demo/Input Device/EtherCAT Input Device</xPCName>
+    
+    
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Input Device/EtherCAT Input Device/Constant</xpcblkName>
+            <SLblockPath>MARCH_demo/Input Device/EtherCAT Input Device/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT Safety</blkName>
+            <xpcblkName>Input Device/EtherCAT Input Device/EtherCAT Safety</xpcblkName>
+            <SLblockPath>MARCH_demo/Input Device/EtherCAT Input Device/EtherCAT Safety</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 38]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT State</blkName>
+            <xpcblkName>Input Device/EtherCAT Input Device/EtherCAT State</xpcblkName>
+            <SLblockPath>MARCH_demo/Input Device/EtherCAT Input Device/EtherCAT State</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 37]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>EtherCAT Trigger</blkName>
+            <xpcblkName>Input Device/EtherCAT Input Device/EtherCAT Trigger</xpcblkName>
+            <SLblockPath>MARCH_demo/Input Device/EtherCAT Input Device/EtherCAT Trigger</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 39]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT Safety</sigName>
+              <xpcsigName>Input Device/EtherCAT Input Device/EtherCAT Safety</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>safety</sigLabel>
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT State</sigName>
+              <xpcsigName>Input Device/EtherCAT Input Device/EtherCAT State</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT Trigger</sigName>
+              <xpcsigName>Input Device/EtherCAT Input Device/EtherCAT Trigger</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>trigger</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Rocker Switch</Name>
     <xPCName>MARCH_demo/Input Device/Rocker Switch</xPCName>
     
@@ -764,6 +4234,7 @@ Switch1</sigName>
     </SubSystem>
 
     
+
 
 
 
@@ -1041,8 +4512,74 @@ Switch1</sigName>
     <SubSystem>
     <Name>Point&amp;Go</Name>
     <xPCName>MARCH_demo/Point&amp;Go</xPCName>
+        <SubSystem>
+    <Name>EtherCAT Point&amp;Go</Name>
+    <xPCName>MARCH_demo/Point&amp;Go/EtherCAT Point&amp;Go</xPCName>
     
     
+ 
+            <block>
+            <blkName>EtherCAT PDO Receive</blkName>
+            <xpcblkName>Point&amp;Go/EtherCAT Point&amp;Go/EtherCAT PDO Receive</xpcblkName>
+            <SLblockPath>MARCH_demo/Point&amp;Go/EtherCAT Point&amp;Go/EtherCAT PDO Receive</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 35]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+ 
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+
+    
+    
+
+
+  
+              
+
+              
+       
+              <signal>
+              <sigName>EtherCAT PDO Receive</sigName>
+              <xpcsigName>Point&amp;Go/EtherCAT Point&amp;Go/EtherCAT PDO Receive</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+    
+
  
             <block>
             <blkName>Local</blkName>
@@ -1208,6 +4745,18 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>State Machine Output</Name>
+    <xPCName>MARCH_demo/State Machine/State Machine Output</xPCName>
+    
+    
+
+
+    
+    
+
+
+    </SubSystem>
+    <SubSystem>
     <Name>State Machine</Name>
     <xPCName>MARCH_demo/State Machine/State Machine</xPCName>
     
@@ -1215,6 +4764,7 @@ Switch1</sigName>
     </SubSystem>
 
     
+
 
 
 
@@ -1284,7 +4834,7 @@ Switch1</sigName>
               <xpcsigName>State Machine/State Machine/p5</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>state</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -1499,6 +5049,10 @@ Switch1</sigName>
 
 
 
+
+
+
+
  
             <block>
             <blkName>ManualControl</blkName>
@@ -1657,34 +5211,6 @@ Switch1</sigName>
 
  
             <block>
-            <blkName>Simulation Pace</blkName>
-            <xpcblkName>Simulation Pace</xpcblkName>
-            <SLblockPath>MARCH_demo/Simulation Pace</SLblockPath>
-            <isSrc>[0 0 0]</isSrc>
-          <parameter>
-          <paramName>P1</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P2</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P3</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
- 
-          <parameter>
-          <paramName>P4</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
-
- 
-            <block>
             <blkName>Delay</blkName>
             <xpcblkName>Delay</xpcblkName>
             <SLblockPath>MARCH_demo/Delay</SLblockPath>
@@ -1719,20 +5245,12 @@ Switch1</sigName>
 
 
     
+
+
+    
     
 
 
-  
-              
-
-              
-       
-              <signal>
-              <sigName>ManualControl</sigName>
-              <xpcsigName>ManualControl</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 
     
@@ -1943,16 +5461,6 @@ Switch1</sigName>
     
 
 
-
-    
-    
-
-
-
-    
-    
-
-
   
               
 
@@ -1982,4 +5490,10 @@ Switch1</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
 
+<block>
+   <blkName>Model Parameters</blkName>
+   <xpcblkName>Model Parameters</xpcblkName>
+   <SLblockPath>. </SLblockPath>
+   <isSrc>[0 1 1]</isSrc>
+</block>
 </Root>

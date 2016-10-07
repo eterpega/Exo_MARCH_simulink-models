@@ -3,6 +3,9 @@ SET PROMPT=$P$G
 SET PATH=c:\fdos\bin
 REM KEYB SG,,keyboard.sys 
 
+cd C:\xpcfiles
+autoexec
+
 DOSUSB.COM /E /Y1D
 DEVLOAD USBDISK.SYS /D2
 cls
