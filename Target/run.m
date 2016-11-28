@@ -54,7 +54,7 @@ set_param([model{1} '/Controllers/Input Device'],'commented',target)
 set_param([model{1} '/Input Device/EtherCAT Input Device'],'commented',target)
 set_param([model{1} '/State Machine/State Machine Output'],'commented',target)
 set_param([model{1} '/Controllers/0-Torque/Motor enable'],'commented',target)
-set_param([model{1} '/Controllers/Home/Motor enable'],'commented',target)
+%set_param([model{1} '/Controllers/Home/Motor enable'],'commented',target)
 set_param([model{1} '/Controllers/Hold/Motor enable'],'commented',target)
 
 % Input device: Trigger buttons
