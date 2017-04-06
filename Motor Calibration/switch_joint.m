@@ -7,7 +7,7 @@ model = {'calibration_model_v5'};
 
 % Load the model in memory before we open it.
 % open_system(model{1});
-joint = 'LHFE';
+joint = 'RHFE';
 switch joint
     case 'RHAA'
         jointOut = 'Hip_HAA.Outputs.R_';

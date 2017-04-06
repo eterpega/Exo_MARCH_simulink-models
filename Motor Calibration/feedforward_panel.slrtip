@@ -1,0 +1,103 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanel1" children="Controls">
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+      <Property name="BindingSrcPath">motor_enable/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">48, 40</Property>
+      <Property name="Location">451, 173</Property>
+      <Property name="Name">SwitchLED1</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">1190, 638</Property>
+      <Property name="Name">NumericDisplay6</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">magnitude/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">283, 638</Property>
+      <Property name="Name">NumericDisplay2</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">angle increment/Value</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">110, 638</Property>
+      <Property name="Name">NumericDisplay1</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+      <Property name="Text">Velocity Setpoint</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Font">Segoe UI, 14pt</Property>
+      <Property name="Location">1190, 52</Property>
+      <Property name="Name">Label6</Property>
+      <Property name="Size">164, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">velocity setpoint/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Min">-600</Property>
+        <Property name="Span">1200</Property>
+      </Property>
+      <Property name="Size">69, 533</Property>
+      <Property name="Location">1190, 81</Property>
+      <Property name="Name">Slider6</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+      <Property name="Text">Magnitude</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Font">Segoe UI, 14pt</Property>
+      <Property name="Location">283, 52</Property>
+      <Property name="Name">Label2</Property>
+      <Property name="Size">129, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">magnitude/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Span">10000</Property>
+      </Property>
+      <Property name="Size">78, 533</Property>
+      <Property name="Location">283, 81</Property>
+      <Property name="Name">Slider2</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+      <Property name="Text">Angle Increment</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Font">Segoe UI, 14pt</Property>
+      <Property name="Location">110, 52</Property>
+      <Property name="Name">Label1</Property>
+      <Property name="Size">149, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="BindingSrcPath">angle increment/Value</Property>
+      <Property name="TargetName">SpeedGoat</Property>
+      <Property name="BindingSrcObject" />
+      <Property name="ScaleRange">
+        <Property name="Span">100000</Property>
+      </Property>
+      <Property name="Size">84, 533</Property>
+      <Property name="Location">110, 81</Property>
+      <Property name="Name">Slider1</Property>
+    </Object>
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>

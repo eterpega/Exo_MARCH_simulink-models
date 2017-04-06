@@ -4,7 +4,7 @@ function run(location)
 % model to function on your local host.
 
 % Define model as single cell array
-model = {'MARCH_v1_5'};
+model = {'MARCH_demo'};
 
 % Load the model in memory before we open it.
 open_system(model{1});
@@ -54,8 +54,8 @@ set_param([model{1} '/Controllers/Input Device'],'commented',target)
 set_param([model{1} '/Input Device/EtherCAT Input Device'],'commented',target)
 set_param([model{1} '/State Machine/State Machine Output'],'commented',target)
 set_param([model{1} '/Controllers/0-Torque/Motor enable'],'commented',target)
-%set_param([model{1} '/Controllers/Home/Motor enable'],'commented',target)
-set_param([model{1} '/Controllers/Hold/Motor enable'],'commented',target)
+set_param([model{1} '/Controllers/Home/Motor enable'],'commented',target)
+% set_param([model{1} '/Controllers/Hold/Motor enable'],'commented',target)
 
 % Input device: Trigger buttons
 set_param([model{1} '/Input Device/Right Trigger'], 'Value', '0')

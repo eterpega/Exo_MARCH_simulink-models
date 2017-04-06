@@ -872,54 +872,6 @@
           </block>
 
 
- 
-            <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Controllers/Walking/Constant</xpcblkName>
-            <SLblockPath>MARCH_demo/Controllers/Walking/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>stepHeight</blkName>
-            <xpcblkName>Controllers/Walking/stepHeight</xpcblkName>
-            <SLblockPath>MARCH_demo/Controllers/Walking/stepHeight</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>stepLength</blkName>
-            <xpcblkName>Controllers/Walking/stepLength</xpcblkName>
-            <SLblockPath>MARCH_demo/Controllers/Walking/stepLength</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
- 
-            <block>
-            <blkName>stepVelocity</blkName>
-            <xpcblkName>Controllers/Walking/stepVelocity</xpcblkName>
-            <SLblockPath>MARCH_demo/Controllers/Walking/stepVelocity</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-
 
 
     
@@ -949,30 +901,6 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
-
-
-    
-    
-
-
 
 
     
@@ -4209,12 +4137,6 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
-    <Name>Rocker Switch</Name>
-    <xPCName>MARCH_demo/Input Device/Rocker Switch</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Rocker Switch1</Name>
     <xPCName>MARCH_demo/Input Device/Rocker Switch1</xPCName>
     
@@ -4234,7 +4156,6 @@ Switch1</sigName>
     </SubSystem>
 
     
-
 
 
 
@@ -4636,6 +4557,12 @@ Switch1</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>Push Button</Name>
+    <xPCName>MARCH_demo/Push Button</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Reachability</Name>
     <xPCName>MARCH_demo/Reachability</xPCName>
     
@@ -4658,6 +4585,18 @@ Switch1</sigName>
               <sigDim>[6, 1]</sigDim>
             </signal>
 
+    </SubSystem>
+    <SubSystem>
+    <Name>Rocker Switch3</Name>
+    <xPCName>MARCH_demo/Rocker Switch3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Rotary Switch</Name>
+    <xPCName>MARCH_demo/Rotary Switch</xPCName>
+    
+    
     </SubSystem>
     <SubSystem>
     <Name>State Machine</Name>
@@ -4837,6 +4776,12 @@ Switch1</sigName>
                 
             </signal>
 
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch</Name>
+    <xPCName>MARCH_demo/Toggle Switch</xPCName>
+    
+    
     </SubSystem>
     <SubSystem>
     <Name>Torque compensation controller</Name>
@@ -5053,11 +4998,63 @@ Switch1</sigName>
 
 
 
+
+
+
+
+ 
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Constant</xpcblkName>
+            <SLblockPath>MARCH_demo/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
  
             <block>
             <blkName>ManualControl</blkName>
             <xpcblkName>ManualControl</xpcblkName>
             <SLblockPath>MARCH_demo/ManualControl</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepHeight</blkName>
+            <xpcblkName>stepHeight</xpcblkName>
+            <SLblockPath>MARCH_demo/stepHeight</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepLength</blkName>
+            <xpcblkName>stepLength</xpcblkName>
+            <SLblockPath>MARCH_demo/stepLength</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+ 
+            <block>
+            <blkName>stepVelocity</blkName>
+            <xpcblkName>stepVelocity</xpcblkName>
+            <SLblockPath>MARCH_demo/stepVelocity</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -5245,6 +5242,30 @@ Switch1</sigName>
 
 
     
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
+
+
+    
+    
+
+
 
 
     
