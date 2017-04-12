@@ -1,3 +1,227 @@
-<Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral" name="InstrumentPanelTuning" children="Controls">
-   <Property name="ClientSize">1400, 1212</Property>
-</Object>
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="InstrumentPanelTuning" children="Controls">
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label12" children="Controls">
+      <Property name="Text">Opmode</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">242, 510</Property>
+      <Property name="Name">Label12</Property>
+      <Property name="Size">54, 15</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label10" children="Controls">
+      <Property name="Text">Tuning: -128</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">93, 572</Property>
+      <Property name="Name">Label10</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Velocity control" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">TargetVelocity/Value</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">55, 25</Property>
+        <Property name="Name">NumericDisplay1</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">TargetVelocity/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Span">3000</Property>
+        </Property>
+        <Property name="Size">74, 284</Property>
+        <Property name="Location">38, 66</Property>
+        <Property name="Name">Slider1</Property>
+      </Object>
+      <Property name="Text">Velocity control</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="BackColor">ActiveBorder</Property>
+      <Property name="Location">215, 82</Property>
+      <Property name="Name">Velocity control</Property>
+      <Property name="Size">178, 379</Property>
+    </Object>
+    <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
+      <Property name="BindingSrcPath">opmode/Value</Property>
+      <Property name="TargetName">JetStar</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">100, 23</Property>
+      <Property name="Location">215, 528</Property>
+      <Property name="Name">NumericEntry1</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
+      <Property name="Text">Velocity Control: 9</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">87, 528</Property>
+      <Property name="Name">Label9</Property>
+      <Property name="Size">106, 15</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
+      <Property name="Text">Torque Control: 10</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">87, 543</Property>
+      <Property name="Name">Label8</Property>
+      <Property name="Size">106, 18</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
+      <Property name="Text">Position Control: 8 </Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">87, 510</Property>
+      <Property name="Name">Label7</Property>
+      <Property name="Size">106, 18</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+      <Property name="Text">Clear Error</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">544, 546</Property>
+      <Property name="Name">Label6</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED3" children="Controls">
+      <Property name="BindingSrcPath">clear_error/Value</Property>
+      <Property name="TargetName">JetStar</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">48, 40</Property>
+      <Property name="Location">557, 503</Property>
+      <Property name="Name">SwitchLED3</Property>
+    </Object>
+    <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label3" children="Controls">
+      <Property name="Text">Quick Stop</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">650, 546</Property>
+      <Property name="Name">Label3</Property>
+      <Property name="Size">100, 23</Property>
+    </Object>
+    <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED2" children="Controls">
+      <Property name="BindingSrcPath">Quick_stop/Value</Property>
+      <Property name="TargetName">JetStar</Property>
+      <Property name="BindingSrcType">Parameter</Property>
+      <Property name="Size">48, 40</Property>
+      <Property name="Location">666, 503</Property>
+      <Property name="Name">SwitchLED2</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+        <Property name="Text">Frequency</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">152, 48</Property>
+        <Property name="Name">Label2</Property>
+        <Property name="Size">91, 24</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+        <Property name="Text">Amplitude</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">31, 48</Property>
+        <Property name="Name">Label1</Property>
+        <Property name="Size">91, 24</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">Signal Generator1/Frequency</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Span">30</Property>
+        </Property>
+        <Property name="Size">64, 285</Property>
+        <Property name="Location">152, 66</Property>
+        <Property name="Name">Slider5</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">Signal Generator1/Amplitude</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Span">4000</Property>
+        </Property>
+        <Property name="Size">75, 284</Property>
+        <Property name="Location">31, 66</Property>
+        <Property name="Name">Slider4</Property>
+      </Object>
+      <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED1" children="Controls">
+        <Property name="BindingSrcPath">Sinus input/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">48, 40</Property>
+        <Property name="Location">222, 281</Property>
+        <Property name="Name">SwitchLED1</Property>
+      </Object>
+      <Property name="Text">Sinus Input</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="BackColor">ActiveBorder</Property>
+      <Property name="ForeColor">Black</Property>
+      <Property name="Location">591, 82</Property>
+      <Property name="Name">GroupBox2</Property>
+      <Property name="Size">280, 379</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox3" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">TargetPosition/Value</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">22, 22</Property>
+        <Property name="Name">NumericDisplay3</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">TargetPosition/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Span">32000</Property>
+        </Property>
+        <Property name="Size">79, 284</Property>
+        <Property name="Location">43, 65</Property>
+        <Property name="Name">Slider3</Property>
+      </Object>
+      <Property name="Text">Position Control</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="BackColor">ActiveBorder</Property>
+      <Property name="Location">35, 83</Property>
+      <Property name="Name">GroupBox3</Property>
+      <Property name="Size">179, 378</Property>
+    </Object>
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Torque Control" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">TargetTorque/Value</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">23, 22</Property>
+        <Property name="Name">NumericDisplay2</Property>
+      </Object>
+      <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="BindingSrcPath">TargetTorque/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="ScaleRange">
+          <Property name="Min">-500</Property>
+          <Property name="Span">1000</Property>
+          <Property name="Reverse">True</Property>
+        </Property>
+        <Property name="Size">69, 285</Property>
+        <Property name="Border">
+          <Property name="Color">ControlLight</Property>
+        </Property>
+        <Property name="Location">50, 66</Property>
+        <Property name="Name">Slider2</Property>
+      </Object>
+      <Property name="Text">Torque Control</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="BackColor">ActiveBorder</Property>
+      <Property name="Location">393, 82</Property>
+      <Property name="Name">Torque Control</Property>
+      <Property name="Size">176, 379</Property>
+    </Object>
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>
