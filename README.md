@@ -11,4 +11,3 @@ Explain the folder structure here and what each folder contains.
 ## Get Started
 Small get started tutorial should be inserted here.
 `This is inline code`
-Test
