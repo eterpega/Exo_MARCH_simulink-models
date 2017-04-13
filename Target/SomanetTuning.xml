@@ -48,7 +48,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 53]</dim>  
+          <dim>[1, 59]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -82,7 +82,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 49]</dim>  
+          <dim>[1, 55]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -116,7 +116,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 53]</dim>  
+          <dim>[1, 59]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -150,7 +150,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 51]</dim>  
+          <dim>[1, 57]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -184,7 +184,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 48]</dim>  
+          <dim>[1, 54]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -218,7 +218,7 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 52]</dim>  
+          <dim>[1, 58]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -300,7 +300,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 46]</dim>  
+          <dim>[1, 53]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -334,7 +334,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 50]</dim>  
+          <dim>[1, 57]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -368,7 +368,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 54]</dim>  
+          <dim>[1, 61]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -402,7 +402,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 54]</dim>  
+          <dim>[1, 61]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -436,7 +436,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 52]</dim>  
+          <dim>[1, 59]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -470,7 +470,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 53]</dim>  
+          <dim>[1, 60]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -504,7 +504,7 @@ Operator</sigName>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 48]</dim>  
+          <dim>[1, 55]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -532,6 +532,24 @@ Operator</sigName>
           </parameter>
           </block>
 
+    </SubSystem>
+    <SubSystem>
+    <Name>Half Gauge</Name>
+    <xPCName>SomanetTuning/Half Gauge</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Half Gauge1</Name>
+    <xPCName>SomanetTuning/Half Gauge1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Half Gauge2</Name>
+    <xPCName>SomanetTuning/Half Gauge2</xPCName>
+    
+    
     </SubSystem>
     <SubSystem>
     <Name>Init </Name>
@@ -576,20 +594,14 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Rotary Switch</Name>
-    <xPCName>SomanetTuning/Rotary Switch</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Rotary Switch1</Name>
-    <xPCName>SomanetTuning/Rotary Switch1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Slider</Name>
     <xPCName>SomanetTuning/Slider</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider Switch</Name>
+    <xPCName>SomanetTuning/Slider Switch</xPCName>
     
     
     </SubSystem>
@@ -612,8 +624,20 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Slider4</Name>
-    <xPCName>SomanetTuning/Slider4</xPCName>
+    <Name>Slider5</Name>
+    <xPCName>SomanetTuning/Slider5</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider6</Name>
+    <xPCName>SomanetTuning/Slider6</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider7</Name>
+    <xPCName>SomanetTuning/Slider7</xPCName>
     
     
     </SubSystem>
@@ -630,14 +654,14 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Toggle Switch1</Name>
-    <xPCName>SomanetTuning/Toggle Switch1</xPCName>
+    <Name>Torque</Name>
+    <xPCName>SomanetTuning/Torque</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>Torque</Name>
-    <xPCName>SomanetTuning/Torque</xPCName>
+    <Name>Tuning switch</Name>
+    <xPCName>SomanetTuning/Tuning switch</xPCName>
     
     
     </SubSystem>
@@ -650,6 +674,18 @@ Operator</sigName>
     <SubSystem>
     <Name>Chart</Name>
     <xPCName>SomanetTuning/Chart</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetTuning/MATLAB Function1</xPCName>
     
     
     </SubSystem>
@@ -666,9 +702,29 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>CommandValue</blkName>
-            <xpcblkName>CommandValue</xpcblkName>
-            <SLblockPath>SomanetTuning/CommandValue</SLblockPath>
+            <blkName>D</blkName>
+            <xpcblkName>D</xpcblkName>
+            <SLblockPath>SomanetTuning/D</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>I</blkName>
+            <xpcblkName>I</xpcblkName>
+            <SLblockPath>SomanetTuning/I</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>P</blkName>
+            <xpcblkName>P</xpcblkName>
+            <SLblockPath>SomanetTuning/P</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -686,9 +742,21 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Sinus input</blkName>
-            <xpcblkName>Sinus input</xpcblkName>
-            <SLblockPath>SomanetTuning/Sinus input</SLblockPath>
+            <blkName>Sinus Input
+</blkName>
+            <xpcblkName>Sinus Input </xpcblkName>
+            <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TUNING
+</blkName>
+            <xpcblkName>TUNING </xpcblkName>
+            <SLblockPath>SomanetTuning/TUNING </SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -726,9 +794,9 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Tuning_Command</blkName>
-            <xpcblkName>Tuning_Command</xpcblkName>
-            <SLblockPath>SomanetTuning/Tuning_Command</SLblockPath>
+            <blkName>Tuning Offset</blkName>
+            <xpcblkName>Tuning Offset</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Offset</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -746,20 +814,10 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>opmode</blkName>
-            <xpcblkName>opmode</xpcblkName>
-            <SLblockPath>SomanetTuning/opmode</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Signal
-Generator1</blkName>
-            <xpcblkName>Signal Generator1</xpcblkName>
-            <SLblockPath>SomanetTuning/Signal Generator1</SLblockPath>
+Generator</blkName>
+            <xpcblkName>Signal Generator</xpcblkName>
+            <SLblockPath>SomanetTuning/Signal Generator</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Amplitude</paramName>
@@ -783,8 +841,62 @@ Generator1</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>CommandValue</sigName>
-              <xpcsigName>CommandValue</xpcsigName>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>MATLAB Function1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p3</sigName>
+              <xpcsigName>MATLAB Function1/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p4</sigName>
+              <xpcsigName>MATLAB Function1/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>D</sigName>
+              <xpcsigName>D</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>I</sigName>
+              <xpcsigName>I</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>P</sigName>
+              <xpcsigName>P</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -795,23 +907,10 @@ Generator1</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Tuning_Command</sigName>
-              <xpcsigName>Tuning_Command</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>clear_error</sigName>
               <xpcsigName>clear_error</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>opmode</sigName>
-              <xpcsigName>opmode</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>OpMode</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion</sigName>
@@ -826,57 +925,57 @@ Generator1</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Data Type Conversion2</sigName>
               <xpcsigName>Data Type Conversion2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion3</sigName>
-              <xpcsigName>Data Type Conversion3</xpcsigName>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>Data Type Conversion7</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion4</sigName>
-              <xpcsigName>Data Type Conversion4</xpcsigName>
+              <sigName>Data Type Conversion8</sigName>
+              <xpcsigName>Data Type Conversion8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion5</sigName>
-              <xpcsigName>Data Type Conversion5</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion6</sigName>
-              <xpcsigName>Data Type Conversion6</xpcsigName>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>Data Type Conversion9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Signal
-Generator1</sigName>
-              <xpcsigName>Signal Generator1</xpcsigName>
+Generator</sigName>
+              <xpcsigName>Signal Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Switch</sigName>
               <xpcsigName>Switch</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch1</sigName>
-              <xpcsigName>Switch1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch2</sigName>
-              <xpcsigName>Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
