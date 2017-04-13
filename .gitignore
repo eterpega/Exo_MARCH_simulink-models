@@ -7,3 +7,7 @@ ecat_config_xml_0.c
 build/
 *.asv
 Target/MARCH_v1_6_Dick.slx
+*_sfun.mexw64
+*bio.m
+*pt.m
+*ref.m
