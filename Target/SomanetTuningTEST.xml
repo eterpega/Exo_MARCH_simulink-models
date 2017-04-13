@@ -664,6 +664,12 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Temp</Name>
+    <xPCName>SomanetTuningTEST/Temp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Toggle Switch</Name>
     <xPCName>SomanetTuningTEST/Toggle Switch</xPCName>
     
@@ -678,12 +684,6 @@ Operator</sigName>
     <SubSystem>
     <Name>Torque</Name>
     <xPCName>SomanetTuningTEST/Torque</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Torque1</Name>
-    <xPCName>SomanetTuningTEST/Torque1</xPCName>
     
     
     </SubSystem>
