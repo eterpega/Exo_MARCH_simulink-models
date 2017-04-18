@@ -10,7 +10,7 @@
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED6" children="Controls">
         <Property name="BindingSrcPath">Tuning Offset/Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">65, 45</Property>
         <Property name="Location">211, 25</Property>
@@ -58,7 +58,7 @@
         <Property name="OutputValue">0</Property>
         <Property name="BindingSrcPath">D/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="Size">90, 25</Property>
         <Property name="Location">199, 380</Property>
         <Property name="Name">NumericDisplay7</Property>
@@ -68,7 +68,7 @@
         <Property name="OutputValue">0</Property>
         <Property name="BindingSrcPath">I/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="Size">90, 25</Property>
         <Property name="Location">102, 380</Property>
         <Property name="Name">NumericDisplay6</Property>
@@ -78,7 +78,7 @@
         <Property name="OutputValue">0</Property>
         <Property name="BindingSrcPath">P/Value</Property>
         <Property name="BindingSrcObject" />
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="TextFormatting">
           <Property name="Precision">0</Property>
         </Property>
@@ -89,7 +89,7 @@
       </Object>
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED4" children="Controls">
         <Property name="BindingSrcPath">LIVETUNING /Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="Size">48, 35</Property>
         <Property name="Location">261, 8</Property>
@@ -119,7 +119,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider8" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">D/Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">1000000</Property>
@@ -131,7 +131,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider7" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">I/Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">1000000</Property>
@@ -143,7 +143,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">P/Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">1000000</Property>
@@ -172,7 +172,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">TargetVelocity/Value</Property>
-        <Property name="TargetName">Speedgoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">3000</Property>
@@ -191,7 +191,7 @@
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
       <Object type="MW.Instruments.SwitchLED, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SwitchLED5" children="Controls">
         <Property name="BindingSrcPath">Sinus Input /Value</Property>
-        <Property name="TargetName">SpeedGoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="AutoSize">False</Property>
         <Property name="Size">30, 33</Property>
@@ -218,7 +218,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">Signal Generator/Frequency</Property>
-        <Property name="TargetName">Speedgoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">30</Property>
@@ -258,7 +258,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">TargetPosition/Value</Property>
-        <Property name="TargetName">Speedgoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Span">32000</Property>
@@ -288,7 +288,7 @@
       <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="BindingSrcPath">TargetTorque/Value</Property>
-        <Property name="TargetName">Speedgoat</Property>
+        <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcObject" />
         <Property name="ScaleRange">
           <Property name="Min">-500</Property>

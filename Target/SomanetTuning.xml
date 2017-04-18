@@ -727,16 +727,6 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Constant</xpcblkName>
-            <SLblockPath>SomanetTuning/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>D</blkName>
             <xpcblkName>D</xpcblkName>
             <SLblockPath>SomanetTuning/D</SLblockPath>
@@ -944,12 +934,6 @@ Generator</blkName>
               <signal>
               <sigName>MATLAB Function1/p4</sigName>
               <xpcsigName>MATLAB Function1/p4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Constant</sigName>
-              <xpcsigName>Constant</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
