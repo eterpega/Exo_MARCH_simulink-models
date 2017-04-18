@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
-    <Name>
-</Name>
-    <xPCName>SomanetTuning/ </xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Controlword</Name>
     <xPCName>SomanetTuning/Controlword</xPCName>
     
@@ -565,36 +558,6 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Lamp</Name>
-    <xPCName>SomanetTuning/Lamp</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Lamp1</Name>
-    <xPCName>SomanetTuning/Lamp1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Lamp2</Name>
-    <xPCName>SomanetTuning/Lamp2</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Lamp3</Name>
-    <xPCName>SomanetTuning/Lamp3</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Lamp4</Name>
-    <xPCName>SomanetTuning/Lamp4</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Mosi+Tu</Name>
     <xPCName>SomanetTuning/Mosi+Tu</xPCName>
     
@@ -625,14 +588,14 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Slider</Name>
-    <xPCName>SomanetTuning/Slider</xPCName>
+    <Name>Rotary Switch</Name>
+    <xPCName>SomanetTuning/Rotary Switch</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>Slider Switch</Name>
-    <xPCName>SomanetTuning/Slider Switch</xPCName>
+    <Name>Slider</Name>
+    <xPCName>SomanetTuning/Slider</xPCName>
     
     
     </SubSystem>
@@ -651,6 +614,12 @@ Operator</sigName>
     <SubSystem>
     <Name>Slider3</Name>
     <xPCName>SomanetTuning/Slider3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider4</Name>
+    <xPCName>SomanetTuning/Slider4</xPCName>
     
     
     </SubSystem>
@@ -681,6 +650,18 @@ Operator</sigName>
     <SubSystem>
     <Name>Toggle Switch</Name>
     <xPCName>SomanetTuning/Toggle Switch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch1</Name>
+    <xPCName>SomanetTuning/Toggle Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch2</Name>
+    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
     
     
     </SubSystem>
@@ -727,6 +708,16 @@ Change</blkName>
           </parameter>
           </block>
             <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>D</blkName>
             <xpcblkName>D</xpcblkName>
             <SLblockPath>SomanetTuning/D</SLblockPath>
@@ -768,9 +759,29 @@ Change</blkName>
           </parameter>
           </block>
             <block>
+            <blkName>Offset</blkName>
+            <xpcblkName>Offset</xpcblkName>
+            <SLblockPath>SomanetTuning/Offset</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>P</blkName>
             <xpcblkName>P</xpcblkName>
             <SLblockPath>SomanetTuning/P</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Position Control_type</blkName>
+            <xpcblkName>Position Control_type</xpcblkName>
+            <SLblockPath>SomanetTuning/Position Control_type</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1037,12 +1048,6 @@ Generator</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Add</sigName>
-              <xpcsigName>Add</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Switch</sigName>
               <xpcsigName>Switch</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1051,6 +1056,12 @@ Generator</sigName>
               <signal>
               <sigName>Switch1</sigName>
               <xpcsigName>Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
