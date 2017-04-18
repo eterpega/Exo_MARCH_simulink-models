@@ -576,6 +576,12 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>OpMode1</Name>
+    <xPCName>SomanetTuning/OpMode1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Position</Name>
     <xPCName>SomanetTuning/Position</xPCName>
     
@@ -590,6 +596,12 @@ Operator</sigName>
     <SubSystem>
     <Name>Push Button1</Name>
     <xPCName>SomanetTuning/Push Button1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Push Button2</Name>
+    <xPCName>SomanetTuning/Push Button2</xPCName>
     
     
     </SubSystem>
@@ -712,9 +724,30 @@ Change</blkName>
           </parameter>
           </block>
             <block>
+            <blkName>Disable control command</blkName>
+            <xpcblkName>Disable control command</xpcblkName>
+            <SLblockPath>SomanetTuning/Disable control command</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>I</blkName>
             <xpcblkName>I</xpcblkName>
             <SLblockPath>SomanetTuning/I</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>LIVETUNING
+</blkName>
+            <xpcblkName>LIVETUNING </xpcblkName>
+            <SLblockPath>SomanetTuning/LIVETUNING </SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -742,10 +775,9 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Sinus Input
-</blkName>
-            <xpcblkName>Sinus Input </xpcblkName>
-            <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
+            <blkName>Reset control</blkName>
+            <xpcblkName>Reset control</xpcblkName>
+            <SLblockPath>SomanetTuning/Reset control</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -753,10 +785,10 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>TUNING
+            <blkName>Sinus Input
 </blkName>
-            <xpcblkName>TUNING </xpcblkName>
-            <SLblockPath>SomanetTuning/TUNING </SLblockPath>
+            <xpcblkName>Sinus Input </xpcblkName>
+            <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -825,6 +857,16 @@ Generator</blkName>
           </parameter>
           <parameter>
           <paramName>Frequency</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Switch1</blkName>
+            <xpcblkName>Switch1</xpcblkName>
+            <SLblockPath>SomanetTuning/Switch1</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
@@ -976,6 +1018,12 @@ Generator</sigName>
               <signal>
               <sigName>Switch</sigName>
               <xpcsigName>Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch1</sigName>
+              <xpcsigName>Switch1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
