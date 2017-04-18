@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
+    <Name>
+</Name>
+    <xPCName>SomanetTuning/ </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Controlword</Name>
     <xPCName>SomanetTuning/Controlword</xPCName>
     
@@ -564,20 +571,32 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Lamp1</Name>
+    <xPCName>SomanetTuning/Lamp1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Lamp2</Name>
+    <xPCName>SomanetTuning/Lamp2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Lamp3</Name>
+    <xPCName>SomanetTuning/Lamp3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Lamp4</Name>
+    <xPCName>SomanetTuning/Lamp4</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Mosi+Tu</Name>
     <xPCName>SomanetTuning/Mosi+Tu</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>OpMode</Name>
-    <xPCName>SomanetTuning/OpMode</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>OpMode1</Name>
-    <xPCName>SomanetTuning/OpMode1</xPCName>
     
     
     </SubSystem>
@@ -672,12 +691,6 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Tuning switch</Name>
-    <xPCName>SomanetTuning/Tuning switch</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Velocity</Name>
     <xPCName>SomanetTuning/Velocity</xPCName>
     
@@ -710,6 +723,16 @@ Change</blkName>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>vinit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
@@ -925,6 +948,12 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>D</sigName>
               <xpcsigName>D</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -937,6 +966,13 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>LIVETUNING
+</sigName>
+              <xpcsigName>LIVETUNING </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>P</sigName>
               <xpcsigName>P</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -945,6 +981,13 @@ Generator</blkName>
               <signal>
               <sigName>Quick_stop</sigName>
               <xpcsigName>Quick_stop</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sinus Input
+</sigName>
+              <xpcsigName>Sinus Input </xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
