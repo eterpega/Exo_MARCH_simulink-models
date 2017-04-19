@@ -38,6 +38,12 @@ Operator</sigName>
 
     </SubSystem>
     <SubSystem>
+    <Name>Errorcode</Name>
+    <xPCName>SomanetTuning/Errorcode</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>EtherCAT Receive</Name>
     <xPCName>SomanetTuning/EtherCAT Receive</xPCName>
     
@@ -245,6 +251,74 @@ Operator</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+            <block>
+            <blkName>EtherCAT PDO Receive6</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive6</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 55]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive7</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive7</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive7</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 57]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
               <signal>
               <sigName>EtherCAT Init </sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT Init </xpcsigName>
@@ -284,6 +358,18 @@ Operator</sigName>
               <signal>
               <sigName>EtherCAT PDO Receive5</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive6</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive7</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive7</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -672,6 +758,12 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Torque1</Name>
+    <xPCName>SomanetTuning/Torque1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Velocity</Name>
     <xPCName>SomanetTuning/Velocity</xPCName>
     
@@ -949,8 +1041,20 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>D</sigName>
               <xpcsigName>D</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Disable control command</sigName>
+              <xpcsigName>Disable control command</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -968,8 +1072,20 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Offset</sigName>
+              <xpcsigName>Offset</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>P</sigName>
               <xpcsigName>P</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Position Control_type</sigName>
+              <xpcsigName>Position Control_type</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -980,9 +1096,39 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Reset control</sigName>
+              <xpcsigName>Reset control</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Sinus Input
 </sigName>
               <xpcsigName>Sinus Input </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>TargetPosition</sigName>
+              <xpcsigName>TargetPosition</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>TargetTorque</sigName>
+              <xpcsigName>TargetTorque</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>TargetVelocity</sigName>
+              <xpcsigName>TargetVelocity</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Tuning Offset</sigName>
+              <xpcsigName>Tuning Offset</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
