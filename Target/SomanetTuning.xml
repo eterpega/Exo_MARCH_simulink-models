@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
-    <Name>Controlword</Name>
-    <xPCName>SomanetTuning/Controlword</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Detect
 Change</Name>
     <xPCName>SomanetTuning/Detect Change</xPCName>
@@ -36,12 +30,6 @@ Operator</sigName>
                 <sigLabel>U(k-1)</sigLabel>
             </signal>
 
-    </SubSystem>
-    <SubSystem>
-    <Name>Errorcode</Name>
-    <xPCName>SomanetTuning/Errorcode</xPCName>
-    
-    
     </SubSystem>
     <SubSystem>
     <Name>EtherCAT Receive</Name>
@@ -292,7 +280,41 @@ Operator</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 57]</dim>  
+          <dim>[1, 74]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive8</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive8</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive8</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 74]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -324,54 +346,70 @@ Operator</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT Init </xpcsigName>
               <sigWidth>6</sigWidth>
               <sigDim>[6, 1]</sigDim>
+                <sigLabel>EtherCAT Init</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Velocity</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive1</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Status word</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive2</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Position</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive3</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Torque</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive4</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>User MISO</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive5</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive5</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning Status</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive6</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive6</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive7</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive7</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase B current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive8</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase C current</sigLabel>
             </signal>
 
     </SubSystem>
@@ -638,18 +676,6 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Init </Name>
-    <xPCName>SomanetTuning/Init </xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Mosi+Tu</Name>
-    <xPCName>SomanetTuning/Mosi+Tu</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Position</Name>
     <xPCName>SomanetTuning/Position</xPCName>
     
@@ -670,6 +696,12 @@ Operator</sigName>
     <SubSystem>
     <Name>Push Button2</Name>
     <xPCName>SomanetTuning/Push Button2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Rest</Name>
+    <xPCName>SomanetTuning/Rest</xPCName>
     
     
     </SubSystem>
@@ -724,12 +756,6 @@ Operator</sigName>
     <SubSystem>
     <Name>Slider7</Name>
     <xPCName>SomanetTuning/Slider7</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Statusword</Name>
-    <xPCName>SomanetTuning/Statusword</xPCName>
     
     
     </SubSystem>
@@ -1041,20 +1067,8 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Constant</sigName>
-              <xpcsigName>Constant</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>D</sigName>
               <xpcsigName>D</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Disable control command</sigName>
-              <xpcsigName>Disable control command</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1072,20 +1086,8 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Offset</sigName>
-              <xpcsigName>Offset</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>P</sigName>
               <xpcsigName>P</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Position Control_type</sigName>
-              <xpcsigName>Position Control_type</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1096,39 +1098,9 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Reset control</sigName>
-              <xpcsigName>Reset control</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Sinus Input
 </sigName>
               <xpcsigName>Sinus Input </xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>TargetPosition</sigName>
-              <xpcsigName>TargetPosition</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>TargetTorque</sigName>
-              <xpcsigName>TargetTorque</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>TargetVelocity</sigName>
-              <xpcsigName>TargetVelocity</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Tuning Offset</sigName>
-              <xpcsigName>Tuning Offset</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1155,18 +1127,55 @@ Generator</blkName>
               <xpcsigName>Data Type Conversion10</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Target Position</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion11</sigName>
               <xpcsigName>Data Type Conversion11</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetTorque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion13</sigName>
+              <xpcsigName>Data Type Conversion13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion2</sigName>
               <xpcsigName>Data Type Conversion2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>UserMISO</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion4</sigName>
+              <xpcsigName>Data Type Conversion4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TuningStatus</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion5</sigName>
+              <xpcsigName>Data Type Conversion5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Controlword</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion6</sigName>
+              <xpcsigName>Data Type Conversion6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Statusword</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion7</sigName>
@@ -1185,11 +1194,18 @@ Generator</blkName>
               <xpcsigName>Data Type Conversion9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetVelocity</sigLabel>
             </signal>
               <signal>
               <sigName>Signal
 Generator</sigName>
               <xpcsigName>Signal Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1210,6 +1226,13 @@ Generator</sigName>
               <xpcsigName>Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Unary Minus</sigName>
+              <xpcsigName>Unary Minus</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase A current</sigLabel>
             </signal>
 
 </Root>
