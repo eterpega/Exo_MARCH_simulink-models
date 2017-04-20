@@ -724,6 +724,12 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Slider10</Name>
+    <xPCName>SomanetTuning/Slider10</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Slider2</Name>
     <xPCName>SomanetTuning/Slider2</xPCName>
     
@@ -760,6 +766,18 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Slider8</Name>
+    <xPCName>SomanetTuning/Slider8</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider9</Name>
+    <xPCName>SomanetTuning/Slider9</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Toggle Switch</Name>
     <xPCName>SomanetTuning/Toggle Switch</xPCName>
     
@@ -790,6 +808,377 @@ Operator</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Torque2</Name>
+    <xPCName>SomanetTuning/Torque2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Torque3</Name>
+    <xPCName>SomanetTuning/Torque3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Tuning Magic</Name>
+    <xPCName>SomanetTuning/Tuning Magic</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/Tuning Magic/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetTuning/Tuning Magic/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Tuning Magic/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>D</blkName>
+            <xpcblkName>Tuning Magic/D</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/D</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Disable control command</blkName>
+            <xpcblkName>Tuning Magic/Disable control command</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Disable control command</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>I</blkName>
+            <xpcblkName>Tuning Magic/I</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/I</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>LIVETUNING
+</blkName>
+            <xpcblkName>Tuning Magic/LIVETUNING </xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/LIVETUNING </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Max_Position</blkName>
+            <xpcblkName>Tuning Magic/Max_Position</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Max_Position</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Max_Torque</blkName>
+            <xpcblkName>Tuning Magic/Max_Torque</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Max_Torque</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Min_Position</blkName>
+            <xpcblkName>Tuning Magic/Min_Position</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Min_Position</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Offset</blkName>
+            <xpcblkName>Tuning Magic/Offset</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Offset</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>P</blkName>
+            <xpcblkName>Tuning Magic/P</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/P</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Position Control_type</blkName>
+            <xpcblkName>Tuning Magic/Position Control_type</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Position Control_type</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Reset control</blkName>
+            <xpcblkName>Tuning Magic/Reset control</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Reset control</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Sinus Input
+</blkName>
+            <xpcblkName>Tuning Magic/Sinus Input </xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Sinus Input </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetPosition</blkName>
+            <xpcblkName>Tuning Magic/TargetPosition</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/TargetPosition</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetTorque</blkName>
+            <xpcblkName>Tuning Magic/TargetTorque</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/TargetTorque</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetVelocity</blkName>
+            <xpcblkName>Tuning Magic/TargetVelocity</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/TargetVelocity</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Tuning Offset</blkName>
+            <xpcblkName>Tuning Magic/Tuning Offset</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Tuning Offset</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Signal
+Generator</blkName>
+            <xpcblkName>Tuning Magic/Signal Generator</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Signal Generator</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>Frequency</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Switch1</blkName>
+            <xpcblkName>Tuning Magic/Switch1</xpcblkName>
+            <SLblockPath>SomanetTuning/Tuning Magic/Switch1</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function1/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p3</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function1/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p4</sigName>
+              <xpcsigName>Tuning Magic/MATLAB Function1/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>D</sigName>
+              <xpcsigName>Tuning Magic/D</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>I</sigName>
+              <xpcsigName>Tuning Magic/I</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>LIVETUNING
+</sigName>
+              <xpcsigName>Tuning Magic/LIVETUNING </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>P</sigName>
+              <xpcsigName>Tuning Magic/P</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Sinus Input
+</sigName>
+              <xpcsigName>Tuning Magic/Sinus Input </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Target Position</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetTorque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion8</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>Tuning Magic/Data Type Conversion9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetVelocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Signal
+Generator</sigName>
+              <xpcsigName>Tuning Magic/Signal Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Tuning Magic/Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch1</sigName>
+              <xpcsigName>Tuning Magic/Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>Tuning Magic/Switch2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Velocity</Name>
     <xPCName>SomanetTuning/Velocity</xPCName>
     
@@ -798,18 +1187,6 @@ Operator</sigName>
     <SubSystem>
     <Name>Chart</Name>
     <xPCName>SomanetTuning/Chart</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>SomanetTuning/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>MATLAB Function1</Name>
-    <xPCName>SomanetTuning/MATLAB Function1</xPCName>
     
     
     </SubSystem>
@@ -826,151 +1203,9 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Constant</xpcblkName>
-            <SLblockPath>SomanetTuning/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>D</blkName>
-            <xpcblkName>D</xpcblkName>
-            <SLblockPath>SomanetTuning/D</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Disable control command</blkName>
-            <xpcblkName>Disable control command</xpcblkName>
-            <SLblockPath>SomanetTuning/Disable control command</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>I</blkName>
-            <xpcblkName>I</xpcblkName>
-            <SLblockPath>SomanetTuning/I</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>LIVETUNING
-</blkName>
-            <xpcblkName>LIVETUNING </xpcblkName>
-            <SLblockPath>SomanetTuning/LIVETUNING </SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Offset</blkName>
-            <xpcblkName>Offset</xpcblkName>
-            <SLblockPath>SomanetTuning/Offset</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>P</blkName>
-            <xpcblkName>P</xpcblkName>
-            <SLblockPath>SomanetTuning/P</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Position Control_type</blkName>
-            <xpcblkName>Position Control_type</xpcblkName>
-            <SLblockPath>SomanetTuning/Position Control_type</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Quick_stop</blkName>
             <xpcblkName>Quick_stop</xpcblkName>
             <SLblockPath>SomanetTuning/Quick_stop</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Reset control</blkName>
-            <xpcblkName>Reset control</xpcblkName>
-            <SLblockPath>SomanetTuning/Reset control</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Sinus Input
-</blkName>
-            <xpcblkName>Sinus Input </xpcblkName>
-            <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>TargetPosition</blkName>
-            <xpcblkName>TargetPosition</xpcblkName>
-            <SLblockPath>SomanetTuning/TargetPosition</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>TargetTorque</blkName>
-            <xpcblkName>TargetTorque</xpcblkName>
-            <SLblockPath>SomanetTuning/TargetTorque</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>TargetVelocity</blkName>
-            <xpcblkName>TargetVelocity</xpcblkName>
-            <SLblockPath>SomanetTuning/TargetVelocity</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Tuning Offset</blkName>
-            <xpcblkName>Tuning Offset</xpcblkName>
-            <SLblockPath>SomanetTuning/Tuning Offset</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -988,27 +1223,42 @@ Change</blkName>
           </parameter>
           </block>
             <block>
-            <blkName>Signal
-Generator</blkName>
-            <xpcblkName>Signal Generator</xpcblkName>
-            <SLblockPath>SomanetTuning/Signal Generator</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
           <parameter>
-          <paramName>Amplitude</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          <parameter>
-          <paramName>Frequency</paramName>
+          <paramName>Gain</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
             <block>
-            <blkName>Switch1</blkName>
-            <xpcblkName>Switch1</xpcblkName>
-            <SLblockPath>SomanetTuning/Switch1</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Gain1</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
           <parameter>
-          <paramName>Threshold</paramName>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Gain2</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Gain3</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
@@ -1025,82 +1275,26 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function/p1</sigName>
-              <xpcsigName>MATLAB Function/p1</xpcsigName>
+              <sigName>Abs</sigName>
+              <xpcsigName>Abs</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function/p2</sigName>
-              <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigName>Abs1</sigName>
+              <xpcsigName>Abs1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function/p3</sigName>
-              <xpcsigName>MATLAB Function/p3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function1/p1</sigName>
-              <xpcsigName>MATLAB Function1/p1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function1/p2</sigName>
-              <xpcsigName>MATLAB Function1/p2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function1/p3</sigName>
-              <xpcsigName>MATLAB Function1/p3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function1/p4</sigName>
-              <xpcsigName>MATLAB Function1/p4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>D</sigName>
-              <xpcsigName>D</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>I</sigName>
-              <xpcsigName>I</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>LIVETUNING
-</sigName>
-              <xpcsigName>LIVETUNING </xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>P</sigName>
-              <xpcsigName>P</xpcsigName>
+              <sigName>Abs2</sigName>
+              <xpcsigName>Abs2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Quick_stop</sigName>
               <xpcsigName>Quick_stop</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Sinus Input
-</sigName>
-              <xpcsigName>Sinus Input </xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1117,24 +1311,11 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion1</sigName>
-              <xpcsigName>Data Type Conversion1</xpcsigName>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>Data Type Conversion12</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion10</sigName>
-              <xpcsigName>Data Type Conversion10</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Target Position</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion11</sigName>
-              <xpcsigName>Data Type Conversion11</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>TargetTorque</sigLabel>
+                <sigLabel>I_DC [mA]</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion13</sigName>
@@ -1142,12 +1323,6 @@ Generator</blkName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion2</sigName>
-              <xpcsigName>Data Type Conversion2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion3</sigName>
@@ -1178,30 +1353,31 @@ Generator</blkName>
                 <sigLabel>Statusword</sigLabel>
             </signal>
               <signal>
-              <sigName>Data Type Conversion7</sigName>
-              <xpcsigName>Data Type Conversion7</xpcsigName>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion8</sigName>
-              <xpcsigName>Data Type Conversion8</xpcsigName>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Gain1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase A current [mA]</sigLabel>
             </signal>
               <signal>
-              <sigName>Data Type Conversion9</sigName>
-              <xpcsigName>Data Type Conversion9</xpcsigName>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Gain2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>TargetVelocity</sigLabel>
+                <sigLabel>Phase B current [mA]</sigLabel>
             </signal>
               <signal>
-              <sigName>Signal
-Generator</sigName>
-              <xpcsigName>Signal Generator</xpcsigName>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase C current [mA]</sigLabel>
             </signal>
               <signal>
               <sigName>Add</sigName>
@@ -1210,22 +1386,11 @@ Generator</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Switch</sigName>
-              <xpcsigName>Switch</xpcsigName>
+              <sigName>Add1</sigName>
+              <xpcsigName>Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch1</sigName>
-              <xpcsigName>Switch1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch2</sigName>
-              <xpcsigName>Switch2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
+                <sigLabel>I_DC</sigLabel>
             </signal>
               <signal>
               <sigName>Unary Minus</sigName>
