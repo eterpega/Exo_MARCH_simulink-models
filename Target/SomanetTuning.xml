@@ -862,36 +862,22 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-              <signal>
-              <sigName>Abs</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Abs</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Abs1</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Abs1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Abs2</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Abs2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
+            <block>
+            <blkName>Scalefactor</blkName>
+            <xpcblkName>PhaseCurrentCalculation/Scalefactor</xpcblkName>
+            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Scalefactor</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
               <signal>
               <sigName>Data Type Conversion12</sigName>
               <xpcsigName>PhaseCurrentCalculation/Data Type Conversion12</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>I_DC [mA]</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Gain</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Gain</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Gain1</sigName>
@@ -915,24 +901,48 @@
                 <sigLabel>Phase C current [mA]</sigLabel>
             </signal>
               <signal>
+              <sigName>Scalefactor</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Scalefactor</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>ProductBC</sigName>
+              <xpcsigName>PhaseCurrentCalculation/ProductBC</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SquareB</sigName>
+              <xpcsigName>PhaseCurrentCalculation/SquareB</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SquareC</sigName>
+              <xpcsigName>PhaseCurrentCalculation/SquareC</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Add</sigName>
               <xpcsigName>PhaseCurrentCalculation/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Add1</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Add1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>I_DC</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Unary Minus</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Unary Minus</xpcsigName>
+              <sigName>Substract</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Substract</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>Phase A current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Sqrt</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Sqrt</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>I_DC</sigLabel>
             </signal>
 
     </SubSystem>
@@ -976,33 +986,33 @@
     <Name>SetPointHandler</Name>
     <xPCName>SomanetTuning/SetPointHandler</xPCName>
         <SubSystem>
-    <Name>MATLAB Function1</Name>
-    <xPCName>SomanetTuning/SetPointHandler/MATLAB Function1</xPCName>
+    <Name>process set point sliders</Name>
+    <xPCName>SomanetTuning/SetPointHandler/process set point sliders</xPCName>
     
     
     </SubSystem>
 
                   <signal>
-              <sigName>MATLAB Function1/p1</sigName>
-              <xpcsigName>SetPointHandler/MATLAB Function1/p1</xpcsigName>
+              <sigName>process set point sliders/p1</sigName>
+              <xpcsigName>SetPointHandler/process set point sliders/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function1/p2</sigName>
-              <xpcsigName>SetPointHandler/MATLAB Function1/p2</xpcsigName>
+              <sigName>process set point sliders/p2</sigName>
+              <xpcsigName>SetPointHandler/process set point sliders/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function1/p3</sigName>
-              <xpcsigName>SetPointHandler/MATLAB Function1/p3</xpcsigName>
+              <sigName>process set point sliders/p3</sigName>
+              <xpcsigName>SetPointHandler/process set point sliders/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function1/p4</sigName>
-              <xpcsigName>SetPointHandler/MATLAB Function1/p4</xpcsigName>
+              <sigName>process set point sliders/p4</sigName>
+              <xpcsigName>SetPointHandler/process set point sliders/p4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1044,6 +1054,12 @@
     <SubSystem>
     <Name>Slider10</Name>
     <xPCName>SomanetTuning/Slider10</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider11</Name>
+    <xPCName>SomanetTuning/Slider11</xPCName>
     
     
     </SubSystem>
@@ -1526,6 +1542,7 @@ Generator</blkName>
               <xpcsigName>Data Type Conversion12</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+                <sigLabel>Op mode</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion13</sigName>
