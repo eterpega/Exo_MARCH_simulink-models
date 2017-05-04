@@ -815,12 +815,6 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Rest1</Name>
-    <xPCName>SomanetTuning/Rest1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Rotary Switch</Name>
     <xPCName>SomanetTuning/Rotary Switch</xPCName>
     
@@ -998,6 +992,12 @@
     
     </SubSystem>
     <SubSystem>
+    <Name>Torque5</Name>
+    <xPCName>SomanetTuning/Torque5</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>TuningHandler</Name>
     <xPCName>SomanetTuning/TuningHandler</xPCName>
         <SubSystem>
@@ -1153,38 +1153,6 @@
     <Name>SomanetConfigHandler</Name>
     <xPCName>SomanetTuning/TuningHandler/SomanetConfigHandler</xPCName>
         <SubSystem>
-    <Name>Detect
-Change</Name>
-    <xPCName>SomanetTuning/TuningHandler/SomanetConfigHandler/Detect Change</xPCName>
-    
-                <block>
-            <blkName>Delay Input1</blkName>
-            <xpcblkName>TuningHandler/SomanetConfigHandler/Detect Change/Delay Input1</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningHandler/SomanetConfigHandler/Detect Change/Delay Input1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>vinit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>FixPt
-Relational
-Operator</sigName>
-              <xpcsigName>TuningHandler/SomanetConfigHandler/Detect Change/FixPt Relational Operator</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Delay Input1</sigName>
-              <xpcsigName>TuningHandler/SomanetConfigHandler/Detect Change/Delay Input1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>U(k-1)</sigLabel>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
     <Name>read_config</Name>
     <xPCName>SomanetTuning/TuningHandler/SomanetConfigHandler/read_config</xPCName>
         <SubSystem>
@@ -1258,17 +1226,6 @@ Operator</sigName>
     </SubSystem>
 
                 <block>
-            <blkName>Detect
-Change</blkName>
-            <xpcblkName>TuningHandler/SomanetConfigHandler/Detect Change</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningHandler/SomanetConfigHandler/Detect Change</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>vinit</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Delay</blkName>
             <xpcblkName>TuningHandler/SomanetConfigHandler/Delay</xpcblkName>
             <SLblockPath>SomanetTuning/TuningHandler/SomanetConfigHandler/Delay</SLblockPath>
@@ -1383,17 +1340,6 @@ Change</blkName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-            <block>
-            <blkName>offset_tuning_switch
-</blkName>
-            <xpcblkName>TuningHandler/offset_tuning_switch </xpcblkName>
-            <SLblockPath>SomanetTuning/TuningHandler/offset_tuning_switch </SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
               <signal>
               <sigName>Switch2</sigName>
               <xpcsigName>TuningHandler/Switch2</xpcsigName>
@@ -1493,6 +1439,26 @@ Change</blkName>
           </parameter>
           </block>
             <block>
+            <blkName>angle_offset_slider</blkName>
+            <xpcblkName>angle_offset_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/angle_offset_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>auto_offset_switch</blkName>
+            <xpcblkName>auto_offset_switch</xpcblkName>
+            <SLblockPath>SomanetTuning/auto_offset_switch</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>clear_error</blkName>
             <xpcblkName>clear_error</xpcblkName>
             <SLblockPath>SomanetTuning/clear_error</SLblockPath>
@@ -1549,16 +1515,6 @@ Change</blkName>
             <blkName>max_torque_slider</blkName>
             <xpcblkName>max_torque_slider</xpcblkName>
             <SLblockPath>SomanetTuning/max_torque_slider</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>max_torque_slider1</blkName>
-            <xpcblkName>max_torque_slider1</xpcblkName>
-            <SLblockPath>SomanetTuning/max_torque_slider1</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1680,6 +1636,13 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TuningValue</sigLabel>
+            </signal>
+              <signal>
               <sigName>Data Type Conversion13</sigName>
               <xpcsigName>Data Type Conversion13</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1722,17 +1685,17 @@ Generator</blkName>
                 <sigLabel>Statusword</sigLabel>
             </signal>
               <signal>
-              <sigName>Data Type Conversion7</sigName>
-              <xpcsigName>Data Type Conversion7</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Data Type Conversion8</sigName>
               <xpcsigName>Data Type Conversion8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>OpMode</sigLabel>
+                <sigLabel>TuningCommand</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>Data Type Conversion9</xpcsigName>
+              <sigWidth>15</sigWidth>
+              <sigDim>[15, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Signal
