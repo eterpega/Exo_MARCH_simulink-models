@@ -1224,6 +1224,12 @@
             </signal>
 
     </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/TuningHandler/SomanetConfigHandler/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
 
                 <block>
             <blkName>Delay</blkName>
@@ -1253,6 +1259,12 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>TuningHandler/SomanetConfigHandler/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
               <signal>
               <sigName>Switch</sigName>
               <xpcsigName>TuningHandler/SomanetConfigHandler/Switch</xpcsigName>
@@ -1640,7 +1652,21 @@ Generator</blkName>
               <xpcsigName>Data Type Conversion10</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>TuningValue</sigLabel>
+                <sigLabel>Tuning Value</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Somanet opmode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>Data Type Conversion12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Desired Opmode</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion13</sigName>
@@ -1685,11 +1711,17 @@ Generator</blkName>
                 <sigLabel>Statusword</sigLabel>
             </signal>
               <signal>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>Data Type Conversion7</xpcsigName>
+              <sigWidth>15</sigWidth>
+              <sigDim>[15, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Data Type Conversion8</sigName>
               <xpcsigName>Data Type Conversion8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>TuningCommand</sigLabel>
+                <sigLabel>Tuning Command</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion9</sigName>
