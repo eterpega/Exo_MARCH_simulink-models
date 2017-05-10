@@ -16,6 +16,7 @@ bone_dimensions     =   '[0.012, 0.5, 0.045]' ; %[W L H] originaly taken from th
 bone_density        =   0; %in kg/m^3
 spring_stiffness    =   0.1;
 damping_coef        =   0.001;
+sine_frequency      =   0.5 %Hz
 
 %Set important parameters
 %use get param to find the names of the parameters in a particular block
@@ -26,6 +27,7 @@ set_param([model '/Solid'],'BrickDimensions',bone_dimensions);
 set_param([model '/Solid'],'Density',num2str(bone_density));
 set_param([model '/Revolute Joint'],'SpringStiffness',num2str(spring_stiffness));
 set_param([model '/Revolute Joint'],'DampingCoefficient',num2str(damping_coef));
+set_param([model '/Sine Wave'],'Frequency',num2str(sine_frequency));
 
 %Run model
 simout =sim(model);
