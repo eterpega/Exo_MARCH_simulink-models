@@ -10,7 +10,7 @@ model='SimpleJointModel';
 open_system(model);
 
 %Define important parameters
-initial_load        =   35; %in kg
+initial_load        =   40; %in kg
 initial_angle       =   0 ; %in degrees wrt horizontal
 bone_dimensions     =   '[0.012, 0.5, 0.045]' ; %[W L H] originaly taken from the first test bone
 bone_density        =   2700; %in kg/m^3
