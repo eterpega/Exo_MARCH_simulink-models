@@ -1,137 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
-    <Name>ConfigHandler</Name>
-    <xPCName>SomanetTuning/ConfigHandler</xPCName>
-        <SubSystem>
-    <Name>read_config</Name>
-    <xPCName>SomanetTuning/ConfigHandler/read_config</xPCName>
-        <SubSystem>
-    <Name>MATLAB Function1</Name>
-    <xPCName>SomanetTuning/ConfigHandler/read_config/MATLAB Function1</xPCName>
+    <Name>Desired config</Name>
+    <xPCName>SomanetTuning/Desired config</xPCName>
     
     
-    </SubSystem>
-
-                <block>
-            <blkName>somanet_config</blkName>
-            <xpcblkName>ConfigHandler/read_config/somanet_config</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/read_config/somanet_config</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>InitialOutput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>config_done</blkName>
-            <xpcblkName>ConfigHandler/read_config/config_done</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/read_config/config_done</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>InitialOutput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>MATLAB Function1/p1</sigName>
-              <xpcsigName>ConfigHandler/read_config/MATLAB Function1/p1</xpcsigName>
-              <sigWidth>20</sigWidth>
-              <sigDim>[20, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function1/p2</sigName>
-              <xpcsigName>ConfigHandler/read_config/MATLAB Function1/p2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-    <SubSystem>
-    <Name>update_config</Name>
-    <xPCName>SomanetTuning/ConfigHandler/update_config</xPCName>
-        <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>SomanetTuning/ConfigHandler/update_config/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-
-                <block>
-            <blkName>somanet_config</blkName>
-            <xpcblkName>ConfigHandler/update_config/somanet_config</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/update_config/somanet_config</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>InitialOutput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>ConfigHandler/update_config/MATLAB Function</xpcsigName>
-              <sigWidth>20</sigWidth>
-              <sigDim>[20, 1]</sigDim>
-            </signal>
-
-    </SubSystem>
-
-                <block>
-            <blkName>Switch</blkName>
-            <xpcblkName>ConfigHandler/Switch</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/Switch</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
-          <parameter>
-          <paramName>Threshold</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Delay</blkName>
-            <xpcblkName>ConfigHandler/Delay</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/Delay</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>DelayLength</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Delay1</blkName>
-            <xpcblkName>ConfigHandler/Delay1</xpcblkName>
-            <SLblockPath>SomanetTuning/ConfigHandler/Delay1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>DelayLength</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          <parameter>
-          <paramName>InitialCondition</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>Switch</sigName>
-              <xpcsigName>ConfigHandler/Switch</xpcsigName>
-              <sigWidth>20</sigWidth>
-              <sigDim>[20, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Delay</sigName>
-              <xpcsigName>ConfigHandler/Delay</xpcsigName>
-              <sigWidth>20</sigWidth>
-              <sigDim>[20, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Delay1</sigName>
-              <xpcsigName>ConfigHandler/Delay1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
     </SubSystem>
     <SubSystem>
     <Name>EtherCAT Receive</Name>
@@ -517,7 +389,7 @@
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>User MISO</sigLabel>
+                
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive5</sigName>
@@ -531,7 +403,7 @@
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive6</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>Error Code</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive7</sigName>
@@ -545,14 +417,14 @@
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>Phase C current</sigLabel>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive9</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>op_mode_somanet</sigLabel>
             </signal>
 
     </SubSystem>
@@ -801,20 +673,131 @@
 
     </SubSystem>
     <SubSystem>
-    <Name>Half Gauge</Name>
-    <xPCName>SomanetTuning/Half Gauge</xPCName>
+    <Name>GuiConfigCreator</Name>
+    <xPCName>SomanetTuning/GuiConfigCreator</xPCName>
+    
+                <block>
+            <blkName>Pole Pairs</blkName>
+            <xpcblkName>GuiConfigCreator/Pole Pairs</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/Pole Pairs</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>break release strategy
+</blkName>
+            <xpcblkName>GuiConfigCreator/break release strategy </xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/break release strategy </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max speed</blkName>
+            <xpcblkName>GuiConfigCreator/max speed</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/max speed</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position integral limit</blkName>
+            <xpcblkName>GuiConfigCreator/position integral limit</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/position integral limit</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity integral limit</blkName>
+            <xpcblkName>GuiConfigCreator/velocity integral limit</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/velocity integral limit</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>position_p_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_p_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>position_i_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_i_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>position_d_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_d_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_p_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_p_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_i_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_i_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_d_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_d_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>min_position_gui</sigName>
+              <xpcsigName>GuiConfigCreator/min_position_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>max_position_gui</sigName>
+              <xpcsigName>GuiConfigCreator/max_position_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>max_torque_gui</sigName>
+              <xpcsigName>GuiConfigCreator/max_torque_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>angle_offset_gui</sigName>
+              <xpcsigName>GuiConfigCreator/angle_offset_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Phase currents</Name>
+    <xPCName>SomanetTuning/Phase currents</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>Half Gauge1</Name>
-    <xPCName>SomanetTuning/Half Gauge1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Half Gauge2</Name>
-    <xPCName>SomanetTuning/Half Gauge2</xPCName>
+    <Name>Phase currents numeric</Name>
+    <xPCName>SomanetTuning/Phase currents numeric</xPCName>
     
     
     </SubSystem>
@@ -862,22 +845,36 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-            <block>
-            <blkName>Scalefactor</blkName>
-            <xpcblkName>PhaseCurrentCalculation/Scalefactor</xpcblkName>
-            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Scalefactor</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Abs</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Abs1</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Abs1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Abs2</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Abs2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
               <signal>
               <sigName>Data Type Conversion12</sigName>
               <xpcsigName>PhaseCurrentCalculation/Data Type Conversion12</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>I_DC [mA]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Gain1</sigName>
@@ -901,48 +898,24 @@
                 <sigLabel>Phase C current [mA]</sigLabel>
             </signal>
               <signal>
-              <sigName>Scalefactor</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Scalefactor</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>ProductBC</sigName>
-              <xpcsigName>PhaseCurrentCalculation/ProductBC</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>SquareB</sigName>
-              <xpcsigName>PhaseCurrentCalculation/SquareB</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>SquareC</sigName>
-              <xpcsigName>PhaseCurrentCalculation/SquareC</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Add</sigName>
               <xpcsigName>PhaseCurrentCalculation/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Substract</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Substract</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase A current</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Sqrt</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Sqrt</xpcsigName>
+              <sigName>Add1</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>I_DC</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Unary Minus</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Unary Minus</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase A current</sigLabel>
             </signal>
 
     </SubSystem>
@@ -971,71 +944,325 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Rest</Name>
-    <xPCName>SomanetTuning/Rest</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Rotary Switch</Name>
     <xPCName>SomanetTuning/Rotary Switch</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>SetPointHandler</Name>
-    <xPCName>SomanetTuning/SetPointHandler</xPCName>
+    <Name>ScopeSystem</Name>
+    <xPCName>SomanetTuning/ScopeSystem</xPCName>
+    
+                  <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Error code</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Statusword</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion13</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion14</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion14</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion15</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion15</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion16</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion16</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion17</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion17</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion18</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion18</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion19</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion19</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Controlword</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion20</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion20</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion21</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion21</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion22</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion22</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion23</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion23</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion24</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion24</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion25</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion25</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion26</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion26</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion27</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion27</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion28</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion28</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion29</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion29</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuningstatus</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion30</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion30</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>min</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion31</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion31</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>max</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion4</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion5</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Statemachine state</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion6</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning command</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning value</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion8</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Somanet opmode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Desired opmode</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>SetPointGuiHandler</Name>
+    <xPCName>SomanetTuning/SetPointGuiHandler</xPCName>
         <SubSystem>
     <Name>process set point sliders</Name>
-    <xPCName>SomanetTuning/SetPointHandler/process set point sliders</xPCName>
+    <xPCName>SomanetTuning/SetPointGuiHandler/process set point sliders</xPCName>
     
     
     </SubSystem>
 
-                  <signal>
+                <block>
+            <blkName>disable_control_command</blkName>
+            <xpcblkName>SetPointGuiHandler/disable_control_command</xpcblkName>
+            <SLblockPath>SomanetTuning/SetPointGuiHandler/disable_control_command</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>ResetControlSwitch</blkName>
+            <xpcblkName>SetPointGuiHandler/ResetControlSwitch</xpcblkName>
+            <SLblockPath>SomanetTuning/SetPointGuiHandler/ResetControlSwitch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
               <sigName>process set point sliders/p1</sigName>
-              <xpcsigName>SetPointHandler/process set point sliders/p1</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/process set point sliders/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p2</sigName>
-              <xpcsigName>SetPointHandler/process set point sliders/p2</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/process set point sliders/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p3</sigName>
-              <xpcsigName>SetPointHandler/process set point sliders/p3</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/process set point sliders/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p4</sigName>
-              <xpcsigName>SetPointHandler/process set point sliders/p4</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/process set point sliders/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>SetPointGuiHandler/Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion10</sigName>
-              <xpcsigName>SetPointHandler/Data Type Conversion10</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/Data Type Conversion10</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>Target Position</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion11</sigName>
-              <xpcsigName>SetPointHandler/Data Type Conversion11</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/Data Type Conversion11</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>TargetTorque</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion9</sigName>
-              <xpcsigName>SetPointHandler/Data Type Conversion9</xpcsigName>
+              <xpcsigName>SetPointGuiHandler/Data Type Conversion9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>TargetVelocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>ResetControlSwitch</sigName>
+              <xpcsigName>SetPointGuiHandler/ResetControlSwitch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
 
     </SubSystem>
@@ -1060,6 +1287,18 @@
     <SubSystem>
     <Name>Slider11</Name>
     <xPCName>SomanetTuning/Slider11</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider12</Name>
+    <xPCName>SomanetTuning/Slider12</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider13</Name>
+    <xPCName>SomanetTuning/Slider13</xPCName>
     
     
     </SubSystem>
@@ -1112,6 +1351,154 @@
     
     </SubSystem>
     <SubSystem>
+    <Name>Somanet config</Name>
+    <xPCName>SomanetTuning/Somanet config</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Somanet data</Name>
+    <xPCName>SomanetTuning/Somanet data</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>SomanetConfigHandler</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler</xPCName>
+        <SubSystem>
+    <Name>read_config</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler/read_config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler/read_config/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>SomanetConfigHandler/read_config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetTuning/SomanetConfigHandler/read_config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>config_done</blkName>
+            <xpcblkName>SomanetConfigHandler/read_config/config_done</xpcblkName>
+            <SLblockPath>SomanetTuning/SomanetConfigHandler/read_config/config_done</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>SomanetConfigHandler/read_config/MATLAB Function1/p1</xpcsigName>
+              <sigWidth>18</sigWidth>
+              <sigDim>[18, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>SomanetConfigHandler/read_config/MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>update config</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler/update config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler/update config/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>SomanetConfigHandler/update config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetTuning/SomanetConfigHandler/update config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SomanetConfigHandler/update config/MATLAB Function</xpcsigName>
+              <sigWidth>18</sigWidth>
+              <sigDim>[18, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/SomanetConfigHandler/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Delay</blkName>
+            <xpcblkName>SomanetConfigHandler/Delay</xpcblkName>
+            <SLblockPath>SomanetTuning/SomanetConfigHandler/Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Delay1</blkName>
+            <xpcblkName>SomanetConfigHandler/Delay1</xpcblkName>
+            <SLblockPath>SomanetTuning/SomanetConfigHandler/Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SomanetConfigHandler/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>SomanetConfigHandler/Switch</xpcsigName>
+              <sigWidth>18</sigWidth>
+              <sigDim>[18, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Delay</sigName>
+              <xpcsigName>SomanetConfigHandler/Delay</xpcsigName>
+              <sigWidth>18</sigWidth>
+              <sigDim>[18, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Delay1</sigName>
+              <xpcsigName>SomanetConfigHandler/Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Toggle Switch</Name>
     <xPCName>SomanetTuning/Toggle Switch</xPCName>
     
@@ -1136,37 +1523,25 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Torque1</Name>
-    <xPCName>SomanetTuning/Torque1</xPCName>
+    <Name>Total current</Name>
+    <xPCName>SomanetTuning/Total current</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>Torque2</Name>
-    <xPCName>SomanetTuning/Torque2</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Torque3</Name>
-    <xPCName>SomanetTuning/Torque3</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>TuningCommandHandler</Name>
-    <xPCName>SomanetTuning/TuningCommandHandler</xPCName>
+    <Name>TuningCommandGenerator</Name>
+    <xPCName>SomanetTuning/TuningCommandGenerator</xPCName>
         <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>SomanetTuning/TuningCommandHandler/MATLAB Function</xPCName>
+    <Name>generates ethercat values to tune somanet</Name>
+    <xPCName>SomanetTuning/TuningCommandGenerator/generates ethercat values to tune somanet</xPCName>
     
     
     </SubSystem>
 
                 <block>
-            <blkName>Out1</blkName>
-            <xpcblkName>TuningCommandHandler/Out1</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningCommandHandler/Out1</SLblockPath>
+            <blkName>tuning_command</blkName>
+            <xpcblkName>TuningCommandGenerator/tuning_command</xpcblkName>
+            <SLblockPath>SomanetTuning/TuningCommandGenerator/tuning_command</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>InitialOutput</paramName>
@@ -1174,9 +1549,9 @@
           </parameter>
           </block>
             <block>
-            <blkName>Out2</blkName>
-            <xpcblkName>TuningCommandHandler/Out2</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningCommandHandler/Out2</SLblockPath>
+            <blkName>TuningValue</blkName>
+            <xpcblkName>TuningCommandGenerator/TuningValue</xpcblkName>
+            <SLblockPath>SomanetTuning/TuningCommandGenerator/TuningValue</SLblockPath>
             <isSrc>[0 1 0]</isSrc>
           <parameter>
           <paramName>InitialOutput</paramName>
@@ -1184,58 +1559,42 @@
           </parameter>
           </block>
             <block>
-            <blkName>off</blkName>
-            <xpcblkName>TuningCommandHandler/off</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningCommandHandler/off</SLblockPath>
+            <blkName>auto_offset_tuning</blkName>
+            <xpcblkName>TuningCommandGenerator/auto_offset_tuning</xpcblkName>
+            <SLblockPath>SomanetTuning/TuningCommandGenerator/auto_offset_tuning</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-            <block>
-            <blkName>Switch1</blkName>
-            <xpcblkName>TuningCommandHandler/Switch1</xpcblkName>
-            <SLblockPath>SomanetTuning/TuningCommandHandler/Switch1</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
-          <parameter>
-          <paramName>Threshold</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
               <signal>
-              <sigName>MATLAB Function/p1</sigName>
-              <xpcsigName>TuningCommandHandler/MATLAB Function/p1</xpcsigName>
+              <sigName>generates ethercat values to tune somanet/p1</sigName>
+              <xpcsigName>TuningCommandGenerator/generates ethercat values to tune somanet/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>MATLAB Function/p2</sigName>
-              <xpcsigName>TuningCommandHandler/MATLAB Function/p2</xpcsigName>
+              <sigName>generates ethercat values to tune somanet/p2</sigName>
+              <xpcsigName>TuningCommandGenerator/generates ethercat values to tune somanet/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion7</sigName>
-              <xpcsigName>TuningCommandHandler/Data Type Conversion7</xpcsigName>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>TuningCommandGenerator/Data Type Conversion1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion8</sigName>
-              <xpcsigName>TuningCommandHandler/Data Type Conversion8</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch1</sigName>
-              <xpcsigName>TuningCommandHandler/Switch1</xpcsigName>
+              <xpcsigName>TuningCommandGenerator/Data Type Conversion8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Switch2</sigName>
-              <xpcsigName>TuningCommandHandler/Switch2</xpcsigName>
+              <xpcsigName>TuningCommandGenerator/Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1248,103 +1607,59 @@
     
     </SubSystem>
     <SubSystem>
+    <Name>determine_opmode</Name>
+    <xPCName>SomanetTuning/determine_opmode</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/determine_opmode/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>determine_opmode/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/determine_opmode/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>determine_opmode/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>determine_opmode/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>determine_opmode/Switch2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Chart</Name>
     <xPCName>SomanetTuning/Chart</xPCName>
     
     
     </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
 
                   <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>Constant</xpcblkName>
-            <SLblockPath>SomanetTuning/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>D</blkName>
-            <xpcblkName>D</xpcblkName>
-            <SLblockPath>SomanetTuning/D</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>I</blkName>
-            <xpcblkName>I</xpcblkName>
-            <SLblockPath>SomanetTuning/I</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Max_Position</blkName>
-            <xpcblkName>Max_Position</xpcblkName>
-            <SLblockPath>SomanetTuning/Max_Position</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Max_Torque</blkName>
-            <xpcblkName>Max_Torque</xpcblkName>
-            <SLblockPath>SomanetTuning/Max_Torque</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Min_Position</blkName>
-            <xpcblkName>Min_Position</xpcblkName>
-            <SLblockPath>SomanetTuning/Min_Position</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Offset</blkName>
-            <xpcblkName>Offset</xpcblkName>
-            <SLblockPath>SomanetTuning/Offset</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>P</blkName>
-            <xpcblkName>P</xpcblkName>
-            <SLblockPath>SomanetTuning/P</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Position Control_type</blkName>
-            <xpcblkName>Position Control_type</xpcblkName>
-            <SLblockPath>SomanetTuning/Position Control_type</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Quick_stop</blkName>
             <xpcblkName>Quick_stop</xpcblkName>
             <SLblockPath>SomanetTuning/Quick_stop</SLblockPath>
@@ -1406,9 +1721,29 @@
           </parameter>
           </block>
             <block>
-            <blkName>Tuning Offset</blkName>
-            <xpcblkName>Tuning Offset</xpcblkName>
-            <SLblockPath>SomanetTuning/Tuning Offset</SLblockPath>
+            <blkName>angle_offset_slider</blkName>
+            <xpcblkName>angle_offset_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/angle_offset_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>auto_offset_button</blkName>
+            <xpcblkName>auto_offset_button</xpcblkName>
+            <SLblockPath>SomanetTuning/auto_offset_button</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>changemeplease</blkName>
+            <xpcblkName>changemeplease</xpcblkName>
+            <SLblockPath>SomanetTuning/changemeplease</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1437,8 +1772,107 @@
           </parameter>
           </block>
             <block>
-            <blkName>Signal
-Generator</blkName>
+            <blkName>max_position_slider</blkName>
+            <xpcblkName>max_position_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/max_position_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_torque_slider</blkName>
+            <xpcblkName>max_torque_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/max_torque_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>min_position_slider</blkName>
+            <xpcblkName>min_position_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/min_position_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_control_type_switch</blkName>
+            <xpcblkName>position_control_type_switch</xpcblkName>
+            <SLblockPath>SomanetTuning/position_control_type_switch</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_d_gui</blkName>
+            <xpcblkName>position_d_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_d_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_i_gui</blkName>
+            <xpcblkName>position_i_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_i_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_p_gui</blkName>
+            <xpcblkName>position_p_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_p_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_d_gui</blkName>
+            <xpcblkName>velocity_d_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_d_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_i_gui</blkName>
+            <xpcblkName>velocity_i_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_i_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_p_gui</blkName>
+            <xpcblkName>velocity_p_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_p_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Signal Generator</blkName>
             <xpcblkName>Signal Generator</xpcblkName>
             <SLblockPath>SomanetTuning/Signal Generator</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
@@ -1470,38 +1904,14 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Chart/p4</sigName>
-              <xpcsigName>Chart/p4</xpcsigName>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>MATLAB Function/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Chart/p5</sigName>
-              <xpcsigName>Chart/p5</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Chart/p6</sigName>
-              <xpcsigName>Chart/p6</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>D</sigName>
-              <xpcsigName>D</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>I</sigName>
-              <xpcsigName>I</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>P</sigName>
-              <xpcsigName>P</xpcsigName>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1512,9 +1922,8 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Sinus Input
-</sigName>
-              <xpcsigName>Sinus Input </xpcsigName>
+              <sigName>changemeplease</sigName>
+              <xpcsigName>changemeplease</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1525,69 +1934,13 @@ Generator</blkName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>livetuning_switch
-</sigName>
-              <xpcsigName>livetuning_switch </xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Data Type Conversion</sigName>
               <xpcsigName>Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Data Type Conversion12</sigName>
-              <xpcsigName>Data Type Conversion12</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Op mode</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion13</sigName>
-              <xpcsigName>Data Type Conversion13</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion14</sigName>
-              <xpcsigName>Data Type Conversion14</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion3</sigName>
-              <xpcsigName>Data Type Conversion3</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>UserMISO</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion4</sigName>
-              <xpcsigName>Data Type Conversion4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>TuningStatus</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion5</sigName>
-              <xpcsigName>Data Type Conversion5</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Controlword</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion6</sigName>
-              <xpcsigName>Data Type Conversion6</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Statusword</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Signal
-Generator</sigName>
+              <sigName>Signal Generator</sigName>
               <xpcsigName>Signal Generator</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
