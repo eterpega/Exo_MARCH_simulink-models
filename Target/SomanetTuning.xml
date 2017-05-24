@@ -1751,16 +1751,6 @@
           </parameter>
           </block>
             <block>
-            <blkName>changemeplease</blkName>
-            <xpcblkName>changemeplease</xpcblkName>
-            <SLblockPath>SomanetTuning/changemeplease</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>clear_error</blkName>
             <xpcblkName>clear_error</xpcblkName>
             <SLblockPath>SomanetTuning/clear_error</SLblockPath>
@@ -1928,12 +1918,6 @@
               <signal>
               <sigName>Quick_stop</sigName>
               <xpcsigName>Quick_stop</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>changemeplease</sigName>
-              <xpcsigName>changemeplease</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>

@@ -3,7 +3,7 @@
 % set_param('SomanetTuning','PostCodeGenCommand','SomanetTuning_make_rtw_hook')
 % should not have to be repeated, but for future reference
 
-disp(['MARCH S&C: Resetting slider constants']);
+disp('MARCH S&C: Resetting slider constants');
 setConstant('position_p_gui'        , 20000);
 setConstant('position_i_gui'        , 0);
 setConstant('position_d_gui'        , 90000);
