@@ -1538,8 +1538,8 @@
               <signal>
               <sigName>MATLAB Function1/p1</sigName>
               <xpcsigName>SomanetConfigHandler/read_config/MATLAB Function1/p1</xpcsigName>
-              <sigWidth>18</sigWidth>
-              <sigDim>[18, 1]</sigDim>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
             </signal>
               <signal>
               <sigName>MATLAB Function1/p2</sigName>
@@ -1572,8 +1572,8 @@
               <signal>
               <sigName>MATLAB Function</sigName>
               <xpcsigName>SomanetConfigHandler/update config/MATLAB Function</xpcsigName>
-              <sigWidth>18</sigWidth>
-              <sigDim>[18, 1]</sigDim>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
             </signal>
 
     </SubSystem>
@@ -1621,14 +1621,14 @@
               <signal>
               <sigName>Switch</sigName>
               <xpcsigName>SomanetConfigHandler/Switch</xpcsigName>
-              <sigWidth>18</sigWidth>
-              <sigDim>[18, 1]</sigDim>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Delay</sigName>
               <xpcsigName>SomanetConfigHandler/Delay</xpcsigName>
-              <sigWidth>18</sigWidth>
-              <sigDim>[18, 1]</sigDim>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Delay1</sigName>
