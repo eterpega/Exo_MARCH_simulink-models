@@ -1090,6 +1090,12 @@
     
     </SubSystem>
     <SubSystem>
+    <Name>Rotary Switch1</Name>
+    <xPCName>SomanetTuning/Rotary Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>ScopeSystem</Name>
     <xPCName>SomanetTuning/ScopeSystem</xPCName>
     
@@ -1647,12 +1653,6 @@
     <SubSystem>
     <Name>Toggle Switch1</Name>
     <xPCName>SomanetTuning/Toggle Switch1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Toggle Switch2</Name>
-    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
     
     
     </SubSystem>
