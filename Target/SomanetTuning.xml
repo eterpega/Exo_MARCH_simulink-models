@@ -1,5 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
+    <Name>Data logging</Name>
+    <xPCName>SomanetTuning/Data logging</xPCName>
+        <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>SomanetTuning/Data logging/Scope </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 2</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 3</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 3</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>
+</sigName>
+              <xpcsigName>Data logging/ </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Total Current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+
+</sigName>
+              <xpcsigName>Data logging/  </xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                <sigLabel>Phase Current</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Desired config</Name>
     <xPCName>SomanetTuning/Desired config</xPCName>
     

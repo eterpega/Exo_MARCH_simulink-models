@@ -10,10 +10,6 @@
 f=SimulinkRealTime.fileSystem;
 
 %Open the file, read the data, close the file.
-read=fopen(f,'temp.dat');
-data_temperature=fread(f,read);
-f.fclose(read);
-
 read=fopen(f,'Velocity.dat');
 data_velocity=fread(f,read);
 f.fclose(read);
@@ -26,35 +22,29 @@ read=fopen(f,'Position.dat');
 data_position=fread(f,read);
 f.fclose(read);
 
-read=fopen(f,'Currents.dat');
+read=fopen(f,'Current.dat');
 data_current=fread(f,read);
 f.fclose(read);
 
 % Unpack the data.
-temperature=SimulinkRealTime.utils.getFileScopeData(data_temperature);
 velocity=SimulinkRealTime.utils.getFileScopeData(data_torque);
 torque=SimulinkRealTime.utils.getFileScopeData(data_velocity);
 position=SimulinkRealTime.utils.getFileScopeData(data_position);
 currents=SimulinkRealTime.utils.getFileScopeData(data_current);
 
 %determine starttime of measurements, so that plots dont start on zero
-start_time = 0;
-for i = 1:length(temperature.data(:,2))
+start_time = 1;
+for i = 1:length(velocity.data(:,2))
 
-   if temperature.data(i,1) ~= 0 && start_time == 0
+   if velocity.data(i,1) ~= 0 && start_time == 0
        
        start_time = i;
    end
    
 end
-end_time = length(temperature.data(:,2));
+end_time = length(velocity.data(:,2));
 %%
 %plot all the data
-%temperature
-figure(1)
-title('Temperature')
-plot(temperature.data(start_time:end_time,3),temperature.data(start_time:end_time,1),temperature.data(start_time:end_time,3),temperature.data(start_time:end_time,2))
-legend('Temperature motor','Temperature board')
 %position
 figure(2)
 title('Position')
@@ -78,8 +68,6 @@ figure(5)
 title('Currents')
 plot(currents.data(start_time:end_time,5),currents.data(start_time:end_time,1),currents.data(start_time:end_time,5),currents.data(start_time:end_time,2),currents.data(start_time:end_time,5),currents.data(start_time:end_time,3),currents.data(start_time:end_time,5),currents.data(start_time:end_time,4));
 
-
-save('temporaryResults/temperature','temperature');
 save('temporaryResults/position','position');
 save('temporaryResults/torque','torque');
 save('temporaryResults/velocity','velocity');
