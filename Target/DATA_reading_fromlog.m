@@ -27,8 +27,8 @@ data_current=fread(f,read);
 f.fclose(read);
 
 % Unpack the data.
-velocity=SimulinkRealTime.utils.getFileScopeData(data_torque);
-torque=SimulinkRealTime.utils.getFileScopeData(data_velocity);
+velocity=SimulinkRealTime.utils.getFileScopeData(data_velocity);
+torque=SimulinkRealTime.utils.getFileScopeData(data_torque);
 position=SimulinkRealTime.utils.getFileScopeData(data_position);
 currents=SimulinkRealTime.utils.getFileScopeData(data_current);
 
@@ -67,7 +67,7 @@ legend('Target Torque','Actual Torque')
 figure(5)
 title('Currents')
 plot(currents.data(start_time:end_time,5),currents.data(start_time:end_time,1),currents.data(start_time:end_time,5),currents.data(start_time:end_time,2),currents.data(start_time:end_time,5),currents.data(start_time:end_time,3),currents.data(start_time:end_time,5),currents.data(start_time:end_time,4));
-
+mkdir('temporaryResults');
 save('temporaryResults/position','position');
 save('temporaryResults/torque','torque');
 save('temporaryResults/velocity','velocity');
