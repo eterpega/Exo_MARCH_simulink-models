@@ -5,5 +5,6 @@ classdef State < Simulink.IntEnumType
     sync(3)
     fault(4)
     pending(5)
+    disconnected(6)
     end
 end 

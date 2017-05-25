@@ -8,8 +8,24 @@
     <SubSystem>
     <Name>EtherCAT Receive</Name>
     <xPCName>SomanetTuning/EtherCAT Receive</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/EtherCAT Receive/MATLAB Function</xPCName>
     
+    
+    </SubSystem>
+
                 <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>EtherCAT Receive/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>EtherCAT PDO Receive</blkName>
             <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive</xpcblkName>
             <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive</SLblockPath>
@@ -51,6 +67,40 @@
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 55]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive10</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive10</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive10</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 54]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -349,6 +399,22 @@
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+            <block>
+            <blkName>Switch</blkName>
+            <xpcblkName>EtherCAT Receive/Switch</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>EtherCAT Receive/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
               <signal>
               <sigName>EtherCAT Init </sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT Init </xpcsigName>
@@ -369,6 +435,12 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>Status word</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive10</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive2</sigName>
@@ -425,6 +497,12 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>op_mode_somanet</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>EtherCAT Receive/Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
 
     </SubSystem>
@@ -952,6 +1030,58 @@
     <xPCName>SomanetTuning/Push Button2</xPCName>
     
     
+    </SubSystem>
+    <SubSystem>
+    <Name>Reinit Ethercat</Name>
+    <xPCName>SomanetTuning/Reinit Ethercat</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Reinit Ethercat/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Reinit Ethercat/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT Set State </blkName>
+            <xpcblkName>Reinit Ethercat/EtherCAT Set State </xpcblkName>
+            <SLblockPath>SomanetTuning/Reinit Ethercat/EtherCAT Set State </SLblockPath>
+            <isSrc>[0 1 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>Reinit Ethercat/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT Set State /p1</sigName>
+              <xpcsigName>Reinit Ethercat/EtherCAT Set State /p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT Set State /p2</sigName>
+              <xpcsigName>Reinit Ethercat/EtherCAT Set State /p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
     </SubSystem>
     <SubSystem>
     <Name>Rotary Switch</Name>
@@ -1912,6 +2042,12 @@
               <signal>
               <sigName>MATLAB Function/p2</sigName>
               <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>MATLAB Function/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
