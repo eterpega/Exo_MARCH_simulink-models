@@ -13,6 +13,6 @@ setConstant('velocity_d_gui'        , 0);
 setConstant('min_position_slider'   , -500000000);
 setConstant('max_position_slider'   , 500000000);
 setConstant('max_torque_slider'     , 2122);
-setConstant('angle_offset_slider'   , 900);
+setConstant('angle_offset_slider'   , 960);
 setConstant('Quick_stop'            , 1);
 %setConstant('changemeplease'        , 72);

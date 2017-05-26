@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
+    <Name>Board and core temp</Name>
+    <xPCName>SomanetTuning/Board and core temp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Currents graphical</Name>
+    <xPCName>SomanetTuning/Currents graphical</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Currents numerical</Name>
+    <xPCName>SomanetTuning/Currents numerical</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Data logging</Name>
     <xPCName>SomanetTuning/Data logging</xPCName>
         <SubSystem>
@@ -26,6 +44,12 @@
     
     
     </SubSystem>
+    <SubSystem>
+    <Name>Scope 4</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 4</xPCName>
+    
+    
+    </SubSystem>
 
                   <signal>
               <sigName>
@@ -43,6 +67,23 @@
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
                 <sigLabel>Phase Current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+
+1</sigName>
+              <xpcsigName>Data logging/  1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Core temp</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+1</sigName>
+              <xpcsigName>Data logging/ 1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
             </signal>
 
     </SubSystem>
@@ -148,6 +189,74 @@
           <parameter>
           <paramName>P1</paramName>
           <dim>[1, 54]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive11</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive11</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive11</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 57]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive13</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive13</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive13</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 61]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -486,6 +595,18 @@
               <signal>
               <sigName>EtherCAT PDO Receive10</sigName>
               <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive11</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive13</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive13</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -921,42 +1042,10 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Phase currents</Name>
-    <xPCName>SomanetTuning/Phase currents</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Phase currents numeric</Name>
-    <xPCName>SomanetTuning/Phase currents numeric</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>PhaseCurrentCalculation</Name>
     <xPCName>SomanetTuning/PhaseCurrentCalculation</xPCName>
     
                 <block>
-            <blkName>Gain</blkName>
-            <xpcblkName>PhaseCurrentCalculation/Gain</xpcblkName>
-            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Gain</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Gain1</blkName>
-            <xpcblkName>PhaseCurrentCalculation/Gain1</xpcblkName>
-            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Gain1</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>Gain</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Gain2</blkName>
             <xpcblkName>PhaseCurrentCalculation/Gain2</xpcblkName>
             <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Gain2</SLblockPath>
@@ -994,25 +1083,18 @@
                 <sigLabel>I_DC [mA]</sigLabel>
             </signal>
               <signal>
-              <sigName>Gain1</sigName>
-              <xpcsigName>PhaseCurrentCalculation/Gain1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase A current [mA]</sigLabel>
-            </signal>
-              <signal>
               <sigName>Gain2</sigName>
               <xpcsigName>PhaseCurrentCalculation/Gain2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase B current [mA]</sigLabel>
+                <sigLabel>Phase B [mA]</sigLabel>
             </signal>
               <signal>
               <sigName>Gain3</sigName>
               <xpcsigName>PhaseCurrentCalculation/Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase C current [mA]</sigLabel>
+                <sigLabel>Phase C [mA]</sigLabel>
             </signal>
               <signal>
               <sigName>Scalefactor</sigName>
@@ -1049,7 +1131,7 @@
               <xpcsigName>PhaseCurrentCalculation/Substract</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase A current</sigLabel>
+                <sigLabel>Phase A [mA]</sigLabel>
             </signal>
               <signal>
               <sigName>Sqrt</sigName>
@@ -1147,6 +1229,24 @@
     <xPCName>SomanetTuning/Rotary Switch1</xPCName>
     
     
+    </SubSystem>
+    <SubSystem>
+    <Name>Safety switch temperature based</Name>
+    <xPCName>SomanetTuning/Safety switch temperature based</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/Safety switch temperature based/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>Safety switch temperature based/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
     </SubSystem>
     <SubSystem>
     <Name>ScopeSystem</Name>
@@ -1300,18 +1400,6 @@
                 
             </signal>
               <signal>
-              <sigName>Data Type Conversion28</sigName>
-              <xpcsigName>ScopeSystem/Data Type Conversion28</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Data Type Conversion29</sigName>
-              <xpcsigName>ScopeSystem/Data Type Conversion29</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>Data Type Conversion3</sigName>
               <xpcsigName>ScopeSystem/Data Type Conversion3</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1331,6 +1419,20 @@
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>max</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion33</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion33</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Board temp</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion34</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion34</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion4</sigName>
@@ -1377,19 +1479,22 @@
 
     </SubSystem>
     <SubSystem>
+    <Name>SetGuiHandler + Soft stop switch</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch</xPCName>
+        <SubSystem>
     <Name>SetPointGuiHandler</Name>
-    <xPCName>SomanetTuning/SetPointGuiHandler</xPCName>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler</xPCName>
         <SubSystem>
     <Name>process set point sliders</Name>
-    <xPCName>SomanetTuning/SetPointGuiHandler/process set point sliders</xPCName>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders</xPCName>
     
     
     </SubSystem>
 
                 <block>
             <blkName>disable_control_command</blkName>
-            <xpcblkName>SetPointGuiHandler/disable_control_command</xpcblkName>
-            <SLblockPath>SomanetTuning/SetPointGuiHandler/disable_control_command</SLblockPath>
+            <xpcblkName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/disable_control_command</xpcblkName>
+            <SLblockPath>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/disable_control_command</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1398,8 +1503,8 @@
           </block>
             <block>
             <blkName>ResetControlSwitch</blkName>
-            <xpcblkName>SetPointGuiHandler/ResetControlSwitch</xpcblkName>
-            <SLblockPath>SomanetTuning/SetPointGuiHandler/ResetControlSwitch</SLblockPath>
+            <xpcblkName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</xpcblkName>
+            <SLblockPath>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</SLblockPath>
             <isSrc>[0 3 1]</isSrc>
           <parameter>
           <paramName>Threshold</paramName>
@@ -1408,58 +1513,91 @@
           </block>
               <signal>
               <sigName>process set point sliders/p1</sigName>
-              <xpcsigName>SetPointGuiHandler/process set point sliders/p1</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p2</sigName>
-              <xpcsigName>SetPointGuiHandler/process set point sliders/p2</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p3</sigName>
-              <xpcsigName>SetPointGuiHandler/process set point sliders/p3</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>process set point sliders/p4</sigName>
-              <xpcsigName>SetPointGuiHandler/process set point sliders/p4</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion</sigName>
-              <xpcsigName>SetPointGuiHandler/Data Type Conversion</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion10</sigName>
-              <xpcsigName>SetPointGuiHandler/Data Type Conversion10</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion10</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>Target Position</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion11</sigName>
-              <xpcsigName>SetPointGuiHandler/Data Type Conversion11</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion11</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>TargetTorque</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion9</sigName>
-              <xpcsigName>SetPointGuiHandler/Data Type Conversion9</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion9</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>TargetVelocity</sigLabel>
             </signal>
               <signal>
               <sigName>ResetControlSwitch</sigName>
-              <xpcsigName>SetPointGuiHandler/ResetControlSwitch</xpcsigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Soft Stop</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/Soft Stop</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>Soft Stop/p1</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p2</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p3</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p4</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1710,14 +1848,14 @@
     
     </SubSystem>
     <SubSystem>
-    <Name>Torque</Name>
-    <xPCName>SomanetTuning/Torque</xPCName>
+    <Name>Toggle Switch2</Name>
+    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
     
     
     </SubSystem>
     <SubSystem>
-    <Name>Total current</Name>
-    <xPCName>SomanetTuning/Total current</xPCName>
+    <Name>Torque</Name>
+    <xPCName>SomanetTuning/Torque</xPCName>
     
     
     </SubSystem>
@@ -1863,6 +2001,16 @@
           </parameter>
           </block>
             <block>
+            <blkName>Quick_stop2</blkName>
+            <xpcblkName>Quick_stop2</xpcblkName>
+            <SLblockPath>SomanetTuning/Quick_stop2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Reset control</blkName>
             <xpcblkName>Reset control</xpcblkName>
             <SLblockPath>SomanetTuning/Reset control</SLblockPath>
@@ -1877,6 +2025,16 @@
 </blkName>
             <xpcblkName>Sinus Input </xpcblkName>
             <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Soft_stop_switch</blkName>
+            <xpcblkName>Soft_stop_switch</xpcblkName>
+            <SLblockPath>SomanetTuning/Soft_stop_switch</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1907,6 +2065,17 @@
             <blkName>TargetVelocity</blkName>
             <xpcblkName>TargetVelocity</xpcblkName>
             <SLblockPath>SomanetTuning/TargetVelocity</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Time_to_stop [seconds]
+</blkName>
+            <xpcblkName>Time_to_stop [seconds] </xpcblkName>
+            <SLblockPath>SomanetTuning/Time_to_stop [seconds] </SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1958,6 +2127,26 @@
             <blkName>max_position_slider</blkName>
             <xpcblkName>max_position_slider</xpcblkName>
             <SLblockPath>SomanetTuning/max_position_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_temperature</blkName>
+            <xpcblkName>max_temperature</xpcblkName>
+            <SLblockPath>SomanetTuning/max_temperature</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_temperature_change_per_second</blkName>
+            <xpcblkName>max_temperature_change_per_second</xpcblkName>
+            <SLblockPath>SomanetTuning/max_temperature_change_per_second</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -2055,6 +2244,16 @@
           </parameter>
           </block>
             <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Signal Generator</blkName>
             <xpcblkName>Signal Generator</xpcblkName>
             <SLblockPath>SomanetTuning/Signal Generator</SLblockPath>
@@ -2105,12 +2304,6 @@
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Quick_stop</sigName>
-              <xpcsigName>Quick_stop</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
               <sigName>clear_error</sigName>
               <xpcsigName>clear_error</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -2123,8 +2316,33 @@
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>Logical Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Signal Generator</sigName>
               <xpcsigName>Signal Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Switch</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
