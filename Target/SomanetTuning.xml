@@ -915,6 +915,12 @@
 
     </SubSystem>
     <SubSystem>
+    <Name>Lamp</Name>
+    <xPCName>SomanetTuning/Lamp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Phase currents</Name>
     <xPCName>SomanetTuning/Phase currents</xPCName>
     
