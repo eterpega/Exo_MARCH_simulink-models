@@ -3,7 +3,7 @@
 *.original
 slprj/
 *_rtw/
-ecat_config_xml_0.c
+ecat_config_xml_*.c
 build/
 *.asv
 Target/MARCH_v1_6_Dick.slx
