@@ -1,0 +1,2392 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+          <SubSystem>
+    <Name>Board and core temp</Name>
+    <xPCName>SomanetTuning/Board and core temp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Currents graphical</Name>
+    <xPCName>SomanetTuning/Currents graphical</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Currents numerical</Name>
+    <xPCName>SomanetTuning/Currents numerical</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Data logging</Name>
+    <xPCName>SomanetTuning/Data logging</xPCName>
+        <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>SomanetTuning/Data logging/Scope </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 2</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 3</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 4</Name>
+    <xPCName>SomanetTuning/Data logging/Scope 4</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>
+</sigName>
+              <xpcsigName>Data logging/ </xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Total Current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+
+</sigName>
+              <xpcsigName>Data logging/  </xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+                <sigLabel>Phase Current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+
+1</sigName>
+              <xpcsigName>Data logging/  1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Core temp</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+1</sigName>
+              <xpcsigName>Data logging/ 1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>
+Average</sigName>
+              <xpcsigName>Data logging/ Average</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Desired config</Name>
+    <xPCName>SomanetTuning/Desired config</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>EtherCAT Receive</Name>
+    <xPCName>SomanetTuning/EtherCAT Receive</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/EtherCAT Receive/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>EtherCAT Receive/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 59]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive1</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive1</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 55]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive10</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive10</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive10</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 54]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive11</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive11</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive11</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 57]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive13</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive13</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive13</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 61]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive2</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive2</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 59]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive3</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive3</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 57]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive4</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive4</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 54]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive5</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive5</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive5</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 58]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive6</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive6</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 55]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive7</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive7</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive7</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 74]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive8</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive8</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive8</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 74]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Receive9</blkName>
+            <xpcblkName>EtherCAT Receive/EtherCAT PDO Receive9</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/EtherCAT PDO Receive9</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 60]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Switch</blkName>
+            <xpcblkName>EtherCAT Receive/Switch</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Receive/Switch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>EtherCAT Receive/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT Init </sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT Init </xpcsigName>
+              <sigWidth>6</sigWidth>
+              <sigDim>[6, 1]</sigDim>
+                <sigLabel>EtherCAT Init</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Velocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive1</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Status word</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive10</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive11</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive13</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive2</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Position</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive3</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Torque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive4</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive5</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning Status</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive6</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Error Code</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive7</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase B current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive8</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase C current</sigLabel>
+            </signal>
+              <signal>
+              <sigName>EtherCAT PDO Receive9</sigName>
+              <xpcsigName>EtherCAT Receive/EtherCAT PDO Receive9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>op_mode_somanet</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>EtherCAT Receive/Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>EtherCAT Transmit</Name>
+    <xPCName>SomanetTuning/EtherCAT Transmit</xPCName>
+    
+                <block>
+            <blkName>EtherCAT PDO Transmit </blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit </xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit </SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 53]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 1</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 1</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 1</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 57]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 2</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 2</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 2</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 61]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 3</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 3</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 3</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 61]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 4</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 4</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 4</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 59]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 5</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 5</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 5</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 60]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT PDO Transmit 6</blkName>
+            <xpcblkName>EtherCAT Transmit/EtherCAT PDO Transmit 6</xpcblkName>
+            <SLblockPath>SomanetTuning/EtherCAT Transmit/EtherCAT PDO Transmit 6</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 55]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P4</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P5</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P6</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P7</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>GuiConfigCreator</Name>
+    <xPCName>SomanetTuning/GuiConfigCreator</xPCName>
+    
+                <block>
+            <blkName>Pole Pairs</blkName>
+            <xpcblkName>GuiConfigCreator/Pole Pairs</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/Pole Pairs</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>break release strategy
+</blkName>
+            <xpcblkName>GuiConfigCreator/break release strategy </xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/break release strategy </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max speed</blkName>
+            <xpcblkName>GuiConfigCreator/max speed</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/max speed</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position integral limit</blkName>
+            <xpcblkName>GuiConfigCreator/position integral limit</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/position integral limit</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity integral limit</blkName>
+            <xpcblkName>GuiConfigCreator/velocity integral limit</xpcblkName>
+            <SLblockPath>SomanetTuning/GuiConfigCreator/velocity integral limit</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>position_p_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_p_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>position_i_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_i_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>position_d_gui</sigName>
+              <xpcsigName>GuiConfigCreator/position_d_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_p_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_p_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_i_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_i_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>velocity_d_gui1</sigName>
+              <xpcsigName>GuiConfigCreator/velocity_d_gui1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>min_position_gui</sigName>
+              <xpcsigName>GuiConfigCreator/min_position_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>max_position_gui</sigName>
+              <xpcsigName>GuiConfigCreator/max_position_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>max_torque_gui</sigName>
+              <xpcsigName>GuiConfigCreator/max_torque_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>angle_offset_gui</sigName>
+              <xpcsigName>GuiConfigCreator/angle_offset_gui</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Lamp</Name>
+    <xPCName>SomanetTuning/Lamp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>PhaseCurrentCalculation</Name>
+    <xPCName>SomanetTuning/PhaseCurrentCalculation</xPCName>
+    
+                <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>PhaseCurrentCalculation/Gain2</xpcblkName>
+            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>PhaseCurrentCalculation/Gain3</xpcblkName>
+            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Scalefactor</blkName>
+            <xpcblkName>PhaseCurrentCalculation/Scalefactor</xpcblkName>
+            <SLblockPath>SomanetTuning/PhaseCurrentCalculation/Scalefactor</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Data Type Conversion12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>I_DC [mA]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase B [mA]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase C [mA]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Scalefactor</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Scalefactor</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>ProductBC</sigName>
+              <xpcsigName>PhaseCurrentCalculation/ProductBC</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SquareB</sigName>
+              <xpcsigName>PhaseCurrentCalculation/SquareB</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SquareC</sigName>
+              <xpcsigName>PhaseCurrentCalculation/SquareC</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Add</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Substract</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Substract</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Phase A [mA]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Sqrt</sigName>
+              <xpcsigName>PhaseCurrentCalculation/Sqrt</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>I_DC</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Position</Name>
+    <xPCName>SomanetTuning/Position</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Push Button</Name>
+    <xPCName>SomanetTuning/Push Button</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Push Button1</Name>
+    <xPCName>SomanetTuning/Push Button1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Push Button2</Name>
+    <xPCName>SomanetTuning/Push Button2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Reinit Ethercat</Name>
+    <xPCName>SomanetTuning/Reinit Ethercat</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Reinit Ethercat/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Reinit Ethercat/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>EtherCAT Set State </blkName>
+            <xpcblkName>Reinit Ethercat/EtherCAT Set State </xpcblkName>
+            <SLblockPath>SomanetTuning/Reinit Ethercat/EtherCAT Set State </SLblockPath>
+            <isSrc>[0 1 2]</isSrc>
+          <parameter>
+          <paramName>P1</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P2</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>P3</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>Reinit Ethercat/Constant</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT Set State /p1</sigName>
+              <xpcsigName>Reinit Ethercat/EtherCAT Set State /p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>EtherCAT Set State /p2</sigName>
+              <xpcsigName>Reinit Ethercat/EtherCAT Set State /p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Rotary Switch</Name>
+    <xPCName>SomanetTuning/Rotary Switch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Rotary Switch1</Name>
+    <xPCName>SomanetTuning/Rotary Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Safety switch temperature based</Name>
+    <xPCName>SomanetTuning/Safety switch temperature based</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/Safety switch temperature based/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>Safety switch temperature based/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>ScopeSystem</Name>
+    <xPCName>SomanetTuning/ScopeSystem</xPCName>
+    
+                  <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Error code</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Statusword</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion13</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion14</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion14</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion15</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion15</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion16</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion16</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion17</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion17</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion18</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion18</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion19</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion19</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Controlword</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion20</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion20</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion21</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion21</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion22</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion22</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion23</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion23</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion24</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion24</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion25</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion25</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion26</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion26</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion27</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion27</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion28</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion28</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Target Velocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuningstatus</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion30</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion30</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>min</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion31</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion31</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>max</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion33</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion33</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Board temp</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion34</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion34</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion4</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion5</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Statemachine state</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion6</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning command</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Tuning value</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion8</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Somanet opmode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Desired opmode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>ScopeSystem/Add</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Velocity Error</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Moving
+Average</sigName>
+              <xpcsigName>ScopeSystem/Moving Average</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>SetGuiHandler + Soft stop switch</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch</xPCName>
+        <SubSystem>
+    <Name>SetPointGuiHandler</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler</xPCName>
+        <SubSystem>
+    <Name>process set point sliders</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>disable_control_command</blkName>
+            <xpcblkName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/disable_control_command</xpcblkName>
+            <SLblockPath>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/disable_control_command</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>ResetControlSwitch</blkName>
+            <xpcblkName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</xpcblkName>
+            <SLblockPath>SomanetTuning/SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>process set point sliders/p1</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>process set point sliders/p2</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>process set point sliders/p3</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>process set point sliders/p4</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/process set point sliders/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion10</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Target Position</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetTorque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion9</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/Data Type Conversion9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>TargetVelocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>ResetControlSwitch</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/SetPointGuiHandler/ResetControlSwitch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Soft Stop</Name>
+    <xPCName>SomanetTuning/SetGuiHandler + Soft stop switch/Soft Stop</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>Soft Stop/p1</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p2</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p3</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Soft Stop/p4</sigName>
+              <xpcsigName>SetGuiHandler + Soft stop switch/Soft Stop/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider</Name>
+    <xPCName>SomanetTuning/Slider</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider1</Name>
+    <xPCName>SomanetTuning/Slider1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider10</Name>
+    <xPCName>SomanetTuning/Slider10</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider11</Name>
+    <xPCName>SomanetTuning/Slider11</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider12</Name>
+    <xPCName>SomanetTuning/Slider12</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider13</Name>
+    <xPCName>SomanetTuning/Slider13</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider2</Name>
+    <xPCName>SomanetTuning/Slider2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider3</Name>
+    <xPCName>SomanetTuning/Slider3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider4</Name>
+    <xPCName>SomanetTuning/Slider4</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider5</Name>
+    <xPCName>SomanetTuning/Slider5</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider6</Name>
+    <xPCName>SomanetTuning/Slider6</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider7</Name>
+    <xPCName>SomanetTuning/Slider7</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider8</Name>
+    <xPCName>SomanetTuning/Slider8</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Slider9</Name>
+    <xPCName>SomanetTuning/Slider9</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Somanet config</Name>
+    <xPCName>SomanetTuning/Somanet config</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Somanet data</Name>
+    <xPCName>SomanetTuning/Somanet data</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch</Name>
+    <xPCName>SomanetTuning/Toggle Switch</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch1</Name>
+    <xPCName>SomanetTuning/Toggle Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch2</Name>
+    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Torque</Name>
+    <xPCName>SomanetTuning/Torque</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Velocity</Name>
+    <xPCName>SomanetTuning/Velocity</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>determine_opmode</Name>
+    <xPCName>SomanetTuning/determine_opmode</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/determine_opmode/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>determine_opmode/Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/determine_opmode/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>determine_opmode/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>determine_opmode/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>determine_opmode/Switch2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>Chart</Name>
+    <xPCName>SomanetTuning/Chart</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <block>
+            <blkName>Quick_stop</blkName>
+            <xpcblkName>Quick_stop</xpcblkName>
+            <SLblockPath>SomanetTuning/Quick_stop</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Quick_stop2</blkName>
+            <xpcblkName>Quick_stop2</xpcblkName>
+            <SLblockPath>SomanetTuning/Quick_stop2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Reset control</blkName>
+            <xpcblkName>Reset control</xpcblkName>
+            <SLblockPath>SomanetTuning/Reset control</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Sinus Input
+</blkName>
+            <xpcblkName>Sinus Input </xpcblkName>
+            <SLblockPath>SomanetTuning/Sinus Input </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Soft_stop_switch</blkName>
+            <xpcblkName>Soft_stop_switch</xpcblkName>
+            <SLblockPath>SomanetTuning/Soft_stop_switch</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetPosition</blkName>
+            <xpcblkName>TargetPosition</xpcblkName>
+            <SLblockPath>SomanetTuning/TargetPosition</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetTorque</blkName>
+            <xpcblkName>TargetTorque</xpcblkName>
+            <SLblockPath>SomanetTuning/TargetTorque</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TargetVelocity</blkName>
+            <xpcblkName>TargetVelocity</xpcblkName>
+            <SLblockPath>SomanetTuning/TargetVelocity</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Time_to_stop [seconds]
+</blkName>
+            <xpcblkName>Time_to_stop [seconds] </xpcblkName>
+            <SLblockPath>SomanetTuning/Time_to_stop [seconds] </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>angle_offset_slider</blkName>
+            <xpcblkName>angle_offset_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/angle_offset_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>auto_offset_button</blkName>
+            <xpcblkName>auto_offset_button</xpcblkName>
+            <SLblockPath>SomanetTuning/auto_offset_button</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>clear_error</blkName>
+            <xpcblkName>clear_error</xpcblkName>
+            <SLblockPath>SomanetTuning/clear_error</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>livetuning_switch
+</blkName>
+            <xpcblkName>livetuning_switch </xpcblkName>
+            <SLblockPath>SomanetTuning/livetuning_switch </SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_position_slider</blkName>
+            <xpcblkName>max_position_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/max_position_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_temperature</blkName>
+            <xpcblkName>max_temperature</xpcblkName>
+            <SLblockPath>SomanetTuning/max_temperature</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_temperature_change_per_second</blkName>
+            <xpcblkName>max_temperature_change_per_second</xpcblkName>
+            <SLblockPath>SomanetTuning/max_temperature_change_per_second</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>max_torque_slider</blkName>
+            <xpcblkName>max_torque_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/max_torque_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>min_position_slider</blkName>
+            <xpcblkName>min_position_slider</xpcblkName>
+            <SLblockPath>SomanetTuning/min_position_slider</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_control_type_switch</blkName>
+            <xpcblkName>position_control_type_switch</xpcblkName>
+            <SLblockPath>SomanetTuning/position_control_type_switch</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_d_gui</blkName>
+            <xpcblkName>position_d_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_d_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_i_gui</blkName>
+            <xpcblkName>position_i_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_i_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>position_p_gui</blkName>
+            <xpcblkName>position_p_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/position_p_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_d_gui</blkName>
+            <xpcblkName>velocity_d_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_d_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_i_gui</blkName>
+            <xpcblkName>velocity_i_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_i_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>velocity_p_gui</blkName>
+            <xpcblkName>velocity_p_gui</xpcblkName>
+            <SLblockPath>SomanetTuning/velocity_p_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>Gain</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Signal Generator</blkName>
+            <xpcblkName>Signal Generator</xpcblkName>
+            <SLblockPath>SomanetTuning/Signal Generator</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Amplitude</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>Frequency</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Chart/p1</sigName>
+              <xpcsigName>Chart/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Chart/p2</sigName>
+              <xpcsigName>Chart/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Chart/p3</sigName>
+              <xpcsigName>Chart/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p3</sigName>
+              <xpcsigName>MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>clear_error</sigName>
+              <xpcsigName>clear_error</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>Logical Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+         <mdlref>
+             <mdlrefName>TuningCommandGenerator</mdlrefName>
+             <xpcblkName>Generates Tuning Command</xpcblkName>
+             <refblkName>Generates Tuning Command</refblkName>
+             <Root>
+          <SubSystem>
+    <Name>generates ethercat values to tune somanet</Name>
+    <xPCName>TuningCommandGenerator/generates ethercat values to tune somanet</xPCName>
+    
+    
+    </SubSystem>
+
+                  <block>
+            <blkName>TuningCommand</blkName>
+            <xpcblkName>Generates Tuning Command/TuningCommand</xpcblkName>
+            <SLblockPath>TuningCommandGenerator/TuningCommand</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>TuningValue</blkName>
+            <xpcblkName>Generates Tuning Command/TuningValue</xpcblkName>
+            <SLblockPath>TuningCommandGenerator/TuningValue</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>auto_offset_tuning</blkName>
+            <xpcblkName>Generates Tuning Command/auto_offset_tuning</xpcblkName>
+            <SLblockPath>TuningCommandGenerator/auto_offset_tuning</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>generates ethercat values to tune somanet/p1</sigName>
+              <xpcsigName>Generates Tuning Command/generates ethercat values to tune somanet/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>generates ethercat values to tune somanet/p2</sigName>
+              <xpcsigName>Generates Tuning Command/generates ethercat values to tune somanet/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>Generates Tuning Command/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+</Root>
+         </mdlref>
+              <signal>
+              <sigName>Generates Tuning Command/p1</sigName>
+              <xpcsigName>Generates Tuning Command/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Generates Tuning Command/p2</sigName>
+              <xpcsigName>Generates Tuning Command/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+         <mdlref>
+             <mdlrefName>SomanetConfigHandler</mdlrefName>
+             <xpcblkName>SomanetConfigHandler</xpcblkName>
+             <refblkName>SomanetConfigHandler</refblkName>
+             <Root>
+          <SubSystem>
+    <Name>read_config</Name>
+    <xPCName>SomanetConfigHandler/read_config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetConfigHandler/read_config/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>SomanetConfigHandler/read_config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/read_config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>config_done</blkName>
+            <xpcblkName>SomanetConfigHandler/read_config/config_done</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/read_config/config_done</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>SomanetConfigHandler/read_config/MATLAB Function1/p1</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>SomanetConfigHandler/read_config/MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>update config</Name>
+    <xPCName>SomanetConfigHandler/update config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetConfigHandler/update config/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>SomanetConfigHandler/update config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/update config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SomanetConfigHandler/update config/MATLAB Function</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetConfigHandler/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <block>
+            <blkName>Delay</blkName>
+            <xpcblkName>SomanetConfigHandler/Delay</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Delay1</blkName>
+            <xpcblkName>SomanetConfigHandler/Delay1</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SomanetConfigHandler/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>SomanetConfigHandler/Switch</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Delay</sigName>
+              <xpcsigName>SomanetConfigHandler/Delay</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+
+</Root>
+         </mdlref>
+              <signal>
+              <sigName>SomanetConfigHandler/p1</sigName>
+              <xpcsigName>SomanetConfigHandler/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>SomanetConfigHandler/p2</sigName>
+              <xpcsigName>SomanetConfigHandler/p2</xpcsigName>
+              <sigWidth>15</sigWidth>
+              <sigDim>[15, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Signal Generator</sigName>
+              <xpcsigName>Signal Generator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+</Root>
