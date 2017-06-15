@@ -2500,13 +2500,7 @@ Operator1</sigName>
     
     </SubSystem>
 
-                    <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>Model1/Data Type Conversion</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-         <mdlref>
+               <mdlref>
              <mdlrefName>SetpointTransitionHandler</mdlrefName>
              <xpcblkName>Model</xpcblkName>
              <refblkName>Model</refblkName>
@@ -2532,18 +2526,6 @@ Operator1</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-              <signal>
-              <sigName>MATLAB Function/p1</sigName>
-              <xpcsigName>Model1/Model/MATLAB Function/p1</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>MATLAB Function/p2</sigName>
-              <xpcsigName>Model1/Model/MATLAB Function/p2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
               <signal>
               <sigName>Clock</sigName>
               <xpcsigName>Model1/Model/Clock</xpcsigName>
@@ -2633,8 +2615,48 @@ Operator1</sigName>
              <xpcblkName>VelocityHandler</xpcblkName>
              <refblkName>VelocityHandler</refblkName>
              <Root>
-      
-                    <signal>
+          <SubSystem>
+    <Name>Compare
+To Constant</Name>
+    <xPCName>VelocityTransitionHandler/Compare To Constant</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Model1/Model/Model/VelocityHandler/Compare To Constant/Constant</xpcblkName>
+            <SLblockPath>VelocityTransitionHandler/Compare To Constant/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Compare</sigName>
+              <xpcsigName>Model1/Model/Model/VelocityHandler/Compare To Constant/Compare</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+
+                  <block>
+            <blkName>Compare
+To Constant</blkName>
+            <xpcblkName>Model1/Model/Model/VelocityHandler/Compare To Constant</xpcblkName>
+            <SLblockPath>VelocityTransitionHandler/Compare To Constant</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>const</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Abs</sigName>
+              <xpcsigName>Model1/Model/Model/VelocityHandler/Abs</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Clock</sigName>
               <xpcsigName>Model1/Model/Model/VelocityHandler/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -2643,6 +2665,12 @@ Operator1</sigName>
               <signal>
               <sigName>Ac//deceleration</sigName>
               <xpcsigName>Model1/Model/Model/VelocityHandler/Ac//deceleration</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Divide</sigName>
+              <xpcsigName>Model1/Model/Model/VelocityHandler/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2667,6 +2695,18 @@ Operator1</sigName>
               <signal>
               <sigName>Add1</sigName>
               <xpcsigName>Model1/Model/Model/VelocityHandler/Add1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add2</sigName>
+              <xpcsigName>Model1/Model/Model/VelocityHandler/Add2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add3</sigName>
+              <xpcsigName>Model1/Model/Model/VelocityHandler/Add3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2709,6 +2749,24 @@ Operator1</sigName>
 
 </Root>
          </mdlref>
+              <signal>
+              <sigName>Model/p2</sigName>
+              <xpcsigName>Model1/Model/p2</xpcsigName>
+              <sigWidth>2</sigWidth>
+              <sigDim>[2, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Model/p3</sigName>
+              <xpcsigName>Model1/Model/p3</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Model/p4</sigName>
+              <xpcsigName>Model1/Model/p4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
 </Root>
          </mdlref>
