@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><Root>
+          <SubSystem>
+    <Name>read_config</Name>
+    <xPCName>SomanetConfigHandler/read_config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetConfigHandler/read_config/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>read_config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/read_config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>config_done</blkName>
+            <xpcblkName>read_config/config_done</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/read_config/config_done</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function1/p1</sigName>
+              <xpcsigName>read_config/MATLAB Function1/p1</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1/p2</sigName>
+              <xpcsigName>read_config/MATLAB Function1/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>update config</Name>
+    <xPCName>SomanetConfigHandler/update config</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetConfigHandler/update config/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>somanet_config</blkName>
+            <xpcblkName>update config/somanet_config</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/update config/somanet_config</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>update config/MATLAB Function</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetConfigHandler/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <block>
+            <blkName>Delay</blkName>
+            <xpcblkName>Delay</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/Delay</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Delay1</blkName>
+            <xpcblkName>Delay1</xpcblkName>
+            <SLblockPath>SomanetConfigHandler/Delay1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>DelayLength</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch</sigName>
+              <xpcsigName>Switch</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Delay</sigName>
+              <xpcsigName>Delay</xpcsigName>
+              <sigWidth>19</sigWidth>
+              <sigDim>[19, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Delay1</sigName>
+              <xpcsigName>Delay1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+</Root>
