@@ -708,20 +708,8 @@ Average</sigName>
     
     </SubSystem>
     <SubSystem>
-    <Name>Slider14</Name>
-    <xPCName>SomanetTuning/Slider14</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
     <Name>Slider2</Name>
     <xPCName>SomanetTuning/Slider2</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Slider3</Name>
-    <xPCName>SomanetTuning/Slider3</xPCName>
     
     
     </SubSystem>
@@ -782,12 +770,6 @@ Average</sigName>
     <SubSystem>
     <Name>Toggle Switch1</Name>
     <xPCName>SomanetTuning/Toggle Switch1</xPCName>
-    
-    
-    </SubSystem>
-    <SubSystem>
-    <Name>Toggle Switch2</Name>
-    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
     
     
     </SubSystem>
@@ -857,6 +839,16 @@ Average</sigName>
     </SubSystem>
 
                   <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>Constant</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Maximum acceleration</blkName>
             <xpcblkName>Maximum acceleration</xpcblkName>
             <SLblockPath>SomanetTuning/Maximum acceleration</SLblockPath>
@@ -1119,6 +1111,46 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>Gain1</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>Gain2</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>Gain3</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>Gain4</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Memory</blkName>
             <xpcblkName>Memory</xpcblkName>
             <SLblockPath>SomanetTuning/Memory</SLblockPath>
@@ -1310,13 +1342,6 @@ Concatenate1</sigName>
               <sigDim>[3, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>TargetPosition</sigName>
-              <xpcsigName>TargetPosition</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-                <sigLabel>Target Position</sigLabel>
-            </signal>
-              <signal>
               <sigName>TargetTorque</sigName>
               <xpcsigName>TargetTorque</xpcsigName>
               <sigWidth>3</sigWidth>
@@ -1353,6 +1378,12 @@ Concatenate1</sigName>
               <xpcsigName>Data Type Conversion10</xpcsigName>
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion11</sigName>
+              <xpcsigName>Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion2</sigName>
@@ -1393,8 +1424,8 @@ Concatenate1</sigName>
               <signal>
               <sigName>Data Type Conversion8</sigName>
               <xpcsigName>Data Type Conversion8</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion9</sigName>
@@ -1407,6 +1438,30 @@ Concatenate1</sigName>
               <xpcsigName>Gain</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>Gain1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>Gain4</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Logical
@@ -2490,8 +2545,8 @@ Operator1</sigName>
             </signal>
          <mdlref>
              <mdlrefName>GuiSetpointHandler</mdlrefName>
-             <xpcblkName>Model1</xpcblkName>
-             <refblkName>Model1</refblkName>
+             <xpcblkName>SetPointHandler</xpcblkName>
+             <refblkName>SetPointHandler</refblkName>
              <Root>
           <SubSystem>
     <Name>MATLAB Function</Name>
@@ -2514,7 +2569,7 @@ Operator1</sigName>
 
                   <block>
             <blkName>Delay</blkName>
-            <xpcblkName>Model1/Model/Delay</xpcblkName>
+            <xpcblkName>SetPointHandler/Model/Delay</xpcblkName>
             <SLblockPath>SetpointTransitionHandler/Delay</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
@@ -2527,14 +2582,26 @@ Operator1</sigName>
           </parameter>
           </block>
               <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>SetPointHandler/Model/MATLAB Function/p1</xpcsigName>
+              <sigWidth>3</sigWidth>
+              <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>SetPointHandler/Model/MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Clock</sigName>
-              <xpcsigName>Model1/Model/Clock</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Data Type Conversion</sigName>
-              <xpcsigName>Model1/Model/Data Type Conversion</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2546,7 +2613,7 @@ Operator1</sigName>
       
                     <signal>
               <sigName>Data Type Conversion4</sigName>
-              <xpcsigName>Model1/Model/Model/Data Type Conversion4</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/Data Type Conversion4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2564,25 +2631,25 @@ Operator1</sigName>
 
                     <signal>
               <sigName>MATLAB Function</sigName>
-              <xpcsigName>Model1/Model/Model/PositionHandler/MATLAB Function</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/MATLAB Function</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Clock</sigName>
-              <xpcsigName>Model1/Model/Model/PositionHandler/Clock</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add</sigName>
-              <xpcsigName>Model1/Model/Model/PositionHandler/Add</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add1</sigName>
-              <xpcsigName>Model1/Model/Model/PositionHandler/Add1</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2591,7 +2658,7 @@ Operator1</sigName>
          </mdlref>
               <signal>
               <sigName>PositionHandler</sigName>
-              <xpcsigName>Model1/Model/Model/PositionHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/PositionHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2606,7 +2673,7 @@ Operator1</sigName>
          </mdlref>
               <signal>
               <sigName>TorqueHandler</sigName>
-              <xpcsigName>Model1/Model/Model/TorqueHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/TorqueHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2622,7 +2689,7 @@ To Constant</Name>
     
                 <block>
             <blkName>Constant</blkName>
-            <xpcblkName>Model1/Model/Model/VelocityHandler/Compare To Constant/Constant</xpcblkName>
+            <xpcblkName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant/Constant</xpcblkName>
             <SLblockPath>VelocityTransitionHandler/Compare To Constant/Constant</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
@@ -2632,7 +2699,7 @@ To Constant</Name>
           </block>
               <signal>
               <sigName>Compare</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Compare To Constant/Compare</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant/Compare</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2642,7 +2709,7 @@ To Constant</Name>
                   <block>
             <blkName>Compare
 To Constant</blkName>
-            <xpcblkName>Model1/Model/Model/VelocityHandler/Compare To Constant</xpcblkName>
+            <xpcblkName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant</xpcblkName>
             <SLblockPath>VelocityTransitionHandler/Compare To Constant</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
@@ -2652,61 +2719,61 @@ To Constant</blkName>
           </block>
               <signal>
               <sigName>Abs</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Abs</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Abs</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Clock</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Clock</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Ac//deceleration</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Ac//deceleration</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Ac//deceleration</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Divide</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Divide</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Result</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Result</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Result</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Sign</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Sign</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Sign</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Add</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add1</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Add1</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add2</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Add2</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add3</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler/Add3</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2715,7 +2782,7 @@ To Constant</blkName>
          </mdlref>
               <signal>
               <sigName>VelocityHandler</sigName>
-              <xpcsigName>Model1/Model/Model/VelocityHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2724,61 +2791,43 @@ To Constant</blkName>
          </mdlref>
               <signal>
               <sigName>Model</sigName>
-              <xpcsigName>Model1/Model/Model</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Model</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Selector</sigName>
-              <xpcsigName>Model1/Model/Selector</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Selector</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Selector1</sigName>
-              <xpcsigName>Model1/Model/Selector1</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Selector1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Delay</sigName>
-              <xpcsigName>Model1/Model/Delay</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/Delay</xpcsigName>
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
             </signal>
 
 </Root>
          </mdlref>
-              <signal>
-              <sigName>Model/p2</sigName>
-              <xpcsigName>Model1/Model/p2</xpcsigName>
-              <sigWidth>2</sigWidth>
-              <sigDim>[2, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Model/p3</sigName>
-              <xpcsigName>Model1/Model/p3</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Model/p4</sigName>
-              <xpcsigName>Model1/Model/p4</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
 
 </Root>
          </mdlref>
               <signal>
-              <sigName>Model1/p1</sigName>
-              <xpcsigName>Model1/p1</xpcsigName>
+              <sigName>SetPointHandler/p1</sigName>
+              <xpcsigName>SetPointHandler/p1</xpcsigName>
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Model1/p2</sigName>
-              <xpcsigName>Model1/p2</xpcsigName>
+              <sigName>SetPointHandler/p2</sigName>
+              <xpcsigName>SetPointHandler/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2926,6 +2975,12 @@ To Constant</blkName>
               <xpcsigName>SomanetConfigHandler/p2</xpcsigName>
               <sigWidth>15</sigWidth>
               <sigDim>[15, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add</sigName>
+              <xpcsigName>Add</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Switch</sigName>
