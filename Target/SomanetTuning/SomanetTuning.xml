@@ -2607,13 +2607,13 @@ Operator1</sigName>
             </signal>
          <mdlref>
              <mdlrefName>TransitionTypeHandler</mdlrefName>
-             <xpcblkName>Model</xpcblkName>
-             <refblkName>Model</refblkName>
+             <xpcblkName>TransitionHandler</xpcblkName>
+             <refblkName>TransitionHandler</refblkName>
              <Root>
       
                     <signal>
               <sigName>Data Type Conversion4</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/Data Type Conversion4</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/Data Type Conversion4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2631,25 +2631,25 @@ Operator1</sigName>
 
                     <signal>
               <sigName>MATLAB Function</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/MATLAB Function</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/PositionHandler/MATLAB Function</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Clock</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Clock</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/PositionHandler/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Add</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/PositionHandler/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add1</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/PositionHandler/Add1</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/PositionHandler/Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2658,7 +2658,7 @@ Operator1</sigName>
          </mdlref>
               <signal>
               <sigName>PositionHandler</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/PositionHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/PositionHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2673,7 +2673,7 @@ Operator1</sigName>
          </mdlref>
               <signal>
               <sigName>TorqueHandler</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/TorqueHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/TorqueHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2689,7 +2689,7 @@ To Constant</Name>
     
                 <block>
             <blkName>Constant</blkName>
-            <xpcblkName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant/Constant</xpcblkName>
+            <xpcblkName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant/Constant</xpcblkName>
             <SLblockPath>VelocityTransitionHandler/Compare To Constant/Constant</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
@@ -2699,7 +2699,7 @@ To Constant</Name>
           </block>
               <signal>
               <sigName>Compare</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant/Compare</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant/Compare</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2709,7 +2709,7 @@ To Constant</Name>
                   <block>
             <blkName>Compare
 To Constant</blkName>
-            <xpcblkName>SetPointHandler/Model/Model/VelocityHandler/Compare To Constant</xpcblkName>
+            <xpcblkName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant</xpcblkName>
             <SLblockPath>VelocityTransitionHandler/Compare To Constant</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
@@ -2719,61 +2719,61 @@ To Constant</blkName>
           </block>
               <signal>
               <sigName>Abs</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Abs</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Abs</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Clock</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Clock</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Clock</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Ac//deceleration</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Ac//deceleration</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Ac//deceleration</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Divide</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Divide</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Result</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Result</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Result</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Sign</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Sign</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Sign</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add1</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add1</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add2</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add2</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Add3</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler/Add3</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2782,7 +2782,7 @@ To Constant</blkName>
          </mdlref>
               <signal>
               <sigName>VelocityHandler</sigName>
-              <xpcsigName>SetPointHandler/Model/Model/VelocityHandler</xpcsigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2790,8 +2790,8 @@ To Constant</blkName>
 </Root>
          </mdlref>
               <signal>
-              <sigName>Model</sigName>
-              <xpcsigName>SetPointHandler/Model/Model</xpcsigName>
+              <sigName>TransitionHandler</sigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
