@@ -2683,73 +2683,21 @@ Operator1</sigName>
              <refblkName>VelocityHandler</refblkName>
              <Root>
           <SubSystem>
-    <Name>Compare
-To Constant</Name>
-    <xPCName>VelocityTransitionHandler/Compare To Constant</xPCName>
+    <Name>MATLAB Function</Name>
+    <xPCName>VelocityTransitionHandler/MATLAB Function</xPCName>
     
-                <block>
-            <blkName>Constant</blkName>
-            <xpcblkName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant/Constant</xpcblkName>
-            <SLblockPath>VelocityTransitionHandler/Compare To Constant/Constant</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>const</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>Compare</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant/Compare</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-
+    
     </SubSystem>
 
-                  <block>
-            <blkName>Compare
-To Constant</blkName>
-            <xpcblkName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Compare To Constant</xpcblkName>
-            <SLblockPath>VelocityTransitionHandler/Compare To Constant</SLblockPath>
-            <isSrc>[0 1 1]</isSrc>
-          <parameter>
-          <paramName>const</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>Abs</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Abs</xpcsigName>
+                    <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/MATLAB Function</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Clock</sigName>
               <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Clock</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Ac//deceleration</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Ac//deceleration</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Divide</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Divide</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Result</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Result</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Sign</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Sign</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2762,18 +2710,6 @@ To Constant</blkName>
               <signal>
               <sigName>Add1</sigName>
               <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Add2</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Add3</sigName>
-              <xpcsigName>SetPointHandler/Model/TransitionHandler/VelocityHandler/Add3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
