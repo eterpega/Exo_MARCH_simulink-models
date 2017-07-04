@@ -99,3 +99,4 @@ save('temporaryResults/position','position');
 save('temporaryResults/torque','torque');
 save('temporaryResults/velocity','velocity');
 save('temporaryResults/currents','currents');
+save('temporaryResults/Temperature','Temperature');

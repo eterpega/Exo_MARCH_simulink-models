@@ -714,6 +714,12 @@ Average</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>Slider3</Name>
+    <xPCName>SomanetTuning/Slider3</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
     <Name>Slider4</Name>
     <xPCName>SomanetTuning/Slider4</xPCName>
     
@@ -770,6 +776,12 @@ Average</sigName>
     <SubSystem>
     <Name>Toggle Switch1</Name>
     <xPCName>SomanetTuning/Toggle Switch1</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Toggle Switch2</Name>
+    <xPCName>SomanetTuning/Toggle Switch2</xPCName>
     
     
     </SubSystem>
@@ -842,6 +854,16 @@ Average</sigName>
             <blkName>Constant</blkName>
             <xpcblkName>Constant</xpcblkName>
             <SLblockPath>SomanetTuning/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant4</blkName>
+            <xpcblkName>Constant4</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant4</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -2555,7 +2577,33 @@ Operator1</sigName>
     
     </SubSystem>
 
-               <mdlref>
+                  <block>
+            <blkName>Targets Out</blkName>
+            <xpcblkName>SetPointHandler/Targets Out</xpcblkName>
+            <SLblockPath>GuiSetpointHandler/Targets Out</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Control strategy</blkName>
+            <xpcblkName>SetPointHandler/Control strategy</xpcblkName>
+            <SLblockPath>GuiSetpointHandler/Control strategy</SLblockPath>
+            <isSrc>[0 1 0]</isSrc>
+          <parameter>
+          <paramName>InitialOutput</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SetPointHandler/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+         <mdlref>
              <mdlrefName>SetpointTransitionHandler</mdlrefName>
              <xpcblkName>Model</xpcblkName>
              <refblkName>Model</refblkName>
