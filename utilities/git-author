@@ -1,22 +1,31 @@
 #!/bin/bash
-
-if [ $1 == 'phil' ]
- then
-name=phild
-mail=p.duernay@protonmail.com
-elif [ $1 == 'taeke' ]
- then
-name=taeke
-mail=
-elif [ $1 == 'luca' ]
- then
-name=luca
-mail=lucadelaat@gmail.com
- else
 name=projectmarch
 mail=tech@projectmarch.nl
+if [ -z "$1" ]
+ then
+ echo "No username given. If you want to change it use: git-author {name}. "
+else
+	if [ $1 == 'phil' ]
+	 then
+	name=phild
+	mail=p.duernay@protonmail.com
+	elif [ $1 == 'taeke' ]
+	 then
+	name=taeke
+	mail=
+	elif [ $1 == 'luca' ]
+	 then
+	name=luca
+	mail=lucadelaat@gmail.com
+	elif [ $1 == 'nathan' ]
+	 then
+	name=nathantim
+	mail=timmerhout@gmail.com
+	 else
+	echo "$1 has not an entry yet. Add it by editing <git-author> script."
+	exit 1
+	fi
 fi
-
 git config user.name "$name" && echo "User name changed to $name"
 git config user.email "$mail" && echo "Mail set to $mail"
 
