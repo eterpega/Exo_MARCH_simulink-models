@@ -1,0 +1,23 @@
+#!/bin/bash
+
+if [ $1 == 'phil' ]
+ then
+name=phild
+mail=p.duernay@protonmail.com
+elif [ $1 == 'taeke' ]
+ then
+name=taeke
+mail=
+elif [ $1 == 'luca' ]
+ then
+name=luca
+mail=lucadelaat@gmail.com
+ else
+name=projectmarch
+mail=tech@projectmarch.nl
+fi
+
+git config user.name "$name" && echo "User name changed to $name"
+git config user.email "$mail" && echo "Mail set to $mail"
+
+
