@@ -1,10 +1,11 @@
 classdef SomanetError < Simulink.IntEnumType
     enumeration
-        NOERROR(72)
-        DISCONNECT(0)
+        NOERRORSOMANET(72) % Somanet is added here to avoid conflict
+        DISCONNECTSOMANET(0) 
+        GENERICERRORSOMANET(666)
         HARDSTOPREACHED(1001)
         PHASEOVERCURRENT(1002)
         NONRESPONSIVE(1003)
-        GENERICERROR(666)
+        OVERHEAT(1004)
     end    
 end
