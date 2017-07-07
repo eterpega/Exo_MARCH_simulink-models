@@ -6,6 +6,30 @@
     
     </SubSystem>
     <SubSystem>
+    <Name>Current over time</Name>
+    <xPCName>SomanetTuning/Current over time</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/Current over time/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>Current over time/MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>Current over time/MATLAB Function/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Currents graphical</Name>
     <xPCName>SomanetTuning/Currents graphical</xPCName>
     
@@ -221,6 +245,12 @@ Average</sigName>
     <SubSystem>
     <Name>Lamp</Name>
     <xPCName>SomanetTuning/Lamp</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Lamp1</Name>
+    <xPCName>SomanetTuning/Lamp1</xPCName>
     
     
     </SubSystem>
@@ -768,6 +798,25 @@ Average</sigName>
     
     </SubSystem>
     <SubSystem>
+    <Name>TemerpatureSwitch</Name>
+    <xPCName>SomanetTuning/TemerpatureSwitch</xPCName>
+        <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>SomanetTuning/TemerpatureSwitch/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>TemerpatureSwitch/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>y</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
     <Name>Toggle Switch</Name>
     <xPCName>SomanetTuning/Toggle Switch</xPCName>
     
@@ -864,6 +913,16 @@ Average</sigName>
             <blkName>Constant4</blkName>
             <xpcblkName>Constant4</xpcblkName>
             <SLblockPath>SomanetTuning/Constant4</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant5</blkName>
+            <xpcblkName>Constant5</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant5</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -992,6 +1051,26 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>currentMaximum</blkName>
+            <xpcblkName>currentMaximum</xpcblkName>
+            <SLblockPath>SomanetTuning/currentMaximum</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>currentNominal</blkName>
+            <xpcblkName>currentNominal</xpcblkName>
+            <SLblockPath>SomanetTuning/currentNominal</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>livetuning_switch
 </blkName>
             <xpcblkName>livetuning_switch </xpcblkName>
@@ -1003,9 +1082,9 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>max_position_slider</blkName>
-            <xpcblkName>max_position_slider</xpcblkName>
-            <SLblockPath>SomanetTuning/max_position_slider</SLblockPath>
+            <blkName>maxTemperature</blkName>
+            <xpcblkName>maxTemperature</xpcblkName>
+            <SLblockPath>SomanetTuning/maxTemperature</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1013,19 +1092,9 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>max_temperature</blkName>
-            <xpcblkName>max_temperature</xpcblkName>
-            <SLblockPath>SomanetTuning/max_temperature</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>max_temperature_change_per_second</blkName>
-            <xpcblkName>max_temperature_change_per_second</xpcblkName>
-            <SLblockPath>SomanetTuning/max_temperature_change_per_second</SLblockPath>
+            <blkName>max_position</blkName>
+            <xpcblkName>max_position</xpcblkName>
+            <SLblockPath>SomanetTuning/max_position</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1043,9 +1112,9 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>min_position_slider</blkName>
-            <xpcblkName>min_position_slider</xpcblkName>
-            <SLblockPath>SomanetTuning/min_position_slider</SLblockPath>
+            <blkName>min_position</blkName>
+            <xpcblkName>min_position</xpcblkName>
+            <SLblockPath>SomanetTuning/min_position</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1086,6 +1155,26 @@ Average</sigName>
             <blkName>position_p_gui</blkName>
             <xpcblkName>position_p_gui</xpcblkName>
             <SLblockPath>SomanetTuning/position_p_gui</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>stopTime</blkName>
+            <xpcblkName>stopTime</xpcblkName>
+            <SLblockPath>SomanetTuning/stopTime</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>timeMaximum</blkName>
+            <xpcblkName>timeMaximum</xpcblkName>
+            <SLblockPath>SomanetTuning/timeMaximum</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1303,6 +1392,26 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>Switch1</blkName>
+            <xpcblkName>Switch1</xpcblkName>
+            <SLblockPath>SomanetTuning/Switch1</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Switch2</blkName>
+            <xpcblkName>Switch2</xpcblkName>
+            <SLblockPath>SomanetTuning/Switch2</SLblockPath>
+            <isSrc>[0 3 1]</isSrc>
+          <parameter>
+          <paramName>Threshold</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Weighted
 Sample Time</blkName>
             <xpcblkName>Weighted Sample Time</xpcblkName>
@@ -1484,6 +1593,13 @@ Concatenate1</sigName>
               <xpcsigName>Gain4</xpcsigName>
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Logical
+Operator</sigName>
+              <xpcsigName>Logical Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
               <sigName>Logical
@@ -2545,27 +2661,6 @@ Operator1</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
          <mdlref>
-             <mdlrefName>SafetyTemperatureSwitch</mdlrefName>
-             <xpcblkName>Model</xpcblkName>
-             <refblkName>Model</refblkName>
-             <Root>
-          <SubSystem>
-    <Name>MATLAB Function</Name>
-    <xPCName>SafetyTemperatureSwitch/MATLAB Function</xPCName>
-    
-    
-    </SubSystem>
-
-      
-</Root>
-         </mdlref>
-              <signal>
-              <sigName>Model</sigName>
-              <xpcsigName>Model</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-         <mdlref>
              <mdlrefName>GuiSetpointHandler</mdlrefName>
              <xpcblkName>SetPointHandler</xpcblkName>
              <refblkName>SetPointHandler</refblkName>
@@ -2969,6 +3064,18 @@ Operator1</sigName>
               <signal>
               <sigName>Switch</sigName>
               <xpcsigName>Switch</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch1</sigName>
+              <xpcsigName>Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Switch2</sigName>
+              <xpcsigName>Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
