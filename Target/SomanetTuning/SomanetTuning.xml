@@ -293,21 +293,21 @@ Average</sigName>
               <xpcsigName>PhaseCurrentCalculation/Data Type Conversion12</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>I_DC [mA]</sigLabel>
+                <sigLabel>I_DC [A]</sigLabel>
             </signal>
               <signal>
               <sigName>Gain2</sigName>
               <xpcsigName>PhaseCurrentCalculation/Gain2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase B [mA]</sigLabel>
+                <sigLabel>Phase B [A]</sigLabel>
             </signal>
               <signal>
               <sigName>Gain3</sigName>
               <xpcsigName>PhaseCurrentCalculation/Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase C [mA]</sigLabel>
+                <sigLabel>Phase C [A]</sigLabel>
             </signal>
               <signal>
               <sigName>Scalefactor</sigName>
@@ -344,7 +344,7 @@ Average</sigName>
               <xpcsigName>PhaseCurrentCalculation/Substract</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Phase A [mA]</sigLabel>
+                <sigLabel>Phase A [A]</sigLabel>
             </signal>
               <signal>
               <sigName>Sqrt</sigName>
@@ -898,6 +898,12 @@ Average</sigName>
     
     
     </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function1</Name>
+    <xPCName>SomanetTuning/MATLAB Function1</xPCName>
+    
+    
+    </SubSystem>
 
                   <block>
             <blkName>Constant</blkName>
@@ -910,9 +916,9 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>Constant4</blkName>
-            <xpcblkName>Constant4</xpcblkName>
-            <SLblockPath>SomanetTuning/Constant4</SLblockPath>
+            <blkName>Constant1</blkName>
+            <xpcblkName>Constant1</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant1</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -920,9 +926,29 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>Constant5</blkName>
-            <xpcblkName>Constant5</xpcblkName>
-            <SLblockPath>SomanetTuning/Constant5</SLblockPath>
+            <blkName>Constant2</blkName>
+            <xpcblkName>Constant2</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>Constant3</xpcblkName>
+            <SLblockPath>SomanetTuning/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Frequency [Hz]</blkName>
+            <xpcblkName>Frequency [Hz]</xpcblkName>
+            <SLblockPath>SomanetTuning/Frequency [Hz]</SLblockPath>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>Value</paramName>
@@ -1392,26 +1418,6 @@ Average</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>Switch1</blkName>
-            <xpcblkName>Switch1</xpcblkName>
-            <SLblockPath>SomanetTuning/Switch1</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
-          <parameter>
-          <paramName>Threshold</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Switch2</blkName>
-            <xpcblkName>Switch2</xpcblkName>
-            <SLblockPath>SomanetTuning/Switch2</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
-          <parameter>
-          <paramName>Threshold</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Weighted
 Sample Time</blkName>
             <xpcblkName>Weighted Sample Time</xpcblkName>
@@ -1455,6 +1461,18 @@ Sample Time</blkName>
               <signal>
               <sigName>MATLAB Function/p3</sigName>
               <xpcsigName>MATLAB Function/p3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function1</sigName>
+              <xpcsigName>MATLAB Function1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Clock1</sigName>
+              <xpcsigName>Clock1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1605,6 +1623,20 @@ Operator</sigName>
               <sigName>Logical
 Operator1</sigName>
               <xpcsigName>Logical Operator1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Math
+Function</sigName>
+              <xpcsigName>Math Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Math
+Function1</sigName>
+              <xpcsigName>Math Function1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -2672,33 +2704,7 @@ Operator1</sigName>
     
     </SubSystem>
 
-                  <block>
-            <blkName>Targets Out</blkName>
-            <xpcblkName>SetPointHandler/Targets Out</xpcblkName>
-            <SLblockPath>GuiSetpointHandler/Targets Out</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>InitialOutput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Control strategy</blkName>
-            <xpcblkName>SetPointHandler/Control strategy</xpcblkName>
-            <SLblockPath>GuiSetpointHandler/Control strategy</SLblockPath>
-            <isSrc>[0 1 0]</isSrc>
-          <parameter>
-          <paramName>InitialOutput</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-              <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>SetPointHandler/MATLAB Function</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-         <mdlref>
+               <mdlref>
              <mdlrefName>SetpointTransitionHandler</mdlrefName>
              <xpcblkName>Model</xpcblkName>
              <refblkName>Model</refblkName>
@@ -3056,8 +3062,28 @@ Operator1</sigName>
               <sigDim>[15, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Divide</sigName>
+              <xpcsigName>Divide</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>maxSurface</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Relational
+Operator</sigName>
+              <xpcsigName>Relational Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Add</sigName>
               <xpcsigName>Add</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Add1</sigName>
+              <xpcsigName>Add1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -3070,12 +3096,6 @@ Operator1</sigName>
               <signal>
               <sigName>Switch1</sigName>
               <xpcsigName>Switch1</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-            </signal>
-              <signal>
-              <sigName>Switch2</sigName>
-              <xpcsigName>Switch2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
