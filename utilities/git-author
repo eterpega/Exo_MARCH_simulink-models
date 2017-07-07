@@ -9,6 +9,10 @@ else
 	 then
 	name=phild
 	mail=p.duernay@protonmail.com
+        elif [ $1 == 'ike' ]
+         then
+        name=snyke7
+        mail=ikemulder@hotmail.com
 	elif [ $1 == 'taeke' ]
 	 then
 	name=taeke
