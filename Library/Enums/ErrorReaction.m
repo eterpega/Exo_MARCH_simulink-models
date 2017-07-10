@@ -3,6 +3,6 @@ classdef ErrorReaction < Simulink.IntEnumType
         QUITIMMEDIATELY(1)
         FINISHCURRENTREACTION(2)
         MOVETOPREVIOUSSTATE(3)
-        NOERROR(4)
+        NOREACTION(4)
     end
 end
