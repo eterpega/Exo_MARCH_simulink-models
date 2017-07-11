@@ -1,5 +1,1365 @@
-<?xml version="1.0" encoding="UTF-8"?><Root>
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
           <SubSystem>
+    <Name>DataLogger</Name>
+    <xPCName>HighLevelMARCH/DataLogger</xPCName>
+        <SubSystem>
+    <Name>DataLogger </Name>
+    <xPCName>HighLevelMARCH/DataLogger/DataLogger </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>LatchHandler</Name>
+    <xPCName>HighLevelMARCH/DataLogger/LatchHandler</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>ScopeHandler</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler</xPCName>
+        <SubSystem>
+    <Name>DemuxJointInfo</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/DemuxJointInfo</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/DemuxJointInfo/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/DemuxJointInfo/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/DemuxJointInfo/Constant1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/DemuxJointInfo/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/DemuxJointInfo/Constant2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/DemuxJointInfo/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/DemuxJointInfo/Constant3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/DemuxJointInfo/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/DemuxJointInfo/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/DemuxJointInfo/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/DemuxJointInfo/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/DemuxJointInfo/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>configScope</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/configScope</xPCName>
+        <SubSystem>
+    <Name>Scope </Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Scope </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>Scope 1</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Scope 1</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain10</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain10</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain10</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain11</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain11</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain11</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain12</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain12</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain12</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain13</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain13</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain13</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain14</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain14</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain14</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain15</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain15</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain15</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain4</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain5</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain6</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain6</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain6</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain7</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain7</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain7</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain8</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain8</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain8</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain9</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/configScope/Gain9</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/configScope/Gain9</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>minPosLim_LHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>maxPosLim_LHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain10</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKp_RHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain11</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKd_RHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain12</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>minPosLim_RKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain13</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>maxPosLim_RKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain14</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain14</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKp_RKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain15</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain15</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKd_RKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKp_LHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKd_LHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>minPosLim_LKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>maxPosLim_LKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain6</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKp_LKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain7</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>posKd_LKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain8</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>minPosLim_RHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain9</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/configScope/Gain9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>maxPosLim_RHFE</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>errorScopes</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes</xPCName>
+        <SubSystem>
+    <Name>DemuxJointInfo</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Selector</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Selector1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Selector2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo/Selector3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>DemuxJointInfo1</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Selector</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Selector1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Selector2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Selector3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/DemuxJointInfo1/Selector3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>errorScope</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/errorScopes/errorScope</xPCName>
+    
+    
+    </SubSystem>
+
+                  <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorSOMANETLHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorSOMANETLKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorSOMANETRHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorSOMANETRKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion4</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorInputDevice</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion5</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorGES1</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion6</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorGES2</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion7</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorPDB</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion8</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/errorScopes/Data Type Conversion8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>errorBMS</sigLabel>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>inDataSOMANETsScopes</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes</xPCName>
+        <SubSystem>
+    <Name>DemuxJointInfo</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/DemuxJointInfo/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
+    <SubSystem>
+    <Name>inSOMANET_LHFE</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/inSOMANET_LHFE</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>inSOMANET_LKFE </Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/inSOMANET_LKFE </xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>inSOMANET_RHFE</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/inSOMANET_RHFE</xPCName>
+    
+    
+    </SubSystem>
+    <SubSystem>
+    <Name>inSOMANET_RKFE</Name>
+    <xPCName>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/inSOMANET_RKFE</xPCName>
+    
+    
+    </SubSystem>
+
+                <block>
+            <blkName>Gain</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain1</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain1</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain10</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain10</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain10</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain11</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain11</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain11</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain12</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain12</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain12</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain13</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain13</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain13</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain14</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain14</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain14</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain15</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain15</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain15</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain16</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain16</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain16</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain17</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain17</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain17</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain18</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain18</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain18</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain19</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain19</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain19</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain2</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain2</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain20</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain20</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain20</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain21</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain21</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain21</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain22</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain22</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain22</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain23</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain23</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain23</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain24</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain24</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain24</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain25</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain25</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain25</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain26</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain26</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain26</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain27</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain27</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain27</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain28</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain28</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain28</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain29</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain29</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain29</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain3</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain3</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain30</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain30</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain30</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain31</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain31</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain31</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain32</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain32</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain32</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain33</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain33</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain33</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain34</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain34</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain34</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain35</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain35</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain35</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain4</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain4</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain4</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain5</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain6</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain6</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain6</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain7</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain7</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain7</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain8</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain8</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain8</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Gain9</blkName>
+            <xpcblkName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain9</xpcblkName>
+            <SLblockPath>HighLevelMARCH/DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain9</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Gain</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>statusword_LHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain1</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualAngle [Rad]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain10</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain10</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualAngle [Rad]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain11</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualVelocity [Rad/s]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain12</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualTorque [Nm]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain13</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain13</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>error</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain14</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain14</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentB [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain15</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain15</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentC [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain16</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain16</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>opMode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain17</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain17</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>temperature [°C]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain18</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain18</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>statusword_RHFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain19</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain19</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualAngle [Rad]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain2</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualVelocity [Rad/s]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain20</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain20</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualVelocity [Rad/s]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain21</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain21</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualTorque [Nm]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain22</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain22</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>error</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain23</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain23</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentB [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain24</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain24</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentC [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain25</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain25</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>opMode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain26</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain26</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>temperature [°C]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain27</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain27</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>statusword_RKFE</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain28</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain28</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualAngle [Rad]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain29</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain29</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualVelocity [Rad/s]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain3</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualTorque [Nm]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain30</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain30</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualTorque [Nm]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain31</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain31</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>error</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain32</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain32</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentB [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain33</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain33</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentC [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain34</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain34</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>opMode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain35</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain35</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>temperature [°C]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain4</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>error</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentB [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain6</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>phaseCurrentC [A]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain7</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>opMode</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain8</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain8</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>temperature [°C]</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Gain9</sigName>
+              <xpcsigName>DataLogger/ScopeHandler/inDataSOMANETsScopes/Gain9</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>statusword_LKFE</sigLabel>
+            </signal>
+
+    </SubSystem>
+
+    
+    </SubSystem>
+
+    
+    </SubSystem>
+    <SubSystem>
     <Name>GESHandler</Name>
     <xPCName>HighLevelMARCH/GESHandler</xPCName>
         <SubSystem>
@@ -97,6 +1457,76 @@ Concatenate</sigName>
             </signal>
 
     </SubSystem>
+    <SubSystem>
+    <Name>MuxJointInfo1</Name>
+    <xPCName>HighLevelMARCH/GESHandler/MuxJointInfo1</xPCName>
+    
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>GESHandler/MuxJointInfo1/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/MuxJointInfo1/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant1</blkName>
+            <xpcblkName>GESHandler/MuxJointInfo1/Constant1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/MuxJointInfo1/Constant1</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant2</blkName>
+            <xpcblkName>GESHandler/MuxJointInfo1/Constant2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/MuxJointInfo1/Constant2</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant3</blkName>
+            <xpcblkName>GESHandler/MuxJointInfo1/Constant3</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/MuxJointInfo1/Constant3</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>GESHandler/MuxJointInfo1/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>GESHandler/MuxJointInfo1/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>GESHandler/MuxJointInfo1/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion3</sigName>
+              <xpcsigName>GESHandler/MuxJointInfo1/Data Type Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+
+    </SubSystem>
 
                 <block>
             <blkName>Constant1</blkName>
@@ -148,13 +1578,36 @@ Concatenate</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-              <signal>
-              <sigName>Constant2</sigName>
-              <xpcsigName>GESHandler/Constant2</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
-                <sigLabel>toGES1</sigLabel>
-            </signal>
+            <block>
+            <blkName>Constant6</blkName>
+            <xpcblkName>GESHandler/Constant6</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/Constant6</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant7</blkName>
+            <xpcblkName>GESHandler/Constant7</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/Constant7</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Constant8</blkName>
+            <xpcblkName>GESHandler/Constant8</xpcblkName>
+            <SLblockPath>HighLevelMARCH/GESHandler/Constant8</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
               <signal>
               <sigName>Data Type Conversion</sigName>
               <xpcsigName>GESHandler/Data Type Conversion</xpcsigName>
@@ -3011,7 +4464,7 @@ Concatenate</sigName>
               <xpcsigName>ReceivedCommunication/inSOMANET_LHFE/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -3674,7 +5127,7 @@ Concatenate</sigName>
               <xpcsigName>ReceivedCommunication/inSOMANET_LKFE/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -3977,7 +5430,7 @@ Concatenate</sigName>
               <xpcsigName>ReceivedCommunication/inSOMANET_RHFE/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -4280,7 +5733,7 @@ Concatenate</sigName>
               <xpcsigName>ReceivedCommunication/inSOMANET_RKFE/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -5153,14 +6606,14 @@ Concatenate</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LHFE/ConfigHandler/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>radians</sigLabel>
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LHFE/ConfigHandler/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -5183,7 +6636,7 @@ Concatenate</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LHFE/ConfigHandler/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -5498,9 +6951,19 @@ Concatenate</sigName>
 
     </SubSystem>
 
-                  <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>SOMANETHandler/SOMANET_LHFE/SafetyCheckerSOMANET/Data Type Conversion</xpcsigName>
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>SOMANETHandler/SOMANET_LHFE/SafetyCheckerSOMANET/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/SOMANETHandler/SOMANET_LHFE/SafetyCheckerSOMANET/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LHFE/SafetyCheckerSOMANET/Constant</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -5995,14 +7458,14 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LKFE/ConfigHandler/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>radians</sigLabel>
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LKFE/ConfigHandler/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -6025,7 +7488,7 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LKFE/ConfigHandler/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -6340,9 +7803,19 @@ Operator1</sigName>
 
     </SubSystem>
 
-                  <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>SOMANETHandler/SOMANET_LKFE/SafetyCheckerSOMANET/Data Type Conversion</xpcsigName>
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>SOMANETHandler/SOMANET_LKFE/SafetyCheckerSOMANET/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/SOMANETHandler/SOMANET_LKFE/SafetyCheckerSOMANET/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LKFE/SafetyCheckerSOMANET/Constant</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -6837,14 +8310,14 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RHFE/ConfigHandler/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>radians</sigLabel>
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RHFE/ConfigHandler/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -6867,7 +8340,7 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RHFE/ConfigHandler/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -7182,9 +8655,19 @@ Operator1</sigName>
 
     </SubSystem>
 
-                  <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>SOMANETHandler/SOMANET_RHFE/SafetyCheckerSOMANET/Data Type Conversion</xpcsigName>
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>SOMANETHandler/SOMANET_RHFE/SafetyCheckerSOMANET/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/SOMANETHandler/SOMANET_RHFE/SafetyCheckerSOMANET/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_RHFE/SafetyCheckerSOMANET/Constant</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -7679,14 +9162,14 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RKFE/ConfigHandler/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>radians</sigLabel>
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RKFE/ConfigHandler/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -7709,7 +9192,7 @@ Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_RKFE/ConfigHandler/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                
+                <sigLabel>rotations</sigLabel>
             </signal>
 
     </SubSystem>
@@ -8024,9 +9507,19 @@ Operator1</sigName>
 
     </SubSystem>
 
-                  <signal>
-              <sigName>Data Type Conversion</sigName>
-              <xpcsigName>SOMANETHandler/SOMANET_RKFE/SafetyCheckerSOMANET/Data Type Conversion</xpcsigName>
+                <block>
+            <blkName>Constant</blkName>
+            <xpcblkName>SOMANETHandler/SOMANET_RKFE/SafetyCheckerSOMANET/Constant</xpcblkName>
+            <SLblockPath>HighLevelMARCH/SOMANETHandler/SOMANET_RKFE/SafetyCheckerSOMANET/Constant</SLblockPath>
+            <isSrc>[1 0 1]</isSrc>
+          <parameter>
+          <paramName>Value</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+              <signal>
+              <sigName>Constant</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_RKFE/SafetyCheckerSOMANET/Constant</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
