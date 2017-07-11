@@ -7409,6 +7409,34 @@ Concatenate</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
+              <sigName>Signal
+Conversion</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LHFE/Signal Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Signal
+Conversion1</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LHFE/Signal Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Signal
+Conversion2</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LHFE/Signal Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Signal
+Conversion3</sigName>
+              <xpcsigName>SOMANETHandler/SOMANET_LHFE/Signal Conversion3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Logical
 Operator1</sigName>
               <xpcsigName>SOMANETHandler/SOMANET_LHFE/Logical Operator1</xpcsigName>
