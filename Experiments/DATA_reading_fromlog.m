@@ -88,7 +88,7 @@ ylabel('Torque [N/m]')
 %currents
 figure(5)
 title('Currents')
-plot(currents.data(start_time:end_time,5),currents.data(start_time:end_time,1),currents.data(start_time:end_time,5),currents.data(start_time:end_time,2),currents.data(start_time:end_time,5),currents.data(start_time:end_time,3),currents.data(start_time:end_time,5),currents.data(start_time:end_time,4));
+plot(currents.data(start_time:end_time,6),currents.data(start_time:end_time,1),currents.data(start_time:end_time,6),currents.data(start_time:end_time,2),currents.data(start_time:end_time,6),currents.data(start_time:end_time,3),currents.data(start_time:end_time,6),currents.data(start_time:end_time,4));
 legend('Total', 'Phase A', 'Phase B', 'Phase C')
 xlabel('Time [s]')
 ylabel('Ampere [A]')
