@@ -30,6 +30,10 @@ switch(errorCode)
         somanetError = SomanetError.SOFTWARE_HARDSTOP_REACHED;
     case hex2dec('8B04')
         somanetError = SomanetError.SOFTWARE_SOFTSTOP_REACHED;
+    case 0 % then ethercat isnt working yet
+        somanetError = SomanetError.SOMANET_DISCONNECTED;
+    case 72 % this means no error
+        somanetError = SomanetError.NOERROR_SOMANET;
     otherwise
         somanetError = SomanetError.SOMANET_UNKNOWN_ERROR;
 end
