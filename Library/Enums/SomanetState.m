@@ -8,5 +8,6 @@ classdef SomanetState < Simulink.IntEnumType
         FAULT_REACTION_ACTIVE(661)
         OPERATION_ENABLED(72)
         FAULT(666)
+        UNKNOWN_STATUSWORD(666666)
     end
 end
