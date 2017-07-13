@@ -14,8 +14,8 @@
         <Devices>
             <Device Physics="YY">
                 <Type ProductCode="#x00000201" RevisionNo="#x0a000002">CiA402 Motor Control Device</Type>
-                <Name LcId="1033">SOMANET CiA402 Drive</Name>
-                <Name LcId="1031">SOMANET CiA402 Antrieb</Name>
+                <Name LcId="1033">CiA402 Drive</Name>
+                <Name LcId="1031">CiA402 Antrieb (Modules/Slots)</Name>
                 <Info>
                     <Mailbox>
                         <Timeout>
@@ -126,7 +126,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT1600</Name>
-                                <BitSize>624</BitSize>
+                                <BitSize>560</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>SubIndex 000</Name>
@@ -239,7 +239,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name></Name>
+                                    <Name>Digital Output 2</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>304</BitOffs>
@@ -250,7 +250,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>11</SubIdx>
-                                    <Name>Digital Output 2</Name>
+                                    <Name>padding entry (automatically added) 1</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>336</BitOffs>
@@ -261,7 +261,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>12</SubIdx>
-                                    <Name>padding entry (automatically added) 1</Name>
+                                    <Name>Digital Output 3</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>368</BitOffs>
@@ -272,7 +272,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>13</SubIdx>
-                                    <Name></Name>
+                                    <Name>padding entry (automatically added) 2</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>400</BitOffs>
@@ -283,7 +283,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>14</SubIdx>
-                                    <Name>Digital Output 3</Name>
+                                    <Name>Digital Output 4</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>432</BitOffs>
@@ -294,7 +294,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>15</SubIdx>
-                                    <Name>padding entry (automatically added) 2</Name>
+                                    <Name>padding entry (automatically added) 3</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>464</BitOffs>
@@ -305,7 +305,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>16</SubIdx>
-                                    <Name>Digital Output 4</Name>
+                                    <Name>User MOSI</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>496</BitOffs>
@@ -316,7 +316,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>17</SubIdx>
-                                    <Name>padding entry (automatically added) 3</Name>
+                                    <Name>Max torque</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>528</BitOffs>
@@ -325,32 +325,10 @@
                                         <Category>o</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>18</SubIdx>
-                                    <Name>User MOSI</Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>560</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>19</SubIdx>
-                                    <Name>Max torque</Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>592</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT1A00</Name>
-                                <BitSize>1040</BitSize>
+                                <BitSize>848</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>SubIndex 000</Name>
@@ -363,7 +341,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>28</SubIdx>
+                                    <SubIdx>1</SubIdx>
                                     <Name>Statusword</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -374,7 +352,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>29</SubIdx>
+                                    <SubIdx>2</SubIdx>
                                     <Name>Op Mode Display</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -385,7 +363,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>30</SubIdx>
+                                    <SubIdx>3</SubIdx>
                                     <Name>Position Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -396,7 +374,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>31</SubIdx>
+                                    <SubIdx>4</SubIdx>
                                     <Name>Velocity Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -407,7 +385,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>32</SubIdx>
+                                    <SubIdx>5</SubIdx>
                                     <Name>Torque Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -418,7 +396,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>33</SubIdx>
+                                    <SubIdx>6</SubIdx>
                                     <Name>Secondary position value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -595,7 +573,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>22</SubIdx>
-                                    <Name>Timestamp</Name>
+                                    <Name>timestamp</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>688</BitOffs>
@@ -617,7 +595,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>24</SubIdx>
-                                    <Name>Instantaneous Phase B current</Name>
+                                    <Name>Phase B</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>752</BitOffs>
@@ -628,7 +606,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>25</SubIdx>
-                                    <Name>Instantaneous Phase C current</Name>
+                                    <Name>Phase C</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>784</BitOffs>
@@ -639,76 +617,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>26</SubIdx>
-                                    <Name>Core temperature</Name>
+                                    <Name>Core Temp</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>816</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>27</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>848</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>28</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>880</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>29</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>912</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>30</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>944</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>31</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>976</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>32</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>1008</BitOffs>
                                     <Flags>
                                         <Access>ro</Access>
                                         <Category>o</Category>
@@ -991,7 +903,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT2004</Name>
-                                <BitSize>136</BitSize>
+                                <BitSize>120</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>Number of entries</Name>
@@ -1053,17 +965,6 @@
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
                                     <BitOffs>104</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>6</SubIdx>
-                                    <Name>DC bus voltage</Name>
-                                    <Type>UINT</Type>
-                                    <BitSize>16</BitSize>
-                                    <BitOffs>120</BitOffs>
                                     <Flags>
                                         <Access>ro</Access>
                                         <Category>o</Category>
@@ -1198,7 +1099,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT2006</Name>
-                                <BitSize>112</BitSize>
+                                <BitSize>80</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>Number of entries</Name>
@@ -1230,17 +1131,6 @@
                                     <Flags>
                                         <Access>ro</Access>
                                         <Category>m</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>3</SubIdx>
-                                    <Name>Max Current</Name>
-                                    <Type>DINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>80</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
                                     </Flags>
                                 </SubItem>
                             </DataType>
@@ -1439,7 +1329,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT2202</Name>
-                                <BitSize>224</BitSize>
+                                <BitSize>216</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>BISS Encoder 2</Name>
@@ -1497,9 +1387,9 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
+                                    <Name>Multiturn resolution</Name>
+                                    <Type>UDINT</Type>
+                                    <BitSize>32</BitSize>
                                     <BitOffs>80</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
@@ -1508,10 +1398,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>Multiturn resolution</Name>
+                                    <Name>Clock frequency</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
-                                    <BitOffs>88</BitOffs>
+                                    <BitOffs>112</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -1519,10 +1409,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>7</SubIdx>
-                                    <Name>Clock frequency</Name>
+                                    <Name>Timeout</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
-                                    <BitOffs>120</BitOffs>
+                                    <BitOffs>144</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -1530,10 +1420,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>8</SubIdx>
-                                    <Name>Timeout</Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>152</BitOffs>
+                                    <Name>CRC polynom</Name>
+                                    <Type>USINT</Type>
+                                    <BitSize>8</BitSize>
+                                    <BitOffs>176</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -1541,7 +1431,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>9</SubIdx>
-                                    <Name>CRC polynom</Name>
+                                    <Name>Clock port config</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>184</BitOffs>
@@ -1552,7 +1442,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name>Clock port config</Name>
+                                    <Name>Data port config</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>192</BitOffs>
@@ -1563,7 +1453,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>11</SubIdx>
-                                    <Name>Data port config</Name>
+                                    <Name>Number of filling bits</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>200</BitOffs>
@@ -1574,7 +1464,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>12</SubIdx>
-                                    <Name>Number of filling bits</Name>
+                                    <Name>Number of bits to read while busy</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>208</BitOffs>
@@ -1583,21 +1473,10 @@
                                         <Category>m</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>13</SubIdx>
-                                    <Name>Number of bits to read while busy</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>216</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2203</Name>
-                                <BitSize>96</BitSize>
+                                <BitSize>88</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>REM 16MT Encoder</Name>
@@ -1655,7 +1534,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
+                                    <Name>Filter</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>80</BitOffs>
@@ -1664,21 +1543,10 @@
                                         <Category>o</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>6</SubIdx>
-                                    <Name>Filter</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>88</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2204</Name>
-                                <BitSize>120</BitSize>
+                                <BitSize>112</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>REM 14 Encoder</Name>
@@ -1736,7 +1604,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
+                                    <Name>Hysteresis</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>80</BitOffs>
@@ -1747,7 +1615,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>Hysteresis</Name>
+                                    <Name>Noise settings</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>88</BitOffs>
@@ -1758,7 +1626,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>7</SubIdx>
-                                    <Name>Noise settings</Name>
+                                    <Name>Dynamic angle error compensation</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>96</BitOffs>
@@ -1769,7 +1637,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>8</SubIdx>
-                                    <Name>Dynamic angle error compensation</Name>
+                                    <Name>Resolution settings</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>104</BitOffs>
@@ -1778,21 +1646,10 @@
                                         <Category>o</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>9</SubIdx>
-                                    <Name>Resolution settings</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>112</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2205</Name>
-                                <BitSize>104</BitSize>
+                                <BitSize>96</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>Incremental Encoder 1</Name>
@@ -1850,7 +1707,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
+                                    <Name>Number of channels</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>80</BitOffs>
@@ -1861,7 +1718,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>Number of channels</Name>
+                                    <Name>Access signal type</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>88</BitOffs>
@@ -1870,21 +1727,10 @@
                                         <Category>m</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>7</SubIdx>
-                                    <Name>Access signal type</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>96</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2206</Name>
-                                <BitSize>104</BitSize>
+                                <BitSize>96</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>Incremental Encoder 2</Name>
@@ -1942,7 +1788,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
+                                    <Name>Number of channels</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>80</BitOffs>
@@ -1953,7 +1799,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>Number of channels</Name>
+                                    <Name>Access signal type</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>88</BitOffs>
@@ -1962,21 +1808,10 @@
                                         <Category>m</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>7</SubIdx>
-                                    <Name>Access signal type</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>96</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2207</Name>
-                                <BitSize>184</BitSize>
+                                <BitSize>176</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>HALL Sensor 1</Name>
@@ -2034,9 +1869,9 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
+                                    <Name>State angle 0</Name>
+                                    <Type>UINT</Type>
+                                    <BitSize>16</BitSize>
                                     <BitOffs>80</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
@@ -2045,10 +1880,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>State angle 0</Name>
+                                    <Name>State angle 1</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>88</BitOffs>
+                                    <BitOffs>96</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2056,10 +1891,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>7</SubIdx>
-                                    <Name>State angle 1</Name>
+                                    <Name>State angle 2</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>104</BitOffs>
+                                    <BitOffs>112</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2067,10 +1902,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>8</SubIdx>
-                                    <Name>State angle 2</Name>
+                                    <Name>State angle 3</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>120</BitOffs>
+                                    <BitOffs>128</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2078,10 +1913,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>9</SubIdx>
-                                    <Name>State angle 3</Name>
+                                    <Name>State angle 4</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>136</BitOffs>
+                                    <BitOffs>144</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2089,30 +1924,19 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name>State angle 4</Name>
+                                    <Name>State angle 5</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>152</BitOffs>
+                                    <BitOffs>160</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
                                     </Flags>
                                 </SubItem>
-                                <SubItem>
-                                    <SubIdx>11</SubIdx>
-                                    <Name>State angle 5</Name>
-                                    <Type>UINT</Type>
-                                    <BitSize>16</BitSize>
-                                    <BitOffs>168</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT2208</Name>
-                                <BitSize>184</BitSize>
+                                <BitSize>176</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>HALL Sensor 2</Name>
@@ -2170,9 +1994,9 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
+                                    <Name>State angle 0</Name>
+                                    <Type>UINT</Type>
+                                    <BitSize>16</BitSize>
                                     <BitOffs>80</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
@@ -2181,10 +2005,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>State angle 0</Name>
+                                    <Name>State angle 1</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>88</BitOffs>
+                                    <BitOffs>96</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2192,10 +2016,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>7</SubIdx>
-                                    <Name>State angle 1</Name>
+                                    <Name>State angle 2</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>104</BitOffs>
+                                    <BitOffs>112</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2203,10 +2027,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>8</SubIdx>
-                                    <Name>State angle 2</Name>
+                                    <Name>State angle 3</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>120</BitOffs>
+                                    <BitOffs>128</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2214,10 +2038,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>9</SubIdx>
-                                    <Name>State angle 3</Name>
+                                    <Name>State angle 4</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>136</BitOffs>
+                                    <BitOffs>144</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2225,24 +2049,13 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name>State angle 4</Name>
-                                    <Type>UINT</Type>
-                                    <BitSize>16</BitSize>
-                                    <BitOffs>152</BitOffs>
-                                    <Flags>
-                                        <Access>rw</Access>
-                                        <Category>m</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>11</SubIdx>
                                     <Name>State angle 5</Name>
                                     <Type>UINT</Type>
                                     <BitSize>16</BitSize>
-                                    <BitOffs>168</BitOffs>
+                                    <BitOffs>160</BitOffs>
                                     <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
+                                        <Access>rw</Access>
+                                        <Category>m</Category>
                                     </Flags>
                                 </SubItem>
                             </DataType>
@@ -2307,7 +2120,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT2201</Name>
-                                <BitSize>224</BitSize>
+                                <BitSize>216</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>BISS Encoder 1</Name>
@@ -2365,9 +2178,9 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>5</SubIdx>
-                                    <Name>Polarity</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
+                                    <Name>Multiturn resolution</Name>
+                                    <Type>UDINT</Type>
+                                    <BitSize>32</BitSize>
                                     <BitOffs>80</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
@@ -2376,10 +2189,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>6</SubIdx>
-                                    <Name>Multiturn resolution</Name>
+                                    <Name>Clock frequency</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
-                                    <BitOffs>88</BitOffs>
+                                    <BitOffs>112</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2387,10 +2200,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>7</SubIdx>
-                                    <Name>Clock frequency</Name>
+                                    <Name>Timeout</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
-                                    <BitOffs>120</BitOffs>
+                                    <BitOffs>144</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2398,10 +2211,10 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>8</SubIdx>
-                                    <Name>Timeout</Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>152</BitOffs>
+                                    <Name>CRC polynom</Name>
+                                    <Type>USINT</Type>
+                                    <BitSize>8</BitSize>
+                                    <BitOffs>176</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
@@ -2409,7 +2222,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>9</SubIdx>
-                                    <Name>CRC polynom</Name>
+                                    <Name>Clock port config</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>184</BitOffs>
@@ -2420,7 +2233,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name>Clock port config</Name>
+                                    <Name>Data port config</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>192</BitOffs>
@@ -2431,7 +2244,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>11</SubIdx>
-                                    <Name>Data port config</Name>
+                                    <Name>Number of filling bits</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>200</BitOffs>
@@ -2442,24 +2255,13 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>12</SubIdx>
-                                    <Name>Number of filling bits</Name>
+                                    <Name>Number of bits to read while busy</Name>
                                     <Type>USINT</Type>
                                     <BitSize>8</BitSize>
                                     <BitOffs>208</BitOffs>
                                     <Flags>
                                         <Access>rw</Access>
                                         <Category>m</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>13</SubIdx>
-                                    <Name>Number of bits to read while busy</Name>
-                                    <Type>USINT</Type>
-                                    <BitSize>8</BitSize>
-                                    <BitOffs>216</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
                                     </Flags>
                                 </SubItem>
                             </DataType>
@@ -2537,12 +2339,12 @@
                                 <Index>#x1600</Index>
                                 <Name>Rx PDO Mapping</Name>
                                 <Type>DT1600</Type>
-                                <BitSize>624</BitSize>
+                                <BitSize>560</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>SubIndex 000</Name>
                                         <Info>
-                                            <DefaultData>13</DefaultData>
+                                            <DefaultData>11</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -2600,12 +2402,6 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name></Name>
-                                        <Info>
-                                            <DefaultData>07000000</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
                                         <Name>Digital Output 2</Name>
                                         <Info>
                                             <DefaultData>01000226</DefaultData>
@@ -2613,12 +2409,6 @@
                                     </SubItem>
                                     <SubItem>
                                         <Name>padding entry (automatically added) 1</Name>
-                                        <Info>
-                                            <DefaultData>07000000</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name></Name>
                                         <Info>
                                             <DefaultData>07000000</DefaultData>
                                         </Info>
@@ -2669,7 +2459,7 @@
                                 <Index>#x1A00</Index>
                                 <Name>Tx PDO Mapping</Name>
                                 <Type>DT1A00</Type>
-                                <BitSize>1040</BitSize>
+                                <BitSize>848</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>SubIndex 000</Name>
@@ -2804,7 +2594,7 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>Timestamp</Name>
+                                        <Name>timestamp</Name>
                                         <Info>
                                             <DefaultData>2000FD2F</DefaultData>
                                         </Info>
@@ -2816,21 +2606,21 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>Instantaneous Phase B current</Name>
+                                        <Name>Phase B</Name>
                                         <Info>
-                                            <DefaultData>10000524</DefaultData>
+                                            <DefaultData>10000127</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>Instantaneous Phase C current</Name>
+                                        <Name>Phase C</Name>
                                         <Info>
-                                            <DefaultData>10000624</DefaultData>
+                                            <DefaultData>10000227</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>Core temperature</Name>
+                                        <Name>Core Temp</Name>
                                         <Info>
-                                            <DefaultData>10000724</DefaultData>
+                                            <DefaultData>10000327</DefaultData>
                                         </Info>
                                     </SubItem>
                                 </Info>
@@ -3073,7 +2863,7 @@
                                 <BitSize>16</BitSize>
                                 <Info>
                                     <DefaultData>0000</DefaultData>
-                                    <Unit>00</Unit>
+                                    <Unit></Unit>
                                 </Info>
                                 <Flags>
                                     <Access>rw</Access>
@@ -3141,7 +2931,7 @@
                             </Object>
                             <Object>
                                 <Index>#x607D</Index>
-                                <Name>Max Software Position Range Limit</Name>
+                                <Name>Max Software Postition Range Limit</Name>
                                 <Type>DT607X</Type>
                                 <BitSize>80</BitSize>
                                 <Info>
@@ -3171,7 +2961,7 @@
                             </Object>
                             <Object>
                                 <Index>#x607B</Index>
-                                <Name>Position Range Limits</Name>
+                                <Name>Postition Range Limits</Name>
                                 <Type>DT607X</Type>
                                 <BitSize>80</BitSize>
                                 <Info>
@@ -3253,7 +3043,7 @@
                                 <Info>
                                     <MinData>00</MinData>
                                     <DefaultData>00</DefaultData>
-                                    <Unit>#x00b44700</Unit>
+                                    <Unit>00b44700</Unit>
                                 </Info>
                                 <Flags>
                                     <Access>rw</Access>
@@ -3334,7 +3124,7 @@
                                 <Info>
                                     <MinData>00</MinData>
                                     <DefaultData>00</DefaultData>
-                                    <Unit>#x00B44700</Unit>
+                                    <Unit>00b44700</Unit>
                                 </Info>
                                 <Flags>
                                     <Access>rw</Access>
@@ -3411,33 +3201,30 @@
                                 <Name>Brake Release</Name>
                                 <Comment></Comment>
                                 <Type>DT2004</Type>
-                                <BitSize>136</BitSize>
+                                <BitSize>120</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>Number of entries</Name>
                                         <Info>
-                                            <DefaultData>06</DefaultData>
+                                            <DefaultData>05</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
                                         <Name>Pull brake voltage</Name>
                                         <Info>
                                             <DefaultData>00</DefaultData>
-                                            <Unit>#xFD260000</Unit>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
                                         <Name>Hold brake voltage</Name>
                                         <Info>
                                             <DefaultData>00</DefaultData>
-                                            <Unit>#xFD260000</Unit>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
                                         <Name>Pull brake time</Name>
                                         <Info>
                                             <DefaultData>00</DefaultData>
-                                            <Unit>#xFD030000</Unit>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -3450,14 +3237,6 @@
                                         <Name>Brake release delay</Name>
                                         <Info>
                                             <DefaultData>00</DefaultData>
-                                            <Unit>#xFD030000</Unit>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>DC bus voltage</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
-                                            <Unit>#xFD260000</Unit>
                                         </Info>
                                     </SubItem>
                                 </Info>
@@ -3584,33 +3363,24 @@
                                 <Name>Protection</Name>
                                 <Comment></Comment>
                                 <Type>DT2006</Type>
-                                <BitSize>112</BitSize>
+                                <BitSize>80</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>Number of entries</Name>
                                         <Info>
-                                            <DefaultData>03</DefaultData>
+                                            <DefaultData>02</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
                                         <Name>Min DC Voltage</Name>
                                         <Info>
                                             <DefaultData>00</DefaultData>
-                                            <Unit>#x00260000</Unit>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
                                         <Name>Max DC Voltage</Name>
                                         <Info>
                                             <DefaultData>01</DefaultData>
-                                            <Unit>#x00260000</Unit>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Max Current</Name>
-                                        <Info>
-                                            <DefaultData>01</DefaultData>
-                                            <Unit>#xFD040000</Unit>
                                         </Info>
                                     </SubItem>
                                 </Info>
@@ -3968,7 +3738,7 @@
                                 <BitSize>32</BitSize>
                                 <Info>
                                     <DefaultData>00</DefaultData>
-                                    <Unit>#x00b44700</Unit>
+                                    <Unit>00b44700</Unit>
                                 </Info>
                                 <Flags>
                                     <Access>ro</Access>
@@ -4026,12 +3796,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4093,12 +3857,12 @@
                                 <Name>REM 16MT Encoder</Name>
                                 <Comment></Comment>
                                 <Type>DT2203</Type>
-                                <BitSize>96</BitSize>
+                                <BitSize>88</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>REM 16MT Encoder</Name>
                                         <Info>
-                                            <DefaultData>06</DefaultData>
+                                            <DefaultData>05</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4126,12 +3890,6 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
                                         <Name>Filter</Name>
                                         <Info>
                                             <DefaultData>02</DefaultData>
@@ -4148,12 +3906,12 @@
                                 <Name>REM 14 Encoder</Name>
                                 <Comment></Comment>
                                 <Type>DT2204</Type>
-                                <BitSize>120</BitSize>
+                                <BitSize>112</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>REM 14 Encoder</Name>
                                         <Info>
-                                            <DefaultData>09</DefaultData>
+                                            <DefaultData>08</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4178,12 +3936,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4221,12 +3973,12 @@
                                 <Name>Incremental Encoder 1</Name>
                                 <Comment></Comment>
                                 <Type>DT2205</Type>
-                                <BitSize>104</BitSize>
+                                <BitSize>96</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>Incremental Encoder 1</Name>
                                         <Info>
-                                            <DefaultData>07</DefaultData>
+                                            <DefaultData>06</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4251,12 +4003,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4282,12 +4028,12 @@
                                 <Name>Incremental Encoder 2</Name>
                                 <Comment></Comment>
                                 <Type>DT2206</Type>
-                                <BitSize>104</BitSize>
+                                <BitSize>96</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>Incremental Encoder 2</Name>
                                         <Info>
-                                            <DefaultData>07</DefaultData>
+                                            <DefaultData>06</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4312,12 +4058,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4343,12 +4083,12 @@
                                 <Name>HALL Sensor 1</Name>
                                 <Comment></Comment>
                                 <Type>DT2207</Type>
-                                <BitSize>184</BitSize>
+                                <BitSize>176</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>HALL Sensor 1</Name>
                                         <Info>
-                                            <DefaultData>0B</DefaultData>
+                                            <DefaultData>0A</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4373,12 +4113,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4428,12 +4162,12 @@
                                 <Name>HALL Sensor 2</Name>
                                 <Comment></Comment>
                                 <Type>DT2208</Type>
-                                <BitSize>184</BitSize>
+                                <BitSize>176</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>HALL Sensor 2</Name>
                                         <Info>
-                                            <DefaultData>0B</DefaultData>
+                                            <DefaultData>0A</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4458,12 +4192,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4739,7 +4467,7 @@
                                 <BitSize>32</BitSize>
                                 <Info>
                                     <DefaultData>00</DefaultData>
-                                    <Unit>#x00b44700</Unit>
+                                    <Unit>00b44700</Unit>
                                 </Info>
                                 <Flags>
                                     <Access>rw</Access>
@@ -4752,12 +4480,12 @@
                                 <Name>BISS Encoder 1</Name>
                                 <Comment></Comment>
                                 <Type>DT2201</Type>
-                                <BitSize>224</BitSize>
+                                <BitSize>216</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>BISS Encoder 1</Name>
                                         <Info>
-                                            <DefaultData>0D</DefaultData>
+                                            <DefaultData>0C</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4782,12 +4510,6 @@
                                         <Name>Velocity calculation period</Name>
                                         <Info>
                                             <DefaultData>E803</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Polarity</Name>
-                                        <Info>
-                                            <DefaultData>00</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -4861,15 +4583,12 @@
                             </Object>
                             <Object>
                                 <Index>#x2FFD</Index>
-                                <Name>Timestamp</Name>
+                                <Name>timestamp</Name>
                                 <Comment></Comment>
                                 <Type>UDINT</Type>
                                 <BitSize>32</BitSize>
                                 <Info>
-                                    <MinData>00</MinData>
-                                    <MaxData>FFFFFFFF</MaxData>
                                     <DefaultData>00</DefaultData>
-                                    <Unit>#xFA030000</Unit>
                                 </Info>
                                 <Flags>
                                     <Access>ro</Access>
@@ -4878,8 +4597,8 @@
                                 </Flags>
                             </Object>
                             <Object>
-                                <Index>#x2405</Index>
-                                <Name>Instantaneous Phase B current</Name>
+                                <Index>#x2701</Index>
+                                <Name>Phase B</Name>
                                 <Comment></Comment>
                                 <Type>INT</Type>
                                 <BitSize>16</BitSize>
@@ -4893,8 +4612,8 @@
                                 </Flags>
                             </Object>
                             <Object>
-                                <Index>#x2406</Index>
-                                <Name>Instantaneous Phase C current</Name>
+                                <Index>#x2702</Index>
+                                <Name>Phase C</Name>
                                 <Comment></Comment>
                                 <Type>INT</Type>
                                 <BitSize>16</BitSize>
@@ -4908,21 +4627,8 @@
                                 </Flags>
                             </Object>
                             <Object>
-                                <Index>#x2209</Index>
-                                <Name>Sensor Error</Name>
-                                <Comment></Comment>
-                                <Type>UINT</Type>
-                                <BitSize>16</BitSize>
-                                <Info/>
-                                <Flags>
-                                    <Access>ro</Access>
-                                    <Category>o</Category>
-                                    <PdoMapping>t</PdoMapping>
-                                </Flags>
-                            </Object>
-                            <Object>
-                                <Index>#x2407</Index>
-                                <Name>Core temperature</Name>
+                                <Index>#x2703</Index>
+                                <Name>Core Temp</Name>
                                 <Comment></Comment>
                                 <Type>INT</Type>
                                 <BitSize>16</BitSize>
@@ -5010,12 +4716,6 @@
                         <DataType></DataType>
                     </Entry>
                     <Entry>
-                        <Index>0</Index>
-                        <BitLen>7</BitLen>
-                        <Name></Name>
-                        <DataType></DataType>
-                    </Entry>
-                    <Entry>
                         <Index>#x2602</Index>
                         <SubIndex>0</SubIndex>
                         <BitLen>1</BitLen>
@@ -5026,12 +4726,6 @@
                         <Index>0</Index>
                         <BitLen>7</BitLen>
                         <Name>padding entry (automatically added) 1</Name>
-                        <DataType></DataType>
-                    </Entry>
-                    <Entry>
-                        <Index>0</Index>
-                        <BitLen>7</BitLen>
-                        <Name></Name>
                         <DataType></DataType>
                     </Entry>
                     <Entry>
@@ -5225,7 +4919,7 @@
                         <Index>#x2FFD</Index>
                         <SubIndex>0</SubIndex>
                         <BitLen>32</BitLen>
-                        <Name>Timestamp</Name>
+                        <Name>timestamp</Name>
                         <DataType>UDINT</DataType>
                     </Entry>
                     <Entry>
@@ -5236,24 +4930,24 @@
                         <DataType>UINT</DataType>
                     </Entry>
                     <Entry>
-                        <Index>#x2405</Index>
+                        <Index>#x2701</Index>
                         <SubIndex>0</SubIndex>
                         <BitLen>16</BitLen>
-                        <Name>Instantaneous Phase B current</Name>
+                        <Name>Phase B</Name>
                         <DataType>INT</DataType>
                     </Entry>
                     <Entry>
-                        <Index>#x2406</Index>
+                        <Index>#x2702</Index>
                         <SubIndex>0</SubIndex>
                         <BitLen>16</BitLen>
-                        <Name>Instantaneous Phase C current</Name>
+                        <Name>Phase C</Name>
                         <DataType>INT</DataType>
                     </Entry>
                     <Entry>
-                        <Index>#x2407</Index>
+                        <Index>#x2703</Index>
                         <SubIndex>0</SubIndex>
                         <BitLen>16</BitLen>
-                        <Name>Core temperature</Name>
+                        <Name>Core Temp</Name>
                         <DataType>INT</DataType>
                     </Entry>
                 </TxPdo>
