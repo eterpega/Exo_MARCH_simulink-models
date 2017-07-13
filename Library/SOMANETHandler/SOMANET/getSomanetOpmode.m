@@ -11,6 +11,8 @@ switch(rawOpmode)
         somanetOpmode = SomanetOpmode.CSTORQUE;
     case 128
         somanetOpmode = SomanetOpmode.TUNING;
+    case -128
+        somanetOpmode = SomanetOpmode.TUNING;
     otherwise
         somanetOpmode = SomanetOpmode.UNKNOWN_OPMODE;
 end
