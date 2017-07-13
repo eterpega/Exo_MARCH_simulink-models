@@ -9,6 +9,10 @@ classdef SomanetError < Simulink.IntEnumType
         PHASE_I2T_ERROR(1002)
         SOMANET_OVERHEAT(1003)
         SOMANET_DISCONNECTED(1004) 
+        END_STOP_REACHED(1005)
+        MAX_POSITION_DIFFERENCE_REACHED(1006)
+        MAX_TORQUE_REACHED(1007)
+        
         % 20XX will contain errors detected on SOMANET
         PHASE_OVERCURRENT(2001) % as this is most common
         SOFTWARE_SOFTSTOP_REACHED(2002)
