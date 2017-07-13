@@ -126,7 +126,7 @@
                             </DataType>
                             <DataType>
                                 <Name>DT1600</Name>
-                                <BitSize>528</BitSize>
+                                <BitSize>624</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>SubIndex 000</Name>
@@ -228,7 +228,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>9</SubIdx>
-                                    <Name>padding 1</Name>
+                                    <Name>padding entry (automatically added) 0</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>272</BitOffs>
@@ -239,7 +239,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>10</SubIdx>
-                                    <Name>Digital Output 2</Name>
+                                    <Name></Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>304</BitOffs>
@@ -250,7 +250,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>11</SubIdx>
-                                    <Name>padding 2</Name>
+                                    <Name>Digital Output 2</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>336</BitOffs>
@@ -261,7 +261,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>12</SubIdx>
-                                    <Name>Digital Output 3</Name>
+                                    <Name>padding entry (automatically added) 1</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>368</BitOffs>
@@ -272,7 +272,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>13</SubIdx>
-                                    <Name>padding 3</Name>
+                                    <Name></Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>400</BitOffs>
@@ -283,7 +283,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>14</SubIdx>
-                                    <Name>Digital Output 4</Name>
+                                    <Name>Digital Output 3</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>432</BitOffs>
@@ -294,7 +294,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>15</SubIdx>
-                                    <Name>padding 4</Name>
+                                    <Name>padding entry (automatically added) 2</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>464</BitOffs>
@@ -305,7 +305,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>16</SubIdx>
-                                    <Name>User MOSI</Name>
+                                    <Name>Digital Output 4</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>496</BitOffs>
@@ -314,10 +314,43 @@
                                         <Category>o</Category>
                                     </Flags>
                                 </SubItem>
+                                <SubItem>
+                                    <SubIdx>17</SubIdx>
+                                    <Name>padding entry (automatically added) 3</Name>
+                                    <Type>UDINT</Type>
+                                    <BitSize>32</BitSize>
+                                    <BitOffs>528</BitOffs>
+                                    <Flags>
+                                        <Access>ro</Access>
+                                        <Category>o</Category>
+                                    </Flags>
+                                </SubItem>
+                                <SubItem>
+                                    <SubIdx>18</SubIdx>
+                                    <Name>User MOSI</Name>
+                                    <Type>UDINT</Type>
+                                    <BitSize>32</BitSize>
+                                    <BitOffs>560</BitOffs>
+                                    <Flags>
+                                        <Access>ro</Access>
+                                        <Category>o</Category>
+                                    </Flags>
+                                </SubItem>
+                                <SubItem>
+                                    <SubIdx>19</SubIdx>
+                                    <Name>Max torque</Name>
+                                    <Type>UDINT</Type>
+                                    <BitSize>32</BitSize>
+                                    <BitOffs>592</BitOffs>
+                                    <Flags>
+                                        <Access>ro</Access>
+                                        <Category>o</Category>
+                                    </Flags>
+                                </SubItem>
                             </DataType>
                             <DataType>
                                 <Name>DT1A00</Name>
-                                <BitSize>1072</BitSize>
+                                <BitSize>1040</BitSize>
                                 <SubItem>
                                     <SubIdx>0</SubIdx>
                                     <Name>SubIndex 000</Name>
@@ -330,7 +363,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>27</SubIdx>
+                                    <SubIdx>28</SubIdx>
                                     <Name>Statusword</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -341,7 +374,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>28</SubIdx>
+                                    <SubIdx>29</SubIdx>
                                     <Name>Op Mode Display</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -352,7 +385,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>29</SubIdx>
+                                    <SubIdx>30</SubIdx>
                                     <Name>Position Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -363,7 +396,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>30</SubIdx>
+                                    <SubIdx>31</SubIdx>
                                     <Name>Velocity Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -374,7 +407,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>31</SubIdx>
+                                    <SubIdx>32</SubIdx>
                                     <Name>Torque Value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -385,7 +418,7 @@
                                     </Flags>
                                 </SubItem>
                                 <SubItem>
-                                    <SubIdx>32</SubIdx>
+                                    <SubIdx>33</SubIdx>
                                     <Name>Secondary position value</Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
@@ -617,7 +650,7 @@
                                 </SubItem>
                                 <SubItem>
                                     <SubIdx>27</SubIdx>
-                                    <Name>Max torque</Name>
+                                    <Name></Name>
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>848</BitOffs>
@@ -676,17 +709,6 @@
                                     <Type>UDINT</Type>
                                     <BitSize>32</BitSize>
                                     <BitOffs>1008</BitOffs>
-                                    <Flags>
-                                        <Access>ro</Access>
-                                        <Category>o</Category>
-                                    </Flags>
-                                </SubItem>
-                                <SubItem>
-                                    <SubIdx>33</SubIdx>
-                                    <Name></Name>
-                                    <Type>UDINT</Type>
-                                    <BitSize>32</BitSize>
-                                    <BitOffs>1040</BitOffs>
                                     <Flags>
                                         <Access>ro</Access>
                                         <Category>o</Category>
@@ -2515,12 +2537,12 @@
                                 <Index>#x1600</Index>
                                 <Name>Rx PDO Mapping</Name>
                                 <Type>DT1600</Type>
-                                <BitSize>528</BitSize>
+                                <BitSize>624</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>SubIndex 000</Name>
                                         <Info>
-                                            <DefaultData>10</DefaultData>
+                                            <DefaultData>13</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -2572,7 +2594,13 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>padding entry (automatically added)</Name>
+                                        <Name>padding entry (automatically added) 0</Name>
+                                        <Info>
+                                            <DefaultData>07000000</DefaultData>
+                                        </Info>
+                                    </SubItem>
+                                    <SubItem>
+                                        <Name></Name>
                                         <Info>
                                             <DefaultData>07000000</DefaultData>
                                         </Info>
@@ -2584,7 +2612,13 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>padding entry (automatically added)</Name>
+                                        <Name>padding entry (automatically added) 1</Name>
+                                        <Info>
+                                            <DefaultData>07000000</DefaultData>
+                                        </Info>
+                                    </SubItem>
+                                    <SubItem>
+                                        <Name></Name>
                                         <Info>
                                             <DefaultData>07000000</DefaultData>
                                         </Info>
@@ -2596,7 +2630,7 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>padding entry (automatically added)</Name>
+                                        <Name>padding entry (automatically added) 2</Name>
                                         <Info>
                                             <DefaultData>07000000</DefaultData>
                                         </Info>
@@ -2608,7 +2642,7 @@
                                         </Info>
                                     </SubItem>
                                     <SubItem>
-                                        <Name>padding entry (automatically added)</Name>
+                                        <Name>padding entry (automatically added) 3</Name>
                                         <Info>
                                             <DefaultData>07000000</DefaultData>
                                         </Info>
@@ -2617,6 +2651,12 @@
                                         <Name>User MOSI</Name>
                                         <Info>
                                             <DefaultData>2000FE2F</DefaultData>
+                                        </Info>
+                                    </SubItem>
+                                    <SubItem>
+                                        <Name>Max torque</Name>
+                                        <Info>
+                                            <DefaultData>10007260</DefaultData>
                                         </Info>
                                     </SubItem>
                                 </Info>
@@ -2629,12 +2669,12 @@
                                 <Index>#x1A00</Index>
                                 <Name>Tx PDO Mapping</Name>
                                 <Type>DT1A00</Type>
-                                <BitSize>1072</BitSize>
+                                <BitSize>1040</BitSize>
                                 <Info>
                                     <SubItem>
                                         <Name>SubIndex 000</Name>
                                         <Info>
-                                            <DefaultData>1B</DefaultData>
+                                            <DefaultData>1A</DefaultData>
                                         </Info>
                                     </SubItem>
                                     <SubItem>
@@ -2791,12 +2831,6 @@
                                         <Name>Core temperature</Name>
                                         <Info>
                                             <DefaultData>10000724</DefaultData>
-                                        </Info>
-                                    </SubItem>
-                                    <SubItem>
-                                        <Name>Max torque</Name>
-                                        <Info>
-                                            <DefaultData>10007260</DefaultData>
                                         </Info>
                                     </SubItem>
                                 </Info>
@@ -4972,6 +5006,12 @@
                     <Entry>
                         <Index>0</Index>
                         <BitLen>7</BitLen>
+                        <Name>padding entry (automatically added) 0</Name>
+                        <DataType></DataType>
+                    </Entry>
+                    <Entry>
+                        <Index>0</Index>
+                        <BitLen>7</BitLen>
                         <Name></Name>
                         <DataType></DataType>
                     </Entry>
@@ -4981,6 +5021,12 @@
                         <BitLen>1</BitLen>
                         <Name>Digital Output 2</Name>
                         <DataType>BOOL</DataType>
+                    </Entry>
+                    <Entry>
+                        <Index>0</Index>
+                        <BitLen>7</BitLen>
+                        <Name>padding entry (automatically added) 1</Name>
+                        <DataType></DataType>
                     </Entry>
                     <Entry>
                         <Index>0</Index>
@@ -4998,7 +5044,7 @@
                     <Entry>
                         <Index>0</Index>
                         <BitLen>7</BitLen>
-                        <Name>padding entry (automatically added)</Name>
+                        <Name>padding entry (automatically added) 2</Name>
                         <DataType></DataType>
                     </Entry>
                     <Entry>
@@ -5011,7 +5057,7 @@
                     <Entry>
                         <Index>0</Index>
                         <BitLen>7</BitLen>
-                        <Name>padding entry (automatically added)</Name>
+                        <Name>padding entry (automatically added) 3</Name>
                         <DataType></DataType>
                     </Entry>
                     <Entry>
@@ -5020,6 +5066,13 @@
                         <BitLen>32</BitLen>
                         <Name>User MOSI</Name>
                         <DataType>UDINT</DataType>
+                    </Entry>
+                    <Entry>
+                        <Index>#x6072</Index>
+                        <SubIndex>0</SubIndex>
+                        <BitLen>16</BitLen>
+                        <Name>Max torque</Name>
+                        <DataType>UINT</DataType>
                     </Entry>
                 </RxPdo>
                 <TxPdo Fixed="true" Sm="3">
@@ -5202,13 +5255,6 @@
                         <BitLen>16</BitLen>
                         <Name>Core temperature</Name>
                         <DataType>INT</DataType>
-                    </Entry>
-                    <Entry>
-                        <Index>#x6072</Index>
-                        <SubIndex>0</SubIndex>
-                        <BitLen>16</BitLen>
-                        <Name>Max torque</Name>
-                        <DataType>UINT</DataType>
                     </Entry>
                 </TxPdo>
                 <Mailbox DataLinkLayer="true">
