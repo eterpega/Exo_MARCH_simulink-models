@@ -10,8 +10,7 @@ classdef SomanetError < Simulink.IntEnumType
         SOMANET_OVERHEAT(1003)
         SOMANET_DISCONNECTED(1004) 
         END_STOP_REACHED(1005)
-        MAX_POSITION_DIFFERENCE_REACHED(1006)
-        MAX_TORQUE_REACHED(1007)
+        MAX_TORQUE_REACHED(1006)
         
         % 20XX will contain errors detected on SOMANET
         PHASE_OVERCURRENT(2001) % as this is most common
