@@ -1,4 +1,4 @@
-addpath('C:\Users\Marc\Desktop\OverheatedMotorData')
+
 load 'Temperature'
 load 'Velocity'
 load 'Torque'
