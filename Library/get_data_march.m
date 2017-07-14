@@ -50,9 +50,18 @@ save(strcat(directoryForSave,'statuswords'),'dataStatuswords');
 %% Plotting and saving the angles
 indexAngles = find(contains(nameSignal,'Angle'));
 dataAngles = zeros(numRows,length(indexAngles));
+legendCell = cell(length(indexAngles),1);
+figure(1)
+title('Angles MARCH')
 for j = 1:length(indexAngles)
      dataAngles(:,j) = dataStruct.data(:,indexAngles(j));
+     plot(time,dataAngles(:,j));
+     hold on
+     legendCell(j) = nameSignal(indexAngles(j));
 end
+legend(legendCell);
+xlabel('time [s]')
+ylabel('angle [deg]')
 save(strcat(directoryForSave,'angles'),'dataAngles');
  
 %% Plotting and saving the velocities
