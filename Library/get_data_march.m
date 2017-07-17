@@ -18,6 +18,7 @@ close all;clc;
 % f.fclose(read);
 
 %For testing purposes
+name = 'Data_files/MARCH_04TEST.dat';
 read = fopen(name);
 rawData = fread(read);
 fclose(read);
@@ -38,6 +39,51 @@ time = dataStruct.data(:,numSignal);
 %% Finding number of rows
 totalSize = size(dataStruct.data);
 numRows = totalSize(1);
+
+%% Create structs
+jointNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE'};
+jointFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig'};
+ % make struct for each joint
+for j = 1:length(jointNames)
+    
+    % make nested struct for each joint field
+    for i = 1:length(jointFields)
+        dataMARCH.(char(jointNames(j))).(char(jointFields(i))) = struct('signalNames',[],'data',[]);
+        
+        % Find out where what data is stored so the data can be put in the
+        % appropriate field in the structure.
+        findJointName = contains(nameSignal,jointNames(j));
+        findJointField = contains(dataStruct.signalNames,jointFields(i));
+        
+        % Using dataMARCH struct to store the indices for where what data is
+        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices = find((findJointName & findJointField));
+        
+        % Store the signal names and the data in the structure
+        for k = 1:length(dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices)
+            
+        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).signalNames(k) = nameSignal(dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices(k));
+        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).data(:,k) = dataStruct.data(:,dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices(k));
+        
+        end
+        
+        % Remove the indices field again
+        %dataMARCH.(char(jointNames(j))).(char(jointFields(i))) = rmfield( dataMARCH.(char(jointNames(j))).(char(jointFields(i))),'indices');
+    end
+    
+end
+
+
+
+
+% for i = 1:length(jointNames)
+%     indices = find(contains(nameSignal,jointNames(i)));
+%     for j = 1:length(indices)
+%         jointData(:,j) = dataStruct.data(:,indices(j));
+%     end
+%     (jointNames(i)).receivedFromSOMANET = 
+% end
+
+
 
 %% Plotting and saving the statuswords
 indexStatuswords = find(contains(nameSignal,'statusword'));
