@@ -24,7 +24,7 @@ f.fclose(read);
 % fclose(read);
 
 %% Prepare saving directory
-directoryForSave = strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
+directoryForSave = strcat('Data_files/','/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/'); %Testing: strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
 mkdir(directoryForSave);
 
 %% Process and save the raw data
