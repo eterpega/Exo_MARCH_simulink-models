@@ -1,8 +1,8 @@
 classdef JointHandlerCommand < Simulink.IntEnumType
     enumeration
-        KEEPSETPOINT(0)
-        GAIT(1)
-        LOWTORQUE(2)
+        KEEPSETPOINT(1)
+        GAIT(2)
+        LOWTORQUE(3)
     end    
     
 end
