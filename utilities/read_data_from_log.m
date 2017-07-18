@@ -1,3 +1,4 @@
+function read_data_from_log(nameOfFileToSave)
 %HOW TO USE
 %for one, script only works when usb stick is still in the target and pc is connected to
 %target!
@@ -7,7 +8,7 @@
 %Then here add the code to open and plot the data.
 
 % Attach to the target computer file system.
-close all
+close all;clc;
 f=SimulinkRealTime.fileSystem;
 
 %Open the file, read the data, close the file.
@@ -47,6 +48,9 @@ for i = 1:length(Temperature.data(:,2))
        
        start_time = i;
        break
+   end
+   if max(Temperature.data(:,1)) == 0
+      start_time = 1; 
    end
    
 end
@@ -100,9 +104,10 @@ legend('Total', 'Phase A', 'Phase B', 'Phase C')
 xlabel('Time [s]')
 ylabel('Ampere [mA]')
 
-mkdir(strcat('Data_Results/',char(dateNowShort)));
+mkdir(strcat('Data_files/Data_measurements/',char(dateNowShort)));
 
-save(strcat('Data_Results/',char(timeForSave),'_position'),'position');
-save(strcat('Data_Results/',char(timeForSave),'torque'),'torque');
-save(strcat('Data_Results/',char(timeForSave),'_velocity'),'velocity');
-save(strcat('Data_Results/',char(timeForSave),'_currents'),'currents');
+save(strcat('Data_files/Data_measurements/',char(dateNowShort),'/',char(timeForSave),'_',char(nameOfFileToSave),'position','.mat'),'position');
+save(strcat('Data_files/Data_measurements/',char(dateNowShort),'/',char(timeForSave),'_',char(nameOfFileToSave),'torque','.mat'),'torque');
+save(strcat('Data_files/Data_measurements/',char(dateNowShort),'/',char(timeForSave),'_',char(nameOfFileToSave),'velocity','.mat'),'velocity');
+save(strcat('Data_files/Data_measurements/',char(dateNowShort),'/',char(timeForSave),'_',char(nameOfFileToSave),'currents','.mat'),'currents');
+end
