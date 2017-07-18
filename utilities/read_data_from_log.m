@@ -51,6 +51,13 @@ for i = 1:length(Temperature.data(:,2))
    
 end
 end_time = length(Temperature.data(:,2));
+%% Date for saving
+dateNow = datetime('now');
+dateNow.Format = 'uuuu_MM_dd_HH:mm:ss';
+dateNowShort = dateNow;
+dateNowShort.Format = 'uuuu-MM-dd';
+timeForSave = dateNow;
+timeForSave.Format = 'HH.mm';
 %%
 %plot all the data
 %position
@@ -83,19 +90,19 @@ title('Torque')
 plot(torque.data(start_time:end_time,3),torque.data(start_time:end_time,1),torque.data(start_time:end_time,3),torque.data(start_time:end_time,2))
 legend('Target Torque','Actual Torque')
 xlabel('Time [s]')
-ylabel('Torque [N/m]')
+ylabel('Torque [mNm]')
 
 %currents
 figure(5)
 title('Currents')
-plot(currents.data(start_time:end_time,6),currents.data(start_time:end_time,1),currents.data(start_time:end_time,6),currents.data(start_time:end_time,2),currents.data(start_time:end_time,6),currents.data(start_time:end_time,3),currents.data(start_time:end_time,6),currents.data(start_time:end_time,4));
+plot(currents.data(start_time:length(currents.data(:,6)),6),currents.data(start_time:length(currents.data(:,1)),1),currents.data(start_time:length(currents.data(:,6)),6),currents.data(start_time:length(currents.data(:,6)),2),currents.data(start_time:length(currents.data(:,6)),6),currents.data(start_time:length(currents.data(:,6)),3),currents.data(start_time:length(currents.data(:,6)),6),currents.data(start_time:length(currents.data(:,6)),4));
 legend('Total', 'Phase A', 'Phase B', 'Phase C')
 xlabel('Time [s]')
-ylabel('Ampere [A]')
+ylabel('Ampere [mA]')
 
-mkdir('temporaryResults');
+mkdir(strcat('Data_Results/',char(dateNowShort)));
 
-save('temporaryResults/position','position');
-save('temporaryResults/torque','torque');
-save('temporaryResults/velocity','velocity');
-save('temporaryResults/currents','currents');
+save(strcat('Data_Results/',char(timeForSave),'_position'),'position');
+save(strcat('Data_Results/',char(timeForSave),'torque'),'torque');
+save(strcat('Data_Results/',char(timeForSave),'_velocity'),'velocity');
+save(strcat('Data_Results/',char(timeForSave),'_currents'),'currents');
