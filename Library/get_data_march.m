@@ -1,4 +1,4 @@
-function get_data_march(name)
+function get_data_march(nameOnMaster,nameOfFileToSave)
 %HOW TO USE
 %for one, script only works when usb stick is still in the target and pc is connected to
 %target!
@@ -12,25 +12,30 @@ close all;clc;
 
 %% Reading datalog file from target
 f=SimulinkRealTime.fileSystem;
-
-read = fopen(f,name);
+read = fopen(f,nameOnMaster);
 rawData = fread(f,read);
 f.fclose(read);
 
 %For testing purposes
-% name = 'Data_files/MARCH_05TEST.dat';
-% read = fopen(name);
+% nameOnMaster = 'Data_files/MARCH_05TEST.dat';
+% read = fopen(nameOnMaster);
 % rawData = fread(read);
 % fclose(read);
 
 %% Prepare saving directory
-directoryForSave = strcat('Data_files/','/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/'); %Testing: strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
+dateNow = datetime('now');
+dateNow.Format = 'uuuu_MM_dd_HH:mm:ss';
+dateNowShort = dateNow;
+dateNowShort.Format = 'uuuu-MM-dd';
+timeForSave = dateNow;
+timeForSave.Format = 'HH.mm';
+directoryForSave = strcat('Data_files/','Data_measurements/',char(dateNowShort),'/'); %Testing: strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
 mkdir(directoryForSave);
 
 %% Process and save the raw data
 dataStruct = SimulinkRealTime.utils.getFileScopeData(rawData);
 numSignal = dataStruct.numSignals;
-save(strcat(directoryForSave,'AllResults','.mat'),'dataStruct');
+save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults'),'dataStruct');
 
 %% Preparing signal names to be nice
 nameSignal = regexprep(reverse(strtok(reverse(dataStruct.signalNames),'/')),' ','');
