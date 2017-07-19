@@ -43,7 +43,7 @@ time = dataStruct.data(:,numSignal);
 
 %% Create structs
 jointNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE'};
-jointFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig'};
+jointFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'temperature'};
  % make struct for each joint
 for j = 1:length(jointNames)
     
