@@ -7,9 +7,10 @@ classdef ExoskeletonState < Simulink.IntEnumType
         HOLDSTAND(4)
         SITTINGDOWN(5)
         CONTINUOUSGAIT(6)
-        STAIRS(7)
-        SLOPE(8)
-        STONES(9)
+        STOPCONTINOUSGAIT(7)
+        STAIRS(8)
+        SLOPE(9)
+        STONES(10)
         SEVERE_ERROR(666)
     end 
 end
