@@ -16,8 +16,8 @@ switch(detectedError)
     otherwise
         % no error detected, check device errors
         % somanet errors have highest priority
-        somanetErrors = deviceErrors.errorSOMANETS;
-        if any(somanetErrors ~= SomanetError.SOMANET_NO_ERROR)
+        somanetErrors = deviceErrors.errorSOMANETs;
+        if any(somanetErrors ~= SomanetError.NOERROR_SOMANET)
             if any((somanetErrors == SomanetError.GENERICERROR_SOMANET) | ...
                 (somanetErrors == SomanetError.SOMANET_NONRESPONSIVE) | ...
                 (somanetErrors == SomanetError.SOMANET_UNKNOWN_ERROR))
@@ -37,7 +37,7 @@ switch(detectedError)
                 errorReaction = ErrorReaction.QUITIMMEDIATELY; 
                 resetJointErrors = 0;
             elseif any((somanetErrors == SomanetError.SOMANET_OVERHEAT) | ...
-                    (somanetErrors == SomanetError.SOMANET_I2T_ERROR))
+                    (somanetErrors == SomanetError.PHASE_I2T_ERROR))
                 % this indicates large possibility of blowing up
                 % somanet/motor, so quit immediately
                 errorReaction = ErrorReaction.QUITIMMEDIATELY;
@@ -46,10 +46,9 @@ switch(detectedError)
                 % indicates mechanical failure or erratic control
                 errorReaction = ErrorReaction.MOVETOPREVIOUSSTATE;
                 resetJointErrors = 0;
-            elseif any((somanetErrors == SomanetError.PHASE_OVERCURRENT_MASTER_DETECT)
+            elseif any((somanetErrors == SomanetError.PHASE_OVERCURRENT_MASTER_DETECT) | ...
                     (somanetErrors == SomanetError.SOMANET_NEAR_I2T_ERROR) | ...
-                    (somanetErrors == SomanetError.SOMANET_NEAR_OVERHEAT) | ...
-                    
+                    (somanetErrors == SomanetError.SOMANET_NEAR_OVERHEAT))                    
                 % medium error, finish reaction then evaluate
                 errorReaction = ErrorReaction.FINISHCURRENTREACTION;
                 resetJointErrors = 0;
