@@ -111,6 +111,54 @@
             </signal>
               <signal>
               <sigName>
+2</sigName>
+              <xpcsigName>Data logging/ 2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Actual Postion</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+3</sigName>
+              <xpcsigName>Data logging/ 3</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Target Position</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+4</sigName>
+              <xpcsigName>Data logging/ 4</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>
+5</sigName>
+              <xpcsigName>Data logging/ 5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>Targert Torque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>
+6</sigName>
+              <xpcsigName>Data logging/ 6</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>
+7</sigName>
+              <xpcsigName>Data logging/ 7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>
 Average</sigName>
               <xpcsigName>Data logging/ Average</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -608,6 +656,13 @@ Average</sigName>
                 
             </signal>
               <signal>
+              <sigName>Data Type Conversion29</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion29</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualAngle</sigLabel>
+            </signal>
+              <signal>
               <sigName>Data Type Conversion3</sigName>
               <xpcsigName>ScopeSystem/Data Type Conversion3</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -629,6 +684,13 @@ Average</sigName>
                 <sigLabel>max</sigLabel>
             </signal>
               <signal>
+              <sigName>Data Type Conversion32</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion32</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>targetAngle</sigLabel>
+            </signal>
+              <signal>
               <sigName>Data Type Conversion33</sigName>
               <xpcsigName>ScopeSystem/Data Type Conversion33</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -641,6 +703,34 @@ Average</sigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion35</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion35</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualVelocity</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion36</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion36</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion37</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion37</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>actualTorque</sigLabel>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion38</sigName>
+              <xpcsigName>ScopeSystem/Data Type Conversion38</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>targetTorque</sigLabel>
             </signal>
               <signal>
               <sigName>Data Type Conversion4</sigName>
@@ -689,7 +779,7 @@ Average</sigName>
               <xpcsigName>ScopeSystem/Add</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Velocity Error</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Moving
@@ -1288,6 +1378,16 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>Gain5</blkName>
+            <xpcblkName>Gain5</xpcblkName>
+            <SLblockPath>SomanetTuning/Gain5</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>Gain</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Memory</blkName>
             <xpcblkName>Memory</xpcblkName>
             <SLblockPath>SomanetTuning/Memory</SLblockPath>
@@ -1418,6 +1518,34 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>Rate Limiter</blkName>
+            <xpcblkName>Rate Limiter</xpcblkName>
+            <SLblockPath>SomanetTuning/Rate Limiter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>RisingSlewLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>FallingSlewLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Manual Switch</blkName>
+            <xpcblkName>Manual Switch</xpcblkName>
+            <SLblockPath>SomanetTuning/Manual Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>CurrentSetting</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Weighted
 Sample Time</blkName>
             <xpcblkName>Weighted Sample Time</xpcblkName>
@@ -1491,20 +1619,6 @@ Concatenate1</sigName>
               <sigDim>[3, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>TargetTorque</sigName>
-              <xpcsigName>TargetTorque</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-                <sigLabel>Target Torque</sigLabel>
-            </signal>
-              <signal>
-              <sigName>TargetVelocity</sigName>
-              <xpcsigName>TargetVelocity</xpcsigName>
-              <sigWidth>3</sigWidth>
-              <sigDim>[3, 1]</sigDim>
-                
-            </signal>
-              <signal>
               <sigName>clear_error</sigName>
               <xpcsigName>clear_error</xpcsigName>
               <sigWidth>1</sigWidth>
@@ -1531,6 +1645,18 @@ Concatenate1</sigName>
               <signal>
               <sigName>Data Type Conversion11</sigName>
               <xpcsigName>Data Type Conversion11</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion12</sigName>
+              <xpcsigName>Data Type Conversion12</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion13</sigName>
+              <xpcsigName>Data Type Conversion13</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -1611,6 +1737,13 @@ Concatenate1</sigName>
               <xpcsigName>Gain4</xpcsigName>
               <sigWidth>3</sigWidth>
               <sigDim>[3, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Gain5</sigName>
+              <xpcsigName>Gain5</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+                <sigLabel>surface</sigLabel>
             </signal>
               <signal>
               <sigName>Logical
@@ -1886,7 +2019,7 @@ Function1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 61]</dim>  
+          <dim>[1, 54]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -2090,7 +2223,7 @@ Function1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 74]</dim>  
+          <dim>[1, 52]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -2124,7 +2257,7 @@ Function1</sigName>
             <isSrc>[1 0 1]</isSrc>
           <parameter>
           <paramName>P1</paramName>
-          <dim>[1, 74]</dim>  
+          <dim>[1, 52]</dim>  
           </parameter>
           <parameter>
           <paramName>P2</paramName>
@@ -2206,7 +2339,7 @@ Function1</sigName>
               <xpcsigName>EcatHandler/EtherCAT Receive/EtherCAT PDO Receive</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Actual Velocity</sigLabel>
+                
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive1</sigName>
@@ -2245,7 +2378,7 @@ Function1</sigName>
               <xpcsigName>EcatHandler/EtherCAT Receive/EtherCAT PDO Receive3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>Actual Torque</sigLabel>
+                
             </signal>
               <signal>
               <sigName>EtherCAT PDO Receive4</sigName>
@@ -2533,6 +2666,12 @@ Function1</sigName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>EcatHandler/EtherCAT Transmit/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
 
     </SubSystem>
 
@@ -3069,6 +3208,12 @@ Function1</sigName>
                 <sigLabel>maxSurface</sigLabel>
             </signal>
               <signal>
+              <sigName>Rate Limiter</sigName>
+              <xpcsigName>Rate Limiter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Relational
 Operator</sigName>
               <xpcsigName>Relational Operator</xpcsigName>
@@ -3096,6 +3241,12 @@ Operator</sigName>
               <signal>
               <sigName>Switch1</sigName>
               <xpcsigName>Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Manual Switch</sigName>
+              <xpcsigName>Manual Switch</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>

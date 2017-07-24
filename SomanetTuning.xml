@@ -1518,6 +1518,34 @@ Average</sigName>
           </parameter>
           </block>
             <block>
+            <blkName>Rate Limiter</blkName>
+            <xpcblkName>Rate Limiter</xpcblkName>
+            <SLblockPath>SomanetTuning/Rate Limiter</SLblockPath>
+            <isSrc>[0 1 1]</isSrc>
+          <parameter>
+          <paramName>RisingSlewLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>FallingSlewLimit</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          <parameter>
+          <paramName>InitialCondition</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
+            <blkName>Manual Switch</blkName>
+            <xpcblkName>Manual Switch</xpcblkName>
+            <SLblockPath>SomanetTuning/Manual Switch</SLblockPath>
+            <isSrc>[0 2 1]</isSrc>
+          <parameter>
+          <paramName>CurrentSetting</paramName>
+          <dim>[1, 1]</dim>  
+          </parameter>
+          </block>
+            <block>
             <blkName>Weighted
 Sample Time</blkName>
             <xpcblkName>Weighted Sample Time</xpcblkName>
@@ -3180,6 +3208,12 @@ Function1</sigName>
                 <sigLabel>maxSurface</sigLabel>
             </signal>
               <signal>
+              <sigName>Rate Limiter</sigName>
+              <xpcsigName>Rate Limiter</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Relational
 Operator</sigName>
               <xpcsigName>Relational Operator</xpcsigName>
@@ -3207,6 +3241,12 @@ Operator</sigName>
               <signal>
               <sigName>Switch1</sigName>
               <xpcsigName>Switch1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Manual Switch</sigName>
+              <xpcsigName>Manual Switch</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
