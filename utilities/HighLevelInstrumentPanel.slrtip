@@ -1,0 +1,223 @@
+
+  <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1" children="Controls">
+      <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel4" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label10" children="Controls">
+          <Property name="Text">RIGHT KNEE FE</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Font">Segoe UI, 16pt, style=Bold</Property>
+          <Property name="Location">21, 4</Property>
+          <Property name="Name">Label10</Property>
+          <Property name="Size">191, 50</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label11" children="Controls">
+          <Property name="Text">targetTorque</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">143, 263</Property>
+          <Property name="Name">Label11</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider7" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFETorque/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-500</Property>
+            <Property name="Span">1000</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">143, 57</Property>
+          <Property name="Name">Slider7</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label12" children="Controls">
+          <Property name="Text">targetAngle</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">21, 263</Property>
+          <Property name="Name">Label12</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider8" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFEAngle/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-180</Property>
+            <Property name="Span">360</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">21, 57</Property>
+          <Property name="Name">Slider8</Property>
+        </Object>
+        <Property name="Size">251, 307</Property>
+        <Property name="Location">286, 336</Property>
+        <Property name="Name">Panel4</Property>
+      </Object>
+      <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel3" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
+          <Property name="Text">LEFT KNEE FE</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Font">Segoe UI, 16pt, style=Bold</Property>
+          <Property name="Location">21, 4</Property>
+          <Property name="Name">Label7</Property>
+          <Property name="Size">171, 50</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
+          <Property name="Text">targetTorque</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">143, 263</Property>
+          <Property name="Name">Label8</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider5" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFETorque/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-500</Property>
+            <Property name="Span">1000</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">143, 57</Property>
+          <Property name="Name">Slider5</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
+          <Property name="Text">targetAngle</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">21, 263</Property>
+          <Property name="Name">Label9</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider6" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFEAngle/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-180</Property>
+            <Property name="Span">360</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">21, 57</Property>
+          <Property name="Name">Slider6</Property>
+        </Object>
+        <Property name="Size">251, 307</Property>
+        <Property name="Location">20, 332</Property>
+        <Property name="Name">Panel3</Property>
+      </Object>
+      <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel2" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label4" children="Controls">
+          <Property name="Text">RIGHT HIP FE</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Font">Segoe UI, 16pt, style=Bold</Property>
+          <Property name="Location">21, 4</Property>
+          <Property name="Name">Label4</Property>
+          <Property name="Size">180, 50</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label5" children="Controls">
+          <Property name="Text">targetTorque</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">143, 263</Property>
+          <Property name="Name">Label5</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider3" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFETorque/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-500</Property>
+            <Property name="Span">1000</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">143, 57</Property>
+          <Property name="Name">Slider3</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
+          <Property name="Text">targetAngle</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">21, 263</Property>
+          <Property name="Name">Label6</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider4" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFEAngle/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-180</Property>
+            <Property name="Span">360</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">21, 57</Property>
+          <Property name="Name">Slider4</Property>
+        </Object>
+        <Property name="Size">251, 307</Property>
+        <Property name="Location">286, 19</Property>
+        <Property name="Name">Panel2</Property>
+      </Object>
+      <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel1" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label3" children="Controls">
+          <Property name="Text">LEFT HIP FE</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Font">Segoe UI, 16pt, style=Bold</Property>
+          <Property name="Location">21, 4</Property>
+          <Property name="Name">Label3</Property>
+          <Property name="Size">144, 50</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+          <Property name="Text">targetTorque</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">143, 263</Property>
+          <Property name="Name">Label2</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider2" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFETorque/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-500</Property>
+            <Property name="Span">1000</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">143, 57</Property>
+          <Property name="Name">Slider2</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+          <Property name="Text">targetAngle</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">21, 263</Property>
+          <Property name="Name">Label1</Property>
+          <Property name="Size">100, 23</Property>
+        </Object>
+        <Object type="MW.Instruments.Slider, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Slider1" children="Controls">
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="BindingSrcPath">JointHandler/targetLHFEAngle/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="ScaleRange">
+            <Property name="Min">-180</Property>
+            <Property name="Span">360</Property>
+          </Property>
+          <Property name="Size">69, 203</Property>
+          <Property name="Location">21, 57</Property>
+          <Property name="Name">Slider1</Property>
+        </Object>
+        <Property name="Size">251, 307</Property>
+        <Property name="Location">20, 19</Property>
+        <Property name="Name">Panel1</Property>
+      </Object>
+      <Property name="Text">JOINTS</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">30, 14</Property>
+      <Property name="Name">GroupBox1</Property>
+      <Property name="Size">567, 665</Property>
+    </Object>
+    <Property name="ClientSize">1920, 1080</Property>
+  </Object>
