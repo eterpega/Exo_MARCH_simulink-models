@@ -4,6 +4,10 @@ classdef StepType < Simulink.IntEnumType
         HALFSTEPSTART(2)
         HALFSTEPSTOP(3)
         STAIRSTEP(4)
-        NOSTEP(5)
+        STANDUP(5)
+        SITDOWN(6)
+        HOMESTAND(7)
+        HOMESIT(8)
+        NOSTEP(9)
     end 
 end
