@@ -206,7 +206,7 @@
             <Property name="Span">360</Property>
           </Property>
           <Property name="Size">69, 203</Property>
-          <Property name="Location">21, 57</Property>
+          <Property name="Location">21, 66</Property>
           <Property name="Name">Slider1</Property>
         </Object>
         <Property name="Size">251, 307</Property>
