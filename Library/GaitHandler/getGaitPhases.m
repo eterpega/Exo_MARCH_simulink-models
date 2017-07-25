@@ -23,12 +23,12 @@ multiplier = gaitFrequency / modelFrequency;
 samples = passedTime / sampleTime;
 % matlab has 1-based indexing
 phaseIndex = multiplier * samples + 1;
-if(phaseIndex > lengthsLookup(int32(StepType.NOSTEP)))
-    phaseIndex = lengthsLookup(int32(StepType.NOSTEP));
+if(phaseIndex > lengthsLookup(int32(stepType)))
+    phaseIndex = lengthsLookup(int32(stepType));
 end
 
 % update persistent variables
 prevStepType = stepType;
 prevStepLeg = stepLeg;
-prevTime = 0;
+prevTime = curTime;
 end
