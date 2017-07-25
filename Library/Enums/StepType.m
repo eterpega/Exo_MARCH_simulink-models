@@ -1,5 +1,7 @@
 classdef StepType < Simulink.IntEnumType
     enumeration
+        % the values of this enum are also used as indices, so don't change
+        % them!
         FULLSTEP(1)
         HALFSTEPSTART(2)
         HALFSTEPSTOP(3)

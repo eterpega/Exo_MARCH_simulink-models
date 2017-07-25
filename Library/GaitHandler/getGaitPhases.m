@@ -1,0 +1,34 @@
+function [ phaseIndex ] = getGaitPhases(stepType, stepLeg, curTime, gaitFrequency, lengthsLookup)
+%GETGAITPHASES determines gaitPhase by detecting change 
+persistent prevStepType;
+persistent prevStepLeg;
+persistent startTime;
+persistent prevTime;
+if isempty(startTime)
+    prevStepType = StepType.NOSTEP;
+    prevStepLeg = Leg.NONE;
+    startTime = 0;
+    prevTime = 0;
+end
+if(prevStepType ~= stepType || prevStepLeg ~= stepLeg)
+    startTime = curTime;
+end
+sampleTime = curTime - prevTime;
+passedTime = curTime - startTime;
+modelFrequency = 1 / sampleTime;
+multiplier = gaitFrequency / modelFrequency;
+% if gait is made at 1000 Hz and model runs at 500 Hz, we need to go
+% through the gait 2 indices at a time
+
+samples = passedTime / sampleTime;
+% matlab has 1-based indexing
+phaseIndex = multiplier * samples + 1;
+if(phaseIndex > lengthsLookup(int32(StepType.NOSTEP)))
+    phaseIndex = lengthsLookup(int32(StepType.NOSTEP));
+end
+
+% update persistent variables
+prevStepType = stepType;
+prevStepLeg = stepLeg;
+prevTime = 0;
+end
