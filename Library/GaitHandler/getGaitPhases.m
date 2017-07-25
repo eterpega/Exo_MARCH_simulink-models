@@ -1,4 +1,4 @@
-function [ phaseIndex ] = getGaitPhases(stepType, stepLeg, curTime, gaitFrequency, lengthsLookup)
+function [ phaseIndex, phaseDone ] = getGaitPhases(stepType, stepLeg, curTime, gaitFrequency, lengthsLookup)
 %GETGAITPHASES determines gaitPhase by detecting change 
 persistent prevStepType;
 persistent prevStepLeg;
@@ -25,6 +25,9 @@ samples = passedTime / sampleTime;
 phaseIndex = multiplier * samples + 1;
 if(phaseIndex > lengthsLookup(int32(stepType)))
     phaseIndex = lengthsLookup(int32(stepType));
+    phaseDone = 1;
+else
+    phaseDone = 0;
 end
 
 % update persistent variables
