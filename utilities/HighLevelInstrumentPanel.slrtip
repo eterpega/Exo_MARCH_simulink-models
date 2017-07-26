@@ -1,6 +1,22 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox10" children="Controls">
+      <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry11" children="Controls">
+        <Property name="BindingSrcPath">SafetyModule/manualErrorReaction/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">53, 23</Property>
+        <Property name="Location">216, 50</Property>
+        <Property name="Name">NumericEntry11</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry1" children="Controls">
+        <Property name="BindingSrcPath">SafetyModule/enableManualErrorReaction/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Location">216, 23</Property>
+        <Property name="Name">NumericalUpDownEntry1</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox11" children="Controls">
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label34" children="Controls">
           <Property name="Text">NOREACTION: 4</Property>
@@ -36,17 +52,6 @@
         <Property name="Name">GroupBox11</Property>
         <Property name="Size">280, 103</Property>
       </Object>
-      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry9" children="Controls">
-        <Property name="BindingSrcPath">SafetyModule/manualErrorReaction/Value</Property>
-        <Property name="TargetName">JetStar</Property>
-        <Property name="BindingSrcType">Parameter</Property>
-        <Property name="Maximum">4</Property>
-        <Property name="Minimum">1</Property>
-        <Property name="Value">1</Property>
-        <Property name="Location">243, 55</Property>
-        <Property name="Name">NumericalUpDownEntry9</Property>
-        <Property name="Size">41, 23</Property>
-      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label30" children="Controls">
         <Property name="Text">Manual desired reaction:</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
@@ -54,15 +59,6 @@
         <Property name="Location">19, 50</Property>
         <Property name="Name">Label30</Property>
         <Property name="Size">201, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry8" children="Controls">
-        <Property name="BindingSrcPath">SafetyModule/enableManualErrorReaction/CurrentSetting</Property>
-        <Property name="TargetName">JetStar</Property>
-        <Property name="BindingSrcType">Parameter</Property>
-        <Property name="Maximum">1</Property>
-        <Property name="Location">243, 25</Property>
-        <Property name="Name">NumericalUpDownEntry8</Property>
-        <Property name="Size">42, 23</Property>
       </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label29" children="Controls">
         <Property name="Text">Enable manual reaction (enable = 1)</Property>
@@ -103,6 +99,9 @@
         <Property name="BindingSrcPath">JointHandler/setPointSelection/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">3</Property>
+        <Property name="Minimum">1</Property>
+        <Property name="Value">1</Property>
         <Property name="Location">207, 57</Property>
         <Property name="Name">NumericalUpDownEntry3</Property>
         <Property name="Size">53, 32</Property>
@@ -115,6 +114,23 @@
       <Property name="Size">290, 130</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry2" children="Controls">
+        <Property name="BindingSrcPath">DesiredStateSelector/enableManualDesiredState/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
+        <Property name="Location">217, 28</Property>
+        <Property name="Name">NumericalUpDownEntry2</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry10" children="Controls">
+        <Property name="BindingSrcPath">DesiredStateSelector/manualDesiredState/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Size">53, 23</Property>
+        <Property name="Location">217, 58</Property>
+        <Property name="Name">NumericEntry10</Property>
+      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label18" children="Controls">
         <Property name="Text">Manual desired state:</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
@@ -123,32 +139,12 @@
         <Property name="Name">Label18</Property>
         <Property name="Size">171, 23</Property>
       </Object>
-      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry2" children="Controls">
-        <Property name="BindingSrcPath">DesiredStateSelector/enableManualState/CurrentSetting</Property>
-        <Property name="TargetName">JetStar</Property>
-        <Property name="BindingSrcType">Parameter</Property>
-        <Property name="Maximum">6</Property>
-        <Property name="Minimum">1</Property>
-        <Property name="Value">1</Property>
-        <Property name="Location">244, 57</Property>
-        <Property name="Name">NumericalUpDownEntry2</Property>
-        <Property name="Size">41, 23</Property>
-      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label17" children="Controls">
         <Property name="Text">Enable manual state (enable = 1)</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
         <Property name="Location">20, 28</Property>
         <Property name="Name">Label17</Property>
         <Property name="Size">184, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry1" children="Controls">
-        <Property name="BindingSrcPath">DesiredStateSelector/enableManualState/CurrentSetting</Property>
-        <Property name="TargetName">JetStar</Property>
-        <Property name="BindingSrcType">Parameter</Property>
-        <Property name="Maximum">1</Property>
-        <Property name="Location">244, 28</Property>
-        <Property name="Name">NumericalUpDownEntry1</Property>
-        <Property name="Size">42, 23</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox3" children="Controls">
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label16" children="Controls">
@@ -249,6 +245,14 @@
         <Property name="Size">260, 105</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox8" children="Controls">
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry15" children="Controls">
+          <Property name="BindingSrcPath">JointHandler/commandRKFE/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">60, 23</Property>
+          <Property name="Location">146, 237</Property>
+          <Property name="Name">NumericEntry15</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label3" children="Controls">
           <Property name="Text">jointCommand</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
@@ -256,17 +260,6 @@
           <Property name="Location">6, 237</Property>
           <Property name="Name">Label3</Property>
           <Property name="Size">119, 23</Property>
-        </Object>
-        <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry7" children="Controls">
-          <Property name="BindingSrcPath">JointHandler/commandRKFE/Value</Property>
-          <Property name="TargetName">JetStar</Property>
-          <Property name="BindingSrcType">Parameter</Property>
-          <Property name="Maximum">7</Property>
-          <Property name="Minimum">1</Property>
-          <Property name="Value">1</Property>
-          <Property name="Location">158, 237</Property>
-          <Property name="Name">NumericalUpDownEntry7</Property>
-          <Property name="Size">45, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
           <Property name="Text">targetTorque</Property>
@@ -353,6 +346,14 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox7" children="Controls">
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry13" children="Controls">
+          <Property name="BindingSrcPath">JointHandler/commandLKFE/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">62, 23</Property>
+          <Property name="Location">144, 237</Property>
+          <Property name="Name">NumericEntry13</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
           <Property name="Text">jointCommand</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
@@ -360,17 +361,6 @@
           <Property name="Location">6, 237</Property>
           <Property name="Name">Label6</Property>
           <Property name="Size">119, 23</Property>
-        </Object>
-        <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry6" children="Controls">
-          <Property name="BindingSrcPath">JointHandler/commandLKFE/Value</Property>
-          <Property name="TargetName">JetStar</Property>
-          <Property name="BindingSrcType">Parameter</Property>
-          <Property name="Maximum">7</Property>
-          <Property name="Minimum">1</Property>
-          <Property name="Value">1</Property>
-          <Property name="Location">158, 237</Property>
-          <Property name="Name">NumericalUpDownEntry6</Property>
-          <Property name="Size">45, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label5" children="Controls">
           <Property name="Text">targetTorque</Property>
@@ -457,6 +447,14 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox6" children="Controls">
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry14" children="Controls">
+          <Property name="BindingSrcPath">JointHandler/commandRHFE/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">60, 23</Property>
+          <Property name="Location">146, 231</Property>
+          <Property name="Name">NumericEntry14</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
           <Property name="Text">jointCommand</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
@@ -464,17 +462,6 @@
           <Property name="Location">6, 237</Property>
           <Property name="Name">Label9</Property>
           <Property name="Size">119, 23</Property>
-        </Object>
-        <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry5" children="Controls">
-          <Property name="BindingSrcPath">JointHandler/commandRHFE/Value</Property>
-          <Property name="TargetName">JetStar</Property>
-          <Property name="BindingSrcType">Parameter</Property>
-          <Property name="Maximum">7</Property>
-          <Property name="Minimum">1</Property>
-          <Property name="Value">1</Property>
-          <Property name="Location">158, 237</Property>
-          <Property name="Name">NumericalUpDownEntry5</Property>
-          <Property name="Size">45, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
           <Property name="Text">targetTorque</Property>
@@ -561,6 +548,14 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
+        <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry12" children="Controls">
+          <Property name="BindingSrcPath">JointHandler/commandLHFE/Value</Property>
+          <Property name="TargetName">JetStar</Property>
+          <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Size">62, 23</Property>
+          <Property name="Location">144, 233</Property>
+          <Property name="Name">NumericEntry12</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label10" children="Controls">
           <Property name="Text">jointCommand</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
@@ -568,17 +563,6 @@
           <Property name="Location">6, 237</Property>
           <Property name="Name">Label10</Property>
           <Property name="Size">119, 23</Property>
-        </Object>
-        <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry4" children="Controls">
-          <Property name="BindingSrcPath">JointHandler/commandLHFE/Value</Property>
-          <Property name="TargetName">JetStar</Property>
-          <Property name="BindingSrcType">Parameter</Property>
-          <Property name="Maximum">7</Property>
-          <Property name="Minimum">1</Property>
-          <Property name="Value">1</Property>
-          <Property name="Location">158, 237</Property>
-          <Property name="Name">NumericalUpDownEntry4</Property>
-          <Property name="Size">45, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label11" children="Controls">
           <Property name="Text">targetTorque</Property>
