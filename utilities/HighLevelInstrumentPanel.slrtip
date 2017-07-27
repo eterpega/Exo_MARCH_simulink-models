@@ -1,5 +1,46 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox12" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay10" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/TuningHandler/ConfigSyncCommandGenerator/desThreshold</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">189, 153</Property>
+        <Property name="Name">NumericDisplay10</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay9" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/TuningHandler/ConfigSyncCommandGenerator/actThreshold</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">189, 126</Property>
+        <Property name="Name">NumericDisplay9</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label48" children="Controls">
+        <Property name="Text">desThreshold</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">73, 166</Property>
+        <Property name="Name">Label48</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label47" children="Controls">
+        <Property name="Text">actThreshold</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">73, 126</Property>
+        <Property name="Name">Label47</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Property name="Text">JointConfigs</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">909, 32</Property>
+      <Property name="Name">GroupBox12</Property>
+      <Property name="Size">548, 723</Property>
+    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox10" children="Controls">
       <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry11" children="Controls">
         <Property name="BindingSrcPath">SafetyModule/manualErrorReaction/Value</Property>
