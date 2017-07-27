@@ -245,6 +245,34 @@
         <Property name="Size">260, 105</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox8" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label45" children="Controls">
+          <Property name="Text">actualTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">129, 210</Property>
+          <Property name="Name">Label45</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label46" children="Controls">
+          <Property name="Text">actualAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">4, 210</Property>
+          <Property name="Name">Label46</Property>
+          <Property name="Size">119, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label37" children="Controls">
+          <Property name="Text">targetTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">132, 160</Property>
+          <Property name="Name">Label37</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label38" children="Controls">
+          <Property name="Text">targetAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">7, 160</Property>
+          <Property name="Name">Label38</Property>
+          <Property name="Size">119, 23</Property>
+        </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry15" children="Controls">
           <Property name="BindingSrcPath">JointHandler/commandRKFE/Value</Property>
           <Property name="TargetName">JetStar</Property>
@@ -261,28 +289,14 @@
           <Property name="Name">Label3</Property>
           <Property name="Size">119, 23</Property>
         </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
-          <Property name="Text">targetTorque</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">132, 192</Property>
-          <Property name="Name">Label2</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
-          <Property name="Text">targetAngle</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">7, 192</Property>
-          <Property name="Name">Label1</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay7" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actTorqueRK</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">131, 164</Property>
+          <Property name="Location">129, 182</Property>
           <Property name="Name">NumericDisplay7</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry7" children="Controls">
@@ -299,21 +313,21 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcObject" />
           <Property name="ScaleRange">
-            <Property name="Min">-1000</Property>
-            <Property name="Span">2000</Property>
+            <Property name="Min">-1</Property>
+            <Property name="Span">2</Property>
           </Property>
-          <Property name="Size">76, 105</Property>
+          <Property name="Size">56, 105</Property>
           <Property name="Location">130, 22</Property>
           <Property name="Name">Slider4</Property>
         </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay8" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleRK</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">7, 164</Property>
+          <Property name="Location">5, 182</Property>
           <Property name="Name">NumericDisplay8</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry8" children="Controls">
@@ -346,6 +360,27 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox7" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label43" children="Controls">
+          <Property name="Text">actualTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">129, 211</Property>
+          <Property name="Name">Label43</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label44" children="Controls">
+          <Property name="Text">actualAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">4, 211</Property>
+          <Property name="Name">Label44</Property>
+          <Property name="Size">119, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label35" children="Controls">
+          <Property name="Text">targetTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">130, 159</Property>
+          <Property name="Name">Label35</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry13" children="Controls">
           <Property name="BindingSrcPath">JointHandler/commandLKFE/Value</Property>
           <Property name="TargetName">JetStar</Property>
@@ -353,6 +388,13 @@
           <Property name="Size">62, 23</Property>
           <Property name="Location">144, 237</Property>
           <Property name="Name">NumericEntry13</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label36" children="Controls">
+          <Property name="Text">targetAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">5, 159</Property>
+          <Property name="Name">Label36</Property>
+          <Property name="Size">119, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label6" children="Controls">
           <Property name="Text">jointCommand</Property>
@@ -362,28 +404,14 @@
           <Property name="Name">Label6</Property>
           <Property name="Size">119, 23</Property>
         </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label5" children="Controls">
-          <Property name="Text">targetTorque</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">132, 192</Property>
-          <Property name="Name">Label5</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label4" children="Controls">
-          <Property name="Text">targetAngle</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">7, 192</Property>
-          <Property name="Name">Label4</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay5" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actTorqueLK</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">131, 164</Property>
+          <Property name="Location">129, 182</Property>
           <Property name="Name">NumericDisplay5</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry5" children="Controls">
@@ -400,21 +428,21 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcObject" />
           <Property name="ScaleRange">
-            <Property name="Min">-1000</Property>
-            <Property name="Span">2000</Property>
+            <Property name="Min">-1</Property>
+            <Property name="Span">2</Property>
           </Property>
-          <Property name="Size">76, 105</Property>
+          <Property name="Size">56, 105</Property>
           <Property name="Location">130, 22</Property>
           <Property name="Name">Slider3</Property>
         </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLK</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">7, 164</Property>
+          <Property name="Location">5, 182</Property>
           <Property name="Name">NumericDisplay6</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry6" children="Controls">
@@ -447,6 +475,27 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox6" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label41" children="Controls">
+          <Property name="Text">actualTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">129, 211</Property>
+          <Property name="Name">Label41</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label42" children="Controls">
+          <Property name="Text">actualAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">4, 211</Property>
+          <Property name="Name">Label42</Property>
+          <Property name="Size">119, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label2" children="Controls">
+          <Property name="Text">targetTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">132, 160</Property>
+          <Property name="Name">Label2</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry14" children="Controls">
           <Property name="BindingSrcPath">JointHandler/commandRHFE/Value</Property>
           <Property name="TargetName">JetStar</Property>
@@ -454,6 +503,13 @@
           <Property name="Size">60, 23</Property>
           <Property name="Location">146, 231</Property>
           <Property name="Name">NumericEntry14</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label1" children="Controls">
+          <Property name="Text">targetAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">7, 160</Property>
+          <Property name="Name">Label1</Property>
+          <Property name="Size">119, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label9" children="Controls">
           <Property name="Text">jointCommand</Property>
@@ -463,28 +519,14 @@
           <Property name="Name">Label9</Property>
           <Property name="Size">119, 23</Property>
         </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label8" children="Controls">
-          <Property name="Text">targetTorque</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">132, 192</Property>
-          <Property name="Name">Label8</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
-        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label7" children="Controls">
-          <Property name="Text">targetAngle</Property>
-          <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">7, 192</Property>
-          <Property name="Name">Label7</Property>
-          <Property name="Size">100, 23</Property>
-        </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay3" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actTorqueRH</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">131, 164</Property>
+          <Property name="Location">129, 183</Property>
           <Property name="Name">NumericDisplay3</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry3" children="Controls">
@@ -501,21 +543,21 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcObject" />
           <Property name="ScaleRange">
-            <Property name="Min">-1000</Property>
-            <Property name="Span">2000</Property>
+            <Property name="Min">-1</Property>
+            <Property name="Span">2</Property>
           </Property>
-          <Property name="Size">76, 105</Property>
+          <Property name="Size">56, 105</Property>
           <Property name="Location">130, 22</Property>
           <Property name="Name">Slider2</Property>
         </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleRH</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">7, 164</Property>
+          <Property name="Location">5, 183</Property>
           <Property name="Name">NumericDisplay4</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry4" children="Controls">
@@ -548,6 +590,20 @@
         <Property name="Size">260, 285</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label39" children="Controls">
+          <Property name="Text">actualTorque [Nm]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">129, 211</Property>
+          <Property name="Name">Label39</Property>
+          <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label40" children="Controls">
+          <Property name="Text">actualAngle [Deg]</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">4, 211</Property>
+          <Property name="Name">Label40</Property>
+          <Property name="Size">119, 23</Property>
+        </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry12" children="Controls">
           <Property name="BindingSrcPath">JointHandler/commandLHFE/Value</Property>
           <Property name="TargetName">JetStar</Property>
@@ -565,27 +621,27 @@
           <Property name="Size">119, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label11" children="Controls">
-          <Property name="Text">targetTorque</Property>
+          <Property name="Text">targetTorque [Nm]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">132, 192</Property>
+          <Property name="Location">132, 160</Property>
           <Property name="Name">Label11</Property>
-          <Property name="Size">100, 23</Property>
+          <Property name="Size">116, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label12" children="Controls">
-          <Property name="Text">targetAngle</Property>
+          <Property name="Text">targetAngle [Deg]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
-          <Property name="Location">7, 192</Property>
+          <Property name="Location">7, 160</Property>
           <Property name="Name">Label12</Property>
-          <Property name="Size">100, 23</Property>
+          <Property name="Size">119, 23</Property>
         </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay2" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actTorqueLH</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">131, 164</Property>
+          <Property name="Location">129, 183</Property>
           <Property name="Name">NumericDisplay2</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry2" children="Controls">
@@ -602,21 +658,21 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcObject" />
           <Property name="ScaleRange">
-            <Property name="Min">-1000</Property>
-            <Property name="Span">2000</Property>
+            <Property name="Min">-1</Property>
+            <Property name="Span">2</Property>
           </Property>
-          <Property name="Size">76, 105</Property>
+          <Property name="Size">56, 105</Property>
           <Property name="Location">130, 22</Property>
           <Property name="Name">Slider1</Property>
         </Object>
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
-          <Property name="BindingSrcType">None</Property>
+          <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath" />
+          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLH</Property>
           <Property name="BindingSrcObject" />
-          <Property name="TargetName" />
+          <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
-          <Property name="Location">7, 164</Property>
+          <Property name="Location">5, 183</Property>
           <Property name="Name">NumericDisplay1</Property>
         </Object>
         <Object type="MW.Instruments.NumericEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericEntry1" children="Controls">
