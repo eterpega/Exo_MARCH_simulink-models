@@ -13,6 +13,12 @@ switch(detectedError)
         % state did work, so move back to it
         errorReaction = ErrorReaction.MOVETOPREVIOUSSTATE;
         resetJointErrors = 0;
+    case ExoskeletonError.EXOSKELETON_HARDSTOP_REACHED
+        % at softstop we have already tried to hold position, but
+        % this failed since we reached hardstop. Therefore, give up
+        % and quit everything
+        errorReaction = ErrorReaction.QUITIMMEDIATELY; 
+        resetJointErrors = 0;
     otherwise
         % no error detected, check device errors
         % somanet errors have highest priority
@@ -24,8 +30,7 @@ switch(detectedError)
                 % this indicates a programming error, so quit immediately
                 errorReaction = ErrorReaction.QUITIMMEDIATELY;
                 resetJointErrors = 0;
-            elseif any((somanetErrors == SomanetError.SOFTWARE_HARDSTOP_REACHED) | ...
-                    (somanetErrors == SomanetError.SOFTWARE_HARDSTOP_REACHED_MASTER_DETECT))
+            elseif any(somanetErrors == SomanetError.SOFTWARE_HARDSTOP_REACHED)
                 % at softstop we have already tried to hold position, but
                 % this failed since we reached hardstop. Therefore, give up
                 % and quit everything

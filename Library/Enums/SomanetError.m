@@ -9,7 +9,8 @@ classdef SomanetError < Simulink.IntEnumType
         PHASE_I2T_ERROR(1002)
         SOMANET_OVERHEAT(1003)
         SOMANET_DISCONNECTED(1004) 
-        SOFTWARE_HARDSTOP_REACHED_MASTER_DETECT(1005)
+%         SOFTWARE_HARDSTOP_REACHED_MASTER_DETECT(1005) this was moved to
+%         the SafetyModule, so detected higher up
         MAX_TORQUE_REACHED(1006)
         SOMANET_NEAR_I2T_ERROR(1012)
         SOMANET_NEAR_OVERHEAT(1013)

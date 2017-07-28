@@ -32,6 +32,7 @@ end
 indicesToPlot = find(oldTempVal);
 
 %% Finding the data
+a = zeros(1,numel(fieldnames(dataStruct))
 rangeConfig = [0,length(struct.jointConfig.signalNames)];
 rangeReceivedData = [rangeConfig(2)+1,rangeConfig(2)+length(struct.receivedFromSOMANET.signalNames)];
 rangeSendData = [rangeReceivedData(2)+1,rangeReceivedData(2)+length(struct.sendToSOMANET.signalNames)];
