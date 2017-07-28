@@ -5,7 +5,7 @@ function plot_data_march(struct,dataToPlot)
 %function. Then use this function to plot the parameters you want.
 
 % Attach to the target computer file system.
-close all;clc;
+clc;
 
 %% Preparing the data
 

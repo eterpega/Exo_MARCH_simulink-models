@@ -17,7 +17,7 @@ rawData = fread(f,read);
 f.fclose(read);
 
 %For testing purposes
-% nameOnMaster = 'Data_files/MARCH_05TEST.dat';
+% nameOnMaster = 'Data_files/MARCH01.dat';
 % read = fopen(nameOnMaster);
 % rawData = fread(read);
 % fclose(read);
@@ -33,47 +33,56 @@ directoryForSave = strcat('Data_files/','Data_measurements/',char(dateNowShort),
 mkdir(directoryForSave);
 
 %% Process and save the raw data
-dataStruct = SimulinkRealTime.utils.getFileScopeData(rawData);
-numSignal = dataStruct.numSignals;
-save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults'),'dataStruct');
+data = SimulinkRealTime.utils.getFileScopeData(rawData);
+numSignal = data.numSignals;
+save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults'),'data');
 
 %% Preparing signal names to be nice
-nameSignal = regexprep(reverse(strtok(reverse(dataStruct.signalNames),'/')),' ','');
-time = dataStruct.data(:,numSignal);
+nameSignal = regexprep(reverse(strtok(reverse(data.signalNames),'/')),' ','');
+time = data.data(:,numSignal);
 
 %% Create structs
-jointNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE'};
-jointFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'temperature'};
+structNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE' 'GES' 'InputDevice' 'PDB' 'BMS' 'masterState'};
+jointStructFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'temperature' 'error'};
+inputDeviceStructFields = {'receivedFromInputDevice' 'sendToInputDevice' 'error'};
+gesStructFields = {'receivedFromGES' 'sendToGES' 'error'};
+pdbStructFields = {'receivedFromPDB' 'sendToPDB' 'error'};
+bmsStructFields = {'receivedFromBMS' 'sendToBMS' 'error'};
+masterStateFields = {};
+structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; inputDeviceStructFields; gesStructFields; pdbStructFields; bmsStructFields; masterStateFields};
  % make struct for each joint
-for j = 1:length(jointNames)
+for j = 1:length(structNames)
     
     % make nested struct for each joint field
-    for i = 1:length(jointFields)
-        dataMARCH.(char(jointNames(j))).(char(jointFields(i))) = struct('data',[]);
+    for i = 1:length(structFields{j})
+        dataMARCH.(char(structNames(j))).(char(structFields{j}(i))) = struct('data',[]);
         
         % Find out where what data is stored so the data can be put in the
         % appropriate field in the structure.
-        findJointName = contains(nameSignal,jointNames(j));
-        findJointField = contains(dataStruct.signalNames,jointFields(i));
+        if(~strcmp(structNames(j),'miscDataExoskeleton'))
+            findJointName = contains(nameSignal,structNames(j));
+        end
+        findJointField = contains(data.signalNames,structFields{j}(i));
         
         % Using dataMARCH struct to store the indices for where what data is
-        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices = find((findJointName & findJointField));
+        dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).indices = find((findJointName & findJointField));
         
         % Store the signal names and the data in the structure
-        for k = 1:length(dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices)
+        for k = 1:length(dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).indices)
             
-        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).signalNames(k) = nameSignal(dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices(k));
-        dataMARCH.(char(jointNames(j))).(char(jointFields(i))).data(:,k) = dataStruct.data(:,dataMARCH.(char(jointNames(j))).(char(jointFields(i))).indices(k));
+        dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).signalNames(k) = nameSignal(dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).indices(k));
+        dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).data(:,k) = data.data(:,dataMARCH.(char(structNames(j))).(char(structFields{j}(i))).indices(k));
         
         end
         
         % Remove the indices field again
-        dataMARCH.(char(jointNames(j))).(char(jointFields(i))) = rmfield( dataMARCH.(char(jointNames(j))).(char(jointFields(i))),'indices');
+        dataMARCH.(char(structNames(j))).(char(structFields{j}(i))) = rmfield( dataMARCH.(char(structNames(j))).(char(structFields{j}(i))),'indices');
     end
-    dataMARCH.(char(jointNames(j))).time = time;
-    nameSave = char(strcat(directoryForSave,'struct',jointNames(j)));
-    jointStruct = dataMARCH.(char(jointNames(j)));
-    save(nameSave,'jointStruct');
+    
+    dataMARCH.(char(structNames(j))).time = time;
+    nameSave = char(strcat(directoryForSave,char(timeForSave),'_struct',structNames(j),'.mat'));
+    dataStruct = dataMARCH.(char(structNames(j)));
+    save(nameSave,'dataStruct');
 end
 
 end
