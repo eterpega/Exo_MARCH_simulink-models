@@ -1,5 +1,82 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox18" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay25" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLH</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 95</Property>
+        <Property name="Name">NumericDisplay25</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label75" children="Controls">
+        <Property name="Text">Aksim angle on master [Deg]</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 95</Property>
+        <Property name="Name">Label75</Property>
+        <Property name="Size">196, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay24" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 71</Property>
+        <Property name="Name">NumericDisplay24</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label74" children="Controls">
+        <Property name="Text">Commutation offset</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 72</Property>
+        <Property name="Name">Label74</Property>
+        <Property name="RightToLeft">No</Property>
+        <Property name="Size">178, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay23" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">ReceivedOneJoint/receivedSOMANETLHFEOneJoint/EtherCAT PDO secondar</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 47</Property>
+        <Property name="Name">NumericDisplay23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay22" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">ReceivedOneJoint/receivedSOMANETLHFEOneJoint/EtherCAT PDO Receive1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 23</Property>
+        <Property name="Name">NumericDisplay22</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label73" children="Controls">
+        <Property name="Text">RM08 value [Raw]</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 48</Property>
+        <Property name="Name">Label73</Property>
+        <Property name="Size">139, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label72" children="Controls">
+        <Property name="Text">Aksim value [Raw]</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">7, 23</Property>
+        <Property name="Name">Label72</Property>
+        <Property name="Size">152, 23</Property>
+      </Object>
+      <Property name="Text">JointTuning</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">909, 631</Property>
+      <Property name="Name">GroupBox18</Property>
+      <Property name="RightToLeft">No</Property>
+      <Property name="Size">402, 124</Property>
+    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox12" children="Controls">
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox17" children="Controls">
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay19" children="Controls">
