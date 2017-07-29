@@ -1,6 +1,40 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox18" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay27" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s4</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 162</Property>
+        <Property name="Name">NumericDisplay27</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay26" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s3</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">220, 139</Property>
+        <Property name="Name">NumericDisplay26</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label77" children="Controls">
+        <Property name="Text">Max position [Raw]</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 162</Property>
+        <Property name="Name">Label77</Property>
+        <Property name="Size">167, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label76" children="Controls">
+        <Property name="Text">Min position [Raw]</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">7, 139</Property>
+        <Property name="Name">Label76</Property>
+        <Property name="Size">167, 23</Property>
+      </Object>
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay25" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
@@ -75,7 +109,7 @@
       <Property name="Location">909, 631</Property>
       <Property name="Name">GroupBox18</Property>
       <Property name="RightToLeft">No</Property>
-      <Property name="Size">402, 124</Property>
+      <Property name="Size">402, 222</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox12" children="Controls">
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox17" children="Controls">
@@ -867,10 +901,10 @@
             <Property name="Radius">24</Property>
           </Property>
           <Property name="ScaleRange">
-            <Property name="Min">-200</Property>
-            <Property name="Span">400</Property>
+            <Property name="Min">-5</Property>
+            <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">114, 99</Property>
+          <Property name="Size">112, 91</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -982,10 +1016,10 @@
             <Property name="Radius">24</Property>
           </Property>
           <Property name="ScaleRange">
-            <Property name="Min">-200</Property>
-            <Property name="Span">400</Property>
+            <Property name="Min">-5</Property>
+            <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">114, 99</Property>
+          <Property name="Size">112, 91</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
@@ -1097,10 +1131,10 @@
             <Property name="Radius">24</Property>
           </Property>
           <Property name="ScaleRange">
-            <Property name="Min">-200</Property>
-            <Property name="Span">400</Property>
+            <Property name="Min">-20</Property>
+            <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">114, 99</Property>
+          <Property name="Size">108, 95</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1212,11 +1246,11 @@
             <Property name="Radius">24</Property>
           </Property>
           <Property name="ScaleRange">
-            <Property name="Min">-200</Property>
-            <Property name="Span">400</Property>
+            <Property name="Min">-20</Property>
+            <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">114, 99</Property>
-          <Property name="Location">6, 22</Property>
+          <Property name="Size">108, 95</Property>
+          <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>
         <Property name="Text">Left Hip FE</Property>
