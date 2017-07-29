@@ -8,7 +8,13 @@ function plot_data_march(struct,dataToPlot)
 clc;
 
 %% Preparing the data
-
+fieldNames = fieldnames(struct);
+numberOfFields = numel(fieldnames(struct));
+for t = 1:fieldNames
+    for g = 1:numberOfFields
+        allSignalsNames{g,:} = struct.(char(fieldNames(t))).signalNames{:};
+    end
+end
 allSignalsNames = {struct.jointConfig.signalNames{:},struct.receivedFromSOMANET.signalNames{:},struct.sendToSOMANET.signalNames{:}};
 time = struct.time;
 %% Finding the indices to plot
@@ -32,7 +38,6 @@ end
 indicesToPlot = find(oldTempVal);
 
 %% Finding the data
-a = zeros(1,numel(fieldnames(dataStruct))
 rangeConfig = [0,length(struct.jointConfig.signalNames)];
 rangeReceivedData = [rangeConfig(2)+1,rangeConfig(2)+length(struct.receivedFromSOMANET.signalNames)];
 rangeSendData = [rangeReceivedData(2)+1,rangeReceivedData(2)+length(struct.sendToSOMANET.signalNames)];
