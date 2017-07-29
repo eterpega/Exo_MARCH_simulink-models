@@ -17,10 +17,11 @@ rawData = fread(f,read);
 f.fclose(read);
 
 %For testing purposes
-% nameOnMaster = 'Data_files/MARCH01.dat';
-% read = fopen(nameOnMaster);
-% rawData = fread(read);
-% fclose(read);
+nameOnMaster = 'Data_files/MARCH01.dat';
+nameOfFileToSave = 'TestLog';
+read = fopen(nameOnMaster);
+rawData = fread(read);
+fclose(read);
 
 %% Prepare saving directory
 dateNow = datetime('now');
@@ -35,7 +36,7 @@ mkdir(directoryForSave);
 %% Process and save the raw data
 data = SimulinkRealTime.utils.getFileScopeData(rawData);
 numSignal = data.numSignals;
-save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults'),'data');
+save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults.mat'),'data');
 
 %% Preparing signal names to be nice
 nameSignal = regexprep(reverse(strtok(reverse(data.signalNames),'/')),' ','');
@@ -49,7 +50,7 @@ gesStructFields = {'receivedFromGES' 'sendToGES' 'error'};
 pdbStructFields = {'receivedFromPDB' 'sendToPDB' 'error'};
 bmsStructFields = {'receivedFromBMS' 'sendToBMS' 'error'};
 masterStateFields = {};
-structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; inputDeviceStructFields; gesStructFields; pdbStructFields; bmsStructFields; masterStateFields};
+structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; gesStructFields; inputDeviceStructFields; pdbStructFields; bmsStructFields; masterStateFields};
  % make struct for each joint
 for j = 1:length(structNames)
     
@@ -84,5 +85,6 @@ for j = 1:length(structNames)
     dataStruct = dataMARCH.(char(structNames(j)));
     save(nameSave,'dataStruct');
 end
-
+nameSave = char(strcat(directoryForSave,char(timeForSave),'_dataMARCH','.mat'));
+save(nameSave,'dataMARCH');
 end
