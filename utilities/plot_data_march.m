@@ -3,8 +3,12 @@ function plot_data_march(struct,dataToPlotCell)
 %First save the raw data from the MARCH as structs with get_data_march,
 %which saves joint structures with the data. Use that structure in this
 %function. Then use this function to plot the parameters you want.
+%Example:
+%plot_data_march(dataMARCH.LHFE,'Angle') for plotting all the LHFE angles
+%plot_data_march(dataMARCH.LHFE,'Torque') for plotting all the LHFE torques
+%NOTE: the input for dataToPlotCell is sensitive to capital or non capital
+%letters. Use the format as in dataLogHandler in HighLevelMARCH
 
-% Attach to the target computer file system.
 clc;
 
 %% Preparing the data

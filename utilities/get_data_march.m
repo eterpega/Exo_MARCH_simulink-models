@@ -3,12 +3,18 @@ function get_data_march(nameOnMaster,nameOfFileToSave)
 %for one, script only works when usb stick is still in the target and pc is connected to
 %target!
 %add a target scope to the simlink model
-%set the scope type to file and change the number of sampels to ~500.000
+%set the scope type to file 
 %set the name to "X.dat" to what you want it
-%Then here add the code to open and plot the data.
+%When model has run on the target and you want to fetch the data, make sure
+%that you know what the name is of the file. If you use this function, do
+%it like this:
+%get_data_march('name_of_the_file_on_the_target.dat','Name_of_how_you_want_to_call_the
+%_saved_file)
+%Example:
+%get_data_march('MARCH01.dat','AirGaitTest')
 
 % Attach to the target computer file system.
-close all;clc;
+clc;
 
 %% Reading datalog file from target
 f=SimulinkRealTime.fileSystem;
@@ -17,18 +23,16 @@ rawData = fread(f,read);
 f.fclose(read);
 
 %For testing purposes
-nameOnMaster = 'Data_files/MARCH01.dat';
-nameOfFileToSave = 'TestLog';
-read = fopen(nameOnMaster);
-rawData = fread(read);
-fclose(read);
+% nameOnMaster = 'Data_files/MARCH01.dat';
+% nameOfFileToSave = 'TestLog';
+% read = fopen(nameOnMaster);
+% rawData = fread(read);
+% fclose(read);
 
 %% Prepare saving directory
-dateNow = datetime('now');
-dateNow.Format = 'uuuu_MM_dd_HH:mm:ss';
-dateNowShort = dateNow;
+dateNowShort = datetime('now');
 dateNowShort.Format = 'uuuu-MM-dd';
-timeForSave = dateNow;
+timeForSave = datetime('now');
 timeForSave.Format = 'HH.mm';
 directoryForSave = strcat('Data_files/','Data_measurements/',char(dateNowShort),'/'); %Testing: strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
 mkdir(directoryForSave);
@@ -43,14 +47,14 @@ nameSignal = regexprep(reverse(strtok(reverse(data.signalNames),'/')),' ','');
 time = data.data(:,numSignal);
 
 %% Create structs
-structNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE' 'GES' 'InputDevice' 'PDB' 'BMS' 'masterState'};
-jointStructFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'temperature' 'error'};
+structNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE' 'GES' 'InputDevice' 'PDB' 'BMS' 'master'};
+jointStructFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'miscDataSOMANET' 'temperature' 'error' };
 inputDeviceStructFields = {'receivedFromInputDevice' 'sendToInputDevice' 'error'};
 gesStructFields = {'receivedFromGES' 'sendToGES' 'error'};
 pdbStructFields = {'receivedFromPDB' 'sendToPDB' 'error'};
 bmsStructFields = {'receivedFromBMS' 'sendToBMS' 'error'};
-masterStateFields = {};
-structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; gesStructFields; inputDeviceStructFields; pdbStructFields; bmsStructFields; masterStateFields};
+masterInfoFields = {'masterInfo'};
+structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; gesStructFields; inputDeviceStructFields; pdbStructFields; bmsStructFields; masterInfoFields};
  % make struct for each joint
 for j = 1:length(structNames)
     
@@ -81,9 +85,11 @@ for j = 1:length(structNames)
     end
     
     dataMARCH.(char(structNames(j))).time = time;
-    nameSave = char(strcat(directoryForSave,char(timeForSave),'_struct',structNames(j),'.mat'));
     dataStruct = dataMARCH.(char(structNames(j)));
-    save(nameSave,'dataStruct');
+    
+    % This is only useful if you want to save all the structs seperately
+%     nameSave = char(strcat(directoryForSave,char(timeForSave),'_struct',structNames(j),'.mat'));
+%     save(nameSave,'dataStruct');
 end
 nameSave = char(strcat(directoryForSave,char(timeForSave),'_dataMARCH','.mat'));
 save(nameSave,'dataMARCH');
