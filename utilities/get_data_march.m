@@ -16,7 +16,7 @@ function get_data_march(nameOnMaster,nameOfFileToSave)
 % Attach to the target computer file system.
 clc;
 
-%If you want to test, set testFunction to 1;
+%IMPORTANT If you want to test, set testFunction to 1;
 testFunction = 0;
 %% Reading datalog file from target
 
@@ -39,7 +39,7 @@ dateNowShort = datetime('now');
 dateNowShort.Format = 'uuuu-MM-dd';
 timeForSave = datetime('now');
 timeForSave.Format = 'HH.mm';
-directoryForSave = strcat('Data_files/','Data_measurements/',char(dateNowShort),'/'); %Testing: strcat(strtok(name,'/'),'/Data_measurements/',strtok(reverse(strtok(reverse(name),'/')),'.'),'/');
+directoryForSave = strcat('Data_files/','Data_measurements/',char(dateNowShort),'/'); 
 mkdir(directoryForSave);
 
 %% Process and save the raw data
@@ -96,6 +96,6 @@ for j = 1:length(structNames)
 %     nameSave = char(strcat(directoryForSave,char(timeForSave),'_struct',structNames(j),'.mat'));
 %     save(nameSave,'dataStruct');
 end
-nameSave = char(strcat(directoryForSave,char(timeForSave),'_dataMARCH','.mat'));
+nameSave = char(strcat(directoryForSave,char(timeForSave),'_',(nameOfFileToSave),'_dataMARCH','.mat'));
 save(nameSave,'dataMARCH');
 end
