@@ -104,7 +104,7 @@
         <Property name="Name">Label72</Property>
         <Property name="Size">152, 23</Property>
       </Object>
-      <Property name="Text">JointTuning</Property>
+      <Property name="Text">JointTuning (LHFE)</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">909, 631</Property>
       <Property name="Name">GroupBox18</Property>
@@ -673,6 +673,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitRKFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 163</Property>
         <Property name="Name">NumericalUpDownEntry7</Property>
         <Property name="Size">53, 23</Property>
@@ -681,6 +682,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitRHFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 140</Property>
         <Property name="Name">NumericalUpDownEntry6</Property>
         <Property name="Size">53, 23</Property>
@@ -689,6 +691,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitLKFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 117</Property>
         <Property name="Name">NumericalUpDownEntry5</Property>
         <Property name="Size">53, 23</Property>
@@ -697,6 +700,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitLHFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 94</Property>
         <Property name="Name">NumericalUpDownEntry4</Property>
         <Property name="Size">53, 23</Property>
@@ -855,17 +859,35 @@
         </Object>
         <Property name="Text">JointCommands</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">19, 610</Property>
+        <Property name="Location">19, 647</Property>
         <Property name="Name">GroupBox9</Property>
         <Property name="Size">260, 105</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox8" children="Controls">
+        <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay31" children="Controls">
+          <Property name="BindingSrcType">Signal</Property>
+          <Property name="OutputValue">0</Property>
+          <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_RKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="TargetName">JetStar</Property>
+          <Property name="Size">100, 25</Property>
+          <Property name="Location">145, 262</Property>
+          <Property name="Name">NumericDisplay31</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label45" children="Controls">
           <Property name="Text">actualTorque [Nm]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
           <Property name="Location">129, 210</Property>
           <Property name="Name">Label45</Property>
           <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label85" children="Controls">
+          <Property name="Text">Commutation offset</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">7, 265</Property>
+          <Property name="Name">Label85</Property>
+          <Property name="RightToLeft">No</Property>
+          <Property name="Size">132, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label46" children="Controls">
           <Property name="Text">actualAngle [Deg]</Property>
@@ -958,29 +980,47 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">25</Property>
+            <Property name="Radius">26</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">115, 91</Property>
+          <Property name="Size">117, 92</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
         <Property name="Text">Right Knee FE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">285, 319</Property>
+        <Property name="Location">285, 337</Property>
         <Property name="Name">GroupBox8</Property>
-        <Property name="Size">260, 285</Property>
+        <Property name="Size">260, 304</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox7" children="Controls">
+        <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay30" children="Controls">
+          <Property name="BindingSrcType">Signal</Property>
+          <Property name="OutputValue">0</Property>
+          <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="TargetName">JetStar</Property>
+          <Property name="Size">100, 25</Property>
+          <Property name="Location">145, 265</Property>
+          <Property name="Name">NumericDisplay30</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label43" children="Controls">
           <Property name="Text">actualTorque [Nm]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
           <Property name="Location">129, 211</Property>
           <Property name="Name">Label43</Property>
           <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label84" children="Controls">
+          <Property name="Text">Commutation offset</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">7, 268</Property>
+          <Property name="Name">Label84</Property>
+          <Property name="RightToLeft">No</Property>
+          <Property name="Size">132, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label44" children="Controls">
           <Property name="Text">actualAngle [Deg]</Property>
@@ -1073,29 +1113,47 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">25</Property>
+            <Property name="Radius">26</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">115, 91</Property>
+          <Property name="Size">117, 92</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
         <Property name="Text">Left Knee FE</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">19, 319</Property>
+        <Property name="Location">19, 337</Property>
         <Property name="Name">GroupBox7</Property>
-        <Property name="Size">260, 285</Property>
+        <Property name="Size">260, 304</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox6" children="Controls">
+        <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay29" children="Controls">
+          <Property name="BindingSrcType">Signal</Property>
+          <Property name="OutputValue">0</Property>
+          <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_RHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="TargetName">JetStar</Property>
+          <Property name="Size">100, 25</Property>
+          <Property name="Location">145, 265</Property>
+          <Property name="Name">NumericDisplay29</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label41" children="Controls">
           <Property name="Text">actualTorque [Nm]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
           <Property name="Location">129, 211</Property>
           <Property name="Name">Label41</Property>
           <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label83" children="Controls">
+          <Property name="Text">Commutation offset</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">7, 268</Property>
+          <Property name="Name">Label83</Property>
+          <Property name="RightToLeft">No</Property>
+          <Property name="Size">132, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label42" children="Controls">
           <Property name="Text">actualAngle [Deg]</Property>
@@ -1188,13 +1246,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">25</Property>
+            <Property name="Radius">26</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">110, 96</Property>
+          <Property name="Size">112, 98</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1202,15 +1260,33 @@
         <Property name="UseCompatibleTextRendering">True</Property>
         <Property name="Location">285, 28</Property>
         <Property name="Name">GroupBox6</Property>
-        <Property name="Size">260, 285</Property>
+        <Property name="Size">260, 303</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox5" children="Controls">
+        <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay28" children="Controls">
+          <Property name="BindingSrcType">Signal</Property>
+          <Property name="OutputValue">0</Property>
+          <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="TargetName">JetStar</Property>
+          <Property name="Size">100, 25</Property>
+          <Property name="Location">144, 265</Property>
+          <Property name="Name">NumericDisplay28</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label39" children="Controls">
           <Property name="Text">actualTorque [Nm]</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
           <Property name="Location">129, 211</Property>
           <Property name="Name">Label39</Property>
           <Property name="Size">116, 23</Property>
+        </Object>
+        <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label82" children="Controls">
+          <Property name="Text">Commutation offset</Property>
+          <Property name="UseCompatibleTextRendering">True</Property>
+          <Property name="Location">6, 268</Property>
+          <Property name="Name">Label82</Property>
+          <Property name="RightToLeft">No</Property>
+          <Property name="Size">132, 23</Property>
         </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label40" children="Controls">
           <Property name="Text">actualAngle [Deg]</Property>
@@ -1303,13 +1379,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">25</Property>
+            <Property name="Radius">26</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">110, 96</Property>
+          <Property name="Size">112, 98</Property>
           <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>
@@ -1317,13 +1393,13 @@
         <Property name="UseCompatibleTextRendering">True</Property>
         <Property name="Location">19, 28</Property>
         <Property name="Name">GroupBox5</Property>
-        <Property name="Size">260, 285</Property>
+        <Property name="Size">260, 303</Property>
       </Object>
       <Property name="Text">MANUALJOINTSETPOINTS</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">335, 32</Property>
       <Property name="Name">GroupBox1</Property>
-      <Property name="Size">567, 723</Property>
+      <Property name="Size">567, 763</Property>
     </Object>
     <Property name="ClientSize">1920, 1080</Property>
   </Object>
