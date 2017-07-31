@@ -1,4 +1,4 @@
-function [ jointCommands ] = getJointCommandsFromState( masterState, clearJointErrors )
+function [ jointCommands ] = getJointCommandsFromState( masterState, clearJointErrors, jointEnables )
 %GETJOINTCOMMANDSFROMSTATE Determines the jointCommands from the
 %masterState and wether joint errors should be cleared
 persistent clearJointErrorDuration;
@@ -14,24 +14,29 @@ if(clearJointErrorDuration > 0)
     jointCommands = [ JointCommand.RESOLVEERROR; JointCommand.RESOLVEERROR; JointCommand.RESOLVEERROR; JointCommand.RESOLVEERROR ];
     clearJointErrorDuration = clearJointErrorDuration - 1;
 else
-    allPosition = [ JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL];
+    gaitCommands = [ JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL; JointCommand.POSITIONCONTROL];
+    for i=1:4
+        if(jointEnables(i) == 0)
+            gaitCommands(i) = JointCommand.DEACTIVATEMOTOR;
+        end
+    end
     switch(masterState)
         case ExoskeletonState.HOLDSTAND
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.HOLDSIT
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.STANDINGUP
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.SITTINGDOWN
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.CONTINUOUSGAIT
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.STAIRS
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.SLOPE
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.STONES
-            jointCommands = allPosition;
+            jointCommands = gaitCommands;
         case ExoskeletonState.MANUAL % what were these for again..
             jointCommands = [ JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL ];
         case ExoskeletonState.FULLMANUAL

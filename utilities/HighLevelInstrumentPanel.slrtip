@@ -624,7 +624,7 @@
       </Object>
       <Property name="Text">ERRORREACTION</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">13, 397</Property>
+      <Property name="Location">13, 537</Property>
       <Property name="Name">GroupBox10</Property>
       <Property name="Size">316, 195</Property>
     </Object>
@@ -669,6 +669,66 @@
       <Property name="Size">290, 130</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry7" children="Controls">
+        <Property name="BindingSrcPath">JointHandler/enableGaitRKFE/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Location">217, 163</Property>
+        <Property name="Name">NumericalUpDownEntry7</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry6" children="Controls">
+        <Property name="BindingSrcPath">JointHandler/enableGaitRHFE/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Location">217, 140</Property>
+        <Property name="Name">NumericalUpDownEntry6</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry5" children="Controls">
+        <Property name="BindingSrcPath">JointHandler/enableGaitLKFE/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Location">217, 117</Property>
+        <Property name="Name">NumericalUpDownEntry5</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry4" children="Controls">
+        <Property name="BindingSrcPath">JointHandler/enableGaitLHFE/Value</Property>
+        <Property name="TargetName">JetStar</Property>
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Location">217, 94</Property>
+        <Property name="Name">NumericalUpDownEntry4</Property>
+        <Property name="Size">53, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label81" children="Controls">
+        <Property name="Text">Enable RKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">110, 163</Property>
+        <Property name="Name">Label81</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label80" children="Controls">
+        <Property name="Text">Enable RHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">110, 140</Property>
+        <Property name="Name">Label80</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label79" children="Controls">
+        <Property name="Text">Enable LKFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">110, 117</Property>
+        <Property name="Name">Label79</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label78" children="Controls">
+        <Property name="Text">Enable LHFE</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">110, 94</Property>
+        <Property name="Name">Label78</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
       <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry2" children="Controls">
         <Property name="BindingSrcPath">DesiredStateSelector/enableManualDesiredState/Value</Property>
         <Property name="TargetName">JetStar</Property>
@@ -732,7 +792,7 @@
         </Object>
         <Property name="Text">Selectable States</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">20, 92</Property>
+        <Property name="Location">20, 184</Property>
         <Property name="Name">GroupBox3</Property>
         <Property name="Size">280, 99</Property>
       </Object>
@@ -740,7 +800,7 @@
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">12, 185</Property>
       <Property name="Name">GroupBox2</Property>
-      <Property name="Size">317, 205</Property>
+      <Property name="Size">317, 288</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1" children="Controls">
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox9" children="Controls">
@@ -898,13 +958,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">24</Property>
+            <Property name="Radius">25</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">112, 91</Property>
+          <Property name="Size">115, 91</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -1013,13 +1073,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">24</Property>
+            <Property name="Radius">25</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">112, 91</Property>
+          <Property name="Size">115, 91</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
@@ -1128,13 +1188,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">24</Property>
+            <Property name="Radius">25</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">108, 95</Property>
+          <Property name="Size">110, 96</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1243,13 +1303,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">24</Property>
+            <Property name="Radius">25</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">108, 95</Property>
+          <Property name="Size">110, 96</Property>
           <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>
