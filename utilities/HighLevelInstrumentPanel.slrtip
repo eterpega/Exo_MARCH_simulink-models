@@ -673,6 +673,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitRKFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 163</Property>
         <Property name="Name">NumericalUpDownEntry7</Property>
         <Property name="Size">53, 23</Property>
@@ -681,6 +682,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitRHFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 140</Property>
         <Property name="Name">NumericalUpDownEntry6</Property>
         <Property name="Size">53, 23</Property>
@@ -689,6 +691,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitLKFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 117</Property>
         <Property name="Name">NumericalUpDownEntry5</Property>
         <Property name="Size">53, 23</Property>
@@ -697,6 +700,7 @@
         <Property name="BindingSrcPath">JointHandler/enableGaitLHFE/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
+        <Property name="Maximum">1</Property>
         <Property name="Location">217, 94</Property>
         <Property name="Name">NumericalUpDownEntry4</Property>
         <Property name="Size">53, 23</Property>
