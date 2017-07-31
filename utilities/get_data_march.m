@@ -16,18 +16,23 @@ function get_data_march(nameOnMaster,nameOfFileToSave)
 % Attach to the target computer file system.
 clc;
 
+%If you want to test, set testFunction to 1;
+testFunction = 0;
 %% Reading datalog file from target
-f=SimulinkRealTime.fileSystem;
-read = fopen(f,nameOnMaster);
-rawData = fread(f,read);
-f.fclose(read);
 
-%For testing purposes
-% nameOnMaster = 'Data_files/MARCH01.dat';
-% nameOfFileToSave = 'TestLog';
-% read = fopen(nameOnMaster);
-% rawData = fread(read);
-% fclose(read);
+if(~testFunction)
+    f=SimulinkRealTime.fileSystem;
+    read = fopen(f,nameOnMaster);
+    rawData = fread(f,read);
+    f.fclose(read);
+else
+    %For testing purposes
+%     nameOnMaster = 'Data_files/MARCH04.dat';
+%     nameOfFileToSave = 'AirGaitFriday4';
+    read = fopen(nameOnMaster);
+    rawData = fread(read);
+    fclose(read);
+end
 
 %% Prepare saving directory
 dateNowShort = datetime('now');
