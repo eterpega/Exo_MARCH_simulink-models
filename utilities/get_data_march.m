@@ -45,7 +45,8 @@ mkdir(directoryForSave);
 %% Process and save the raw data
 data = SimulinkRealTime.utils.getFileScopeData(rawData);
 numSignal = data.numSignals;
-save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults.mat'),'data');
+%Not necessary
+%save(strcat(directoryForSave,char(timeForSave),'_',nameOfFileToSave,'_','AllResults.mat'),'data');
 
 %% Preparing signal names to be nice
 nameSignal = regexprep(reverse(strtok(reverse(data.signalNames),'/')),' ','');
