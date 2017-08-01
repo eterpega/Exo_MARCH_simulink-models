@@ -1,12 +1,15 @@
-function plot_joint(actualAngleJoint, desiredAngleJoint, masterState, desiredState, time, plotTitle)
+function plot_joint(actualAngleJoint, desiredAngleJoint, masterState, desiredState, stepType, time, plotTitle)
 
-y_labels ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
+yLabelsStates ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
         'SITTINGDOWN(5)', 'CONTINUOUSGAIT(6)', 'STAIRS(7)', 'SLOPE(8)',...
         'STONES(9)', 'SEVERE_ERROR(666)'};
+yLabelsStepTypes ={'FULLSTEP(1)', 'HALFSTEPSTART(2)', 'HALFSTEPSTOP(3)', ...
+'STAIRSTEP(4)','STANDUP(5)','SITDOWN(6)','HOMESTAND(7)','HOMESIT(8)',...
+'NOSTEP(9)'};
 scrsz = get(groot,'ScreenSize');
 
-
-figure('Visible','Off','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
+%% Angles
+figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 plot(time, desiredAngleJoint);
 hold on
 plot(time, actualAngleJoint);
@@ -15,24 +18,40 @@ title(plotTitle)
 xlabel('time [ms]')
 ylabel('angle [rad]')
 grid on
-saveas(gcf,[plotTitle, 'angles'],'jpg')
+saveas(gcf,[plotTitle, 'Angles'],'fig')
+close all
 
-figure('Visible','Off','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
+%% States
+figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 plot(time, masterState);
 hold on
 plot(time, desiredState);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', y_labels);
-axis([0 length(desiredState)/1000 1 9]);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStates);
+axis([0 length(desiredState)/500 1 9]);
 title(plotTitle)
 xlabel('time [ms]')
 ylabel('state')
 legend('masterState','desiredState')
 grid on
-saveas(gcf,[plotTitle, 'states'],'jpg')
+saveas(gcf,[plotTitle, 'States'],'fig')
+close all
 
-figure('Visible','Off','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
+%% Step Types
+figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
+plot(time, stepType);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStepTypes);
+axis([0 length(desiredState)/500 1 9]);
+title(plotTitle)
+xlabel('time [ms]')
+ylabel('step type')
+grid on
+saveas(gcf,[plotTitle, 'StepType'],'fig')
+close all
+
+%%StatesandAngles
+figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 plot(time, desiredState);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', y_labels);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStates);
 ylabel('angle [rad]')
 hold on
 yyaxis right
@@ -41,4 +60,5 @@ ylabel('angle [rad]')
 xlabel('time [ms]')
 title(plotTitle)
 grid on
-saveas(gcf,[plotTitle, 'statesandangles'],'jpg')
+saveas(gcf,[plotTitle, 'StatesAndAngles'],'fig')
+close all
