@@ -11,19 +11,15 @@ simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1
             'SaveOutput','on','OutputSaveName','yout',...
  'SaveFormat', 'Dataset');
 
+
+%% Fetch data from model
 angleLKFE = simOut.get('angleLKFE');
+angleLHFE = simOut.get('angleLHFE');
+angleRHKFE = simOut.get('angleRHFE');
+angleRKFE = simOut.get('angleRKFE');
 desiredState = simOut.get('desiredState');
+masterState = simOut.get('masterState');
+actualAngleLKFE = simOut.get('actualDynamics');
 
-
-figure
-plot(desiredState.data)
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', y_labels);
-ylabel('angle [rad]')
-hold on
-yyaxis right
-plot(angleLKFE.data);
-ylabel('angle [rad]')
-xlabel('time [ms]')
-
-title('State and joitn angle')
-grid on
+%% Plot joint
+plot_joint(actualAngleLKFE.data, angleLKFE.data, masterState.data, desiredState.data, angleLKFE.time, 'LKFE')
