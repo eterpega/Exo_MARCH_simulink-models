@@ -38,6 +38,11 @@ else
     errorMessage = prevErrorMessage;
 end
 
+if(errorMessage == ErrorMessage.DEVICE_DISCONNECTED_ERROR && curTimestamp < 400 * 0.002) % somanets seem to connect after 382 samples consistently
+    errorMessage = ErrorMessage.NO_ERROR;
+    errorReaction = ErrorReaction.NOREACTION;
+end
+
 prevReaction = errorReaction;
 prevErrorMessage = errorMessage;
 end
