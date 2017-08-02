@@ -9,10 +9,10 @@ simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1
 
 
 %% Fetch data from model
-angleLKFE = simOut.get('angleLKFE');
-angleLHFE = simOut.get('angleLHFE');
-angleRHFE = simOut.get('angleRHFE');
-angleRKFE = simOut.get('angleRKFE');
+angleLKFE = simOut.get('desiredAngleLKFE');
+angleLHFE = simOut.get('desiredAngleLHFE');
+angleRHFE = simOut.get('desiredAngleRHFE');
+angleRKFE = simOut.get('desiredAngleRKFE');
 
 actualAngleLHFE = simOut.get('actualAngleLHFE');
 actualAngleLKFE = simOut.get('actualAngleLKFE');

@@ -16,3 +16,4 @@ Target/MARCH_v1_6_Dick.slx
 *.bat
 Experiments/temporaryResults/
 Data_files/
+Tests/StateMachineAndGaitPlayback/figures

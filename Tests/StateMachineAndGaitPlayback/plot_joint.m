@@ -8,6 +8,10 @@ yLabelsStepTypes ={'FULLSTEP(1)', 'HALFSTEPSTART(2)', 'HALFSTEPSTOP(3)', ...
 'NOSTEP(9)'};
 scrsz = get(groot,'ScreenSize');
 
+if ~exist('figures', 'dir')
+  mkdir('figures');
+end
+
 %% Angles
 figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 plot(time, desiredAngleJoint);
@@ -18,7 +22,7 @@ title(plotTitle)
 xlabel('time [ms]')
 ylabel('angle [rad]')
 grid on
-saveas(gcf,[plotTitle, 'Angles'],'fig')
+saveas(gcf,['figures/', plotTitle, 'Angles'],'fig')
 close all
 
 %% States
@@ -33,7 +37,7 @@ xlabel('time [ms]')
 ylabel('state')
 legend('masterState','desiredState')
 grid on
-saveas(gcf,[plotTitle, 'States'],'fig')
+saveas(gcf,['figures/',plotTitle, 'States'],'fig')
 close all
 
 %% Step Types
@@ -45,20 +49,21 @@ title(plotTitle)
 xlabel('time [ms]')
 ylabel('step type')
 grid on
-saveas(gcf,[plotTitle, 'StepType'],'fig')
+saveas(gcf,['figures/', plotTitle, 'StepType'],'fig')
 close all
 
-%%StatesandAngles
+%% StatesandAngles
 figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
-plot(time, desiredState);
+plot(time, masterState);
+axis([0 max(time) 1 9]);
 set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStates);
 ylabel('angle [rad]')
 hold on
 yyaxis right
-plot(time, desiredAngleJoint);
+plot(time, actualAngleJoint);
 ylabel('angle [rad]')
 xlabel('time [ms]')
 title(plotTitle)
 grid on
-saveas(gcf,[plotTitle, 'StatesAndAngles'],'fig')
+saveas(gcf,['figures/', plotTitle, 'StatesAndAngles'],'fig')
 close all
