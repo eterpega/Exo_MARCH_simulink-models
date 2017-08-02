@@ -35,6 +35,6 @@ figure
 plot(angleLHFE.time(1:(end-1)), desiredVelocity*60/(2*pi))
 axis([0 , angleLHFE.time((end-1)),-20, 20 ])
 figure
-plot(angleLHFE.time, actualAngleLHFE.data)
+plot(angleLHFE.time, angleLHFE.data, 'o')
 
 time = angleLHFE.time;
