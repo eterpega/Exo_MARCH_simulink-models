@@ -12,32 +12,32 @@ if(isempty(triggeredTimestamp))
    triggeredTimestamp = 0; 
 end
 if(isempty(prevErrorMessage))
-   prevErrorMessage = ErrorMessage.NO_ERROR;; 
-end
-
-if((triggeredTimestamp - curTimestamp) >= 10)
-    prevReaction = ErrorReaction.NOREACTION;
+   prevErrorMessage = ErrorMessage.NO_ERROR; 
 end
 
 [ triggeredErrorReaction, resetJointErrors ] = getErrorReactionFromErrors( detectedError, deviceErrors );
 
-if(triggeredErrorReaction == ErrorReaction.QUITIMMEDIATELY)
-   errorReaction = triggeredErrorReaction;
-   triggeredTimestamp = curTimestamp;
-elseif(triggeredErrorReaction ~= ErrorReaction.NOREACTION && prevReaction ~= ErrorReaction.QUITIMMEDIATELY)
-   errorReaction = triggeredErrorReaction;
-   triggeredTimestamp = curTimestamp;
+if(triggeredErrorReaction ~= ErrorReaction.NOREACTION)
+    if(prevReaction ~= ErrorReaction.QUITIMMEDIATELY || prevReaction == ErrorReaction.NOREACTION)
+        errorReaction = triggeredErrorReaction;
+        triggeredTimestamp = curTimestamp;
+    else
+        errorReaction = prevReaction;
+    end
 else
     errorReaction = prevReaction;
 end
 
+if((curTimestamp - triggeredTimestamp) >= 10)
+    errorReaction = ErrorReaction.NOREACTION;
+end
+
 if (prevReaction ~= errorReaction)
-    prevReaction = errorReaction;
     errorMessage = getErrorMessageFromErrors(detectedError, deviceErrors);
-    prevErrorMessage = errorMessage;
 else
     errorMessage = prevErrorMessage;
 end
 
+prevReaction = errorReaction;
+prevErrorMessage = errorMessage;
 end
-
