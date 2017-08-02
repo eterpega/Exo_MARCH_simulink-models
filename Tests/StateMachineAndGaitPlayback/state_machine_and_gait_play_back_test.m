@@ -23,11 +23,7 @@ desiredState = simOut.get('desiredState');
 masterState = simOut.get('masterState');
 stepType = simOut.get('stepType');
 
-LHFEInputLookUpTable = simOut.get('LHFEInput').data;
-LHFEInputLookUpTable = LHFEInputLookUpTable(1,:);
-LHFEOutputLookUpTable = simOut.get('LHFEOutput').data;
 
-time = simOut.get('LHFEOutput').time;
 %% Plot joint
 plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
 plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
@@ -35,10 +31,17 @@ plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desire
 plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
 
 %% Analyze weird lookup
+LHFEInputLookUpTable = simOut.get('LHFEInput').data;
+LHFEInputLookUpTable = LHFEInputLookUpTable(1,:);
+LHFEOutputLookUpTable = simOut.get('LHFEOutput').data;
+%LHFEOutputLookUpTable = LHFEOutputLookUpTable;%(1,:);
+
+time = simOut.get('LHFEOutput').time;
+
 figure
 plot(time(1:length(LHFEInputLookUpTable)), LHFEInputLookUpTable, 'o')
 hold on
-plot(time, LHFEOutputLookUpTable, 'o')
+plot(time(1:length(LHFEOutputLookUpTable)), LHFEOutputLookUpTable, 'o')
 title('Look up table issue')
 xlabel('Time [ms]')
 ylabel('Angle [degree]')
