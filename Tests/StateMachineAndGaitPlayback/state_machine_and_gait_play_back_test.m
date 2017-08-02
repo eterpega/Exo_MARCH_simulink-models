@@ -29,8 +29,12 @@ plot_joint(actualAngleLKFE.data, angleLKFE.data, masterState.data, desiredState.
 plot_joint(actualAngleRHFE.data, angleRHFE.data, masterState.data, desiredState.data, stepType.data, angleRHFE.time, 'RHFE')
 plot_joint(actualAngleRKFE.data, angleRKFE.data, masterState.data, desiredState.data, stepType.data, angleRKFE.time, 'RKFE')
 
-%%
-
+%% Analyze results
 desiredVelocity = check_joint(actualAngleLHFE.data, angleLHFE.data, masterState.data, desiredState.data, angleLHFE.time);
 figure
-plot(desiredVelocity*60/(2*pi))
+plot(angleLHFE.time(1:(end-1)), desiredVelocity*60/(2*pi))
+axis([0 , angleLHFE.time((end-1)),-20, 20 ])
+figure
+plot(angleLHFE.time, actualAngleLHFE.data)
+
+time = angleLHFE.time;

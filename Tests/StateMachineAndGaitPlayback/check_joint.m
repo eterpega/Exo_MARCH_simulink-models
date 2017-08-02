@@ -1,5 +1,5 @@
-function desiredVelocity = check_joint(actualAngleJoint, desiredAngleJoint, masterState, desiredState, time)
+function actualVelocityJoint = check_joint(actualAngleJoint, desiredAngleJoint, masterState, desiredState, time)
 velocityMaximum = 17; %[RPM]
 velocityMaximum/60*2*pi;
 
-desiredVelocity = diff(desiredAngleJoint)./diff(time);
+actualVelocityJoint = smooth(diff(actualAngleJoint)./diff(time),1);
