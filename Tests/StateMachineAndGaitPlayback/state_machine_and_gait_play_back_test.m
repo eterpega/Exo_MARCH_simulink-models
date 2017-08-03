@@ -25,20 +25,11 @@ stepType = simOut.get('stepType');
 
 
 %% Plot joint
-% plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
-% plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
-% plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
-% plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
+plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
+plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
+plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
+plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
 
-figure
-plot(time(1:length(LHFEInputLookUpTable)), LHFEInputLookUpTable, 'o')
-hold on
-plot(time(1:length(LHFEOutputLookUpTable)), LHFEOutputLookUpTable, 'o')
-title('Look up table issue')
-xlabel('Time [ms]')
-ylabel('Angle [degree]')
-legend('Input look up table','Output look up table')
-grid on
 %% Analyze results
 desiredVelocity = check_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, desiredAngleLHFE.time);
 figure
