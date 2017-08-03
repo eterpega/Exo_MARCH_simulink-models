@@ -1,10 +1,85 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox19" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay35" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/ScopeHandler/TemperatureScope/Gain3</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">170, 96</Property>
+        <Property name="Name">NumericDisplay35</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay34" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/ScopeHandler/TemperatureScope/Gain2</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">170, 71</Property>
+        <Property name="Name">NumericDisplay34</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay33" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/ScopeHandler/TemperatureScope/Gain1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">170, 46</Property>
+        <Property name="Name">NumericDisplay33</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay32" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/ScopeHandler/TemperatureScope/Gain</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">170, 21</Property>
+        <Property name="Name">NumericDisplay32</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label89" children="Controls">
+        <Property name="Text">Somanet temp RK</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">25, 100</Property>
+        <Property name="Name">Label89</Property>
+        <Property name="Size">139, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label88" children="Controls">
+        <Property name="Text">Somanet temp RH</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">25, 77</Property>
+        <Property name="Name">Label88</Property>
+        <Property name="Size">139, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label87" children="Controls">
+        <Property name="Text">Somanet temp LK</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">25, 50</Property>
+        <Property name="Name">Label87</Property>
+        <Property name="Size">139, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label86" children="Controls">
+        <Property name="Text">Somanet temp LH</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">25, 24</Property>
+        <Property name="Name">Label86</Property>
+        <Property name="Size">139, 23</Property>
+      </Object>
+      <Property name="Text">Temperatures</Property>
+      <Property name="UseCompatibleTextRendering">True</Property>
+      <Property name="Location">12, 678</Property>
+      <Property name="Name">GroupBox19</Property>
+      <Property name="Size">316, 138</Property>
+    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox18" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay27" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s4</Property>
+        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s4</Property>
         <Property name="BindingSrcObject" />
         <Property name="TargetName">JetStar</Property>
         <Property name="Size">100, 25</Property>
@@ -14,7 +89,7 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay26" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s3</Property>
+        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s3</Property>
         <Property name="BindingSrcObject" />
         <Property name="TargetName">JetStar</Property>
         <Property name="Size">100, 25</Property>
@@ -55,7 +130,7 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay24" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
         <Property name="BindingSrcObject" />
         <Property name="TargetName">JetStar</Property>
         <Property name="Size">100, 25</Property>
@@ -624,7 +699,7 @@
       </Object>
       <Property name="Text">ERRORREACTION</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">13, 537</Property>
+      <Property name="Location">12, 478</Property>
       <Property name="Name">GroupBox10</Property>
       <Property name="Size">316, 195</Property>
     </Object>
@@ -980,13 +1055,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">26</Property>
+            <Property name="Radius">30</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">117, 92</Property>
+          <Property name="Size">124, 98</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -1113,13 +1188,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">26</Property>
+            <Property name="Radius">30</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">117, 92</Property>
+          <Property name="Size">124, 98</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
@@ -1246,13 +1321,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">26</Property>
+            <Property name="Radius">30</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">112, 98</Property>
+          <Property name="Size">119, 105</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1379,13 +1454,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">26</Property>
+            <Property name="Radius">30</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">112, 98</Property>
+          <Property name="Size">119, 105</Property>
           <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>

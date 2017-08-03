@@ -2,10 +2,6 @@ clc
 close all
 clear all
 
-y_labels ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
-        'SITTINGDOWN(5)', 'CONTINUOUSGAIT(6)', 'STAIRS(7)', 'SLOPE(8)',...
-        'STONES(9)', 'SEVERE_ERROR(666)'};
-
 simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1e-5',...
             'SaveState','on','StateSaveName','xout',...
             'SaveOutput','on','OutputSaveName','yout',...
@@ -13,13 +9,50 @@ simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1
 
 
 %% Fetch data from model
-angleLKFE = simOut.get('angleLKFE');
-angleLHFE = simOut.get('angleLHFE');
-angleRHKFE = simOut.get('angleRHFE');
-angleRKFE = simOut.get('angleRKFE');
+desiredAngleLKFE = simOut.get('desiredAngleLKFE');
+desiredAngleLHFE = simOut.get('desiredAngleLHFE');
+desiredAngleRHFE = simOut.get('desiredAngleRHFE');
+desiredAngleRKFE = simOut.get('desiredAngleRKFE');
+
+actualAngleLHFE = simOut.get('actualAngleLHFE');
+actualAngleLKFE = simOut.get('actualAngleLKFE');
+actualAngleRHFE = simOut.get('actualAngleRHFE');
+actualAngleRKFE = simOut.get('actualAngleRKFE');
+
 desiredState = simOut.get('desiredState');
 masterState = simOut.get('masterState');
-actualAngleLKFE = simOut.get('actualDynamics');
+stepType = simOut.get('stepType');
+
 
 %% Plot joint
-plot_joint(actualAngleLKFE.data, angleLKFE.data, masterState.data, desiredState.data, angleLKFE.time, 'LKFE')
+plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
+plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
+plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
+plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
+
+%% Analyze weird lookup
+LHFEInputLookUpTable = simOut.get('LHFEInput').data;
+LHFEInputLookUpTable = LHFEInputLookUpTable(1,:);
+LHFEOutputLookUpTable = simOut.get('LHFEOutput').data;
+%LHFEOutputLookUpTable = LHFEOutputLookUpTable;%(1,:); 
+
+time = simOut.get('LHFEOutput').time;
+
+figure
+plot(time(1:length(LHFEInputLookUpTable)), LHFEInputLookUpTable, 'o')
+hold on
+plot(time(1:length(LHFEOutputLookUpTable)), LHFEOutputLookUpTable, 'o')
+title('Look up table issue')
+xlabel('Time [ms]')
+ylabel('Angle [degree]')
+legend('Input look up table','Output look up table')
+grid on
+%% Analyze results
+desiredVelocity = check_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, desiredAngleLHFE.time);
+figure
+plot(desiredAngleLHFE.time(1:(end-1)), desiredVelocity*60/(2*pi))
+axis([0 , desiredAngleLHFE.time((end-1)),-20, 20 ])
+figure
+plot(actualAngleLHFE.time, actualAngleLHFE.data, 'o')
+
+time = desiredAngleLHFE.time;

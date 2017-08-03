@@ -15,7 +15,12 @@ switch(stepLeg)
         rightKnee = swingKnee;
         leftHip = standHip;
         leftKnee = standKnee;
-    otherwise % Leg.NONE
+    case Leg.BOTH
+        rightHip = standHip;
+        rightKnee = standKnee;
+        leftHip = standHip;
+        leftKnee = standKnee;        
+    otherwise % Leg.BOTH
         % shouldn't happen, output all zeros
         leftHip = 0;
         leftKnee = 0;
