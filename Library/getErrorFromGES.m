@@ -43,6 +43,8 @@ switch(tempSensor1State)
                                 gesError = GESError.GES_NO_ERROR;
                         end
                 end
+            otherwise
+                gesError = GESError.GES_UNKNOWN_ERROR;
         end
 end
 
