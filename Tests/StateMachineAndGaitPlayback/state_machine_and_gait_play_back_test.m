@@ -9,33 +9,47 @@ simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1
 
 
 %% Fetch data from model
-desiredAngleLKFE = simOut.get('desiredAngleLKFE');
-desiredAngleLHFE = simOut.get('desiredAngleLHFE');
-desiredAngleRHFE = simOut.get('desiredAngleRHFE');
-desiredAngleRKFE = simOut.get('desiredAngleRKFE');
+desiredAngleLKFE = simOut.get('desiredAngleLKFE').data; %[rad]
+desiredAngleLHFE = simOut.get('desiredAngleLHFE').data; %[rad]
+desiredAngleRHFE = simOut.get('desiredAngleRHFE').data; %[rad]
+desiredAngleRKFE = simOut.get('desiredAngleRKFE').data; %[rad]
 
-actualAngleLHFE = simOut.get('actualAngleLHFE');
-actualAngleLKFE = simOut.get('actualAngleLKFE');
-actualAngleRHFE = simOut.get('actualAngleRHFE');
-actualAngleRKFE = simOut.get('actualAngleRKFE');
+actualAngleLHFE = simOut.get('actualAngleLHFE').data; %[rad]
+actualAngleLKFE = simOut.get('actualAngleLKFE').data; %[rad]
+actualAngleRHFE = simOut.get('actualAngleRHFE').data; %[rad]
+actualAngleRKFE = simOut.get('actualAngleRKFE').data; %[rad]
 
-desiredState = simOut.get('desiredState');
-masterState = simOut.get('masterState');
-stepType = simOut.get('stepType');
+desiredState = simOut.get('desiredState').data;
+masterState = simOut.get('masterState').data;
+stepType = simOut.get('stepType').data;
 
+time = simOut.get('desiredAngleLKFE').time; %[s]
+
+%% Fix actual angle
+%Sometimes the actual joint angle is accidently set too zero, I am too lazy
+%to fix it in the SL model, so I 'fix' it by setting these values to nan.
+actualAngleLHFE(actualAngleLHFE == 0) = nan;
+actualAngleLKFE(actualAngleLKFE == 0) = nan;
+actualAngleRHFE(actualAngleRHFE == 0) = nan;
+actualAngleRKFE(actualAngleRKFE == 0) = nan;
 
 %% Plot joint
-plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
-plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
-plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
-plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
+plot_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, stepType, time, 'LHFE')
+plot_joint(actualAngleLKFE, desiredAngleLKFE, masterState, desiredState, stepType, time, 'LKFE')
+plot_joint(actualAngleRHFE, desiredAngleRHFE, masterState, desiredState, stepType, time, 'RHFE')
+plot_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, stepType, time, 'RKFE')
 
 %% Analyze results
-desiredVelocity = check_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, desiredAngleLHFE.time);
-figure
-plot(desiredAngleLHFE.time(1:(end-1)), desiredVelocity*60/(2*pi))
-axis([0 , desiredAngleLHFE.time((end-1)),-20, 20 ])
-figure
-plot(actualAngleLHFE.time, actualAngleLHFE.data, 'o')
+[actualVelocity, actualAcceleration]= check_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, time, 'LHFE');
 
-time = desiredAngleLHFE.time;
+figure
+plot(time, desiredVelocity*60/(2*pi))
+title('Velocity')
+xlabel('time [s]')
+ylabel('velocity [RPM]')
+
+figure
+plot(time, actualAcceleration, 'o')
+title('Acceleration')
+xlabel('time [s]')
+ylabel('acceleration [rad/s^2]')
