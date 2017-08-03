@@ -1,11 +1,13 @@
-function plot_data_march(struct,dataToPlotCell)
+function plot_data_march(struct,dataToPlotCell,smoothSamples)
 %HOW TO USE
 %First save the raw data from the MARCH as structs with get_data_march,
 %which saves joint structures with the data. Use that structure in this
 %function. Then use this function to plot the parameters you want.
 %Example:
-%plot_data_march(dataMARCH.LHFE,'Angle') for plotting all the LHFE angles
-%plot_data_march(dataMARCH.LHFE,'Torque') for plotting all the LHFE torques
+%plot_data_march(dataMARCH.LHFE,'Angle',1) for plotting all the LHFE angles
+%without smoothening
+%plot_data_march(dataMARCH.LHFE,'Torque',40) for plotting all the LHFE
+%torques with smoothening
 %NOTE: the input for dataToPlotCell is sensitive to capital or non capital
 %letters. Use the format as in dataLogHandler in HighLevelMARCH
 
@@ -70,7 +72,7 @@ legendCell = cell(numOfPlots,1);
 figure
 title('Plot:')
 for r = 1:numOfPlots
-    plot(time,struct.(char(fieldNames(fieldsToPlot(r)))).data(:,indicesToPlot(r)));
+    plot(time,smooth(struct.(char(fieldNames(fieldsToPlot(r)))).data(:,indicesToPlot(r)),smoothSamples));
     hold on
     legendCell(r) = (struct.(char(fieldNames(fieldsToPlot(r)))).signalNames(indicesToPlot(r)));
 end
