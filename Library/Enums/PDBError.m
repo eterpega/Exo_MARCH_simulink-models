@@ -9,10 +9,7 @@ classdef PDBError < Simulink.IntEnumType
         PDB_LOW_VOLTAGE_ERROR(4005)
         PDB_HIGH_TEMPERATURE_WARNING(4006)
         PDB_HIGH_TEMPERATURE_ERROR(4007)
-        UNKNOWN_ERROR(666)
-       
-       
-       
+        UNKNOWN_ERROR_PDB(666)
     end
     
 end
