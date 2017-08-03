@@ -34,7 +34,7 @@ plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desire
 LHFEInputLookUpTable = simOut.get('LHFEInput').data;
 LHFEInputLookUpTable = LHFEInputLookUpTable(1,:);
 LHFEOutputLookUpTable = simOut.get('LHFEOutput').data;
-%LHFEOutputLookUpTable = LHFEOutputLookUpTable;%(1,:);
+%LHFEOutputLookUpTable = LHFEOutputLookUpTable;%(1,:); 
 
 time = simOut.get('LHFEOutput').time;
 
