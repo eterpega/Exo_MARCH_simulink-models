@@ -25,18 +25,10 @@ stepType = simOut.get('stepType');
 
 
 %% Plot joint
-plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
-plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
-plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
-plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
-
-%% Analyze weird lookup
-LHFEInputLookUpTable = simOut.get('LHFEInput').data;
-LHFEInputLookUpTable = LHFEInputLookUpTable(1,:);
-LHFEOutputLookUpTable = simOut.get('LHFEOutput').data;
-%LHFEOutputLookUpTable = LHFEOutputLookUpTable;%(1,:);
-
-time = simOut.get('LHFEOutput').time;
+% plot_joint(actualAngleLHFE.data, desiredAngleLHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLHFE.time, 'LHFE')
+% plot_joint(actualAngleLKFE.data, desiredAngleLKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleLKFE.time, 'LKFE')
+% plot_joint(actualAngleRHFE.data, desiredAngleRHFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRHFE.time, 'RHFE')
+% plot_joint(actualAngleRKFE.data, desiredAngleRKFE.data, masterState.data, desiredState.data, stepType.data, desiredAngleRKFE.time, 'RKFE')
 
 figure
 plot(time(1:length(LHFEInputLookUpTable)), LHFEInputLookUpTable, 'o')
