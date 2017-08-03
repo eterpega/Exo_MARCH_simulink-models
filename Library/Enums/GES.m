@@ -1,7 +1,7 @@
 classdef GES < Simulink.IntEnumType    
     enumeration
-        RKFE(1)
-        LKFE(2)
-        BACK(3)
+        RIGHT_GES(1)
+        LEFT_GES(2)
+        BACK_GES(3)
     end
 end
