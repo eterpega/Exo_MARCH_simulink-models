@@ -2,7 +2,7 @@ function [actualVelocityJoint, actualAccelerationJoint] = check_joint(actualAngl
 
 %% Set constants
 % velocity maximum
-velocityMaximum = 8; %[RPM]
+velocityMaximum = 17; %[RPM]
 velocityMaximum = velocityMaximum/60*2*pi; %[rad/s]
 
 % acceleration maximum
