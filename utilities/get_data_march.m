@@ -53,14 +53,13 @@ nameSignal = regexprep(reverse(strtok(reverse(data.signalNames),'/')),' ','');
 time = data.data(:,numSignal);
 
 %% Create structs
-structNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE' 'GES' 'InputDevice' 'PDB' 'BMS' 'master'};
+structNames = {'LHFE' 'LKFE' 'RHFE' 'RKFE' 'GES' 'InputDevice' 'PDB' 'master'};
 jointStructFields = {'receivedFromSOMANET' 'sendToSOMANET' 'jointConfig' 'miscDataSOMANET' 'temperature' 'error' };
 inputDeviceStructFields = {'receivedFromInputDevice' 'sendToInputDevice' 'error'};
 gesStructFields = {'receivedFromGES' 'sendToGES' 'error'};
 pdbStructFields = {'receivedFromPDB' 'sendToPDB' 'error'};
-bmsStructFields = {'receivedFromBMS' 'sendToBMS' 'error'};
 masterInfoFields = {'masterInfo'};
-structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; gesStructFields; inputDeviceStructFields; pdbStructFields; bmsStructFields; masterInfoFields};
+structFields = {jointStructFields; jointStructFields; jointStructFields; jointStructFields; gesStructFields; inputDeviceStructFields; pdbStructFields; masterInfoFields};
  % make struct for each joint
 for j = 1:length(structNames)
     
