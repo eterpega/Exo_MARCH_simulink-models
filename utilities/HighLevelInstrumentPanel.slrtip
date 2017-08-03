@@ -65,13 +65,13 @@
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label86" children="Controls">
         <Property name="Text">Somanet temp LH</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">25, 24</Property>
+        <Property name="Location">25, 27</Property>
         <Property name="Name">Label86</Property>
         <Property name="Size">139, 23</Property>
       </Object>
       <Property name="Text">Temperatures</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">12, 678</Property>
+      <Property name="Location">12, 695</Property>
       <Property name="Name">GroupBox19</Property>
       <Property name="Size">316, 138</Property>
     </Object>
@@ -716,7 +716,7 @@
       </Object>
       <Property name="Text">ERRORREACTION</Property>
       <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">12, 478</Property>
+      <Property name="Location">12, 503</Property>
       <Property name="Name">GroupBox10</Property>
       <Property name="Size">316, 195</Property>
     </Object>
@@ -865,6 +865,16 @@
         <Property name="Size">184, 23</Property>
       </Object>
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox3" children="Controls">
+        <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay37" children="Controls">
+          <Property name="BindingSrcType">Signal</Property>
+          <Property name="OutputValue">0</Property>
+          <Property name="BindingSrcPath">InputDeviceHandler/MATLAB Function</Property>
+          <Property name="BindingSrcObject" />
+          <Property name="TargetName">JetStar</Property>
+          <Property name="Size">100, 25</Property>
+          <Property name="Location">150, 34</Property>
+          <Property name="Name">NumericDisplay37</Property>
+        </Object>
         <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label16" children="Controls">
           <Property name="Text">CONTINUOUSGAIT: 6</Property>
           <Property name="UseCompatibleTextRendering">True</Property>
@@ -903,7 +913,7 @@
       <Property name="UseCompatibleTextRendering">True</Property>
       <Property name="Location">12, 185</Property>
       <Property name="Name">GroupBox2</Property>
-      <Property name="Size">317, 288</Property>
+      <Property name="Size">317, 312</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox1" children="Controls">
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox9" children="Controls">
@@ -1079,13 +1089,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">31</Property>
+            <Property name="Radius">32</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">126, 100</Property>
+          <Property name="Size">128, 101</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -1212,13 +1222,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">31</Property>
+            <Property name="Radius">32</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">126, 100</Property>
+          <Property name="Size">128, 101</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
@@ -1345,13 +1355,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">31</Property>
+            <Property name="Radius">33</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">121, 107</Property>
+          <Property name="Size">124, 110</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1478,13 +1488,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">31</Property>
+            <Property name="Radius">33</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">121, 107</Property>
+          <Property name="Size">124, 110</Property>
           <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>
