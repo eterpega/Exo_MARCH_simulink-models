@@ -10,9 +10,6 @@ classdef PDBError < Simulink.IntEnumType
         PDB_HIGH_TEMPERATURE_WARNING(4006)
         PDB_HIGH_TEMPERATURE_ERROR(4007)
         UNKNOWN_ERROR(666)
-       
-       
-       
     end
     
 end
