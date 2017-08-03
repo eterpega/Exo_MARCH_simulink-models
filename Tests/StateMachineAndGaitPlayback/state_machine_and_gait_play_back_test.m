@@ -33,23 +33,26 @@ actualAngleLKFE(actualAngleLKFE == 0) = nan;
 actualAngleRHFE(actualAngleRHFE == 0) = nan;
 actualAngleRKFE(actualAngleRKFE == 0) = nan;
 
-%% Plot joint
-plot_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, stepType, time, 'LHFE')
-plot_joint(actualAngleLKFE, desiredAngleLKFE, masterState, desiredState, stepType, time, 'LKFE')
-plot_joint(actualAngleRHFE, desiredAngleRHFE, masterState, desiredState, stepType, time, 'RHFE')
-plot_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, stepType, time, 'RKFE')
-
 %% Analyze results
-[actualVelocity, actualAcceleration]= check_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, time, 'LHFE');
+[actualVelocityLHFE, actualAccelerationLHFE]= check_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, time, 'LHFE');
+[actualVelocityLKFE, actualAccelerationLKFE]= check_joint(actualAngleLKFE, desiredAngleLKFE, masterState, desiredState, time, 'LHFE');
+[actualVelocityRHFE, actualAccelerationRHFE]= check_joint(actualAngleRHFE, desiredAngleRHFE, masterState, desiredState, time, 'LHFE');
+[actualVelocityRKFE, actualAccelerationRKFE]= check_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, time, 'LHFE');
 
-figure
-plot(time, desiredVelocity*60/(2*pi))
-title('Velocity')
-xlabel('time [s]')
-ylabel('velocity [RPM]')
+%% Plot joint angle
+plot_joint(actualAngleLHFE, masterState, desiredState, stepType, time, 'LHFE Angle')
+plot_joint(actualAngleLKFE, masterState, desiredState, stepType, time, 'LKFE Angle')
+plot_joint(actualAngleRHFE, masterState, desiredState, stepType, time, 'RHFE Angle')
+plot_joint(actualAngleRKFE, masterState, desiredState, stepType, time, 'RKFE Angle')
 
-figure
-plot(time, actualAcceleration, 'o')
-title('Acceleration')
-xlabel('time [s]')
-ylabel('acceleration [rad/s^2]')
+%% Plot joint angle
+plot_joint(actualVelocityLHFE*60/(2*pi), masterState, desiredState, stepType, time, 'LHFE Velocity')
+plot_joint(actualVelocityLKFE*60/(2*pi), masterState, desiredState, stepType, time, 'LKFE Velocity')
+plot_joint(actualVelocityRHFE*60/(2*pi), masterState, desiredState, stepType, time, 'RHFE Velocity')
+plot_joint(actualVelocityRKFE*60/(2*pi), masterState, desiredState, stepType, time, 'RKFE Velocity')
+
+%% Plot Joint Acceleration
+plot_joint(actualAccelerationLHFE, masterState, desiredState, stepType, time, 'LHFE Acceleration')
+plot_joint(actualAccelerationLKFE, masterState, desiredState, stepType, time, 'LKFE Acceleration')
+plot_joint(actualAccelerationRHFE, masterState, desiredState, stepType, time, 'RHFE Acceleration')
+plot_joint(actualAccelerationRKFE, masterState, desiredState, stepType, time, 'RKFE Acceleration')
