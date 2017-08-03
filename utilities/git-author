@@ -16,7 +16,7 @@ else
 	elif [ $1 == 'taeke' ]
 	 then
 	name=taeke
-	mail=
+	mail=t.deHaan-1@student.tudelft.nl
 	elif [ $1 == 'luca' ]
 	 then
 	name=luca

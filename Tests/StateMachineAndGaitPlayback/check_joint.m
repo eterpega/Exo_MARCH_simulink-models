@@ -27,9 +27,9 @@ actualAccelerationJoint(isnan(actualAngleJoint)) = 0;
 
 %% Return warnings
 if any(abs(actualVelocityJoint) > velocityMaximum)
-    warning([jointName, 'velocity too high:', num2str(max(abs(actualVelocityJoint*60/2/pi))), 'RPM'])
+    warning([jointName, 'velocity too high:', num2str(max(abs(actualVelocityJoint*60/2/pi))), ' [RPM]'])
 end
 
 if any(abs(actualAccelerationJoint) > accelerationMaximum)
-    warning([jointName, 'Acceleration too high:', num2str(max(abs(actualAccelerationJoint))), 'rad/s^2'])
+    warning([jointName, 'Acceleration too high:', num2str(max(abs(actualAccelerationJoint))), ' [rad/s^2]'])
 end
