@@ -721,6 +721,13 @@
       <Property name="Size">316, 195</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox4" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label90" children="Controls">
+        <Property name="Text">Manual smooth = 4</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">19, 110</Property>
+        <Property name="Name">Label90</Property>
+        <Property name="Size">213, 23</Property>
+      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label21" children="Controls">
         <Property name="Text">Manual = 3</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
@@ -746,7 +753,7 @@
         <Property name="BindingSrcPath">JointHandler/setPointSelection/Value</Property>
         <Property name="TargetName">JetStar</Property>
         <Property name="BindingSrcType">Parameter</Property>
-        <Property name="Maximum">3</Property>
+        <Property name="Maximum">4</Property>
         <Property name="Minimum">1</Property>
         <Property name="Value">1</Property>
         <Property name="Location">207, 57</Property>
@@ -758,7 +765,7 @@
       <Property name="Font">Segoe UI, 14pt</Property>
       <Property name="Location">22, 32</Property>
       <Property name="Name">GroupBox4</Property>
-      <Property name="Size">290, 130</Property>
+      <Property name="Size">290, 147</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox2" children="Controls">
       <Object type="MW.Instruments.NumericalUpDownEntry, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericalUpDownEntry7" children="Controls">
