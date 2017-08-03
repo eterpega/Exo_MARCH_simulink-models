@@ -21,10 +21,21 @@ switch(stepLeg)
         leftHip = standHip;
         leftKnee = standKnee;        
     otherwise % Leg.BOTH
-        % shouldn't happen, output all zeros
-        leftHip = 0;
-        leftKnee = 0;
-        rightHip = 0;
-        rightKnee = 0;
+        %shouldn't happen, output all zeros 
+        leftHip.angle = 0;
+        leftHip.velocity = 0;
+        leftHip.torque = 0;
+        
+        leftKnee.angle = 0;
+        leftKnee.velocity = 0;
+        leftKnee.torque = 0;
+        
+        rightHip.angle = 0;
+        rightHip.velocity = 0;
+        rightHip.torque = 0;
+        
+        rightKnee.angle = 0;
+        rightKnee.velocity = 0;
+        rightKnee.torque = 0;
 end
 end

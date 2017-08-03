@@ -43,7 +43,7 @@ plot_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, stepTyp
 [actualVelocity, actualAcceleration]= check_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, time, 'LHFE');
 
 figure
-plot(time, desiredVelocity*60/(2*pi))
+plot(time, actualVelocity*60/(2*pi))
 title('Velocity')
 xlabel('time [s]')
 ylabel('velocity [RPM]')
