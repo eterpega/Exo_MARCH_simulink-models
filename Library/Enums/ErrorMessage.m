@@ -1,7 +1,7 @@
 classdef ErrorMessage < Simulink.IntEnumType
     enumeration
         NO_ERROR(72)
-        DEVICE_DISCONNECTED_ERROR(0)
+        DEVICE_DISCONNECTED_ERROR(1004)
         HEAT_WARNING(1) %I2t + temp
         HEAT_ERROR(2)
         HARDSTOP_ERROR(3) %master + SOMANET
