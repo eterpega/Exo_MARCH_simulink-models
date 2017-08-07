@@ -10,6 +10,7 @@ classdef ExoskeletonState < Simulink.IntEnumType
         STAIRS(7)
         SLOPE(8)
         STONES(9)
+        SHUTTING_DOWN(9001)
         SEVERE_ERROR(666)
     end 
 end

@@ -1,7 +1,7 @@
-function [ desiredState ] = getDesiredState( errorReaction, secondaryButton, inputDeviceState )
+function [ desiredState ] = getDesiredState( errorReaction, shutdownDesired, secondaryButton, inputDeviceState )
 %GETDESIREDSTATE Determines the desired ExoskeletonState from the desired
-%errorReaction, if the secondaryButton on the GES is pressed and from the
-%inputDeviceState
+%errorReaction, from the secondaryButton on the GES, from the
+%inputDeviceState and from the power button on the PDB
 persistent lastDesiredState; % inputState from when this function was last ran
 persistent previousDesiredState; % inputState before last change
 if(isempty(lastDesiredState))
@@ -45,12 +45,17 @@ elseif(errorReaction == ErrorReaction.MOVETOPREVIOUSSTATE)
         desiredState = previousDesiredState;
     end
 else
-    % no error reaction, state is determined by inputDevice and button only
-    if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRS || previousDesiredState == ExoskeletonState.SLOPE))
-        % then retrigger that state
-        desiredState = previousDesiredState;
+    % no error reaction, state is determined by inputDevice, GES button and
+    % PDB button
+    if(shutdownDesired)
+        desiredState = ExoskeletonState.SHUTTING_DOWN;
     else
-        desiredState = inputDeviceState;
+        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRS || previousDesiredState == ExoskeletonState.SLOPE))
+            % then retrigger that state
+            desiredState = previousDesiredState;
+        else
+            desiredState = inputDeviceState;
+        end
     end
 end
 if(lastDesiredState ~= desiredState) % at transition
