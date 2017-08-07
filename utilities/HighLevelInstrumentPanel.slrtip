@@ -75,134 +75,6 @@
       <Property name="Name">GroupBox19</Property>
       <Property name="Size">316, 138</Property>
     </Object>
-    <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox18" children="Controls">
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay36" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">GaitHandler/Switch1</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 189</Property>
-        <Property name="Name">NumericDisplay36</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="gaitDone" children="Controls">
-        <Property name="Text">gaitDone</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">6, 189</Property>
-        <Property name="Name">gaitDone</Property>
-        <Property name="Size">100, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay27" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s4</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 162</Property>
-        <Property name="Name">NumericDisplay27</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay26" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s3</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 139</Property>
-        <Property name="Name">NumericDisplay26</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label77" children="Controls">
-        <Property name="Text">Max position [Raw]</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">6, 162</Property>
-        <Property name="Name">Label77</Property>
-        <Property name="Size">167, 23</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label76" children="Controls">
-        <Property name="Text">Min position [Raw]</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">7, 139</Property>
-        <Property name="Name">Label76</Property>
-        <Property name="Size">167, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay25" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLH</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 95</Property>
-        <Property name="Name">NumericDisplay25</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label75" children="Controls">
-        <Property name="Text">Aksim angle on master [Deg]</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">6, 95</Property>
-        <Property name="Name">Label75</Property>
-        <Property name="Size">196, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay24" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 71</Property>
-        <Property name="Name">NumericDisplay24</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label74" children="Controls">
-        <Property name="Text">Commutation offset</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">6, 72</Property>
-        <Property name="Name">Label74</Property>
-        <Property name="RightToLeft">No</Property>
-        <Property name="Size">178, 23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay23" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">ReceivedOneJoint/receivedSOMANETLHFEOneJoint/EtherCAT PDO secondar</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 47</Property>
-        <Property name="Name">NumericDisplay23</Property>
-      </Object>
-      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay22" children="Controls">
-        <Property name="BindingSrcType">Signal</Property>
-        <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">ReceivedOneJoint/receivedSOMANETLHFEOneJoint/EtherCAT PDO Receive1</Property>
-        <Property name="BindingSrcObject" />
-        <Property name="TargetName">JetStar</Property>
-        <Property name="Size">100, 25</Property>
-        <Property name="Location">220, 23</Property>
-        <Property name="Name">NumericDisplay22</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label73" children="Controls">
-        <Property name="Text">RM08 value [Raw]</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">6, 48</Property>
-        <Property name="Name">Label73</Property>
-        <Property name="Size">139, 23</Property>
-      </Object>
-      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label72" children="Controls">
-        <Property name="Text">Aksim value [Raw]</Property>
-        <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">7, 23</Property>
-        <Property name="Name">Label72</Property>
-        <Property name="Size">152, 23</Property>
-      </Object>
-      <Property name="Text">JointTuning (LHFE)</Property>
-      <Property name="UseCompatibleTextRendering">True</Property>
-      <Property name="Location">909, 631</Property>
-      <Property name="Name">GroupBox18</Property>
-      <Property name="RightToLeft">No</Property>
-      <Property name="Size">402, 222</Property>
-    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox12" children="Controls">
       <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox17" children="Controls">
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay19" children="Controls">
@@ -626,7 +498,7 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay9" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">SOMANETHandler1/SOMANET_LHFE/TuningHandler/ConfigSyncCommandGenerator/Data Type Conversion2</Property>
+        <Property name="BindingSrcPath">HardwareCommunication/SOMANETHandler/SOMANET_LHFE/TuningHandler/ConfigSyncCommandGenerator/Data Type Conversion2</Property>
         <Property name="BindingSrcObject" />
         <Property name="TargetName">JetStar</Property>
         <Property name="Size">100, 25</Property>
@@ -868,7 +740,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay37" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">InputDeviceHandler/MATLAB Function</Property>
+          <Property name="BindingSrcPath">HardwareCommunication/InputDeviceHandler/MATLAB Function</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -976,7 +848,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay31" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">SOMANETHandler/SOMANET_RKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunication/SOMANETHandler/SOMANET_RKFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1089,13 +961,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">32</Property>
+            <Property name="Radius">33</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">128, 101</Property>
+          <Property name="Size">130, 103</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -1109,7 +981,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay30" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunication/SOMANETHandler/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1222,13 +1094,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">32</Property>
+            <Property name="Radius">33</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">128, 101</Property>
+          <Property name="Size">130, 103</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>
@@ -1242,7 +1114,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay29" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">SOMANETHandler/SOMANET_RHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunication/SOMANETHandler/SOMANET_RHFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1355,13 +1227,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">33</Property>
+            <Property name="Radius">34</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">124, 110</Property>
+          <Property name="Size">126, 112</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob2</Property>
         </Object>
@@ -1375,7 +1247,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay28" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunication/SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1488,13 +1360,13 @@
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
           <Property name="Body">
-            <Property name="Radius">33</Property>
+            <Property name="Radius">34</Property>
           </Property>
           <Property name="ScaleRange">
             <Property name="Min">-20</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">124, 110</Property>
+          <Property name="Size">126, 112</Property>
           <Property name="Location">7, 24</Property>
           <Property name="Name">Knob1</Property>
         </Object>
