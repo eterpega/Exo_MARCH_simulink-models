@@ -26,10 +26,13 @@ actualAccelerationJoint = gradient(actualVelocityJoint,time); %[rad/s^2]
 actualAccelerationJoint(isnan(actualAngleJoint)) = 0; 
 
 %% Return warnings
-if any(abs(actualVelocityJoint) > velocityMaximum)
-    warning([jointName, 'velocity too high:', num2str(max(abs(actualVelocityJoint*60/2/pi))), ' [RPM]'])
+absoluteVelocityJoint = abs(actualVelocityJoint);
+absoluteAccelerationJoint = abs(actualAccelerationJoint);
+
+if any(absoluteVelocityJoint > velocityMaximum)
+    warning([jointName, 'velocity too high:', num2str(max(absoluteVelocityJoint*60/2/pi)), ' [RPM] during state ', num2str(unique(masterState(max(absoluteVelocityJoint) == absoluteVelocityJoint)))])
 end
 
-if any(abs(actualAccelerationJoint) > accelerationMaximum)
-    warning([jointName, 'Acceleration too high:', num2str(max(abs(actualAccelerationJoint))), ' [rad/s^2]'])
+if any(absoluteAccelerationJoint > accelerationMaximum)
+    warning([jointName, 'Acceleration too high:', num2str(max(absoluteAccelerationJoint)), ' [rad/s^2] during state ', num2str(unique(masterState(max(absoluteAccelerationJoint) == absoluteAccelerationJoint)))])
 end

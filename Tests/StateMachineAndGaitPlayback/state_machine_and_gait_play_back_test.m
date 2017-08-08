@@ -35,9 +35,9 @@ actualAngleRKFE(actualAngleRKFE == 0) = nan;
 
 %% Analyze results
 [actualVelocityLHFE, actualAccelerationLHFE]= check_joint(actualAngleLHFE, desiredAngleLHFE, masterState, desiredState, time, 'LHFE');
-[actualVelocityLKFE, actualAccelerationLKFE]= check_joint(actualAngleLKFE, desiredAngleLKFE, masterState, desiredState, time, 'LHFE');
-[actualVelocityRHFE, actualAccelerationRHFE]= check_joint(actualAngleRHFE, desiredAngleRHFE, masterState, desiredState, time, 'LHFE');
-[actualVelocityRKFE, actualAccelerationRKFE]= check_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, time, 'LHFE');
+[actualVelocityLKFE, actualAccelerationLKFE]= check_joint(actualAngleLKFE, desiredAngleLKFE, masterState, desiredState, time, 'LKFE');
+[actualVelocityRHFE, actualAccelerationRHFE]= check_joint(actualAngleRHFE, desiredAngleRHFE, masterState, desiredState, time, 'RHFE');
+[actualVelocityRKFE, actualAccelerationRKFE]= check_joint(actualAngleRKFE, desiredAngleRKFE, masterState, desiredState, time, 'RKFE');
 
 %% Plot joint angle
 plot_joint(actualAngleLHFE, masterState, desiredState, stepType, time, 'LHFE Angle')
