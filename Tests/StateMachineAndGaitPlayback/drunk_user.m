@@ -10,7 +10,7 @@ if isempty(implementedStateSitting)
 end
 
 if isempty(implementedStateStanding)
-    implementedStateStanding = [ExoskeletonState.HOLDSIT, ExoskeletonState.HOLDSTAND, ExoskeletonState.CONTINUOUSGAIT]; %HOLDSTAND(4), SITTINGDOWN(5), CONTINUOUSGAIT(6)
+    implementedStateStanding = [ExoskeletonState.HOLDSIT, ExoskeletonState.HOLDSTAND, ExoskeletonState.CONTINUOUSGAIT, ExoskeletonState.STAIRSUP, ExoskeletonState.STAIRSUP]; %HOLDSTAND(4), SITTINGDOWN(5), CONTINUOUSGAIT(6)
 %     rng('shuffle'); % makes rand a new sequence of numbers
 end
 
