@@ -2,10 +2,10 @@ function plot_joint(actualAngleJoint, masterState, desiredState, stepType, time,
 
 yLabelsStates ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
         'SITTINGDOWN(5)', 'CONTINUOUSGAIT(6)', 'STAIRS(7)', 'SLOPE(8)',...
-        'STONES(9)', 'SEVERE_ERROR(666)'};
+        'STONES(9)', 'STAIRSDOWN(10)','SEVERE_ERROR(666)'};
 yLabelsStepTypes ={'FULLSTEP(1)', 'HALFSTEPSTART(2)', 'HALFSTEPSTOP(3)', ...
-'STAIRSTEP(4)','STANDUP(5)','SITDOWN(6)','HOMESTAND(7)','HOMESIT(8)',...
-'NOSTEP(9)'};
+'STAIRSUP(4)','STANDUP(5)','SITDOWN(6)','HOMESTAND(7)','HOMESIT(8)',...
+'NOSTEP(9)', 'STAIRSDOWN(10)'};
 scrsz = get(groot,'ScreenSize');
 
 if ~exist('figures', 'dir')
@@ -28,8 +28,8 @@ subplot(2,1,2)
 plot(time, masterState);
 hold on
 plot(time, desiredState);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStates);
-axis([0 length(desiredState)/500 1 9]);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9,10],'YTickLabel', yLabelsStates);
+axis([0 length(desiredState)/500 1 10]);
 xlabel('time [ms]')
 ylabel('state')
 legend('masterState','desiredState')
@@ -51,8 +51,8 @@ grid on
 %% Step Types
 subplot(2,1,2)
 plot(time, stepType);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9],'YTickLabel', yLabelsStepTypes);
-axis([0 length(desiredState)/500 1 9]);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9, 10],'YTickLabel', yLabelsStepTypes);
+axis([0 length(desiredState)/500 1 10]);
 xlabel('time [ms]')
 ylabel('step type')
 grid on
