@@ -31,7 +31,9 @@ else
             jointCommands = gaitCommands;
         case ExoskeletonState.CONTINUOUSGAIT
             jointCommands = gaitCommands;
-        case ExoskeletonState.STAIRS
+        case ExoskeletonState.STAIRSUP
+            jointCommands = gaitCommands;
+        case ExoskeletonState.STAIRSDOWN
             jointCommands = gaitCommands;
         case ExoskeletonState.SLOPE
             jointCommands = gaitCommands;

@@ -50,7 +50,7 @@ else
     if(shutdownDesired)
         desiredState = ExoskeletonState.SHUTTING_DOWN;
     else
-        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRS || previousDesiredState == ExoskeletonState.SLOPE))
+        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPE))
             % then retrigger that state
             desiredState = previousDesiredState;
         else
