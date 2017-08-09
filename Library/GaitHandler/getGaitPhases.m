@@ -1,4 +1,4 @@
-function [ phaseIndex, phaseDone ] = getGaitPhases(stepType, stepLeg, curTime, gaitFrequency, lengthsLookup)
+ function [ phaseIndex, phaseDone ] = getGaitPhases(stepType, stepLeg, curTime, gaitFrequency, lengthsLookup)
 %GETGAITPHASES determines gaitPhase by detecting change 
 persistent prevStepType;
 persistent prevStepLeg;
@@ -15,7 +15,7 @@ if(prevStepType ~= stepType || prevStepLeg ~= stepLeg)
 end
 sampleTime = curTime - prevTime;
 passedTime = curTime - startTime;
-modelFrequency = 1 / sampleTime;
+modelFrequency = 1 / sampleTime;       
 multiplier = gaitFrequency / modelFrequency;
 % if gait is made at 1000 Hz and model runs at 500 Hz, we need to go
 % through the gait 2 indices at a time

@@ -12,5 +12,7 @@ classdef StepType < Simulink.IntEnumType
         HOMESIT(8)
         NOSTEP(9)
         STAIRSDOWNSTEP(10)
+        INITIALIZESTANDUP(11)
+        WAITSTANDUP(12)
     end 
 end
