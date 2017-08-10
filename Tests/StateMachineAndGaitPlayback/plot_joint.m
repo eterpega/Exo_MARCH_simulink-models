@@ -38,7 +38,7 @@ xlabel('time [ms]')
 ylabel('state')
 legend('masterState','desiredState')
 grid on
-saveas(gcf,['figures/',plotTitle, ' And States'],'fig')
+saveas(gcf,['figures',filesep,plotTitle, ' And States'],'fig')
 close all
 
 %% Angles
@@ -60,5 +60,5 @@ axis([0 length(desiredState)/500 1 12]);
 xlabel('time [ms]')
 ylabel('step type')
 grid on
-saveas(gcf,['figures/', plotTitle, ' And Step Types'],'fig')
+saveas(gcf,['figures',filesep, plotTitle, ' And Step Types'],'fig')
 close all
