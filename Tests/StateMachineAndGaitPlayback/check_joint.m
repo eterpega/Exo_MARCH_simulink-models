@@ -30,9 +30,17 @@ absoluteVelocityJoint = abs(actualVelocityJoint);
 absoluteAccelerationJoint = abs(actualAccelerationJoint);
 
 if any(absoluteVelocityJoint > velocityMaximum)
-    warning([jointName, 'velocity too high:', num2str(max(absoluteVelocityJoint*60/2/pi)), ' [RPM] during state ', num2str(unique(masterState(max(absoluteVelocityJoint) == absoluteVelocityJoint)))])
+    maxVelStr=num2str(max(absoluteVelocityJoint*60/2/pi));
+    curStateStr=[num2str(unique(masterState(max(absoluteVelocityJoint) == absoluteVelocityJoint)))]';
+    disp(maxVelStr)
+    disp(curStateStr)
+    warning([jointName, 'velocity too high:',maxVelStr , ' [RPM] during state ', curStateStr])
 end
 
 if any(absoluteAccelerationJoint > accelerationMaximum)
-    warning([jointName, 'Acceleration too high:', num2str(max(absoluteAccelerationJoint)), ' [rad/s^2] during state ', num2str(unique(masterState(max(absoluteAccelerationJoint) == absoluteAccelerationJoint)))])
+    maxAccStr=num2str(max(absoluteAccelerationJoint));
+    curStateStr=num2str(unique(masterState(max(absoluteAccelerationJoint) == absoluteAccelerationJoint)));
+    disp(maxAccStr)
+    disp(curStateStr)
+    warning([jointName, 'Acceleration too high:', maxAccStr , ' [rad/s^2] during state ',curStateStr ])
 end
