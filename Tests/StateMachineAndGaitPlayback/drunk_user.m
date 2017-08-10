@@ -40,7 +40,12 @@ if time > stateDuration
             desiredStatePersistent = naiveDesiredState;
         end
     end
-    stateDuration = rand*5+time; %[s]
+    
+    if masterState == ExoskeletonState.HOLDSIT && desiredStatePersistent == ExoskeletonState.HOLDSTAND
+        stateDuration = rand*20+time; %[s]
+    else
+        stateDuration = rand*5+time; %[s]
+    end
 end
 
 if masterState == ExoskeletonState.HOLDSTAND
