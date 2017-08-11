@@ -2,6 +2,10 @@ clc
 close all
 clear all
 
+%change pwd to parent dir of this script
+[PATHSTR,~,~] = fileparts(mfilename('fullpath'));
+cd(PATHSTR);
+
 simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1e-5',...
             'SaveState','on','StateSaveName','xout',...
             'SaveOutput','on','OutputSaveName','yout',...
@@ -46,10 +50,10 @@ plot_joint(actualAngleRHFE, masterState, desiredState, stepType, time, 'RHFE Ang
 plot_joint(actualAngleRKFE, masterState, desiredState, stepType, time, 'RKFE Angle')
 
 %% Plot joint angle
-plot_joint(actualVelocityLHFE*60/(2*pi), masterState, desiredState, stepType, time, 'LHFE Velocity')
-plot_joint(actualVelocityLKFE*60/(2*pi), masterState, desiredState, stepType, time, 'LKFE Velocity')
-plot_joint(actualVelocityRHFE*60/(2*pi), masterState, desiredState, stepType, time, 'RHFE Velocity')
-plot_joint(actualVelocityRKFE*60/(2*pi), masterState, desiredState, stepType, time, 'RKFE Velocity')
+plot_joint(actualVelocityLHFE, masterState, desiredState, stepType, time, 'LHFE Velocity')
+plot_joint(actualVelocityLKFE, masterState, desiredState, stepType, time, 'LKFE Velocity')
+plot_joint(actualVelocityRHFE, masterState, desiredState, stepType, time, 'RHFE Velocity')
+plot_joint(actualVelocityRKFE, masterState, desiredState, stepType, time, 'RKFE Velocity')
 
 %% Plot Joint Acceleration
 plot_joint(actualAccelerationLHFE, masterState, desiredState, stepType, time, 'LHFE Acceleration')
