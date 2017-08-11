@@ -15,8 +15,8 @@
     </Groups>
     <Devices>
       <Device Physics="YY">
-        <Name LcId="1033"><![CDATA[InputDeviceMarch]]></Name>        
-        <URL LcId="1033"><![CDATA[http://www.bausano.net/]]></URL>	
+        <Name LcId="1033"><![CDATA[InputDevice]]></Name>        
+        <URL LcId="1033"><![CDATA[March]]></URL>	
         <GroupType>SSC_Device</GroupType>
         <Fmmu>Outputs</Fmmu>
         <Fmmu>Inputs</Fmmu>
@@ -29,18 +29,18 @@
 <!-- ***************** PDO di output ********************************************************** --> 
  
         <RxPdo Fixed="0" Mandatory="1" Sm="0">
-        <Index>#x1600</Index><Name>Outputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>actualMarchState</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706406</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>masterError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706407</IndexOffset><Length>1</Length></AdsInfo></Entry></RxPdo>
+        <Index>#x1600</Index><Name>Outputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>actualStateMarch</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706406</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>masterError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706407</IndexOffset><Length>1</Length></AdsInfo></Entry></RxPdo>
    
 <!-- ***************** PDO di input *********************************************************** -->
    
         <TxPdo Fixed="0" Mandatory="1" Sm="1"> 
-   		<Index>#x1a00</Index><Name>Inputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>desiredState</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2147483618</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>inputDeviceError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2147483619</IndexOffset><Length>1</Length></AdsInfo></Entry></TxPdo>
+   		<Index>#x1a00</Index><Name>Inputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>desiredState</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2147483618</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>inputDeviceError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2147483619</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>2</SubIndex><BitLen>8</BitLen><Name>heartbeat</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2147483620</IndexOffset><Length>1</Length></AdsInfo></Entry></TxPdo>
           
         <Eeprom>
           <ByteSize>4096</ByteSize>                  <!-- EEprom - 4KB   24LC32         -->
           <ConfigData>80030000000000000000</ConfigData>
         </Eeprom>
-      <Type ProductCode="#x00DEFEDE" RevisionNo="#xf86fd995">EasyCAT 32+32 configurable PDO</Type></Device>
+      <Type ProductCode="#x00DEFEDE" RevisionNo="#xfb5ac4bb">EasyCAT 32+32 configurable PDO</Type></Device>
     </Devices>
   </Descriptions>
 </EtherCATInfo>
