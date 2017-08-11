@@ -16,15 +16,29 @@ if ~exist('figures', 'dir')
   mkdir('figures');
 end
 
+if (all(plotTitle == 'LHFE Angle') || all(plotTitle == 'LKFE Angle')  || all(plotTitle == 'RHFE Angle') || all(plotTitle == 'RKFE Angle'))
+    conversion = 360/2/pi;
+    yLabelOutput = 'Angle [deg]';
+elseif (all(plotTitle == 'LHFE Velocity') || all(plotTitle == 'LKFE Velocity')  || all(plotTitle == 'RHFE Velocity') || all(plotTitle == 'RKFE Velocity'))
+    conversion = 60/2/pi;
+    yLabelOutput = 'Velocity [RPM]';
+elseif (all(plotTitle == 'LHFE Acceleration') || all(plotTitle == 'LKFE Acceleration')  || all(plotTitle == 'RHFE Acceleration') || all(plotTitle == 'RKFE Acceleration'))
+    conversion = 1;
+    yLabelOutput = 'Acceleration [rad/s^2]';
+else
+    conversion = 0;
+    yLabelOutput = 'Error, input string not found';
+end
+    
 %% Angles
 figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 subplot(2,1,1)
 title(plotTitle)
-plot(time, actualAngleJoint);
+plot(time, actualAngleJoint * conversion);
 legend('Actual angle')
 title(plotTitle)
 xlabel('time [ms]')
-ylabel('angle [rad]')
+ylabel(yLabelOutput)
 grid on
 
 %% States
@@ -45,11 +59,11 @@ close all
 figure('Visible','On','Position',[1 scrsz(4)/2 scrsz(3)/2 scrsz(4)/2])
 subplot(2,1,1)
 title(plotTitle)
-plot(time, actualAngleJoint);
+plot(time, actualAngleJoint * conversion);
 legend('Actual angle')
 title(plotTitle)
 xlabel('time [ms]')
-ylabel('angle [rad]')
+ylabel(yLabelOutput)
 grid on
 
 %% Step Types
