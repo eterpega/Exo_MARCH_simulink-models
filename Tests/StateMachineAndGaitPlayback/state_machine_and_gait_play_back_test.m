@@ -3,7 +3,7 @@ close all
 clear all
 
 %change pwd to parent dir of this script
-[PATHSTR,~,~] = fileparts(mfilename('fullpath'))
+[PATHSTR,~,~] = fileparts(mfilename('fullpath'));
 cd(PATHSTR);
 
 simOut = sim('stateMachineAndGaitPlayback','SimulationMode','normal','AbsTol','1e-5',...
