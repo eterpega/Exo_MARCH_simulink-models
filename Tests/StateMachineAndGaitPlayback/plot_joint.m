@@ -16,15 +16,21 @@ if ~exist('figures', 'dir')
   mkdir('figures');
 end
 
-if (all(plotTitle == 'LHFE Angle') || all(plotTitle == 'LKFE Angle')  || all(plotTitle == 'RHFE Angle') || all(plotTitle == 'RKFE Angle'))
-    conversion = 360/2/pi;
-    yLabelOutput = 'Angle [deg]';
-elseif (all(plotTitle == 'LHFE Velocity') || all(plotTitle == 'LKFE Velocity')  || all(plotTitle == 'RHFE Velocity') || all(plotTitle == 'RKFE Velocity'))
-    conversion = 60/2/pi;
-    yLabelOutput = 'Velocity [RPM]';
-elseif (all(plotTitle == 'LHFE Acceleration') || all(plotTitle == 'LKFE Acceleration')  || all(plotTitle == 'RHFE Acceleration') || all(plotTitle == 'RKFE Acceleration'))
-    conversion = 1;
-    yLabelOutput = 'Acceleration [rad/s^2]';
+if length(plotTitle) == length('LHFE Angle')
+    if (all(plotTitle == 'LHFE Angle') || all(plotTitle == 'LKFE Angle')  || all(plotTitle == 'RHFE Angle') || all(plotTitle == 'RKFE Angle'))
+        conversion = 360/2/pi;
+        yLabelOutput = 'Angle [deg]';
+    end
+elseif length(plotTitle) == length('LHFE Velocity')
+    if (all(plotTitle == 'LHFE Velocity') || all(plotTitle == 'LKFE Velocity')  || all(plotTitle == 'RHFE Velocity') || all(plotTitle == 'RKFE Velocity'))
+        conversion = 60/(2*pi);
+        yLabelOutput = 'Velocity [RPM]';
+    end
+elseif length(plotTitle) == length('LHFE Acceleration')
+    if (all(plotTitle == 'LHFE Acceleration') || all(plotTitle == 'LKFE Acceleration')  || all(plotTitle == 'RHFE Acceleration') || all(plotTitle == 'RKFE Acceleration'))
+        conversion = 1;
+        yLabelOutput = 'Acceleration [rad/s^2]';
+    end
 else
     conversion = 0;
     yLabelOutput = 'Error, input string not found';
