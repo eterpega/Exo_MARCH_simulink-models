@@ -1,5 +1,27 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel1" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay38" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">PeripheralHandler/Data Type Conversion</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">13, 27</Property>
+        <Property name="Name">NumericDisplay38</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label91" children="Controls">
+        <Property name="Text">buzzerCmd</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">13, 1</Property>
+        <Property name="Name">Label91</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Property name="Size">509, 150</Property>
+      <Property name="Location">909, 634</Property>
+      <Property name="Name">Panel1</Property>
+    </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox19" children="Controls">
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay35" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
@@ -960,11 +982,14 @@
           <Property name="BindingSrcPath">JointHandler/targetRKFEAngle/Value</Property>
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Body">
+            <Property name="Radius">36</Property>
+          </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">133, 106</Property>
+          <Property name="Size">135, 107</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob4</Property>
         </Object>
@@ -1090,11 +1115,14 @@
           <Property name="BindingSrcPath">JointHandler/targetLKFEAngle/Value</Property>
           <Property name="TargetName">JetStar</Property>
           <Property name="BindingSrcType">Parameter</Property>
+          <Property name="Body">
+            <Property name="Radius">36</Property>
+          </Property>
           <Property name="ScaleRange">
             <Property name="Min">-5</Property>
             <Property name="Span">120</Property>
           </Property>
-          <Property name="Size">133, 106</Property>
+          <Property name="Size">135, 107</Property>
           <Property name="Location">6, 22</Property>
           <Property name="Name">Knob3</Property>
         </Object>

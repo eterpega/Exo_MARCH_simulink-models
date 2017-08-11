@@ -11,27 +11,23 @@ switch masterStatePrevious %Buzzer command is derived from the previous and curr
             %if we went from initializing standup to waiting standup
             buzzerCommand = waitTimeStandUp;
         else
-            buzzerCommand = BuzzerCommand.NOTHING;
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
-    case WAITINGSTANDUP
+    case ExoskeletonState.WAITINGSTANDUP
         if masterState == ExoskeletonState.HOLDSIT
-            buzzerCommand = BuzzerCommand.STOPTIMER;      
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
         elseif masterState == ExoskeletonState.STANDINGUP
-            buzzerCommand = BuzzerCommand.NOTHING; 
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         else
-            buzzerCommand = BuzzerCommand.NOTHING;
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
     otherwise
         if masterStatePrevious ~= masterState
-            buzzerCommand = BuzzerCommand.ONEBEEP;
+            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         else
-            buzzerCommand = BuzzerCommand.NOTHING;
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
 end
-
-
-
-
 
 masterStatePrevious = masterState;
 end
