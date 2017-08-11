@@ -9,7 +9,7 @@ switch masterStatePrevious %Buzzer command is derived from the previous and curr
     case ExoskeletonState.INITIALIZINGSTANDUP 
         if masterState == ExoskeletonState.WAITINGSTANDUP 
             %if we went from initializing standup to waiting standup
-            buzzerCommand = waitTimeStandUp;
+            buzzerCommand = uint8(BuzzerCommand.COUNTDOWN);
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
