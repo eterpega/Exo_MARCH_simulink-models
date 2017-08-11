@@ -1,6 +1,16 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
     <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel1" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay39" children="Controls">
+        <Property name="BindingSrcType">Parameter</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">PeripheralHandler/Constant1/Value</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">205, 28</Property>
+        <Property name="Name">NumericDisplay39</Property>
+      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label92" children="Controls">
         <Property name="Text">ManualBuzzerCmd</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
