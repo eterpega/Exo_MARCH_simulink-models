@@ -21,11 +21,15 @@ else
         end
     end
     switch(masterState)
-        case ExoskeletonState.HOLDSTAND
+       case ExoskeletonState.HOLDSTAND
             jointCommands = gaitCommands;
-        case ExoskeletonState.HOLDSIT
+       case ExoskeletonState.HOLDSIT
             jointCommands = gaitCommands;
-        case ExoskeletonState.STANDINGUP
+       case ExoskeletonState.INITIALIZINGSTANDUP
+            jointCommands = gaitCommands;
+       case ExoskeletonState.WAITINGSTANDUP
+            jointCommands = gaitCommands;
+       case ExoskeletonState.STANDINGUP
             jointCommands = gaitCommands;
         case ExoskeletonState.SITTINGDOWN
             jointCommands = gaitCommands;
