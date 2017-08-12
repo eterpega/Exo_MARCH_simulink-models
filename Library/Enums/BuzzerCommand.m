@@ -3,6 +3,6 @@ classdef BuzzerCommand < Simulink.IntEnumType
         NOTHING(0)
         STOPTIMER(66)
         ONEBEEP(77)
-        COUNTDOWN(5)
+        ERROR(99)
     end 
 end
