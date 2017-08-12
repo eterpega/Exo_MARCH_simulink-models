@@ -25,10 +25,6 @@ else
             jointCommands = gaitCommands;
        case ExoskeletonState.HOLDSIT
             jointCommands = gaitCommands;
-       case ExoskeletonState.INITIALIZINGSTANDUP
-            jointCommands = gaitCommands;
-       case ExoskeletonState.WAITINGSTANDUP
-            jointCommands = gaitCommands;
        case ExoskeletonState.STANDINGUP
             jointCommands = gaitCommands;
         case ExoskeletonState.SITTINGDOWN
