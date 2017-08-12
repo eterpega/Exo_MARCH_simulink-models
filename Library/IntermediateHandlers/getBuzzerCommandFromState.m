@@ -1,34 +1,31 @@
-function buzzerCommand = getBuzzerCommandFromState(masterState, waitTimeStandUp)
-persistent masterStatePrevious
+function buzzerCommand = getBuzzerCommandFromState(stepType, waitTimeStandUp)
+persistent stepTypePrevious
 persistent lastBuzzerCommand
-if isempty(masterStatePrevious)
-    masterStatePrevious = ExoskeletonState.MANUAL;
+if isempty(stepTypePrevious)
+    stepTypePrevious = StepType.NOSTEP;
     lastBuzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
-switch masterStatePrevious %Buzzer command is derived from the previous and current masterState
-    case ExoskeletonState.INITIALIZINGSTANDUP 
-        if masterState == ExoskeletonState.WAITINGSTANDUP 
+switch stepTypePrevious %Buzzer command is derived from the previous and current masterState
+    case StepType.INITIALIZESTANDUP 
+        if stepType == StepType.WAITSTANDUP 
             %if we went from initializing standup to waiting standup
             buzzerCommand = waitTimeStandUp;
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
-    case ExoskeletonState.WAITINGSTANDUP
-        if masterState == ExoskeletonState.HOLDSIT
+    case StepType.WAITSTANDUP
+        if stepType == StepType.HOMESIT
             buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
-        elseif masterState == ExoskeletonState.STANDINGUP
+        elseif stepType == StepType.STANDUP
             buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         else
             buzzerCommand = lastBuzzerCommand;
         end
     otherwise
-        if masterStatePrevious ~= masterState
-            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
-        else
-            buzzerCommand = uint8(BuzzerCommand.NOTHING);
-        end
+        buzzerCommand = uint8(BuzzerCommand.NOTHING);
+
 end
 lastBuzzerCommand = buzzerCommand;
-masterStatePrevious = masterState;
+stepTypePrevious = stepType;
 end

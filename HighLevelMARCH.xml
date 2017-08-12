@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Root>
+<?xml version="1.0" encoding="UTF-8"?><Root>
           <SubSystem>
     <Name>DataLogger</Name>
     <xPCName>HighLevelMARCH/DataLogger</xPCName>
@@ -1437,56 +1436,56 @@ Function1</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/errorSOMANETLHFEraw</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETLHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>errorSOMANETLKFEraw</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/errorSOMANETLKFEraw</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETLKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>errorSOMANETRHFEraw</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/errorSOMANETRHFEraw</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETRHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>errorSOMANETRKFEraw</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/errorSOMANETRKFEraw</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETRKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>opModeLHFE</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/opModeLHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeLHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>opModeLKFE</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/opModeLKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeLKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>opModeRHFE</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/opModeRHFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeRHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>opModeRKFE</sigName>
               <xpcsigName>DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/opModeRKFE</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeRKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>statusPhaseCurrentBLHFE</sigName>
@@ -2580,112 +2579,112 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actAngleLH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aLH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actAngleLK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actAngleLK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aLK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actAngleRH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actAngleRH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aRH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actAngleRK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actAngleRK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aRK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actTorqueLH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actTorqueLH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aLH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actTorqueLK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actTorqueLK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aLK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actTorqueRH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actTorqueRH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aRH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>actTorqueRK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/actTorqueRK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>aRK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarAngleLH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarAngleLH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tLH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarAngleLK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarAngleLK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tLK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarAngleRH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarAngleRH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tRH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarAngleRK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarAngleRK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tRK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarTorqueLH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarTorqueLH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tLH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarTorqueLK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarTorqueLK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tLK</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarTorqueRH</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarTorqueRH</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tRH</sigLabel>
+                
             </signal>
               <signal>
               <sigName>tarTorqueRK</sigName>
               <xpcsigName>DataLogger/ScopeHandler/DynamicsScopes/tarTorqueRK</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>tRK</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -2852,28 +2851,28 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/ErrorScope/Data Type Conversion</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETLHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/ErrorScope/Data Type Conversion1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETLKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion2</sigName>
               <xpcsigName>DataLogger/ScopeHandler/ErrorScope/Data Type Conversion2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETRHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion3</sigName>
               <xpcsigName>DataLogger/ScopeHandler/ErrorScope/Data Type Conversion3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorSOMANETRKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion4</sigName>
@@ -2969,21 +2968,21 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/MiscellaneousScope/Data Type Conversion1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorMessage</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion2</sigName>
               <xpcsigName>DataLogger/ScopeHandler/MiscellaneousScope/Data Type Conversion2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorReaction</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion3</sigName>
               <xpcsigName>DataLogger/ScopeHandler/MiscellaneousScope/Data Type Conversion3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>masterState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion4</sigName>
@@ -2996,14 +2995,14 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/MiscellaneousScope/Data Type Conversion5</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorMessage</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Data Type Conversion6</sigName>
               <xpcsigName>DataLogger/ScopeHandler/MiscellaneousScope/Data Type Conversion6</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>masterState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain</sigName>
@@ -3628,14 +3627,14 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeLHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain10</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain10</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeLKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain11</sigName>
@@ -3670,28 +3669,28 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain15</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>phaseCurrent [A]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain16</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain16</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>electricPower [W]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain17</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain17</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>surfaceI2t [A^2s]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain18</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain18</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeRHFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain19</sigName>
@@ -3733,21 +3732,21 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain23</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>phaseCurrent [A]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain24</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain24</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>electricPower [W]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain25</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain25</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>surfaceI2t [A^2s]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain26</sigName>
@@ -3761,7 +3760,7 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain27</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opModeRKFE</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain28</sigName>
@@ -3803,21 +3802,21 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain32</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>phaseCurrent [A]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain33</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain33</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>electricPower [W]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain34</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain34</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>surfaceI2t [A^2s]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain35</sigName>
@@ -3845,21 +3844,21 @@ Function1</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain6</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>phaseCurrent [A]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain7</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain7</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>electricPower [W]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain8</sigName>
               <xpcsigName>DataLogger/ScopeHandler/SomanetScopes/Gain8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>surfaceI2t [A^2s]</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain9</sigName>
@@ -9995,16 +9994,6 @@ Radians2</Name>
           </parameter>
           </block>
             <block>
-            <blkName>Constant26</blkName>
-            <xpcblkName>GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Constant26</xpcblkName>
-            <SLblockPath>HighLevelMARCH/GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Constant26</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
             <blkName>Constant27</blkName>
             <xpcblkName>GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Constant27</xpcblkName>
             <SLblockPath>HighLevelMARCH/GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Constant27</SLblockPath>
@@ -10336,6 +10325,12 @@ Concatenate</sigName>
               <signal>
               <sigName>Width7</sigName>
               <xpcsigName>GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Width7</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Width8</sigName>
+              <xpcsigName>GaitHandler/RegularGait/PhaseGenerator/StepToPhaseLengths/Width8</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -11371,14 +11366,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoBackGESv2/toSensorState2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>toSensorState3</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoBackGESv2/toSensorState3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain</sigName>
@@ -11403,14 +11398,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoBackGESv2/Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1Temp</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain4</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoBackGESv2/Gain4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2Temp</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -11578,14 +11573,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoLeftGESv2/toSensorState2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>toSensorState3</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoLeftGESv2/toSensorState3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain</sigName>
@@ -11610,14 +11605,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoLeftGESv2/Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1Temp</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain4</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoLeftGESv2/Gain4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2Temp</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -11785,14 +11780,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoRightGESv1/toSensorState2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>toSensorState3</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoRightGESv1/toSensorState3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2TempState</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain</sigName>
@@ -11817,14 +11812,14 @@ Radians2</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoRightGESv1/Gain3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor1Temp</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Gain4</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/ReceiveFromNoGESv2s/ReceiveFromNoRightGESv1/Gain4</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>motor2Temp</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -12275,14 +12270,14 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLHFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>radians</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLHFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -12400,7 +12395,7 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLHFEOneJoint/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13099,14 +13094,14 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLKFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>radians</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLKFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13224,7 +13219,7 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETLKFEOneJoint/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13483,14 +13478,14 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRHFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>radians</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRHFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13608,7 +13603,7 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRHFEOneJoint/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13867,14 +13862,14 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRKFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/ToRAD</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>radians</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Divide</sigName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRKFEOneJoint/FromTicksToJointRad/[fromTicksToRad]/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -13992,7 +13987,7 @@ Radians</Name>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/ReceivedOneJointWithInputDevice/receivedSOMANETRKFEOneJoint/[fromTicksToRad]1/Divide</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>rotations</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -15714,7 +15709,7 @@ To Constant1</blkName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/SOMANETHandlerOneJoint/SOMANET_LHFE/MATLAB Function3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opMode</sigLabel>
+                
             </signal>
               <signal>
               <sigName>MATLAB Function4</sigName>
@@ -15741,7 +15736,7 @@ To Constant1</blkName>
               <xpcsigName>HardwareCommunicationJointV1WithInputDeviceAndBuzzer/SOMANETHandlerOneJoint/SOMANET_LHFE/stateMachineSOMANET/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>opMode</sigLabel>
+                
             </signal>
               <signal>
               <sigName>Clock</sigName>
@@ -18898,14 +18893,14 @@ Radians4</Name>
               <xpcsigName>JointHandler/desiredConfigLHFE/MATLAB Function/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>minPosLimit</sigLabel>
+                
             </signal>
               <signal>
               <sigName>MATLAB Function/p2</sigName>
               <xpcsigName>JointHandler/desiredConfigLHFE/MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>maxPosLimit</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -19183,14 +19178,14 @@ Radians4</Name>
               <xpcsigName>JointHandler/desiredConfigLKFE/MATLAB Function/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>minPosLimit</sigLabel>
+                
             </signal>
               <signal>
               <sigName>MATLAB Function/p2</sigName>
               <xpcsigName>JointHandler/desiredConfigLKFE/MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>maxPosLimit</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -19468,14 +19463,14 @@ Radians4</Name>
               <xpcsigName>JointHandler/desiredConfigRHFE/MATLAB Function/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>minPosLimit</sigLabel>
+                
             </signal>
               <signal>
               <sigName>MATLAB Function/p2</sigName>
               <xpcsigName>JointHandler/desiredConfigRHFE/MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>maxPosLimit</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -19753,14 +19748,14 @@ Radians4</Name>
               <xpcsigName>JointHandler/desiredConfigRKFE/MATLAB Function/p1</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>minPosLimit</sigLabel>
+                
             </signal>
               <signal>
               <sigName>MATLAB Function/p2</sigName>
               <xpcsigName>JointHandler/desiredConfigRKFE/MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>maxPosLimit</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -20580,36 +20575,6 @@ To Constant</blkName>
           <dim>[1, 1]</dim>  
           </parameter>
           </block>
-            <block>
-            <blkName>Constant1</blkName>
-            <xpcblkName>PeripheralHandler/Constant1</xpcblkName>
-            <SLblockPath>HighLevelMARCH/PeripheralHandler/Constant1</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>ManualBuzzerCommand</blkName>
-            <xpcblkName>PeripheralHandler/ManualBuzzerCommand</xpcblkName>
-            <SLblockPath>HighLevelMARCH/PeripheralHandler/ManualBuzzerCommand</SLblockPath>
-            <isSrc>[1 0 1]</isSrc>
-          <parameter>
-          <paramName>Value</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
-            <block>
-            <blkName>Switch</blkName>
-            <xpcblkName>PeripheralHandler/Switch</xpcblkName>
-            <SLblockPath>HighLevelMARCH/PeripheralHandler/Switch</SLblockPath>
-            <isSrc>[0 3 1]</isSrc>
-          <parameter>
-          <paramName>Threshold</paramName>
-          <dim>[1, 1]</dim>  
-          </parameter>
-          </block>
               <signal>
               <sigName>MATLAB Function1</sigName>
               <xpcsigName>PeripheralHandler/MATLAB Function1</xpcsigName>
@@ -20622,12 +20587,6 @@ To Constant</blkName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
                 <sigLabel>buzzerCmd</sigLabel>
-            </signal>
-              <signal>
-              <sigName>Switch</sigName>
-              <xpcsigName>PeripheralHandler/Switch</xpcsigName>
-              <sigWidth>1</sigWidth>
-              <sigDim>[1, 1]</sigDim>
             </signal>
 
     </SubSystem>
@@ -21217,7 +21176,7 @@ Concatenate1</sigName>
               <xpcsigName>SafetyModule/Switch</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>errorReaction</sigLabel>
+                
             </signal>
 
     </SubSystem>
@@ -21229,9 +21188,9 @@ Concatenate1</sigName>
     </SubSystem>
 
                   <block>
-            <blkName>Memory</blkName>
-            <xpcblkName>Memory</xpcblkName>
-            <SLblockPath>HighLevelMARCH/Memory</SLblockPath>
+            <blkName>Memory1</blkName>
+            <xpcblkName>Memory1</xpcblkName>
+            <SLblockPath>HighLevelMARCH/Memory1</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>X0</paramName>
@@ -21239,9 +21198,9 @@ Concatenate1</sigName>
           </parameter>
           </block>
             <block>
-            <blkName>Memory1</blkName>
-            <xpcblkName>Memory1</xpcblkName>
-            <SLblockPath>HighLevelMARCH/Memory1</SLblockPath>
+            <blkName>Memory2</blkName>
+            <xpcblkName>Memory2</xpcblkName>
+            <SLblockPath>HighLevelMARCH/Memory2</SLblockPath>
             <isSrc>[0 1 1]</isSrc>
           <parameter>
           <paramName>X0</paramName>
@@ -21265,11 +21224,10 @@ Concatenate1</sigName>
               <sigDim>[1, 1]</sigDim>
             </signal>
               <signal>
-              <sigName>Memory</sigName>
-              <xpcsigName>Memory</xpcsigName>
+              <sigName>Memory2</sigName>
+              <xpcsigName>Memory2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
-                <sigLabel>stepType</sigLabel>
             </signal>
               <signal>
               <sigName>Memory3</sigName>
@@ -21500,6 +21458,10 @@ Concatenate1</sigName>
           <dim>[1,1]</dim>
    </parameter>
    <parameter>
+      <paramName>waitStandUpHip</paramName>
+          <dim>[1875,1]</dim>
+   </parameter>
+   <parameter>
       <paramName>zeroOffsetLHFE</paramName>
           <dim>[1,1]</dim>
    </parameter>
@@ -21513,6 +21475,10 @@ Concatenate1</sigName>
    </parameter>
    <parameter>
       <paramName>zeroOffsetRKFE</paramName>
+          <dim>[1,1]</dim>
+   </parameter>
+   <parameter>
+      <paramName>waitTimeStandUp</paramName>
           <dim>[1,1]</dim>
    </parameter>
 </block>
