@@ -5,7 +5,7 @@ clc
 %get data from file
 fid=fopen('Training_Ruben_1_standUp.txt');
 fmt=['%{HH:mm:ss:SSS}D %8.4f %8.4f %8.2f'];
-data=textscan(fid,fmt,'HeaderLines',1,'Delimiter',',');
+data=textscan(fid,fmt,'HeaderLines',1,'Delimiter','\t');
 %data{5}=data{2}*.data{3};
 
 %plot data
