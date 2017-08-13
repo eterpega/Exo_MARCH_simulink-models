@@ -10,6 +10,9 @@ if isempty(stepTypePrevious)
     lastBuzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
+% Initialize buzzer command, otherwise Simulink gets angry
+buzzerCommand = uint8(BuzzerCommand.NOTHING);
+
 %% Get buzzercommands from step type
 % During some step type changes we would like to warn the pilot.
 switch stepTypePrevious %Buzzer command is derived from the previous and current masterState
@@ -32,10 +35,8 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
     case StepType.HOMESTAND
         if stepType == StepType.SITDOWN
             % If the MARCH II is gonna sit down warn the pilot
-            BuzzerCommand.ONEBEEP
+            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         end
-    otherwise
-        buzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
 %% Get buzzercomands from errorReaction
@@ -48,8 +49,6 @@ switch errorReaction
         buzzerCommand = uint8(BuzzerCommand.ERROR);
     case ErrorReaction.MOVETOPREVIOUSSTATE
         buzzerCommand = uint8(BuzzerCommand.ERROR); 
-    otherwise
-        buzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
 %% Remember the set buzzer command and step type
