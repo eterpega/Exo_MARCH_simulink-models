@@ -37,6 +37,8 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
             % If the MARCH II is gonna sit down warn the pilot
             buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         end
+    otherwise
+        buzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
 %% Get buzzercomands from errorReaction
@@ -44,11 +46,13 @@ end
 % important.
 switch errorReaction
     case ErrorReaction.QUITIMMEDIATELY
-        buzzerCommand = uint8(BuzzerCommand.ERROR);
+        buzzerCommand = uint8(BuzzerCommand.SEVERE_ERROR);
     case ErrorReaction.FINISHCURRENTREACTION
         buzzerCommand = uint8(BuzzerCommand.ERROR);
     case ErrorReaction.MOVETOPREVIOUSSTATE
         buzzerCommand = uint8(BuzzerCommand.ERROR); 
+    otherwise
+        buzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
 
 %% Remember the set buzzer command and step type
