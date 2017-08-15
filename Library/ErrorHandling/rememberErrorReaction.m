@@ -14,7 +14,7 @@ if(isempty(triggeredTimestamp))
 end
 if(isempty(prevErrorMessage))
    prevErrorMessage = ErrorMessage.NO_ERROR;
-   prevErrorLocation = ErrorLocation.UNKNOWN;
+   prevErrorLocation = ErrorLocation.LOCATION_UNKNOWN;
 end
 
 [ triggeredErrorReaction, resetJointErrors ] = getErrorReactionFromErrors( detectedError, deviceErrors );
@@ -36,7 +36,7 @@ end
 
 if (prevReaction ~= errorReaction)
     errorMessage = getErrorMessageFromErrors(detectedError, deviceErrors);
-    errorLocation = getErrorLocationFromErrors(detectedError,deviceErrors);
+    errorLocation = getErrorLocationFromErrors(deviceErrors);
 else
     errorMessage = prevErrorMessage;
     errorLocation = prevErrorLocation;
