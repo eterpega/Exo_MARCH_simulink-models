@@ -46,13 +46,11 @@ end
 % important.
 switch errorReaction
     case ErrorReaction.QUITIMMEDIATELY
-        buzzerCommand = uint8(BuzzerCommand.SEVERE_ERROR);
+        buzzerCommand = uint8(BuzzerCommand.SEVERE_ERROR_BEEP);
     case ErrorReaction.FINISHCURRENTREACTION
-        buzzerCommand = uint8(BuzzerCommand.ERROR);
+        buzzerCommand = uint8(BuzzerCommand.ERROR_BEEP);
     case ErrorReaction.MOVETOPREVIOUSSTATE
-        buzzerCommand = uint8(BuzzerCommand.ERROR); 
-    otherwise
-        buzzerCommand = uint8(BuzzerCommand.NOTHING);
+        buzzerCommand = uint8(BuzzerCommand.ERROR_BEEP); 
 end
 
 %% Remember the set buzzer command and step type
