@@ -30,6 +30,11 @@ switch(detectedError)
                 % this indicates a programming error, so quit immediately
                 errorReaction = ErrorReaction.QUITIMMEDIATELY;
                 resetJointErrors = 0;
+            elseif any(somanetErrors == SomanetError.SOMANET_NO_AKSIM_AT_BOOT)
+                % this somanet won't function until it's been restarted, so
+                % quitimmediately
+                errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                resetJointErrors = 0;
             elseif any(somanetErrors == SomanetError.SOFTWARE_HARDSTOP_REACHED)
                 % at softstop we have already tried to hold position, but
                 % this failed since we reached hardstop. Therefore, give up

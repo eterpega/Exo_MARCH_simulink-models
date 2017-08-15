@@ -1,4 +1,0 @@
-echo "meas:curr?" | nc 169.254.0.2 8462
-
-
-./ms3300_meas.sh
