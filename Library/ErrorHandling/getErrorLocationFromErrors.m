@@ -1,60 +1,58 @@
-function errorLocation = getErrorLocationFromErrors(detectedError,deviceErrors)
-
-%% Error Counting
-% Right now we can't handle more than one device error. So we count errors and if there is more than one
-% we only that it is more than one.
-numberOfErrors = 0;
+function errorLocation = getErrorLocationFromErrors(deviceErrors)
+errorLocation = ErrorLocation.UNKNOWN;
 for i=1:4
-    if deviceErrors.errorSomanets(i) ~= SomanetError.NOERROR_SOMANET
-        numberOfErrors = numberOfErrors +1;
-        if numberOfErrors < 2 
-            errorLocation = getMalfunctioningJoint(deviceError);
+    if deviceErrors.errorSOMANETs(i) ~= SOMANETError.NOERROR_SOMANET
+        if errorLocation == ErrorLocation.UNKNOWN
+            errorLocation = getMalfunctioningSOMANET(deviceErrors);
         else
             errorLocation  = ErrorLocation.MORE_THAN_ONE_JOINT;
             return;
         end
     end
-end
-
-if numberOfErrors > 1
-    errorLocation  = ErrorLocation.MORE_THAN_ONE_JOINT;
-    return;
 end
 
 for i=1:3
     if deviceErrors.errorGES(i) ~= GESError.NO_ERROR
-        numberOfErrors = numberOfErrors +1;
-        if numberOfErrors < 2 
-            errorLocation = getMalfunctioningJoint(deviceError);
+       if errorLocation == ErrorLocation.UNKNOWN 
+            errorLocation = getMalfunctioningGes(deviceErrors);
         else
-            errorLocation  = ErrorLocation.MORE_THAN_ONE_JOINT;
+            errorLocation  = ErrorLocation.MORE_THAN_ONE_DEVICE;
             return;
         end
     end
 end
 
-if deviceErrors.errorPDB ~= PDBError.NO_ERROR
-    numberOfErrors = numberOfErrors +1;
+if deviceErrors.errorPDB == PDBError.NO_ERROR
+    if errorLocation ~= ErrorLocation.UNKNOWN
+        errorLocation = ErrorLocation.PDB;
+    else
+        errorLocation  = ErrorLocation.MORE_THAN_ONE_DEVICE;
+        return;
+    end
 end
 
-if numberOfErrors > 1
-    errorLocation  = ErrorLocation.MORE_THAN_ONE_DEVICE;
-    return;
 end
 
-
-
-end
-
-function errorLocation = getMalfunctioningJoint(deviceError)
+function errorLocation = getMalfunctioningSOMANET(deviceErrors)
 %% We check which joint has an error
-    if deviceErrors(0) ~= DeviceError.NO_ERROR
+    if deviceErrors.errorSOMANETs(0) ~= SOMANET_ERROR.NO_ERROR
         errorLocation = ErrorLocation.LHFE;
-    elseif deviceErrors(1) ~= DeviceError.NO_ERROR
+    elseif deviceErrors.errorSOMANETs(1) ~= SOMANET_ERROR.NO_ERROR
         errorLocation = ErrorLocation.LKFE;
-    elseif deviceErrors(2) ~= DeviceError.NO_ERROR
+    elseif deviceErrors.errorSOMANETs(2) ~= SOMANET_ERROR.NO_ERROR
         errorLocation = ErrorLocation.RKFE;
-    elseif deviceErrors(3) ~= DeviceError.NO_ERROR
+    elseif deviceErrors.errorSOMANETs(3) ~= SOMANET_ERROR.NO_ERROR
         errorLocation = ErrorLocation.RHFE;
+    end
+end
+
+function errorLocation = getMalfunctioningGes(deviceErrors)
+%% We check which joint has an error
+    if deviceErrors.errorGES(0) ~= GES_ERROR.NO_ERROR
+        errorLocation = ErrorLocation.LHFE;
+    elseif deviceErrors.errorGES(1) ~= GES_ERROR.NO_ERROR
+        errorLocation = ErrorLocation.LKFE;
+    elseif deviceErrors.errorGES(2) ~= GES_ERROR.NO_ERROR
+        errorLocation = ErrorLocation.BACKPACK;
     end
 end
