@@ -3,7 +3,7 @@ function enable_graphics(enableGraphicsBoolean)
 myDictionary = Simulink.data.dictionary.open('ModelDictionary.sldd');
 
 dataOfDictionary = getSection(myDictionary,'Design Data');
-enableGraphics = getEntry(dataOfDictionary,'enableGraphcs');
+enableGraphics = getEntry(dataOfDictionary,'enableGraphics');
 enableGraphicsValue = getValue(enableGraphics);
 enableGraphicsValue.Value = enableGraphicsBoolean;
 setValue(enableGraphics,enableGraphicsValue);
