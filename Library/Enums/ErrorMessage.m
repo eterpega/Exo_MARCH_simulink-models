@@ -11,9 +11,6 @@ classdef ErrorMessage < Simulink.IntEnumType
         GENERIC_JOINT_ERROR(666) % SOMANET stuff
         GENERIC_DEVICE_ERROR(777) % non SOMANET stuff
         UNKNOWN_ERROR(666666)
-       
-       
-       
     end
     
 end
