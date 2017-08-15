@@ -21,6 +21,7 @@ classdef SomanetError < Simulink.IntEnumType
         SOFTWARE_HARDSTOP_REACHED(2003)
         TARGET_POSITION_OUT_OF_BOUNDS(2004)
         SOMANET_SENSOR_ERROR(2005)
+        SOMANET_NO_AKSIM_AT_BOOT(2006)
         % 201x are unlikely errors, implemented for completeness
         SOMANET_UNDERVOLTAGE(2010)
         SOMANET_OVERVOLTAGE(2011)
