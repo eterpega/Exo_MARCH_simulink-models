@@ -1,9 +1,10 @@
-function [errorReaction, resetJointErrors, errorMessage] = rememberErrorReaction(detectedError, deviceErrors, curTimestamp) 
+function [errorReaction, resetJointErrors, errorMessage, errorLocation] = rememberErrorReaction(detectedError, deviceErrors, curTimestamp) 
 % This function gets error from getErrorReactionFromErrors and remembers
 % errors for 10 seconds and holds them.
 persistent prevReaction;
 persistent triggeredTimestamp;
 persistent prevErrorMessage;
+persistent prevErrorLocation;
 
 if(isempty(prevReaction))
    prevReaction = ErrorReaction.NOREACTION;
@@ -12,7 +13,8 @@ if(isempty(triggeredTimestamp))
    triggeredTimestamp = 0; 
 end
 if(isempty(prevErrorMessage))
-   prevErrorMessage = ErrorMessage.NO_ERROR; 
+   prevErrorMessage = ErrorMessage.NO_ERROR;
+   prevErrorLocation = Device.UNKNOWN;
 end
 
 [ triggeredErrorReaction, resetJointErrors ] = getErrorReactionFromErrors( detectedError, deviceErrors );
@@ -34,8 +36,10 @@ end
 
 if (prevReaction ~= errorReaction)
     errorMessage = getErrorMessageFromErrors(detectedError, deviceErrors);
+    errorLocation = getErrorLocation(detectedError,deviceErrors);
 else
     errorMessage = prevErrorMessage;
+    errorLocation = prevErrorLocation;
 end
 
 if(errorMessage == ErrorMessage.DEVICE_DISCONNECTED_ERROR && curTimestamp < 400 * 0.002) % somanets seem to connect after 382 samples consistently
@@ -43,6 +47,7 @@ if(errorMessage == ErrorMessage.DEVICE_DISCONNECTED_ERROR && curTimestamp < 400 
     errorReaction = ErrorReaction.NOREACTION;
 end
 
+prevErrorLocation = errorLocation;
 prevReaction = errorReaction;
 prevErrorMessage = errorMessage;
 end
