@@ -76,25 +76,30 @@ switch(detectedError)
        
             end
         else
-            %Commented for jointV1
-%             % no somanet error, check the other devices:
-%             % TODO: implement PowerElectronics error handling
-%             % GES disconnect is worse than inputDeviceDisconnect, since we
-%             % are not able to monitor joint temperatures
-%             gesErrors = [ deviceErrors.errorGES.errorGESLKFE deviceErrors.errorGES.errorGESRKFE deviceErrors.errorGES.errorGESBack ];
-%             if(any(gesErrors == GESError.GES_NO_CONNECTION)) % currently only possible error
-%                 % finish and stop
-%                 errorMessage = ErrorMessage.DEVICE_DISCONNECTED_ERROR;
-% 
-%             elseif deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR
-%                 % finish and stop
-%                 errorMessage = ErrorMessage.GENERIC_DEVICE_ERROR;
-% 
-%             else
+            % no somanet error, check the other devices:
+            % TODO: implement PowerElectronics error handling
+            % GES disconnect is worse than inputDeviceDisconnect, since we
+            % are not able to monitor joint temperatures
+            gesErrors = [ deviceErrors.errorGES.errorGESLKFE deviceErrors.errorGES.errorGESRKFE deviceErrors.errorGES.errorGESBack ];
+            if(any(gesErrors == GESError.GES_NO_CONNECTION)) % currently only possible error
+                % finish and stop
+                errorMessage = ErrorMessage.DEVICE_DISCONNECTED_ERROR;
+            elseif any(gesErrors == GESError.GES_BUTTON_NOT_PRESENT) || any(gesErrors == GESError.GES_BUTTON_DISCONNECTED)
+                errorMessage = ErrorMessage.HIP_BUTTON_DISCONNECTED;
+            elseif any(gesErrors == GesError.GES_IMU_NOT_PRESENT) || any(gesErrors == GESError.GES_IMU_DISCONNECT)
+                errorMessage = ErrorMessage.IMU_DISCONNECTED;
+            elseif any(gesErrors == GesError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP1SENSOR_DISCONNECT)
+                errorMessage = ErrorMessage.TEMPS1_DISCONNECTED;
+            elseif any(gesErrors == GesError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP2SENSOR_DISCONNECT)
+                errorMessage = ErrorMessage.TEMPS2_DISCONNECTED;
+            elseif deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR
+                % finish and stop
+                errorMessage = ErrorMessage.GENERIC_DEVICE_ERROR;
+            else
                 % no errors detected, continue
                 errorMessage = ErrorMessage.NO_ERROR;
 
-%             end
+             end
         end
     % this is badly aligned because of switch cases
 end
