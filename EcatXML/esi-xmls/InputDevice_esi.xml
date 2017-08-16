@@ -15,8 +15,8 @@
     </Groups>
     <Devices>
       <Device Physics="YY">
-        <Name LcId="1033"><![CDATA[InputDevice]]></Name>        
-        <URL LcId="1033"><![CDATA[March]]></URL>	
+        <Name LcId="1033"><![CDATA[InputDeviceMarch]]></Name>        
+        <URL LcId="1033"><![CDATA[http://www.bausano.net/]]></URL>	
         <GroupType>SSC_Device</GroupType>
         <Fmmu>Outputs</Fmmu>
         <Fmmu>Inputs</Fmmu>
@@ -29,7 +29,7 @@
 <!-- ***************** PDO di output ********************************************************** --> 
  
         <RxPdo Fixed="0" Mandatory="1" Sm="0">
-        <Index>#x1600</Index><Name>Outputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>actualStateMarch</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706406</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>masterError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706407</IndexOffset><Length>1</Length></AdsInfo></Entry></RxPdo>
+        <Index>#x1600</Index><Name>Outputs</Name><Entry><Index>#x5</Index><SubIndex>0</SubIndex><BitLen>8</BitLen><Name>masterState</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706406</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>1</SubIndex><BitLen>8</BitLen><Name>masterError</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706407</IndexOffset><Length>1</Length></AdsInfo></Entry><Entry><Index>#x5</Index><SubIndex>2</SubIndex><BitLen>8</BitLen><Name>errorLocation</Name><DataType>USINT</DataType><AdsInfo><AmsAddress><AmsPort>11</AmsPort></AmsAddress><IndexGroup>50593808</IndexGroup><IndexOffset>-2130706408</IndexOffset><Length>1</Length></AdsInfo></Entry></RxPdo>
    
 <!-- ***************** PDO di input *********************************************************** -->
    
@@ -40,7 +40,7 @@
           <ByteSize>4096</ByteSize>                  <!-- EEprom - 4KB   24LC32         -->
           <ConfigData>80030000000000000000</ConfigData>
         </Eeprom>
-      <Type ProductCode="#x00DEFEDE" RevisionNo="#xfb5ac4bb">EasyCAT 32+32 configurable PDO</Type></Device>
+      <Type ProductCode="#x00DEFEDE" RevisionNo="#xfd3feb8b">EasyCAT 32+32 configurable PDO</Type></Device>
     </Devices>
   </Descriptions>
 </EtherCATInfo>
