@@ -22,8 +22,8 @@ for i=1:3
     end
 end
 
-if deviceErrors.errorPDB == PDBError.NO_ERROR_PDB
-    if errorLocation ~= ErrorLocation.LOCATION_UNKNOWN
+if deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB
+    if errorLocation == ErrorLocation.LOCATION_UNKNOWN
         errorLocation = ErrorLocation.LOCATION_PDB;
     else
         errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
