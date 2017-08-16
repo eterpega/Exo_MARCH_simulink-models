@@ -39,12 +39,12 @@
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label91" children="Controls">
         <Property name="Text">buzzerCmd</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
-        <Property name="Location">13, 1</Property>
+        <Property name="Location">13, 3</Property>
         <Property name="Name">Label91</Property>
-        <Property name="Size">100, 23</Property>
+        <Property name="Size">100, 21</Property>
       </Object>
-      <Property name="Size">509, 150</Property>
-      <Property name="Location">909, 634</Property>
+      <Property name="Size">509, 148</Property>
+      <Property name="Location">961, 685</Property>
       <Property name="Name">Panel1</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox19" children="Controls">
@@ -895,7 +895,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay31" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">HardwareCommunicationFourJoints/SOMANETHandler/SOMANET_RKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunicationFourJointsAndBuzzer/SOMANETHandler/SOMANET_RKFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1028,7 +1028,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay30" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">HardwareCommunicationFourJoints/SOMANETHandler/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunicationFourJointsAndBuzzer/SOMANETHandler/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1161,7 +1161,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay29" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">HardwareCommunicationFourJoints/SOMANETHandler/SOMANET_RHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunicationFourJointsAndBuzzer/SOMANETHandler/SOMANET_RHFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1294,7 +1294,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay28" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">HardwareCommunicationFourJoints/SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">HardwareCommunicationFourJointsAndBuzzer/SOMANETHandler/SOMANET_LHFE/ConfigHandler/Data Type Conversion16/s1</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
