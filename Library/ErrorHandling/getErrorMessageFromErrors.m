@@ -60,10 +60,10 @@ switch(detectedError)
                 % medium error, somanet in fault state. finish reaction and
                 % reset error
                 errorMessage = ErrorMessage.CONTROL_ERROR;
-                
+            elseif any((somanetErrors == SomanetError.SOMANET_NO_AKSIM_AT_BOOT))
+                errorMessage = ErrorMessage.NO_AKSIM_AT_BOOT;
             elseif any((somanetErrors == SomanetError.SOMANET_SENSOR_ERROR))
-                errorMessage = ErrorMessage.GENERIC_JOINT_ERROR;
-
+                errorMessage = ErrorMessage.SOMANET_SENSOR;
             elseif any(somanetErrors == SomanetError.SOFTWARE_SOFTSTOP_REACHED)
                 % disregard. should not happen but testers will notice
                 errorMessage = ErrorMessage.NO_ERROR;

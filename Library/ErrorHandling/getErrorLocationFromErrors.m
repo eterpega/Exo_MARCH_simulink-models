@@ -1,38 +1,45 @@
 function errorLocation = getErrorLocationFromErrors(deviceErrors)
-errorLocation = ErrorLocation.LOCATION_UNKNOWN;
-for i=1:4
-    if deviceErrors.errorSOMANETs(i) ~= SomanetError.NOERROR_SOMANET
-        if errorLocation == ErrorLocation.LOCATION_UNKNOWN
-            errorLocation = getMalfunctioningSOMANET(deviceErrors);
+    errorLocation = ErrorLocation.LOCATION_UNKNOWN;
+    for i=1:4
+        if deviceErrors.errorSOMANETs(i) ~= SomanetError.NOERROR_SOMANET
+            if errorLocation == ErrorLocation.LOCATION_UNKNOWN
+                errorLocation = getMalfunctioningSOMANET(deviceErrors);
+            else
+                errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_JOINT;
+                return;
+            end
+        end
+    end
+
+    for i=1:3
+        if deviceErrors.errorGES(i) ~= GESError.GES_NO_ERROR
+           if errorLocation == ErrorLocation.LOCATION_UNKNOWN 
+                errorLocation = getMalfunctioningGes(deviceErrors);
+            else
+                errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
+                return;
+            end
+        end
+    end
+
+    if deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB
+        if errorLocation ~= ErrorLocation.LOCATION_UNKNOWN
+            errorLocation = ErrorLocation.LOCATION_PDB;
         else
-            errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_JOINT;
+            errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
             return;
         end
     end
-end
 
-for i=1:3
-    if deviceErrors.errorGES(i) ~= GESError.GES_NO_ERROR
-       if errorLocation == ErrorLocation.LOCATION_UNKNOWN 
-            errorLocation = getMalfunctioningGes(deviceErrors);
+    if deviceErrors.errorInputDevice ~= InputDeviceError.INPUT_DEVICE_NO_ERROR
+        if errorLocation ~= ErrorLocation.LOCATION_UNKNOWN
+            errorLocation = ErrorLocation.LOCATION_INPUT_DEVICE;
         else
             errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
             return;
         end
     end
 end
-
-if deviceErrors.errorPDB == PDBError.NO_ERROR_PDB
-    if errorLocation ~= ErrorLocation.LOCATION_UNKNOWN
-        errorLocation = ErrorLocation.LOCATION_PDB;
-    else
-        errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
-        return;
-    end
-end
-
-end
-
 function errorLocation = getMalfunctioningSOMANET(deviceErrors)
 %% We check which joint has an error
     if deviceErrors.errorSOMANETs(1) ~= SomanetError.NOERROR_SOMANET
