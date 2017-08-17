@@ -49,6 +49,8 @@ else
     % PDB button
     if(shutdownDesired)
         desiredState = ExoskeletonState.SHUTTING_DOWN;
+    elseif (inputDeviceState == ExoskeletonState.UNREACHABLE)
+        desiredState = lastDesiredState;
     else
         if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPE))
             % then retrigger that state

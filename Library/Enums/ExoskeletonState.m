@@ -13,5 +13,6 @@ classdef ExoskeletonState < Simulink.IntEnumType
         STAIRSDOWN(10)
         SHUTTING_DOWN(9001)
         SEVERE_ERROR(666)
+        UNREACHABLE(999)
     end 
 end
