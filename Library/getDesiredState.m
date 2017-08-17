@@ -8,8 +8,11 @@ if(isempty(lastDesiredState))
     lastDesiredState = ExoskeletonState.FULLMANUAL;
     previousDesiredState = ExoskeletonState.FULLMANUAL;
 end
-
-if(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
+if (errorReaction == ErrorReaction.QUITIMMEDIATELY)
+    desiredState = ExoskeletonState.FULLMANUAL;
+    lastDesiredState = ExoskeletonState.FULLMANUAL;
+    previousDesiredState = ExoskeletonState.FULLMANUAL;
+elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
     % finish one walk action, then goto hold stand OR
     % finish standing up or sitting down, and hold stand/hold sit 
     if(lastDesiredState == ExoskeletonState.HOLDSTAND)
