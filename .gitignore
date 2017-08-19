@@ -13,7 +13,7 @@ Target/MARCH_v1_6_Dick.slx
 *ref.m
 *_slrt_rtw/
 **/work
-*.bat
+#*.bat
 Experiments/temporaryResults/
 Data_files/
 Tests/StateMachineAndGaitPlayback/figures
