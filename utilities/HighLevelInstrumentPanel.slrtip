@@ -1,6 +1,35 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay41" children="Controls">
+      <Property name="BindingSrcType">None</Property>
+      <Property name="OutputValue">0</Property>
+      <Property name="BindingSrcPath">
+      </Property>
+      <Property name="BindingSrcObject" />
+      <Property name="TargetName">
+      </Property>
+      <Property name="Size">100, 25</Property>
+      <Property name="Location">0, 0</Property>
+      <Property name="Name">NumericDisplay41</Property>
+    </Object>
     <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel1" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label93" children="Controls">
+        <Property name="Text">PDB Shutdown Desired</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">332, 2</Property>
+        <Property name="Name">Label93</Property>
+        <Property name="Size">138, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay40" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">HardwareCommunicationOneJointBackGesPDB/PDBHandler/MATLAB Function1</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">370, 28</Property>
+        <Property name="Name">NumericDisplay40</Property>
+      </Object>
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay39" children="Controls">
         <Property name="BindingSrcType">Parameter</Property>
         <Property name="OutputValue">0</Property>
@@ -44,7 +73,7 @@
         <Property name="Size">100, 21</Property>
       </Object>
       <Property name="Size">509, 148</Property>
-      <Property name="Location">961, 685</Property>
+      <Property name="Location">909, 631</Property>
       <Property name="Name">Panel1</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox19" children="Controls">
