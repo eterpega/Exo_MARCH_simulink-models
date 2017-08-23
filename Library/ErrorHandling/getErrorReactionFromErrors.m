@@ -81,27 +81,46 @@ switch(detectedError)
                 resetJointErrors = 0;         
             end
         else
-            if(any(deviceErrors.errorGES == GESError.GES_NO_CONNECTION)) % currently only implemented error
-                % finish and stop
+            if(deviceErrors.errorPDB == PDBError.PDB_DISCONNECTED)
                 errorReaction = ErrorReaction.FINISHCURRENTREACTION;
                 resetJointErrors = 0;
+            elseif(deviceErrors.errorPDB == PDBError.PDB_LOW_VOLTAGE_WARNING || ...
+                   deviceErrors.errorPDB == PDBError.PDB_HIGH_CURRENT_WARNING || ...
+                   deviceErrors.errorPDB == PDBError.PDB_TEMP_SENSOR_ERROR || ...
+                   deviceErrors.errorPDB == PDBError.PDB_HIGH_TEMPERATURE_WARNING)
+               %not a bad error so finish current
+               errorReaction = ErrorReaction.FINISHCURRENTREACTION;
+               resetJointErrors = 0;
+            elseif(deviceErrors.errorPDB == PDBError.PDB_HIGH_CURRENT_ERROR || ...
+                   deviceErrors.errorPDB == PDBError.PDB_LOW_VOLTAGE_ERROR || ...
+                   deviceErrors.errorPDB == PDBError.PDB_HIGH_TEMPERATURE_ERROR || ...
+                   deviceErrors.errorPDB == PDBError.UNKNOWN_ERROR_PDB)
+               %bad error so stop
+               errorReaction = ErrorReaction.QUITIMMEDIATELY; 
+               resetJointErrors = 0; 
             else
-                if(deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR)
-                    if(deviceErrors.errorInputDevice == EthercatDeviceError.DISCONNECT)
-                        errorReaction = ErrorReaction.FINISHCURRENTREACTION;
-                        resetJointErrors = 0;
-                    elseif(deviceErrors.errorInputDevice == EthercatDeviceError.GENERICERROR)
-                        errorReaction = ErrorReaction.QUITIMMEDIATELY;
-                        resetJointErrors = 0;
+                if(any(deviceErrors.errorGES == GESError.GES_NO_CONNECTION)) % currently only implemented error
+                    % finish and stop
+                    errorReaction = ErrorReaction.FINISHCURRENTREACTION;
+                    resetJointErrors = 0;
+                else
+                    if(deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR)
+                        if(deviceErrors.errorInputDevice == EthercatDeviceError.DISCONNECT)
+                            errorReaction = ErrorReaction.FINISHCURRENTREACTION;
+                            resetJointErrors = 0;
+                        elseif(deviceErrors.errorInputDevice == EthercatDeviceError.GENERICERROR)
+                            errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                            resetJointErrors = 0;
+                        else
+                            % we ran into another obscure error, so quit immediately
+                            errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                            resetJointErrors = 0;
+                        end
                     else
-                        % we ran into another obscure error, so quit immediately
-                        errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                          % no errors detected, continue
+                        errorReaction = ErrorReaction.NOREACTION;
                         resetJointErrors = 0;
                     end
-                else
-                      % no errors detected, continue
-                    errorReaction = ErrorReaction.NOREACTION;
-                    resetJointErrors = 0;
                 end
             end
         end
