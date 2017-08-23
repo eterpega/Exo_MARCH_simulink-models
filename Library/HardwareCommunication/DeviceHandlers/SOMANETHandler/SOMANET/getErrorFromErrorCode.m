@@ -5,9 +5,9 @@ function [somanetError] = getErrorFromErrorCode(errorCode)
 % assignment is done in module-ethercat-drive/src/ethercat_drive_service.xc
 % around line 49-97 in function get_cia402_error_code
 switch(errorCode)
-    case hex2dec('3210')
-        somanetError = SomanetError.SOMANET_UNDERVOLTAGE;
     case hex2dec('3220')
+        somanetError = SomanetError.SOMANET_UNDERVOLTAGE;
+    case hex2dec('3210')
         somanetError = SomanetError.SOMANET_OVERVOLTAGE;
     case hex2dec('3131')
         somanetError = SomanetError.PHASE_OVERCURRENT;

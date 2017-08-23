@@ -8,8 +8,11 @@ if(isempty(lastDesiredState))
     lastDesiredState = ExoskeletonState.FULLMANUAL;
     previousDesiredState = ExoskeletonState.FULLMANUAL;
 end
-
-if(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
+if (errorReaction == ErrorReaction.QUITIMMEDIATELY)
+    desiredState = ExoskeletonState.FULLMANUAL;
+    lastDesiredState = ExoskeletonState.FULLMANUAL;
+    previousDesiredState = ExoskeletonState.FULLMANUAL;
+elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
     % finish one walk action, then goto hold stand OR
     % finish standing up or sitting down, and hold stand/hold sit 
     if(lastDesiredState == ExoskeletonState.HOLDSTAND)
@@ -49,6 +52,8 @@ else
     % PDB button
     if(shutdownDesired)
         desiredState = ExoskeletonState.SHUTTING_DOWN;
+    elseif (inputDeviceState == ExoskeletonState.UNREACHABLE)
+        desiredState = lastDesiredState;
     else
         if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPE))
             % then retrigger that state

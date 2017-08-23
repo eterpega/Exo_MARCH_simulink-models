@@ -30,14 +30,13 @@ sectionObj = getSection(myDictionaryObj,'Design Data');
 
 %% GET ALL DIFFERENT GAIT VECTORS TO TEST
 dataPath=['..',filesep,'..',filesep,'..',filesep,'simulink-gait-generation'...
-    ,filesep,'gait-data',filesep,'Prepared Gaits'];
+    ,filesep,'gait-data',filesep,'GaitVectors'];
 cd(dataPath);
 folderContent=dir('*Gaits*');
 [h, w] = size(folderContent);
 for n=1:h
-    cd([folderContent(n).folder,filesep,folderContent(n).name])
-    gaitVector(n).filename=dir('*vectors*');
-    gaitVector(n).data=load(gaitVector(n).filename.name);
+    gaitVector(n).name=folderContent(n).name;
+    gaitVector(n).data=load(folderContent(n).name);
 end
 cd(PATHSTR);
 
@@ -180,21 +179,21 @@ for n=1:h
     gaitVector(n).RKFE=velocityWarning_RKFE;
     %% Plot joint angle
     joint_velocity_plotter(actualAngleLHFE, masterState, desiredState,...
-        stepType, time, 'LHFE Angle',gaitVector(n).filename.name)
+        stepType, time, 'LHFE Angle',gaitVector(n).name)
     joint_velocity_plotter(actualAngleLKFE, masterState, desiredState,...
-        stepType, time, 'LKFE Angle',gaitVector(n).filename.name)
+        stepType, time, 'LKFE Angle',gaitVector(n).name)
     joint_velocity_plotter(actualAngleRHFE, masterState, desiredState,...
-        stepType, time, 'RHFE Angle',gaitVector(n).filename.name)
+        stepType, time, 'RHFE Angle',gaitVector(n).name)
     joint_velocity_plotter(actualAngleRKFE, masterState, desiredState,...
-        stepType, time, 'RKFE Angle',gaitVector(n).filename.name)
+        stepType, time, 'RKFE Angle',gaitVector(n).name)
 
     %% Plot joint Velocity
     joint_velocity_plotter(actualVelocityLHFE, masterState, desiredState,...
-        stepType, time, 'LHFE Velocity',gaitVector(n).filename.name)
+        stepType, time, 'LHFE Velocity',gaitVector(n).name)
     joint_velocity_plotter(actualVelocityLKFE, masterState, desiredState,...
-        stepType, time, 'LKFE Velocity',gaitVector(n).filename.name)
+        stepType, time, 'LKFE Velocity',gaitVector(n).name)
     joint_velocity_plotter(actualVelocityRHFE, masterState, desiredState,...
-        stepType, time, 'RHFE Velocity',gaitVector(n).filename.name)
+        stepType, time, 'RHFE Velocity',gaitVector(n).name)
     joint_velocity_plotter(actualVelocityRKFE, masterState, desiredState,...
-        stepType, time, 'RKFE Velocity',gaitVector(n).filename.name)
+        stepType, time, 'RKFE Velocity',gaitVector(n).name)
 end
