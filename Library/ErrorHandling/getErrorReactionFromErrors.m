@@ -81,25 +81,29 @@ switch(detectedError)
                 resetJointErrors = 0;         
             end
         else
-            %Commented for jointV1
-%             % no somanet error, check the other devices:
-%             % TODO: implement PowerElectronics error handling
-%             % GES disconnect is worse than inputDeviceDisconnect, since we
-%             % are not able to monitor joint temperatures
-%             gesErrors = [ deviceErrors.errorGES.errorGESLKFE deviceErrors.errorGES.errorGESRKFE deviceErrors.errorGES.errorGESBack ];
-%             if(any(gesErrors == GESError.GES_NO_CONNECTION)) % currently only possible error
-%                 % finish and stop
-%                 errorReaction = ErrorReaction.FINISHCURRENTREACTION;
-%                 resetJointErrors = 0;
-%             elseif deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR
-%                 % finish and stop
-%                 errorReaction = ErrorReaction.FINISHCURRENTREACTION;
-%                 resetJointErrors = 0;
-%             else
-%                 % no errors detected, continue
-                errorReaction = ErrorReaction.NOREACTION;
+            if(any(deviceErrors.errorGES == GESError.GES_NO_CONNECTION)) % currently only implemented error
+                % finish and stop
+                errorReaction = ErrorReaction.FINISHCURRENTREACTION;
                 resetJointErrors = 0;
-%             end
+            else
+                if(deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR)
+                    if(deviceErrors.errorInputDevice == EthercatDeviceError.DISCONNECT)
+                        errorReaction = ErrorReaction.FINISHCURRENTREACTION;
+                        resetJointErrors = 0;
+                    elseif(deviceErrors.errorInputDevice == EthercatDeviceError.GENERICERROR)
+                        errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                        resetJointErrors = 0;
+                    else
+                        % we ran into another obscure error, so quit immediately
+                        errorReaction = ErrorReaction.QUITIMMEDIATELY;
+                        resetJointErrors = 0;
+                    end
+                else
+                      % no errors detected, continue
+                    errorReaction = ErrorReaction.NOREACTION;
+                    resetJointErrors = 0;
+                end
+            end
         end
     % this is badly aligned because of switch cases
 end
