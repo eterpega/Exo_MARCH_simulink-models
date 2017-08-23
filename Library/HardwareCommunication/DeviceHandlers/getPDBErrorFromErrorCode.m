@@ -4,8 +4,7 @@ function [pdbError]  = getPDBErrorFromErrorCode(errorCode)
 % message looks like this:
 % fttc cvvs ss-- ----
 % 0000 0000 0000 0000
-% f is a flag to signal if pdb booted correctly. 1 if booted correctly 0
-% otherwise
+% f is a flag to signal if pdb booted correctly. 1 if booted correctly 0 otherwise
 % each other field corresponds to a flag of the respective error
 % t -> temp errors, c->current errors, v->voltage errors s-> state errors
 
@@ -21,8 +20,8 @@ c = errorCodebin(4:5);
 v = errorCodebin(6:7);
 s = errorCodebin(8:10);
 
-if strcmp(f,'0') %triggered when pdb is not booted correctly
-    pdbError = PDBError.UNKNOWN_ERROR_PDB;
+if strcmp(f,'0') %triggered when pdb is not booted correctedly which means it's disconnected
+    pdbError = PDBError.PDB_DISCONNECTED;
 elseif strcmp(c,'10')
     pdbError = PDBError.PDB_HIGH_CURRENT_ERROR;
 elseif strcmp(v,'10')
