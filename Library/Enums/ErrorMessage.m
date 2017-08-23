@@ -8,8 +8,8 @@ classdef ErrorMessage < Simulink.IntEnumType
         HIGH_LOAD_ERROR(4) %phasecurrent & max torque
         POWER_ERROR(5) %under/over voltage/current
         CONTROL_ERROR(6) %pos difference error
-        TEMPS1_DISCONNCETED(7)
-        TEMPS2_DISCONNCETED(8)
+        TEMPS1_DISCONNECTED(7)
+        TEMPS2_DISCONNECTED(8)
         IMU_DISCONNECTED(9)
         HIP_BUTTON_DISCONNECTED(10)
         NO_AKSIM_AT_BOOT(11)

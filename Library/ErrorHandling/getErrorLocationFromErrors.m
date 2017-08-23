@@ -1,62 +1,24 @@
 function errorLocation = getErrorLocationFromErrors(deviceErrors)
-errorLocation = ErrorLocation.LOCATION_UNKNOWN;
+%We set a binary message
+%0000 0000
+%LHFE|LKFE|RHFE|RKFE LGES|RGES|BGES|PDB
+errorLocation = '00000000';
+
 for i=1:4
-    if deviceErrors.errorSOMANETs(i) ~= SomanetError.NOERROR_SOMANET
-        if errorLocation == ErrorLocation.LOCATION_UNKNOWN
-            errorLocation = getMalfunctioningSOMANET(deviceErrors);
-        else
-            errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_JOINT;
-            return;
-        end
-    end
+    errorLocation(i) = log2char(deviceErrors.errorSOMANETs(i)~=SomanetError.NOERROR_SOMANET);
 end
 
 for i=1:3
-    if deviceErrors.errorGES(i) ~= GESError.GES_NO_ERROR
-       if errorLocation == ErrorLocation.LOCATION_UNKNOWN 
-            errorLocation = getMalfunctioningGes(deviceErrors);
-        else
-            errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
-            return;
-        end
-    end
+    errorLocation(4+i) = log2char(deviceErrors.errorGES(i) ~= GESError.GES_NO_ERROR);
 end
 
-if deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB
-    if errorLocation == ErrorLocation.LOCATION_UNKNOWN
-        errorLocation = ErrorLocation.LOCATION_PDB;
-    else
-        errorLocation  = ErrorLocation.LOCATION_MORE_THAN_ONE_DEVICE;
-        return;
-    end
-end
+errorLocation(8) = log2char(deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB);
 
 end
 
-function errorLocation = getMalfunctioningSOMANET(deviceErrors)
-%% We check which joint has an error
-    if deviceErrors.errorSOMANETs(1) ~= SomanetError.NOERROR_SOMANET
-        errorLocation = ErrorLocation.LOCATION_LHFE;
-    elseif deviceErrors.errorSOMANETs(2) ~= SomanetError.NOERROR_SOMANET
-        errorLocation = ErrorLocation.LOCATION_LKFE;
-    elseif deviceErrors.errorSOMANETs(3) ~= SomanetError.NOERROR_SOMANET
-        errorLocation = ErrorLocation.LOCATION_RKFE;
-    elseif deviceErrors.errorSOMANETs(4) ~= SomanetError.NOERROR_SOMANET
-        errorLocation = ErrorLocation.LOCATION_RHFE;
-    else
-        errorLocation = ErrorLocation.LOCATION_UNKNOWN;
-    end
-end
-
-function errorLocation = getMalfunctioningGes(deviceErrors)
-%% We check which joint has an error
-    if deviceErrors.errorGES(1) ~= GESError.GES_NO_ERROR
-        errorLocation = ErrorLocation.LOCATION_LHFE;
-    elseif deviceErrors.errorGES(2) ~= GESError.GES_NO_ERROR
-        errorLocation = ErrorLocation.LOCATION_LKFE;
-    elseif deviceErrors.errorGES(3) ~= GESError.GES_NO_ERROR
-        errorLocation = ErrorLocation.LOCATION_BACKPACK;
-    else
-        errorLocation = ErrorLocation.LOCATION_UNKNOWN;
+function c = log2char(log)
+    c = '0';
+    if log
+        c = '1';
     end
 end

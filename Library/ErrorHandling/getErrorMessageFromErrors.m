@@ -1,4 +1,5 @@
-function [errorMessage] = getErrorMessageFromErrors(detectedError, deviceErrors)
+function [errorMessage, errorLocationOut] = getErrorMessageFromErrors(detectedError, deviceErrors)
+errorLocation = '00000000';
 switch(detectedError)
     case ExoskeletonError.EXOSKELETON_JOINT_NEAR_OVERHEAT
         errorMessage = ErrorMessage.HEAT_WARNING;
@@ -75,22 +76,38 @@ switch(detectedError)
                 errorMessage = ErrorMessage.UNKNOWN_ERROR;
        
             end
+            errorLocation = getErrorLocationFromErrors(deviceErrors);
+            errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
+        elseif deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB
+            errorPDB = deviceErrors.errorPDB;
+            if (errorPDB == PDBError.PDB_HIGH_CURRENT_WARNING || errorPDB == PDBError.PDB_HIGH_CURRENT_ERROR)
+                errorMessage = ErrorMessage.PDB_CURRENT_ERROR;
+            elseif (errorPDB == PDBError.PDB_LOW_VOLTAGE_WARNING || errorPDB == PDBError.PDB_LOW_VOLTAGE_ERROR)
+                errorMessage = ErrorMessage.PDB_VOLTAGE_ERROR;
+            elseif (errorPDB == PDBError.PDB_HIGH_TEMPERATURE_WARNING || errorPDB == PDBError.PDB_HIGH_TEMPERATURE_ERROR)
+                errorMessage = ErrorMessage.PDB_TEMPERATURE_ERROR;
+            else
+                errorMessage = ErrorMessage.UNKNOWN_ERROR;
+            end
+            
+            errorLocation = getErrorLocationFromErrors(deviceErrors);
+            errorLocation(1:7) = '0'; %We ignore everything but the pdb
         else
             % no somanet error, check the other devices:
             % TODO: implement PowerElectronics error handling
             % GES disconnect is worse than inputDeviceDisconnect, since we
             % are not able to monitor joint temperatures
-            gesErrors = [ deviceErrors.errorGES.errorGESLKFE deviceErrors.errorGES.errorGESRKFE deviceErrors.errorGES.errorGESBack ];
+            gesErrors = deviceErrors.errorGES;
             if(any(gesErrors == GESError.GES_NO_CONNECTION)) % currently only possible error
                 % finish and stop
                 errorMessage = ErrorMessage.DEVICE_DISCONNECTED_ERROR;
-            elseif any(gesErrors == GESError.GES_BUTTON_NOT_PRESENT) || any(gesErrors == GESError.GES_BUTTON_DISCONNECTED)
+            elseif any(gesErrors == GESError.GES_BUTTON_NOT_PRESENT) || any(gesErrors == GESError.GES_BUTTON_DISCONNECT)
                 errorMessage = ErrorMessage.HIP_BUTTON_DISCONNECTED;
-            elseif any(gesErrors == GesError.GES_IMU_NOT_PRESENT) || any(gesErrors == GESError.GES_IMU_DISCONNECT)
+            elseif any(gesErrors == GESError.GES_IMU_NOT_PRESENT) || any(gesErrors == GESError.GES_IMU_DISCONNECT)
                 errorMessage = ErrorMessage.IMU_DISCONNECTED;
-            elseif any(gesErrors == GesError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP1SENSOR_DISCONNECT)
+            elseif any(gesErrors == GESError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP1SENSOR_DISCONNECT)
                 errorMessage = ErrorMessage.TEMPS1_DISCONNECTED;
-            elseif any(gesErrors == GesError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP2SENSOR_DISCONNECT)
+            elseif any(gesErrors == GESError.GES_TEMP1SENSOR_NOT_PRESENT) || any(gesErrors == GESError.GES_TEMP2SENSOR_DISCONNECT)
                 errorMessage = ErrorMessage.TEMPS2_DISCONNECTED;
             elseif deviceErrors.errorInputDevice ~= EthercatDeviceError.NOERROR
                 % finish and stop
@@ -99,8 +116,11 @@ switch(detectedError)
                 % no errors detected, continue
                 errorMessage = ErrorMessage.NO_ERROR;
 
-             end
+            end
+             errorLocation(1:4) = '0'; %We ignore the Somanet errors locations (there should not be any)
+             errorLocation(8) = '0'; %We ignore the PDB errors (there shouldn be any)
         end
     % this is badly aligned because of switch cases
 end
+errorLocationOut = bin2dec(errorLocation);
 end
