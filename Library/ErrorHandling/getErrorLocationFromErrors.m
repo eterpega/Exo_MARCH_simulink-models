@@ -16,9 +16,3 @@ errorLocation(8) = log2char(deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB);
 
 end
 
-function c = log2char(log)
-    c = '0';
-    if log
-        c = '1';
-    end
-end

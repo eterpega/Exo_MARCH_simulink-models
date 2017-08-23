@@ -1,23 +1,27 @@
-function [errorMessage, errorLocationOut] = getErrorMessageFromErrors(detectedError, deviceErrors)
+function [errorMessage, errorLocationOut] = getErrorMessageFromErrors(detectedError, deviceErrors,errorLocationHighLevel)
 errorLocation = '00000000';
 switch(detectedError)
     case ExoskeletonError.EXOSKELETON_JOINT_NEAR_OVERHEAT
         errorMessage = ErrorMessage.HEAT_WARNING;
-        
+        errorLocation = dec2bin(errorLocationHighLevel);
+        errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
     case ExoskeletonError.EXOSKELETON_JOINT_OVERHEAT
         errorMessage = ErrorMessage.HEAT_ERROR;
-
+        errorLocation =  dec2bin(errorLocationHighLevel);
+        errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
     case ExoskeletonError.EXOSKELETON_UNSTABLE_CONTROL 
         % indicates too high position error. We presume the originating
         % state did work, so move back to it
         errorMessage = ErrorMessage.CONTROL_ERROR;
-
+        errorLocation = dec2bin(errorLocationHighLevel);
+        errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
     case ExoskeletonError.EXOSKELETON_HARDSTOP_REACHED
         % at softstop we have already tried to hold position, but
         % this failed since we reached hardstop. Therefore, give up
         % and quit everything
         errorMessage = ErrorMessage.HARDSTOP_ERROR;
-
+        errorLocation =  dec2bin(errorLocationHighLevel);
+        errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
     otherwise
         % no error detected, check device errors
         % somanet errors have highest priority

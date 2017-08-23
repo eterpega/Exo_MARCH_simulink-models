@@ -1,4 +1,4 @@
-function [errorReaction, resetJointErrors, errorMessage, errorLocation] = rememberErrorReaction(detectedError, deviceErrors, curTimestamp) 
+function [errorReaction, resetJointErrors, errorMessage, errorLocation] = rememberErrorReaction(detectedError, deviceErrors, curTimestamp,errorLocationHighLevel) 
 % This function gets error from getErrorReactionFromErrors and remembers
 % errors for 10 seconds and holds them.
 persistent prevReaction;
@@ -35,7 +35,7 @@ if((curTimestamp - triggeredTimestamp) >= 10)
 end
 
 if (prevReaction ~= errorReaction)
-    [errorMessage,errorLocation] = getErrorMessageFromErrors(detectedError, deviceErrors);     
+    [errorMessage,errorLocation] = getErrorMessageFromErrors(detectedError, deviceErrors,errorLocationHighLevel);     
 else
     errorMessage = prevErrorMessage;
     errorLocation = prevErrorLocation;

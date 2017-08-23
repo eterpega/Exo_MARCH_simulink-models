@@ -23485,8 +23485,20 @@ To Constant</blkName>
             </signal>
 
     </SubSystem>
+    <SubSystem>
+    <Name>MATLAB Function</Name>
+    <xPCName>HighLevelMARCH/SafetyModule/ErrorDetector/AllEndStopChecker/MATLAB Function</xPCName>
+    
+    
+    </SubSystem>
 
                   <signal>
+              <sigName>MATLAB Function</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/AllEndStopChecker/MATLAB Function</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
               <sigName>Logical
 Operator</sigName>
               <xpcsigName>SafetyModule/ErrorDetector/AllEndStopChecker/Logical Operator</xpcsigName>
@@ -23830,8 +23842,14 @@ Radians7</Name>
     </SubSystem>
 
                   <signal>
-              <sigName>MATLAB Function</sigName>
-              <xpcsigName>SafetyModule/ErrorDetector/PositionDifferenceChecker/MATLAB Function</xpcsigName>
+              <sigName>MATLAB Function/p1</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/PositionDifferenceChecker/MATLAB Function/p1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>MATLAB Function/p2</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/PositionDifferenceChecker/MATLAB Function/p2</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -23856,6 +23874,12 @@ Radians7</Name>
               <signal>
               <sigName>temperature_checker/p2</sigName>
               <xpcsigName>SafetyModule/ErrorDetector/TemperaturesJointChecker/temperature_checker/p2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>temperature_checker/p3</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/TemperaturesJointChecker/temperature_checker/p3</xpcsigName>
               <sigWidth>1</sigWidth>
               <sigDim>[1, 1]</sigDim>
             </signal>
@@ -23887,6 +23911,31 @@ Concatenate1</sigName>
               <xpcsigName>SafetyModule/ErrorDetector/Vector Concatenate1</xpcsigName>
               <sigWidth>4</sigWidth>
               <sigDim>[4, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/Data Type Conversion</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion1</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/Data Type Conversion1</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Data Type Conversion2</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/Data Type Conversion2</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
+            </signal>
+              <signal>
+              <sigName>Bitwise
+Operator</sigName>
+              <xpcsigName>SafetyModule/ErrorDetector/Bitwise Operator</xpcsigName>
+              <sigWidth>1</sigWidth>
+              <sigDim>[1, 1]</sigDim>
             </signal>
 
     </SubSystem>
