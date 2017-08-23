@@ -14,7 +14,7 @@ if(isempty(triggeredTimestamp))
 end
 if(isempty(prevErrorMessage))
    prevErrorMessage = ErrorMessage.NO_ERROR;
-   prevErrorLocation = ErrorLocation.LOCATION_UNKNOWN;
+   prevErrorLocation = bin2dec('00000000');
 end
 
 [ triggeredErrorReaction, resetJointErrors ] = getErrorReactionFromErrors( detectedError, deviceErrors );
@@ -35,8 +35,7 @@ if((curTimestamp - triggeredTimestamp) >= 10)
 end
 
 if (prevReaction ~= errorReaction)
-    errorMessage = getErrorMessageFromErrors(detectedError, deviceErrors);
-    errorLocation = getErrorLocationFromErrors(deviceErrors);
+    [errorMessage,errorLocation] = getErrorMessageFromErrors(detectedError, deviceErrors);     
 else
     errorMessage = prevErrorMessage;
     errorLocation = prevErrorLocation;

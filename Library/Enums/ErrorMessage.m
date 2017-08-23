@@ -8,6 +8,16 @@ classdef ErrorMessage < Simulink.IntEnumType
         HIGH_LOAD_ERROR(4) %phasecurrent & max torque
         POWER_ERROR(5) %under/over voltage/current
         CONTROL_ERROR(6) %pos difference error
+        TEMPS1_DISCONNECTED(7)
+        TEMPS2_DISCONNECTED(8)
+        IMU_DISCONNECTED(9)
+        HIP_BUTTON_DISCONNECTED(10)
+        NO_AKSIM_AT_BOOT(11)
+        SOMANET_SENSOR(12)
+        PDB_TEMP_SENSOR_DISCONNECTED(13)
+        PDB_CURRENT_ERROR(14)
+        PDB_VOLTAGE_ERROR(15)
+        PDB_TEMPERATURE_ERROR(16)
         GENERIC_JOINT_ERROR(666) % SOMANET stuff
         GENERIC_DEVICE_ERROR(777) % non SOMANET stuff
         UNKNOWN_ERROR(666666)
