@@ -1,5 +1,85 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel2" children="Controls">
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label105" children="Controls">
+        <Property name="Text">Button</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">16, 118</Property>
+        <Property name="Name">Label105</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay50" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">HardwareCommunicationMarchII/ReceivedFourJoints/ReceiveFromPDB/EtherCAT PDO Receive2</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">129, 124</Property>
+        <Property name="Name">NumericDisplay50</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay49" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromPDB/temperatureDCDC</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">129, 93</Property>
+        <Property name="Name">NumericDisplay49</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label104" children="Controls">
+        <Property name="Text">Temperature</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 93</Property>
+        <Property name="Name">Label104</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label103" children="Controls">
+        <Property name="Text">Voltage</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">5, 62</Property>
+        <Property name="Name">Label103</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label102" children="Controls">
+        <Property name="Text">Current</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">6, 38</Property>
+        <Property name="Name">Label102</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay48" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromPDB/statusVoltageBattery</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">129, 62</Property>
+        <Property name="Name">NumericDisplay48</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay47" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromPDB/statusCurrentBattery</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">129, 33</Property>
+        <Property name="Name">NumericDisplay47</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="PDB" children="Controls">
+        <Property name="Text">PDB</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">16, 10</Property>
+        <Property name="Name">PDB</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Property name="Size">232, 218</Property>
+      <Property name="Location">354, 828</Property>
+      <Property name="Name">Panel2</Property>
+    </Object>
     <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel1" children="Controls">
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label100" children="Controls">
         <Property name="Text">manualPDBCmd</Property>
@@ -95,6 +175,40 @@
       <Property name="Name">Panel1</Property>
     </Object>
     <Object type="System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="GroupBox19" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay52" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/error/errorGESRKFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">169, 316</Property>
+        <Property name="Name">NumericDisplay52</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay51" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/error/errorGESLKFE</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">169, 294</Property>
+        <Property name="Name">NumericDisplay51</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label107" children="Controls">
+        <Property name="Text">GES Right error</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">25, 315</Property>
+        <Property name="Name">Label107</Property>
+        <Property name="Size">123, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label106" children="Controls">
+        <Property name="Text">GES Left error</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">28, 294</Property>
+        <Property name="Name">Label106</Property>
+        <Property name="Size">123, 23</Property>
+      </Object>
       <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label101" children="Controls">
         <Property name="Text">PDB error</Property>
         <Property name="UseCompatibleTextRendering">True</Property>
@@ -105,7 +219,7 @@
       <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay46" children="Controls">
         <Property name="BindingSrcType">Signal</Property>
         <Property name="OutputValue">0</Property>
-        <Property name="BindingSrcPath">HardwareCommunicationOneJointBackGesPDB/PDBHandler/MATLAB Function</Property>
+        <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/error/errorPDB</Property>
         <Property name="BindingSrcObject" />
         <Property name="TargetName">JetStar</Property>
         <Property name="Size">100, 25</Property>

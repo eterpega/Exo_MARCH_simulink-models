@@ -62,8 +62,8 @@ elseif strcmpi(buildType,'graphical')
     
      % fixing target settings
     targetSettings = SimulinkRealTime.getTargetSettings;
-    targetSettings.TargetScope = 'Disabled';
-    targetSettings.TargetBoot = 'StandAlone';
+    targetSettings.TargetScope = 'Enabled';
+    targetSettings.TargetBoot = 'BootFloppy';
     
     % uncommenting the scopehandler and removing overrides
     % we need the highlevel model for this, load it if needed

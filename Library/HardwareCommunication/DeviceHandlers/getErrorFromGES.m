@@ -16,14 +16,14 @@ switch(tempSensor1State)
                 gesError = GESError.GES_NO_ERROR;
             case GES.LEFT_GES                
                 % left ges has the secondary button
-                switch(buttonState)
-                    case SensorState.NO_SENSOR_PRESENT
-                        gesError = GESError.GES_BUTTON_NOT_PRESENT;
-                    case SensorState.SENSOR_DISCONNECTED
-                        gesError = GESError.GES_BUTTON_DISCONNECT;
-                    otherwise
+%                 switch(buttonState)
+%                     case SensorState.NO_SENSOR_PRESENT
+%                         gesError = GESError.GES_BUTTON_NOT_PRESENT;
+%                     case SensorState.SENSOR_DISCONNECTED
+%                         gesError = GESError.GES_BUTTON_DISCONNECT;
+%                     otherwise
                         gesError = GESError.GES_NO_ERROR;
-                end
+%                 end
             case GES.BACK_GES
                 % back ges has an imu and a temp sensor
                 switch(tempSensor2State)
@@ -34,14 +34,14 @@ switch(tempSensor1State)
                     otherwise
                         % imu is just for datalogging so far, so least
                         % priority
-                        switch(imuState)
-                            case SensorState.NO_SENSOR_PRESENT
-                                gesError = GESError.GES_IMU_NOT_PRESENT;
-                            case SensorState.SENSOR_DISCONNECTED
-                                gesError = GESError.GES_IMU_DISCONNECT;
-                            otherwise
+%                         switch(imuState)
+%                             case SensorState.NO_SENSOR_PRESENT
+%                                 gesError = GESError.GES_IMU_NOT_PRESENT;
+%                             case SensorState.SENSOR_DISCONNECTED
+%                                 gesError = GESError.GES_IMU_DISCONNECT;
+%                             otherwise
                                 gesError = GESError.GES_NO_ERROR;
-                        end
+%                         end
                 end
             otherwise
                 gesError = GESError.GES_UNKNOWN_ERROR;

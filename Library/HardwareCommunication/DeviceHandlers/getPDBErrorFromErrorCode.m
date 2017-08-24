@@ -23,13 +23,15 @@ s = errorCodebin(8:10);
 if strcmp(f,'0') %triggered when pdb is not booted correctedly which means it's disconnected
     pdbError = PDBError.PDB_DISCONNECTED;
 elseif strcmp(c,'10')
-    pdbError = PDBError.PDB_HIGH_CURRENT_ERROR;
+%     pdbError = PDBError.PDB_HIGH_CURRENT_ERROR;
+    pdbError = PDBError.NO_ERROR_PDB;
 elseif strcmp(v,'10')
     pdbError = PDBError.PDB_LOW_VOLTAGE_ERROR;
 elseif strcmp(t,'10')
     pdbError = PDBError.PDB_HIGH_TEMPERATURE_ERROR;
 elseif strcmp(c,'01')
-    pdbError = PDBError.PDB_HIGH_CURRENT_WARNING;
+%     pdbError = PDBError.PDB_HIGH_CURRENT_WARNING;
+    pdbError = PDBError.NO_ERROR_PDB;
 elseif strcmp(v,'01')
     pdbError = PDBError.PDB_LOW_VOLTAGE_WARNING;
 elseif strcmp(t,'01')
