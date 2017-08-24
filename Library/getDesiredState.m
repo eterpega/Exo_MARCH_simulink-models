@@ -9,7 +9,11 @@ if(isempty(lastDesiredState))
     previousDesiredState = ExoskeletonState.FULLMANUAL;
 end
 if (errorReaction == ErrorReaction.QUITIMMEDIATELY)
-    desiredState = ExoskeletonState.FULLMANUAL;
+    if(shutdownDesired)
+        desiredState = ExoskeletonState.SHUTTING_DOWN;
+    else
+        desiredState = ExoskeletonState.FULLMANUAL;
+    end
     lastDesiredState = ExoskeletonState.FULLMANUAL;
     previousDesiredState = ExoskeletonState.FULLMANUAL;
 elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
@@ -18,7 +22,11 @@ elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
     if(lastDesiredState == ExoskeletonState.HOLDSTAND)
         desiredState = lastDesiredState;
     elseif(lastDesiredState == ExoskeletonState.HOLDSIT)
-        desiredState = lastDesiredState;
+        if(shutdownDesired)
+            desiredState = ExoskeletonState.SHUTTING_DOWN;
+        else
+            desiredState = lastDesiredState;
+        end
     else % then a walk action is happening, ie continuousgait, stones, stairs
         % this means the previous state is always holdStand, switch to it:
         desiredState = previousDesiredState;
@@ -46,6 +54,9 @@ elseif(errorReaction == ErrorReaction.MOVETOPREVIOUSSTATE)
     else % then a walk action is happening, ie continuousgait, stones, stairs
         % this means the previous state is always holdStand, switch to it:
         desiredState = previousDesiredState;
+    end
+    if(desiredState == ExoskeletonState.HOLDSIT && shutdownDesired)
+        desiredState = ExoskeletonState.SHUTTING_DOWN;
     end
 else
     % no error reaction, state is determined by inputDevice, GES button and
