@@ -41,6 +41,7 @@ if strcmpi(buildType,'standalone')
     set_param('HighLevelMARCH/DataLogger/ScopeHandler','commented','on');
     set_param('HighLevelMARCH/SafetyModule/enableManualErrorReaction','Value','0');
     set_param('HighLevelMARCH/DesiredStateSelector/enableManualDesiredState','Value','0');
+    set_param('HighLevelMARCH/PeripheralHandler/enableManualCommandPDB','Value','0');
     set_param('HighLevelMARCH/JointHandler/setPointSelection','Value','1');
     warning('on',warningID);
     
@@ -82,6 +83,7 @@ elseif strcmpi(buildType,'graphical')
     set_param('HighLevelMARCH/DataLogger/ScopeHandler','commented','off');
     set_param('HighLevelMARCH/SafetyModule/enableManualErrorReaction','Value','1');
     set_param('HighLevelMARCH/DesiredStateSelector/enableManualDesiredState','Value','1');
+    set_param('HighLevelMARCH/PeripheralHandler/enableManualCommandPDB','Value','1');
     set_param('HighLevelMARCH/JointHandler/setPointSelection','Value','3');
     warning('on',warningID);
     

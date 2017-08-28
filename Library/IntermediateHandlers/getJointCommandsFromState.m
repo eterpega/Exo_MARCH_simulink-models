@@ -5,6 +5,10 @@ persistent clearJointErrorDuration;
 if(isempty(clearJointErrorDuration))
     clearJointErrorDuration = 0;
 end
+persistent lastMasterState;
+if(isempty(lastMasterState))
+    lastMasterState = ExoskeletonState.FULLMANUAL;
+end
 
 if(clearJointErrors)
     clearJointErrorDuration = 50;
@@ -44,9 +48,23 @@ else
         case ExoskeletonState.FULLMANUAL
             jointCommands = [ JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL ];
         case ExoskeletonState.SEVERE_ERROR
-            jointCommands = [ JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR ];
+            if(lastMasterState ~= ExoskeletonState.MANUAL || lastMasterState ~= ExoskeletonState.FULLMANUAL)
+                %If severe error occurs when in not previously being in
+                %manual or full manual, react
+                jointCommands = [ JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR ];
+            else
+                %Remain in torque control if previously in manual or full manual.
+                jointCommands = [ JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL ];
+            end
         otherwise
             jointCommands = [ JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR; JointCommand.DEACTIVATEMOTOR ];
     end
 end
+
+if( (lastMasterState == ExoskeletonState.MANUAL || lastMasterState == ExoskeletonState.FULLMANUAL) && masterState == ExoskeletonState.SEVERE_ERROR)
+    %Do not assign masterState to lastMasterState if this is the case
+else
+    lastMasterState = masterState;
+end
+
 end
