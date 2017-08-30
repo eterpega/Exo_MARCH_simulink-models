@@ -16,5 +16,9 @@ classdef StepType < Simulink.IntEnumType
         WAITSTANDUP(12)
         INITIALIZESITDOWN(13)
         WAITSITDOWN(14)
+        INITIALIZESTAIRSUP(15)
+        WAITSTAIRSUP(16)
+        INITIALIZESTAIRSDOWN(17)
+        WAITSTAIRSDOWN(18)
     end 
 end
