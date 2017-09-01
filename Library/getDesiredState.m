@@ -66,8 +66,7 @@ else
     elseif (inputDeviceState == ExoskeletonState.UNREACHABLE)
         desiredState = lastDesiredState;
     else
-        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPE ...
-                || inputDeviceState == ExoskeletonState.STAIRSUP || inputDeviceState == ExoskeletonState.STAIRSDOWN || inputDeviceState == ExoskeletonState.SLOPE))
+        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPE))
             % then retrigger that state
             desiredState = previousDesiredState;
         else
