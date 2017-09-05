@@ -1,4 +1,4 @@
-function buzzerCommand = getBuzzerCommandFromState(stepType, waitTimeStandUp, waitTimeSitDown, waitTimeStairsUp, waitTimeStairsDown, errorReaction)
+function buzzerCommand = getBuzzerCommandFromState(stepType, waitTimeStandUp, waitTimeSitDown, waitTimeStairsUp, waitTimeStairsDown, waitTimeSlopeUp, waitTimeSlopeDown, errorReaction)
 %% Set up persistant variables
 % We would like to remeber the previous step type and buzzer command
 persistent stepTypePrevious
@@ -94,6 +94,42 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
             buzzerCommand = lastBuzzerCommand;
         end
 
+   %% SlopeUp beeper handling
+    case StepType.INITIALIZESLOPEUP 
+        if stepType == StepType.WAITSLOPEUP 
+            % if the MARCH II starts wating for the standup warn the pilot
+            buzzerCommand = waitTimeSlopeUp;
+        else
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
+        end
+    case StepType.WAITSLOPEUP
+        if stepType == StepType.HOMESTAND
+            % If standing up is canceled stop the timer as well
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
+        elseif stepType == StepType.SLOPEUPSTEP
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
+        else
+            buzzerCommand = lastBuzzerCommand;
+        end
+
+     %% SlopeDown Beep Handling   
+     case StepType.INITIALIZESLOPEDOWN 
+        if stepType == StepType.WAITSLOPEDOWN
+            % if the MARCH II starts wating for the standup warn the pilot
+            buzzerCommand = waitTimeSlopeDown;
+        else
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
+        end
+    case StepType.WAITSLOPEDOWN
+        if stepType == StepType.HOMESTAND
+            % If standing up is canceled stop the timer as well
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
+        elseif stepType == StepType.SLOPEDOWNSTEP
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
+        else
+            buzzerCommand = lastBuzzerCommand;
+        end        
+        
     otherwise
         buzzerCommand = uint8(BuzzerCommand.NOTHING);
 end
