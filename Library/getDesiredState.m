@@ -21,7 +21,7 @@ elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
     % finish standing up or sitting down, and hold stand/hold sit 
     if(lastDesiredState == ExoskeletonState.HOLDSTAND)
         desiredState = lastDesiredState;
-    elseif(lastDesiredState == ExoskeletonState.HOLDSIT)
+    elseif(lastDesiredState == ExoskeletonState.HOLDSIT || lastDesiredState == ExoskeletonState.SITSOFA)
         if(shutdownDesired)
             desiredState = ExoskeletonState.SHUTTING_DOWN;
         else
@@ -33,18 +33,18 @@ elseif(errorReaction == ErrorReaction.FINISHCURRENTREACTION)
     end
 elseif(errorReaction == ErrorReaction.MOVETOPREVIOUSSTATE)
     % this is only different when standing up or sitting down
-    if(lastDesiredState == ExoskeletonState.HOLDSTAND && previousDesiredState ~= ExoskeletonState.HOLDSIT)
+    if( (lastDesiredState == ExoskeletonState.HOLDSTAND) && (previousDesiredState ~= ExoskeletonState.HOLDSIT) && (previousDesiredState ~= ExoskeletonState.SITSOFA) )
         desiredState = lastDesiredState; % this means we were walking/stairs previously
-    elseif(lastDesiredState == ExoskeletonState.HOLDSTAND && previousDesiredState == ExoskeletonState.HOLDSIT)
+    elseif(lastDesiredState == ExoskeletonState.HOLDSTAND && (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.SITSOFA) )
         %during standing up an error occurred, sit back down
         desiredState = previousDesiredState;
         % also, we need to make sure the output value wont oscillate:
         lastDesiredState = desiredState;
         % this assignment makes previousDesiredState not save the previous
         % value, so we won't switch back on the next run
-    elseif(lastDesiredState == ExoskeletonState.HOLDSIT && previousDesiredState ~= ExoskeletonState.HOLDSTAND)
+    elseif( (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.SITSOFA) && previousDesiredState ~= ExoskeletonState.HOLDSTAND)
         desiredState = lastDesiredState; % we were sitting and in manual before
-    elseif(lastDesiredState == ExoskeletonState.HOLDSIT && previousDesiredState == ExoskeletonState.HOLDSTAND)
+    elseif( (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.SITSOFA) && previousDesiredState == ExoskeletonState.HOLDSTAND)
         % we were sitting down and an error occurred, stand back up
         desiredState = previousDesiredState;
         % also, we need to make sure the output value wont oscillate:
@@ -55,7 +55,7 @@ elseif(errorReaction == ErrorReaction.MOVETOPREVIOUSSTATE)
         % this means the previous state is always holdStand, switch to it:
         desiredState = previousDesiredState;
     end
-    if(desiredState == ExoskeletonState.HOLDSIT && shutdownDesired)
+    if( (desiredState == ExoskeletonState.HOLDSIT || desiredState == ExoskeletonState.SITSOFA) && shutdownDesired)
         desiredState = ExoskeletonState.SHUTTING_DOWN;
     end
 else
