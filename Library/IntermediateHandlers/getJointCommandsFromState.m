@@ -45,6 +45,16 @@ else
             jointCommands = gaitCommands;
         case ExoskeletonState.STONES
             jointCommands = gaitCommands;
+        case ExoskeletonState.HOLDSOFA
+            jointCommands = gaitCommands;
+        case ExoskeletonState.SOFADOWN
+            jointCommands = gaitCommands;
+        case ExoskeletonState.SOFAUP
+            jointCommands = gaitCommands;
+        case ExoskeletonState.ROUGHTERRAIN
+            jointCommands = gaitCommands;
+        case ExoskeletonState.SINGLE_STEP
+            jointCommands = gaitCommands;
         case ExoskeletonState.MANUAL % what were these for again..
             jointCommands = [ JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL; JointCommand.TORQUECONTROL ];
         case ExoskeletonState.FULLMANUAL

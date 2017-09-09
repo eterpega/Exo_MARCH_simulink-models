@@ -18,41 +18,41 @@ buzzerCommand = uint8(BuzzerCommand.NOTHING);
 switch stepTypePrevious %Buzzer command is derived from the previous and current masterState
 
     %% StandUp Beep Handling   
-    case StepType.INITIALIZESTANDUP 
-        if stepType == StepType.WAITSTANDUP 
+    case (StepType.INITIALIZESTANDUP)
+        if (stepType == StepType.WAITSTANDUP)
             % if the MARCH II starts wating for the standup warn the pilot
             buzzerCommand = waitTimeStandUp;
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
-    case StepType.WAITSTANDUP
-        if stepType == StepType.HOMESIT
+    case (StepType.WAITSTANDUP)
+        if (stepType == StepType.HOMESIT)
             % If standing up is canceled stop the timer as well
             buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
-        elseif stepType == StepType.STANDUP
+        elseif (stepType == StepType.STANDUP)
             buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         else
             buzzerCommand = lastBuzzerCommand;
         end
     case StepType.HOMESTAND
-        if stepType == StepType.SITDOWN
+        if (stepType == StepType.SITDOWN)
             % If the MARCH II is gonna sit down warn the pilot
             buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         end
 
      %% SitDown Beep Handling   
-     case StepType.INITIALIZESITDOWN 
-        if stepType == StepType.WAITSITDOWN
+     case (StepType.INITIALIZESITDOWN)
+        if (stepType == StepType.WAITSITDOWN)
             % if the MARCH II starts wating for the standup warn the pilot
             buzzerCommand = waitTimeSitDown;
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
-    case StepType.WAITSITDOWN
+    case (StepType.WAITSITDOWN)
         if stepType == StepType.HOMESTAND
             % If standing up is canceled stop the timer as well
             buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
-        elseif stepType == StepType.SITDOWN
+        elseif (stepType == StepType.SITDOWN)
             buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         else
             buzzerCommand = lastBuzzerCommand;
@@ -129,6 +129,48 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
         else
             buzzerCommand = lastBuzzerCommand;
         end        
+ 
+     %% StandUp sofa Beep Handling   
+    case (StepType.INITIALIZESOFAUP)
+        if (stepType == StepType.WAITSOFAUP)
+            % if the MARCH II starts wating for the standup warn the pilot
+            buzzerCommand = waitTimeStandUp;
+        else
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
+        end
+    case (StepType.WAITSOFAUP)
+        if (stepType == StepType.HOMESOFA)
+            % If standing up is canceled stop the timer as well
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
+        elseif (stepType == StepType.SOFAUPSTEP)
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
+        else
+            buzzerCommand = lastBuzzerCommand;
+        end
+    case StepType.HOMESTAND
+        if (stepType == StepType.SOFADOWNSTEP)
+            % If the MARCH II is gonna sit down warn the pilot
+            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
+        end
+
+     %% SitDown sofa Handling   
+     case (StepType.INITIALIZESOFADOWN)
+        if (stepType == StepType.WAITSOFADOWN)
+            % if the MARCH II starts wating for the standup warn the pilot
+            buzzerCommand = waitTimeSitDown;
+        else
+            buzzerCommand = uint8(BuzzerCommand.NOTHING);
+        end
+    case (StepType.WAITSOFADOWN)
+        if stepType == StepType.HOMESTAND
+            % If standing up is canceled stop the timer as well
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);      
+        elseif (stepType == StepType.SOFADOWNSTEP)
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
+        else
+            buzzerCommand = lastBuzzerCommand;
+        end
+       
         
     otherwise
         buzzerCommand = uint8(BuzzerCommand.NOTHING);

@@ -63,13 +63,12 @@ for m = 1:numberOfFieldsInStruct
 end
 
 %% Plot the desired data
-
 numOfPlots = length(indicesToPlot);
 legendCell = cell(numOfPlots,1);
 
 
 
-figure
+%figure
 title('Plot:')
 for r = 1:numOfPlots
     plot(time,smooth(struct.(char(fieldNames(fieldsToPlot(r)))).data(:,indicesToPlot(r)),smoothSamples));
@@ -78,5 +77,13 @@ for r = 1:numOfPlots
 end
 legend(legendCell);
 xlabel('time [s]');
+
+if contains(dataToPlotCell,'masterState')
+    yLabelsMasterStates ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
+        'SITTINGDOWN(5)', 'CONTINUOUSGAIT(6)', 'STAIRSUP(7)', 'SLOPEUP(8)',...
+        'STONES(9)', 'STAIRSDOWN(10)','SLOPEDOWN(11)','HOLDSOFA(12)','SOFADOWN(13)','SOFAUP(14)','ROUGHTERRAIN(15)','SINGLE_STEP(16)','SEVERE_ERROR(666)','UNREACHABLE(999)','FULLMANUAL(1337)','SHUTTING_DOWN(9001)'};
+    set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16, 666, 999, 1337, 9001],'YTickLabel', yLabelsMasterStates);
+
+end
 
 end
