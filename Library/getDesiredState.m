@@ -37,18 +37,18 @@ elseif(errorReaction == ErrorReaction.MOVETOPREVIOUSSTATE)
         desiredState = lastDesiredState; % this means we were walking/stairs previously
     elseif(lastDesiredState == ExoskeletonState.HOLDSTAND && (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.HOLDSOFA) )
         %during standing up an error occurred, sit back down
-        desiredState = previousDesiredState;
+        desiredState = lastDesiredState;%This was previousDesiredState;
         % also, we need to make sure the output value wont oscillate:
-        lastDesiredState = desiredState;
+        %lastDesiredState = desiredState;
         % this assignment makes previousDesiredState not save the previous
         % value, so we won't switch back on the next run
     elseif( (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.HOLDSOFA) && previousDesiredState ~= ExoskeletonState.HOLDSTAND)
         desiredState = lastDesiredState; % we were sitting and in manual before
     elseif( (previousDesiredState == ExoskeletonState.HOLDSIT || previousDesiredState == ExoskeletonState.HOLDSOFA) && previousDesiredState == ExoskeletonState.HOLDSTAND)
         % we were sitting down and an error occurred, stand back up
-        desiredState = previousDesiredState;
+        desiredState = lastDesiredState;%This was previousDesiredState;
         % also, we need to make sure the output value wont oscillate:
-        lastDesiredState = desiredState;
+        %lastDesiredState = desiredState;
         % this assignment makes previousDesiredState not save the previous
         % value, so we won't switch back on the next run
     else % then a walk action is happening, ie continuousgait, stones, stairs
