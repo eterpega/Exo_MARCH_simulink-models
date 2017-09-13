@@ -2,14 +2,20 @@ function plot_joint(actualAngleJoint, masterState, desiredState, stepType, time,
 %MasterStates
 yLabelsMasterStates ={'HOLDSIT(1)', 'MANUAL(2)', 'STANDINGUP(3)', 'HOLDSTAND(4)',...
         'SITTINGDOWN(5)', 'CONTINUOUSGAIT(6)', 'STAIRS(7)', 'SLOPE(8)',...
-        'STONES(9)', 'STAIRSDOWN(10)','SEVERE_ERROR(666)'};
+        'STONES(9)', 'STAIRSDOWN(10)','SLOPEDOWN(11)','HOLDSOFA(12)',...
+        'SOFADOWN(13)','SOFAUP(14)','ROUGHTERRAIN(15)','SINGLE_STEP(16)'};
     
     
 %Step types
 yLabelsStepTypes ={'FULLSTEP(1)', 'HALFSTEPSTART(2)', 'HALFSTEPSTOP(3)', ...
 'STAIRSUP(4)','STANDUP(5)','SITDOWN(6)','HOMESTAND(7)','HOMESIT(8)',...
 'NOSTEP(9)', 'STAIRSDOWN(10)','INITIALIZESTANDUP(11)','WAITSTANDUP(12)',...
-'INITIALIZESITDOWN(13)', 'WAITSITDOWN(14)'};
+'INITIALIZESITDOWN(13)', 'WAITSITDOWN(14)','INITIALIZESTAIRSUP(15)',...
+'WAITSTAIRSUP(16)','INITIALIZESTAIRSDOWN(17)','WAITSTAIRSDOWN(18)',...
+'SLOPEUPSTEP(19)','SLOPEDOWNSTEP(20)','INITIALIZESLOPEUP(21)',...
+'WAITSLOPEUP(22)','INITIALIZESLOPEDOWN(23)','WAITSLOPEDOWN(24)',...
+'INITIALIZESOFAUP(25)','WAITSOFAUP(26)','SOFAUPSTEP(27)','INITIALIZESOFADOWN(28)',...
+'WAITSOFADOWN(29)','SOFADOWNSTEP(30)','HOMESOFA(31)','ROUGHTERRAINSTEP(32)'};
 scrsz = get(groot,'ScreenSize');
 
 if ~exist('figures', 'dir')
@@ -52,8 +58,8 @@ subplot(2,1,2)
 plot(time, masterState);
 hold on
 plot(time, desiredState);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9,10, 11, 12],'YTickLabel', yLabelsMasterStates);
-axis([0 length(desiredState)/500 1 12]);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9,10, 11, 12, 13, 14, 15, 16],'YTickLabel', yLabelsMasterStates);
+axis([0 length(desiredState)/500 1 16]);
 xlabel('time [ms]')
 ylabel('state')
 legend('masterState','desiredState')
@@ -75,8 +81,8 @@ grid on
 %% Step Types
 subplot(2,1,2)
 plot(time, stepType);
-set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9, 10, 11, 12],'YTickLabel', yLabelsStepTypes);
-axis([0 length(desiredState)/500 1 12]);
+set(gca, 'Ytick',[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32],'YTickLabel', yLabelsStepTypes);
+axis([0 length(desiredState)/500 1 32]);
 xlabel('time [ms]')
 ylabel('step type')
 grid on
