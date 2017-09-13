@@ -69,8 +69,10 @@ legendCell = cell(numOfPlots,1);
 
 
 %figure
-title('Plot:')
+    figure
+    title('Plot:')
 for r = 1:numOfPlots
+
     plot(time,smooth(struct.(char(fieldNames(fieldsToPlot(r)))).data(:,indicesToPlot(r)),smoothSamples));
     hold on
     legendCell(r) = (struct.(char(fieldNames(fieldsToPlot(r)))).signalNames(indicesToPlot(r)));
