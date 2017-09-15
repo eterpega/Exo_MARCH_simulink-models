@@ -66,8 +66,13 @@ else
     elseif (inputDeviceState == ExoskeletonState.UNREACHABLE)
         desiredState = lastDesiredState;
     else
-        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN || previousDesiredState == ExoskeletonState.SLOPEUP || previousDesiredState == ExoskeletonState.SLOPEDOWN))
+        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN))
             % then retrigger that state
+            desiredState = previousDesiredState;
+        elseif (secondaryButton == 1 && (lastDesiredState == ExoskeletonState.SLOPEUP || lastDesiredState == ExoskeletonState.SLOPEDOWN))
+            %If slope up or slope down selected it keeps on executing this
+            %until deactiveted on either input device or if secondaryButton
+            %is triggered
             desiredState = previousDesiredState;
         else
             desiredState = inputDeviceState;
