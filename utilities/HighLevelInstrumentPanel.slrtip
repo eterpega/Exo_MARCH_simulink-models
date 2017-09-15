@@ -1261,7 +1261,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay8" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleRK</Property>
+          <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/actualAngleRKFE</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
@@ -1301,7 +1301,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay30" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">HardwareCommunicationFourJointsAndBuzzer/SOMANETHandler/SOMANET_LKFE/ConfigHandler/Data Type Conversion16/s1</Property>
+          <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/jointConfigSOMANET/angleOffsetLKFE</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">100, 25</Property>
@@ -1394,7 +1394,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay6" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLK</Property>
+          <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/actualAngleLKFE</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
@@ -1527,7 +1527,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay4" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleRH</Property>
+          <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/actualAngleRHFE</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>
@@ -1660,7 +1660,7 @@
         <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay1" children="Controls">
           <Property name="BindingSrcType">Signal</Property>
           <Property name="OutputValue">0</Property>
-          <Property name="BindingSrcPath">DataLogger/ScopeHandler/DynamicsScopes/actAngleLH</Property>
+          <Property name="BindingSrcPath">DataLogger/DatalogHandler/Subsystem/receivedFromSOMANET/receivedFromSOMANETs/actualAngleLHFE</Property>
           <Property name="BindingSrcObject" />
           <Property name="TargetName">JetStar</Property>
           <Property name="Size">117, 25</Property>

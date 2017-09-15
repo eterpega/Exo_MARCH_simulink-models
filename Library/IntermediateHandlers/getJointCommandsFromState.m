@@ -2,16 +2,23 @@ function [ jointCommands ] = getJointCommandsFromState( masterState, clearJointE
 %GETJOINTCOMMANDSFROMSTATE Determines the jointCommands from the
 %masterState and wether joint errors should be cleared
 persistent clearJointErrorDuration;
+persistent clearJointErrorCooldown;
 if(isempty(clearJointErrorDuration))
     clearJointErrorDuration = 0;
+    clearJointErrorCooldown = 500;
 end
 persistent lastMasterState;
 if(isempty(lastMasterState))
     lastMasterState = ExoskeletonState.FULLMANUAL;
 end
 
-if(clearJointErrors)
-    clearJointErrorDuration = 50;
+if(clearJointErrorCooldown < 500)
+    clearJointErrorCooldown = clearJointErrorCooldown + 1;
+else
+    if(clearJointErrors)
+        clearJointErrorDuration = 10;
+        clearJointErrorCooldown = 0;
+    end
 end
 
 if(clearJointErrorDuration > 0)
