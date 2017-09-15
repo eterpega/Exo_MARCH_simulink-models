@@ -23,6 +23,7 @@ if strcmpi(buildType,'standalone')
     targetSettings = SimulinkRealTime.getTargetSettings;
     targetSettings.TargetScope = 'Disabled';
     targetSettings.TargetBoot = 'StandAlone';
+    targetSettings.MaxModelSize = '4MB';
     
     % commenting out the scopehandler and removing overrides
     % we need the highlevel model for this, load it if needed
@@ -65,6 +66,7 @@ elseif strcmpi(buildType,'graphical')
     targetSettings = SimulinkRealTime.getTargetSettings;
     targetSettings.TargetScope = 'Enabled';
     targetSettings.TargetBoot = 'BootFloppy';
+    targetSettings.MaxModelSize = '4MB';
     
     % uncommenting the scopehandler and removing overrides
     % we need the highlevel model for this, load it if needed
