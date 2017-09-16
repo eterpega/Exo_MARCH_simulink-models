@@ -1,5 +1,68 @@
 
   <Object type="Desktop.Xpc.Designer.InstrumentPanel, Desktop.Xpc.Designer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="HighLevelInstrumentPanel" children="Controls">
+    <Object type="MW.Instruments.Panel, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Panel3" children="Controls">
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay56" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">HardwareCommunicationMarchII/ReceivedFourJoints/ReceiveFromAllGESv2s/EtherCAT PDO Receive4</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">82, 96</Property>
+        <Property name="Name">NumericDisplay56</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay55" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">HardwareCommunicationMarchII/ReceivedFourJoints/ReceiveFromAllGESv2s/EtherCAT PDO Receive3</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">82, 68</Property>
+        <Property name="Name">NumericDisplay55</Property>
+      </Object>
+      <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay54" children="Controls">
+        <Property name="BindingSrcType">Signal</Property>
+        <Property name="OutputValue">0</Property>
+        <Property name="BindingSrcPath">HardwareCommunicationMarchII/ReceivedFourJoints/ReceiveFromAllGESv2s/EtherCAT PDO Receive2</Property>
+        <Property name="BindingSrcObject" />
+        <Property name="TargetName">JetStar</Property>
+        <Property name="Size">100, 25</Property>
+        <Property name="Location">82, 40</Property>
+        <Property name="Name">NumericDisplay54</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label111" children="Controls">
+        <Property name="Text">IMU z</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">4, 98</Property>
+        <Property name="Name">Label111</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label110" children="Controls">
+        <Property name="Text">IMU y</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">4, 71</Property>
+        <Property name="Name">Label110</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label109" children="Controls">
+        <Property name="Text">IMU x</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">4, 42</Property>
+        <Property name="Name">Label109</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Object type="System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" name="Label108" children="Controls">
+        <Property name="Text">IMU</Property>
+        <Property name="UseCompatibleTextRendering">True</Property>
+        <Property name="Location">3, 15</Property>
+        <Property name="Name">Label108</Property>
+        <Property name="Size">100, 23</Property>
+      </Object>
+      <Property name="Size">202, 201</Property>
+      <Property name="Location">624, 813</Property>
+      <Property name="Name">Panel3</Property>
+    </Object>
     <Object type="MW.Instruments.NumericDisplay, mwio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NumericDisplay53" children="Controls">
       <Property name="BindingSrcType">Signal</Property>
       <Property name="OutputValue">0</Property>
