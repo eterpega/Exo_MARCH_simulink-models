@@ -39,6 +39,10 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
             % If the MARCH II is gonna sit down warn the pilot
             buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         end
+        if (stepType == StepType.SOFADOWNSTEP)
+            % If the MARCH II is gonna sit down warn the pilot
+            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
+        end
 
      %% SitDown Beep Handling   
      case (StepType.INITIALIZESITDOWN)
@@ -146,11 +150,6 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
             buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         else
             buzzerCommand = lastBuzzerCommand;
-        end
-    case StepType.HOMESTAND
-        if (stepType == StepType.SOFADOWNSTEP)
-            % If the MARCH II is gonna sit down warn the pilot
-            buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
         end
 
      %% SitDown sofa Handling   
