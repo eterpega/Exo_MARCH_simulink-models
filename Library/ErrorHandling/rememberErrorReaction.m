@@ -41,9 +41,9 @@ else
     errorLocation = prevErrorLocation;
 end
 
-if((errorMessage == ErrorMessage.DEVICE_DISCONNECTED_ERROR || errorMessage == ErrorMessage.CONTROL_ERROR) && curTimestamp < 1) 
+if((errorMessage == ErrorMessage.DEVICE_DISCONNECTED_ERROR || errorMessage == ErrorMessage.CONTROL_ERROR) && curTimestamp < 3) 
     % somanets seem to connect after 382 samples consistently
-    % this is to ignore boot errors for the first second
+    % this is to ignore boot errors for the first 3 seconds
     % control_error is triggered by target setpoints out of bounds on the SOMANETs
     errorMessage = ErrorMessage.NO_ERROR;
     errorReaction = ErrorReaction.NOREACTION;
