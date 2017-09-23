@@ -6,9 +6,11 @@ function [ gesError ] = getErrorFromGES(buttonState, imuState, tempSensor1State,
 % all GES should have a working tempSensor1
 switch(tempSensor1State)
     case SensorState.NO_SENSOR_PRESENT
-        gesError = GESError.GES_TEMP1SENSOR_NOT_PRESENT;
+        %gesError = GESError.GES_TEMP1SENSOR_NOT_PRESENT;
+        gesError = GESError.GES_NO_ERROR;
     case SensorState.SENSOR_DISCONNECTED
-        gesError = GESError.GES_TEMP1SENSOR_DISCONNECT;
+        %gesError = GESError.GES_TEMP1SENSOR_DISCONNECT;
+        gesError = GESError.GES_NO_ERROR;
     otherwise
         switch(gesType)
             case GES.RIGHT_GES
@@ -28,9 +30,11 @@ switch(tempSensor1State)
                 % back ges has an imu and a temp sensor
                 switch(tempSensor2State)
                     case SensorState.NO_SENSOR_PRESENT
-                        gesError = GESError.GES_TEMP2SENSOR_NOT_PRESENT;
+                        gesError = GESError.GES_NO_ERROR;
+                        %gesError = GESError.GES_TEMP2SENSOR_NOT_PRESENT;
                     case SensorState.SENSOR_DISCONNECTED
-                        gesError = GESError.GES_TEMP2SENSOR_DISCONNECT;
+                        gesError = GESError.GES_NO_ERROR;
+                        %gesError = GESError.GES_TEMP2SENSOR_DISCONNECT;
                     otherwise
                         % imu is just for datalogging so far, so least
                         % priority

@@ -38,10 +38,11 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
         if (stepType == StepType.SITDOWN)
             % If the MARCH II is gonna sit down warn the pilot
             buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
-        end
-        if (stepType == StepType.SOFADOWNSTEP)
+        elseif (stepType == StepType.SOFADOWNSTEP)
             % If the MARCH II is gonna sit down warn the pilot
             buzzerCommand = uint8(BuzzerCommand.ONEBEEP);
+        else
+            buzzerCommand = uint8(BuzzerCommand.NOTHING); 
         end
 
      %% SitDown Beep Handling   
@@ -103,6 +104,8 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
         if stepType == StepType.WAITSLOPEUP 
             % if the MARCH II starts wating for the standup warn the pilot
             buzzerCommand = waitTimeSlopeUp;
+        elseif stepType == StepType.HOMESTAND
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER); 
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
@@ -121,6 +124,8 @@ switch stepTypePrevious %Buzzer command is derived from the previous and current
         if stepType == StepType.WAITSLOPEDOWN
             % if the MARCH II starts wating for the standup warn the pilot
             buzzerCommand = waitTimeSlopeDown;
+        elseif stepType == StepType.HOMESTAND
+            buzzerCommand = uint8(BuzzerCommand.STOPTIMER);
         else
             buzzerCommand = uint8(BuzzerCommand.NOTHING);
         end
