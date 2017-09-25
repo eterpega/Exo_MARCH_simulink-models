@@ -64,7 +64,8 @@ switch(detectedError)
                 resetJointErrors = 0;
             elseif any((somanetErrors == SomanetError.PHASE_OVERCURRENT) | ...
                     (somanetErrors == SomanetError.TARGET_POSITION_OUT_OF_BOUNDS) | ...
-                    (somanetErrors == SomanetError.SOMANET_SENSOR_ERROR))
+                    (somanetErrors == SomanetError.SOMANET_SENSOR_ERROR) |...
+                    (somanetErrors == SomanetError.SOMANET_OVERVOLTAGE))
                 % medium error, somanet in fault state. finish reaction and
                 % reset error
                 errorReaction = ErrorReaction.FINISHCURRENTREACTION;

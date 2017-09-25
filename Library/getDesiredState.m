@@ -66,11 +66,10 @@ else
     elseif (inputDeviceState == ExoskeletonState.UNREACHABLE)
         desiredState = lastDesiredState;
     else
-        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN))
+        if(secondaryButton == 1 && (previousDesiredState == ExoskeletonState.STAIRSUP || previousDesiredState == ExoskeletonState.STAIRSDOWN  || previousDesiredState == ExoskeletonState.SLOPEDOWN))
             % then retrigger that state
             desiredState = previousDesiredState;
-        elseif(secondaryButton == 1 && (lastDesiredState == ExoskeletonState.SLOPEUP || lastDesiredState == ExoskeletonState.SLOPEDOWN || ...
-                previousDesiredState == ExoskeletonState.SLOPEUP || previousDesiredState == ExoskeletonState.SLOPEDOWN))
+        elseif(secondaryButton == 1 && (lastDesiredState == ExoskeletonState.SLOPEUP|| previousDesiredState == ExoskeletonState.SLOPEUP))
             %If in slope up or slope down, which is "continuous" you can go
             %back to hold stand by either pulling the trigger on the input
             %device, or pushing the button on the left upper leg
