@@ -1,14 +1,16 @@
-function plotKinematics( marchKinematics, startTime )
+function plotKinematics( marchKinematics, startTime, endTime)
 %PLOTKINEMATICS Plots given kinematics of marchII
-if nargin < 2
-    startTime = 1;
+if nargin < 3
+    endTime = length(marchKinematics.time);
+    if nargin < 2
+        startTime = 1;
+    end
 end
-samples = length(marchKinematics.time);
 sampleStep = 25;
 waitTime = 0.01;
 h = figure;
 
-for i = startTime:sampleStep:samples
+for i = startTime:sampleStep:endTime
     drawFrame(marchKinematics, i);
     drawnow
     pause(waitTime);

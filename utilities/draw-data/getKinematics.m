@@ -16,7 +16,7 @@ marchKinematics.rightKnee = marchKinematics.rightHip + [sin(angleData.RHFE'); -c
 marchKinematics.leftAnkle = marchKinematics.leftKnee + [sin(angleData.LHFE'-angleData.LKFE'); -cos(angleData.LHFE' - angleData.LKFE'); zeros(1,samples)]*bodyConstants.lowerLegLength;
 marchKinematics.rightAnkle = marchKinematics.rightKnee + [sin(angleData.RHFE'-angleData.RKFE'); -cos(angleData.RHFE' - angleData.RKFE'); zeros(1,samples)]*bodyConstants.lowerLegLength;
 
-imuTransform = eul2rotm(angleData.IMU(:,[2 3 1])); % we use y as height, matlab uses z
+imuTransform = eul2rotm(angleData.IMU); % we use y as height, matlab uses z
 marchKinematics2 = struct;
 marchKinematics2.imuPos = zeros(3,samples);
 marchKinematics2.leftHip = zeros(3,samples);
@@ -25,13 +25,16 @@ marchKinematics2.leftAnkle = zeros(3,samples);
 marchKinematics2.rightHip = zeros(3,samples);
 marchKinematics2.rightKnee = zeros(3,samples);
 marchKinematics2.rightAnkle = zeros(3,samples);
+rowswap = [1];
+coordTransform = [-1 0 0; 0 1 0; 0 0 1];
+coordTransform(:,fliplr(rowswap)) = coordTransform(:,rowswap);
 for i = 1:samples
-    marchKinematics2.leftHip(:,i) = imuTransform(:,:,i) * marchKinematics.leftHip(:,i);
-    marchKinematics2.leftKnee(:,i) = imuTransform(:,:,i) * marchKinematics.leftKnee(:,i);
-    marchKinematics2.leftAnkle(:,i) = imuTransform(:,:,i) * marchKinematics.leftAnkle(:,i);
-    marchKinematics2.rightHip(:,i) = imuTransform(:,:,i) * marchKinematics.rightHip(:,i);
-    marchKinematics2.rightKnee(:,i) = imuTransform(:,:,i) * marchKinematics.rightKnee(:,i);
-    marchKinematics2.rightAnkle(:,i) = imuTransform(:,:,i) * marchKinematics.rightAnkle(:,i);
+    marchKinematics2.leftHip(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.leftHip(:,i);
+    marchKinematics2.leftKnee(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.leftKnee(:,i);
+    marchKinematics2.leftAnkle(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.leftAnkle(:,i);
+    marchKinematics2.rightHip(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.rightHip(:,i);
+    marchKinematics2.rightKnee(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.rightKnee(:,i);
+    marchKinematics2.rightAnkle(:,i) = coordTransform*imuTransform(:,:,i)*coordTransform\marchKinematics.rightAnkle(:,i);
 end
 
 marchKinematics.time = angleData.time;

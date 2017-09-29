@@ -18,9 +18,9 @@ angleData.LKFE = getJointAngles(marchData.LKFE);
 angleData.RHFE = getJointAngles(marchData.RHFE);
 angleData.RKFE = getJointAngles(marchData.RKFE);
 
-angleData.IMU = [marchData.IMU.receivedFromIMU.data(:,3) ... % roll
-    (marchData.IMU.receivedFromIMU.data(:,2) - 0.5*pi) ... % pitch
-    marchData.IMU.receivedFromIMU.data(:,1)]; % yaw
+angleData.IMU = [marchData.IMU.receivedFromIMU.data(:,1) - pi ... % roll
+    (marchData.IMU.receivedFromIMU.data(:,2) - pi) ... % pitch
+    marchData.IMU.receivedFromIMU.data(:,3) - pi]; % yaw
 angleData.time = marchData.IMU.time;
 end
 
