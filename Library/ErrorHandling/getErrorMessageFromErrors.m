@@ -81,7 +81,7 @@ switch(detectedError)
        
             end
             errorLocation = getErrorLocationFromErrors(deviceErrors);
-            errorLocation(5:8) = '0'; %We ignore the Somanet and Ges errors
+            errorLocation(5:8) = '0'; %We ignore non Somanet errors, ie PDB and GES
         elseif deviceErrors.errorPDB ~= PDBError.NO_ERROR_PDB
             errorPDB = deviceErrors.errorPDB;
             if (errorPDB == PDBError.PDB_HIGH_CURRENT_WARNING || errorPDB == PDBError.PDB_HIGH_CURRENT_ERROR)
@@ -90,12 +90,14 @@ switch(detectedError)
                 errorMessage = ErrorMessage.PDB_VOLTAGE_ERROR;
             elseif (errorPDB == PDBError.PDB_HIGH_TEMPERATURE_WARNING || errorPDB == PDBError.PDB_HIGH_TEMPERATURE_ERROR)
                 errorMessage = ErrorMessage.PDB_TEMPERATURE_ERROR;
+            elseif (errorPDB == PDBError.PDB_DISCONNECTED)
+                errorMessage = ErrorMessage.DEVICE_DISCONNECTED_ERROR;
             else
                 errorMessage = ErrorMessage.UNKNOWN_ERROR;
             end
             
             errorLocation = getErrorLocationFromErrors(deviceErrors);
-            errorLocation(1:7) = '0'; %We ignore everything but the pdb
+            errorLocation(1:7) = '0'; %We ignore everything but the pdb, ie Somanet and GES
         else
             % no somanet error, check the other devices:
             % TODO: implement PowerElectronics error handling
