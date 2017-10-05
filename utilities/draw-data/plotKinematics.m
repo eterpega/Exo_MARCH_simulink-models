@@ -8,10 +8,10 @@ if nargin < 3
 end
 sampleStep = 25;
 waitTime = 0.01;
-h = figure;
-
 for i = startTime:sampleStep:endTime
     drawFrame(marchKinematics, i);
+    view([37.5 30]);
+    title(['t = ' num2str(marchKinematics.time(i))]);
     drawnow
     pause(waitTime);
 end
@@ -27,5 +27,5 @@ y = [kinematics.leftAnkle(2,i) kinematics.leftKnee(2,i) kinematics.leftHip(2,i) 
 z = [kinematics.leftAnkle(3,i) kinematics.leftKnee(3,i) kinematics.leftHip(3,i) ...
     kinematics.rightHip(3,i) kinematics.rightKnee(3,i) kinematics.rightAnkle(3,i)];
 plot3(x,y,z);% we use y as height, matlab uses z
-axis([-1 1 -1 1 -1 1]);
+axis([-0.6 0.6 -0.6 0.6 -1 0.4]);
 end
