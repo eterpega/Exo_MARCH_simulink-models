@@ -26,6 +26,6 @@ y = [kinematics.leftAnkle(2,i) kinematics.leftKnee(2,i) kinematics.leftHip(2,i) 
     kinematics.rightHip(2,i) kinematics.rightKnee(2,i) kinematics.rightAnkle(2,i)];
 z = [kinematics.leftAnkle(3,i) kinematics.leftKnee(3,i) kinematics.leftHip(3,i) ...
     kinematics.rightHip(3,i) kinematics.rightKnee(3,i) kinematics.rightAnkle(3,i)];
-plot3(x,z,y);% we use y as height, matlab uses z
+plot3(x,y,z);% we use y as height, matlab uses z
 axis([-1 1 -1 1 -1 1]);
 end
