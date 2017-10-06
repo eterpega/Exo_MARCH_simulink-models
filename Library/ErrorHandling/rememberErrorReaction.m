@@ -30,7 +30,7 @@ else
     errorReaction = prevReaction;
 end
 
-if((curTimestamp - triggeredTimestamp) >= 10)
+if((curTimestamp - triggeredTimestamp) >= 4)
     errorReaction = ErrorReaction.NOREACTION;
 end
 
